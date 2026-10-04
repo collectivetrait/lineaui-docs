@@ -1,69 +1,59 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Link from "next/link";
+
+const FEATURES = [
+  {
+    title: "Zero-class typography",
+    body: "Semantic HTML gets beautiful defaults out of the box. No class names needed for prose.",
+  },
+  {
+    title: "8px / 24px grid",
+    body: "Every size, space, and line-height token snaps to an 8px base grid with 24px rhythm lines.",
+  },
+  {
+    title: "Configurable prefix",
+    body: "The ln- class prefix is a Sass variable. Override it with @use to avoid conflicts.",
+  },
+  {
+    title: "CSS cascade layers",
+    body: "Layers give you predictable specificity. Override any rule without fighting specificity wars.",
+  },
+  {
+    title: "OS-aware dark mode",
+    body: "Colours use light-dark() so they follow the OS automatically. Toggle per-page with data-theme.",
+  },
+  {
+    title: "Modular SCSS",
+    body: "Import only what you need via Sass @use. No global leaks, no deprecated @import.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.tsx</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div>
+      <section>
+        <h1 className="text-display-2">Build interfaces with rhythm.</h1>
+        <p className="lead text-subtle">
+          ln is a SCSS/JS UI library built on an 8px grid, cascade layers, and
+          semantic HTML. No framework dependencies. No build magic required.
+        </p>
+        <p>
+          <Link href="/getting-started">Get started</Link>
+          {" · "}
+          <Link href="/typography">See the type scale</Link>
+        </p>
+      </section>
+
+      <section>
+        <h2>Why ln?</h2>
+        <div className="docs-card-grid">
+          {FEATURES.map((f) => (
+            <div key={f.title} className="docs-card">
+              <h3>{f.title}</h3>
+              <p>{f.body}</p>
+            </div>
+          ))}
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
     </div>
   );
 }
