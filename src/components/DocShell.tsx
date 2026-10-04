@@ -2,6 +2,8 @@ import { SideNav } from "./SideNav";
 import { SidebarToggle } from "./SidebarToggle";
 import { ThemeToggle } from "./ThemeToggle";
 import { GridToggle } from "./GridToggle";
+import { TocToggle } from "./TocToggle";
+import { BackToTop } from "./BackToTop";
 import { PreviewGridToggles } from "./PreviewGridToggles";
 import Link from "next/link";
 
@@ -18,6 +20,8 @@ export function DocShell({ children }: { children: React.ReactNode }) {
         </div>
       </header>
       <GridToggle />
+      <TocToggle />
+      <BackToTop />
       <PreviewGridToggles />
       <div className="docs-shell__body">
         <aside className="docs-shell__sidebar">
