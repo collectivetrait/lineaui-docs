@@ -174,6 +174,86 @@ export default function GridPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-grid</code></td>
+              <td>Grid container with default 24px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--cols-&#123;1–6&#125;</code></td>
+              <td>Fixed column count</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--cols-12</code></td>
+              <td>12-column grid</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--auto</code></td>
+              <td>Auto-fit columns from a minimum track size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--gap-xs</code></td>
+              <td>8px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--gap-sm</code></td>
+              <td>16px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--gap-md</code></td>
+              <td>24px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid--gap-lg</code></td>
+              <td>48px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid__item</code></td>
+              <td>Grid child element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid__item--span-&#123;1–12&#125;</code></td>
+              <td>Span N columns</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid__item--span-full</code></td>
+              <td>Span all columns</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid__item--start-&#123;1–12&#125;</code></td>
+              <td>Start at column N</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-grid__item--subgrid</code></td>
+              <td>Subgrid for row alignment</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

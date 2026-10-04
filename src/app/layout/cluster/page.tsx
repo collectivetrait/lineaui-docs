@@ -96,6 +96,86 @@ export default function ClusterPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-cluster</code></td>
+              <td>Flex row with wrap and default 8px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--gap-xs</code></td>
+              <td>8px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--gap-sm</code></td>
+              <td>16px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--gap-md</code></td>
+              <td>24px gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--justify-start</code></td>
+              <td>Justify items to start</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--justify-center</code></td>
+              <td>Justify items to centre</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--justify-end</code></td>
+              <td>Justify items to end</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--justify-between</code></td>
+              <td>Space between items</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--align-start</code></td>
+              <td>Align items to start</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--align-center</code></td>
+              <td>Align items to centre</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--align-baseline</code></td>
+              <td>Align items to baseline</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--align-end</code></td>
+              <td>Align items to end</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-cluster--nowrap</code></td>
+              <td>Prevent wrapping</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

@@ -118,6 +118,51 @@ export default function BreakpointsPage() {
   )
 );`}</CodeBlock>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Breakpoint</th>
+              <th>Value</th>
+              <th>Suffix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>sm</code></td>
+              <td>36rem (576px)</td>
+              <td><code>@sm</code></td>
+            </tr>
+            <tr>
+              <td><code>md</code></td>
+              <td>48rem (768px)</td>
+              <td><code>@md</code></td>
+            </tr>
+            <tr>
+              <td><code>lg</code></td>
+              <td>64rem (1024px)</td>
+              <td><code>@lg</code></td>
+            </tr>
+            <tr>
+              <td><code>xl</code></td>
+              <td>80rem (1280px)</td>
+              <td><code>@xl</code></td>
+            </tr>
+            <tr>
+              <td><code>2xl</code></td>
+              <td>96rem (1536px)</td>
+              <td><code>@2xl</code></td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Responsive suffixes are available on BEM block modifiers (grid, cluster)
+          and utility classes with <code>responsive: true</code> (display,
+          spacing, text-align, flex, width, float, font, and text-size utilities).
+        </p>
+      </section>
     </article>
   );
 }

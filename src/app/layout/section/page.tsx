@@ -85,6 +85,101 @@ export default function SectionPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-section</code></td>
+              <td>Full-width band with block padding, children centred at container width</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--narrow</code></td>
+              <td>Constrain children to prose measure width</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--wide</code></td>
+              <td>Constrain children to wide container width</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--space-lg</code></td>
+              <td>48px block padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--space-xl</code></td>
+              <td>72px block padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--space-2xl</code></td>
+              <td>96px block padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--space-3xl</code></td>
+              <td>144px block padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--surface-sunken</code></td>
+              <td>Sunken background surface</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--surface-raised</code></td>
+              <td>Raised background surface</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--surface-inverse</code></td>
+              <td>Inverse (dark) background with light text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--bordered</code></td>
+              <td>Top border separator</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section--center</code></td>
+              <td>Centre-align text content</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section__header</code></td>
+              <td>Section header wrapper with bottom spacing</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section__eyebrow</code></td>
+              <td>Uppercase label above the title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section__title</code></td>
+              <td>Section heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-section__lead</code></td>
+              <td>Subtitle or lead paragraph</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

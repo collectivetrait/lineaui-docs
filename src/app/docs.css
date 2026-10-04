@@ -342,7 +342,7 @@
 /* Override _code.scss's pre styles when inside .code-block */
 .code-block__body {
   margin: 0;
-  padding: var(--space-3) 0;
+  padding: var(--space-1) 0;
   overflow: hidden;
   text-wrap: wrap;
   font-family: var(--font-mono);
@@ -367,7 +367,7 @@
 
 .code-block__line {
   display: block;
-  padding: 0 var(--space-2) 0 3.5rem;
+  padding: 0 var(--space-2) 0 2.5rem;
   position: relative;
   line-height: 1.5rem;
 }
@@ -377,7 +377,7 @@
   counter-increment: line;
   position: absolute;
   left: 0;
-  width: 2.5rem;
+  width: 1.75rem;
   text-align: right;
   color: var(--text-disabled);
   font-variant-numeric: tabular-nums;
@@ -443,6 +443,10 @@
 
 .preview-grid-toggle[aria-pressed="true"] {
   color: var(--primary-text);
+}
+
+.component-demo__preview-sizer--full {
+  width: 100%;
 }
 
 .component-demo__preview-sizer--narrow {
@@ -579,3 +583,17 @@
 .docs-height-container {
   height: 200px;
 }
+
+.docs-z-stack {
+  position: relative;
+  height: 120px;
+}
+
+.docs-z-stack__layer {
+  position: absolute;
+  width: 120px;
+}
+
+.docs-z-stack__layer--1 { top: 0; left: 0; }
+.docs-z-stack__layer--2 { top: 16px; left: 40px; }
+.docs-z-stack__layer--3 { top: 32px; left: 80px; }

@@ -58,6 +58,46 @@ export default function ContainerPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-container</code></td>
+              <td>Centred wrapper, max-width 900px with gutter padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-container--narrow</code></td>
+              <td>Prose measure width (~70ch)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-container--wide</code></td>
+              <td>Wide track (1200px)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-container--full</code></td>
+              <td>No max-width constraint</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-container--flush</code></td>
+              <td>Zero inline padding</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }
