@@ -67,13 +67,9 @@
     column-gap: var(--space-8);
   }
 
-  .docs-page-content > article > .docs-section:first-child {
-    grid-column: 1 / -1;
-  }
-
   .docs-page-content > article > .docs-toc {
     grid-column: 2;
-    grid-row: 2 / span 99;
+    grid-row: 1 / span 99;
   }
 }
 
