@@ -1,8 +1,10 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableSelectInit } from "@/components/TableSelectInit";
 
 export default function TablesPage() {
   return (
     <article>
+      <TableSelectInit />
       <section className="docs-section">
         <h1 className="text-display-2">Tables</h1>
         <p className="lead text-subtle">
@@ -79,225 +81,6 @@ export default function TablesPage() {
             </table>
           </div>
         </div>
-        <CodeBlock language="css">{`/* Base layer — applied automatically */
-table { border-collapse: collapse; inline-size: 100%; }
-
-caption {
-  font-family: var(--font-mono);
-  font-size: var(--type-meta-size);
-  color: var(--text-muted);
-  text-align: start;
-}
-
-th, td {
-  padding-block: calc(var(--space-3) / 2);  /* 12px top + 12px bottom = 24px row */
-  padding-inline: var(--space-2);
-  line-height: var(--type-body-sm-lh);
-  text-align: start;
-  vertical-align: top;
-  box-shadow: inset 0 -1px 0 var(--border); /* shadow, not border, to preserve rhythm */
-}
-
-th { font-size: var(--type-body-sm-size); font-weight: 600; color: var(--text-muted); }
-td { font-size: var(--type-body-sm-size); }`}</CodeBlock>
-      </section>
-
-      <section className="docs-section">
-        <h2>Table block — full-featured</h2>
-        <p>
-          The <code>ln-table</code> block wraps enhanced tables with modifiers
-          for divided rows, sortable headers, row selection, and pagination.
-          Modifiers include <code>--divided</code>, <code>--striped</code>,{" "}
-          <code>--bordered</code>, <code>--compact</code>,{" "}
-          <code>--spacious</code>, <code>--sticky-header</code>, and{" "}
-          <code>--sticky-first</code>.
-        </p>
-        <div className="component-demo">
-          <CodeBlock language="html">{`<div class="ln-table ln-table--divided">
-  <table class="ln-table__grid">
-    <thead>
-      <tr>
-        <th class="ln-table__header ln-table__select">
-          <input type="checkbox" class="ln-choice__input">
-        </th>
-        <th class="ln-table__header">
-          <button class="ln-table__sort" aria-sort="ascending">Name</button>
-        </th>
-        <th class="ln-table__header">Role</th>
-        <th class="ln-table__header">Status</th>
-        <th class="ln-table__header ln-table__header--numeric">Hours</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="ln-table__row" aria-selected="true">
-        <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input" checked>
-        </td>
-        <td class="ln-table__cell">
-          <div class="flex align-items-center gap-2">
-            <span class="ln-avatar ln-avatar--sm">AJ</span>
-            Alice Johnson
-          </div>
-        </td>
-        <td class="ln-table__cell">Engineer</td>
-        <td class="ln-table__cell">
-          <span class="ln-badge ln-badge--success">Active</span>
-        </td>
-        <td class="ln-table__cell ln-table__cell--numeric">142</td>
-      </tr>
-      <tr class="ln-table__row" aria-selected="true">
-        <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input" checked>
-        </td>
-        <td class="ln-table__cell">
-          <div class="flex align-items-center gap-2">
-            <span class="ln-avatar ln-avatar--sm">BS</span>
-            Bob Smith
-          </div>
-        </td>
-        <td class="ln-table__cell">Designer</td>
-        <td class="ln-table__cell">
-          <span class="ln-badge ln-badge--warning">Away</span>
-        </td>
-        <td class="ln-table__cell ln-table__cell--numeric">98</td>
-      </tr>
-      <tr class="ln-table__row">
-        <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input">
-        </td>
-        <td class="ln-table__cell">
-          <div class="flex align-items-center gap-2">
-            <span class="ln-avatar ln-avatar--sm">CL</span>
-            Carol Lee
-          </div>
-        </td>
-        <td class="ln-table__cell">Manager</td>
-        <td class="ln-table__cell">
-          <span class="ln-badge ln-badge--success">Active</span>
-        </td>
-        <td class="ln-table__cell ln-table__cell--numeric">160</td>
-      </tr>
-      <tr class="ln-table__row">
-        <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input">
-        </td>
-        <td class="ln-table__cell">
-          <div class="flex align-items-center gap-2">
-            <span class="ln-avatar ln-avatar--sm">DK</span>
-            David Kim
-          </div>
-        </td>
-        <td class="ln-table__cell">Developer</td>
-        <td class="ln-table__cell">
-          <span class="ln-badge ln-badge--danger">Offline</span>
-        </td>
-        <td class="ln-table__cell ln-table__cell--numeric">72</td>
-      </tr>
-    </tbody>
-  </table>
-  <div class="ln-table__foot">
-    <span>2 of 4 selected</span>
-    <div class="ln-table__actions">
-      <button class="ln-button ln-button--outline ln-button--sm" disabled>Previous</button>
-      <span>Page 1 of 3</span>
-      <button class="ln-button ln-button--outline ln-button--sm">Next</button>
-    </div>
-  </div>
-</div>`}</CodeBlock>
-          <div className="component-demo__preview">
-            <div className="ln-table ln-table--divided">
-              <table className="ln-table__grid">
-                <thead>
-                  <tr>
-                    <th className="ln-table__header ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" readOnly />
-                    </th>
-                    <th className="ln-table__header">
-                      <button className="ln-table__sort" aria-sort="ascending">Name</button>
-                    </th>
-                    <th className="ln-table__header">Role</th>
-                    <th className="ln-table__header">Status</th>
-                    <th className="ln-table__header ln-table__header--numeric">Hours</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="ln-table__row" aria-selected="true">
-                    <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" defaultChecked readOnly />
-                    </td>
-                    <td className="ln-table__cell">
-                      <div className="flex align-items-center gap-2">
-                        <span className="ln-avatar ln-avatar--sm">AJ</span>
-                        Alice Johnson
-                      </div>
-                    </td>
-                    <td className="ln-table__cell">Engineer</td>
-                    <td className="ln-table__cell">
-                      <span className="ln-badge ln-badge--success">Active</span>
-                    </td>
-                    <td className="ln-table__cell ln-table__cell--numeric">142</td>
-                  </tr>
-                  <tr className="ln-table__row" aria-selected="true">
-                    <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" defaultChecked readOnly />
-                    </td>
-                    <td className="ln-table__cell">
-                      <div className="flex align-items-center gap-2">
-                        <span className="ln-avatar ln-avatar--sm">BS</span>
-                        Bob Smith
-                      </div>
-                    </td>
-                    <td className="ln-table__cell">Designer</td>
-                    <td className="ln-table__cell">
-                      <span className="ln-badge ln-badge--warning">Away</span>
-                    </td>
-                    <td className="ln-table__cell ln-table__cell--numeric">98</td>
-                  </tr>
-                  <tr className="ln-table__row">
-                    <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" readOnly />
-                    </td>
-                    <td className="ln-table__cell">
-                      <div className="flex align-items-center gap-2">
-                        <span className="ln-avatar ln-avatar--sm">CL</span>
-                        Carol Lee
-                      </div>
-                    </td>
-                    <td className="ln-table__cell">Manager</td>
-                    <td className="ln-table__cell">
-                      <span className="ln-badge ln-badge--success">Active</span>
-                    </td>
-                    <td className="ln-table__cell ln-table__cell--numeric">160</td>
-                  </tr>
-                  <tr className="ln-table__row">
-                    <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" readOnly />
-                    </td>
-                    <td className="ln-table__cell">
-                      <div className="flex align-items-center gap-2">
-                        <span className="ln-avatar ln-avatar--sm">DK</span>
-                        David Kim
-                      </div>
-                    </td>
-                    <td className="ln-table__cell">Developer</td>
-                    <td className="ln-table__cell">
-                      <span className="ln-badge ln-badge--danger">Offline</span>
-                    </td>
-                    <td className="ln-table__cell ln-table__cell--numeric">72</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div className="ln-table__foot">
-                <span>2 of 4 selected</span>
-                <div className="ln-table__actions">
-                  <button className="ln-button ln-button--outline ln-button--sm" disabled>Previous</button>
-                  <span>Page 1 of 3</span>
-                  <button className="ln-button ln-button--outline ln-button--sm">Next</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
       <section className="docs-section">
@@ -362,6 +145,311 @@ td { font-size: var(--type-body-sm-size); }`}</CodeBlock>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Table block — full-featured</h2>
+        <p>
+          The <code>ln-table</code> block wraps enhanced tables with modifiers
+          for divided rows, sortable headers, row selection, and pagination.
+          Modifiers include <code>--divided</code>, <code>--striped</code>,{" "}
+          <code>--bordered</code>, <code>--compact</code>,{" "}
+          <code>--spacious</code>, <code>--sticky-header</code>, and{" "}
+          <code>--sticky-first</code>.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<div class="ln-table ln-table--divided">
+  <table class="ln-table__grid">
+    <thead>
+      <tr>
+        <th class="ln-table__header ln-table__select">
+          <input type="checkbox" class="ln-choice__input">
+        </th>
+        <th class="ln-table__header">
+          <button class="ln-table__sort" aria-sort="ascending">Name</button>
+        </th>
+        <th class="ln-table__header">Role</th>
+        <th class="ln-table__header">Status</th>
+        <th class="ln-table__header ln-table__header--numeric">Hours</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="ln-table__row" aria-selected="true">
+        <td class="ln-table__cell ln-table__select">
+          <input type="checkbox" class="ln-choice__input" checked>
+        </td>
+        <td class="ln-table__cell">
+          <span class="d-flex align-items-center gap-2">
+            <span class="ln-avatar ln-avatar--sm">AJ</span>
+            Alice Johnson
+          </span>
+        </td>
+        <td class="ln-table__cell">Engineer</td>
+        <td class="ln-table__cell">
+          <span class="ln-badge ln-badge--success">Active</span>
+        </td>
+        <td class="ln-table__cell ln-table__cell--numeric">142</td>
+      </tr>
+      <tr class="ln-table__row" aria-selected="true">
+        <td class="ln-table__cell ln-table__select">
+          <input type="checkbox" class="ln-choice__input" checked>
+        </td>
+        <td class="ln-table__cell">
+          <span class="d-flex align-items-center gap-2">
+            <span class="ln-avatar ln-avatar--sm">BS</span>
+            Bob Smith
+          </span>
+        </td>
+        <td class="ln-table__cell">Designer</td>
+        <td class="ln-table__cell">
+          <span class="ln-badge ln-badge--warning">Away</span>
+        </td>
+        <td class="ln-table__cell ln-table__cell--numeric">98</td>
+      </tr>
+      <tr class="ln-table__row">
+        <td class="ln-table__cell ln-table__select">
+          <input type="checkbox" class="ln-choice__input">
+        </td>
+        <td class="ln-table__cell">
+          <span class="d-flex align-items-center gap-2">
+            <span class="ln-avatar ln-avatar--sm">CL</span>
+            Carol Lee
+          </span>
+        </td>
+        <td class="ln-table__cell">Manager</td>
+        <td class="ln-table__cell">
+          <span class="ln-badge ln-badge--success">Active</span>
+        </td>
+        <td class="ln-table__cell ln-table__cell--numeric">160</td>
+      </tr>
+      <tr class="ln-table__row">
+        <td class="ln-table__cell ln-table__select">
+          <input type="checkbox" class="ln-choice__input">
+        </td>
+        <td class="ln-table__cell">
+          <span class="d-flex align-items-center gap-2">
+            <span class="ln-avatar ln-avatar--sm">DK</span>
+            David Kim
+          </span>
+        </td>
+        <td class="ln-table__cell">Developer</td>
+        <td class="ln-table__cell">
+          <span class="ln-badge ln-badge--danger">Offline</span>
+        </td>
+        <td class="ln-table__cell ln-table__cell--numeric">72</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">
+          <div class="ln-table__foot">
+            <span data-select-count>2 of 4 selected</span>
+            <div class="ln-table__actions">
+              <button class="ln-button ln-button--outline ln-button--sm" disabled>Previous</button>
+              <span>Page 1 of 3</span>
+              <button class="ln-button ln-button--outline ln-button--sm">Next</button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="ln-table ln-table--divided">
+              <table className="ln-table__grid">
+                <thead>
+                  <tr>
+                    <th className="ln-table__header ln-table__select">
+                      <input type="checkbox" className="ln-choice__input" />
+                    </th>
+                    <th className="ln-table__header">
+                      <button className="ln-table__sort" aria-sort="ascending">Name</button>
+                    </th>
+                    <th className="ln-table__header">Role</th>
+                    <th className="ln-table__header">Status</th>
+                    <th className="ln-table__header ln-table__header--numeric">Hours</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="ln-table__row" aria-selected="true">
+                    <td className="ln-table__cell ln-table__select">
+                      <input type="checkbox" className="ln-choice__input" defaultChecked />
+                    </td>
+                    <td className="ln-table__cell">
+                      <span className="d-flex align-items-center gap-2">
+                        <span className="ln-avatar ln-avatar--sm">AJ</span>
+                        Alice Johnson
+                      </span>
+                    </td>
+                    <td className="ln-table__cell">Engineer</td>
+                    <td className="ln-table__cell">
+                      <span className="ln-badge ln-badge--success">Active</span>
+                    </td>
+                    <td className="ln-table__cell ln-table__cell--numeric">142</td>
+                  </tr>
+                  <tr className="ln-table__row" aria-selected="true">
+                    <td className="ln-table__cell ln-table__select">
+                      <input type="checkbox" className="ln-choice__input" defaultChecked />
+                    </td>
+                    <td className="ln-table__cell">
+                      <span className="d-flex align-items-center gap-2">
+                        <span className="ln-avatar ln-avatar--sm">BS</span>
+                        Bob Smith
+                      </span>
+                    </td>
+                    <td className="ln-table__cell">Designer</td>
+                    <td className="ln-table__cell">
+                      <span className="ln-badge ln-badge--warning">Away</span>
+                    </td>
+                    <td className="ln-table__cell ln-table__cell--numeric">98</td>
+                  </tr>
+                  <tr className="ln-table__row">
+                    <td className="ln-table__cell ln-table__select">
+                      <input type="checkbox" className="ln-choice__input" />
+                    </td>
+                    <td className="ln-table__cell">
+                      <span className="d-flex align-items-center gap-2">
+                        <span className="ln-avatar ln-avatar--sm">CL</span>
+                        Carol Lee
+                      </span>
+                    </td>
+                    <td className="ln-table__cell">Manager</td>
+                    <td className="ln-table__cell">
+                      <span className="ln-badge ln-badge--success">Active</span>
+                    </td>
+                    <td className="ln-table__cell ln-table__cell--numeric">160</td>
+                  </tr>
+                  <tr className="ln-table__row">
+                    <td className="ln-table__cell ln-table__select">
+                      <input type="checkbox" className="ln-choice__input" />
+                    </td>
+                    <td className="ln-table__cell">
+                      <span className="d-flex align-items-center gap-2">
+                        <span className="ln-avatar ln-avatar--sm">DK</span>
+                        David Kim
+                      </span>
+                    </td>
+                    <td className="ln-table__cell">Developer</td>
+                    <td className="ln-table__cell">
+                      <span className="ln-badge ln-badge--danger">Offline</span>
+                    </td>
+                    <td className="ln-table__cell ln-table__cell--numeric">72</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colSpan={5}>
+                      <div className="ln-table__foot">
+                        <span data-select-count="">2 of 4 selected</span>
+                        <div className="ln-table__actions">
+                          <button className="ln-button ln-button--outline ln-button--sm" disabled>Previous</button>
+                          <span>Page 1 of 3</span>
+                          <button className="ln-button ln-button--outline ln-button--sm">Next</button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-table</code></td>
+              <td>Table block container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__grid</code></td>
+              <td>The <code>&lt;table&gt;</code> element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__header</code></td>
+              <td>Header cell (<code>&lt;th&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__cell</code></td>
+              <td>Body cell (<code>&lt;td&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__row</code></td>
+              <td>Body row (<code>&lt;tr&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__foot</code></td>
+              <td>Footer cell with pagination/selection count</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__select</code></td>
+              <td>Checkbox column cell</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table__sort</code></td>
+              <td>Sortable header button</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--divided</code></td>
+              <td>Row dividers between cells</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--striped</code></td>
+              <td>Alternating row backgrounds</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--bordered</code></td>
+              <td>Borders on all cells</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--compact</code></td>
+              <td>Reduced cell padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--spacious</code></td>
+              <td>Increased cell padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--sticky-header</code></td>
+              <td>Sticky column headers</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--sticky-first</code></td>
+              <td>Sticky first column</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-table--stack</code></td>
+              <td>Card layout below md breakpoint</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

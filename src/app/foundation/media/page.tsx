@@ -8,7 +8,8 @@ export default function MediaPage() {
         <p className="lead text-subtle">
           Base responsive behaviour for images and video, plus the{" "}
           <code>ln-media</code> block for framed media with aspect ratios
-          and captions.
+          and captions. Media elements have intrinsic dimensions governed by
+          their source files, so they will generally break vertical rhythm.
         </p>
       </section>
 
@@ -120,6 +121,70 @@ img, video {
             </div>
           </div>
         </div>
+      </section>
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-media</code></td>
+              <td>Media block container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media__frame</code></td>
+              <td>Frame wrapper for media content</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media__img</code></td>
+              <td>Image inside frame</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media__caption</code></td>
+              <td>Caption text below frame</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media--bordered</code></td>
+              <td>Adds border to frame</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media--ratio-1x1</code></td>
+              <td>1:1 aspect ratio</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media--ratio-4x3</code></td>
+              <td>4:3 aspect ratio</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media--ratio-3x2</code></td>
+              <td>3:2 aspect ratio</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media--ratio-16x9</code></td>
+              <td>16:9 aspect ratio</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-media--ratio-21x9</code></td>
+              <td>21:9 aspect ratio</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

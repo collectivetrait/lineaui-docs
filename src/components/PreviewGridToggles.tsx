@@ -36,9 +36,10 @@ export function PreviewGridToggles() {
         preview.appendChild(inner);
       }
 
-      if (sizerModifier && !inner.querySelector(":scope > .component-demo__preview-sizer--" + sizerModifier)) {
+      const mod = sizerModifier || "full";
+      if (!inner.querySelector(":scope > .component-demo__preview-sizer--" + mod)) {
         const sizer = document.createElement("div");
-        sizer.className = `component-demo__preview-sizer--${sizerModifier}`;
+        sizer.className = `component-demo__preview-sizer--${mod}`;
         while (inner.firstChild) {
           sizer.appendChild(inner.firstChild);
         }
@@ -73,8 +74,10 @@ export function PreviewGridToggles() {
         const h = Math.round(inner.getBoundingClientRect().height * 100) / 100;
         const pass = h % 8 === 0;
         const hasRatio = !!inner.querySelector('[class*="--ratio-"]');
-        const label = pass ? "pass" : hasRatio ? "skip" : "fail";
-        const role = pass ? "success" : hasRatio ? "warning" : "danger";
+        const hasMedia = !!inner.querySelector("img, video, picture, figure, iframe");
+        const skip = hasRatio || hasMedia;
+        const label = pass ? "pass" : skip ? "skip" : "fail";
+        const role = pass ? "success" : skip ? "warning" : "danger";
         heightBadge.textContent = `${h}px`;
         statusBadge.textContent = label;
         statusBadge.className = `ln-badge ln-badge--${role}`;

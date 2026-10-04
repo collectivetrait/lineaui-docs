@@ -15,8 +15,9 @@ export default function FiguresPage() {
       <section className="docs-section">
         <h2>Default figure</h2>
         <p>
-          The <code>&lt;figure&gt;</code> element receives zero inline margin
-          and a block margin of one rhythm line (24px). The{" "}
+          The <code>&lt;figure&gt;</code> element receives zero top and inline
+          margins and a bottom margin of one rhythm line (24px), removed when
+          it is the last child of its container. The{" "}
           <code>&lt;figcaption&gt;</code> uses the UI font at small body size
           with muted colour and an 8px top margin.
         </p>
@@ -55,24 +56,49 @@ export default function FiguresPage() {
       </section>
 
       <section className="docs-section">
-        <h2>Base styles reference</h2>
-        <p>
-          These styles are set in <code>base/_media.scss</code> inside{" "}
-          <code>@layer base</code>.
-        </p>
-        <CodeBlock language="css">{`/* Applied automatically — no classes needed */
-figure {
-  margin-inline: 0;
-  margin-block: 24px; /* one rhythm line */
-}
-
-figcaption {
-  font-family: var(--font-ui);
-  font-size: var(--type-body-sm-size);
-  line-height: var(--type-body-sm-lh);
-  color: var(--text-muted);
-  margin-block-start: var(--space-1); /* 8px */
-}`}</CodeBlock>
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Element</th>
+              <th>Property</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>figure</code></td>
+              <td><code>margin-top: 0</code></td>
+            </tr>
+            <tr>
+              <td><code>figure</code></td>
+              <td><code>margin-bottom: 24px</code> (0 when last child)</td>
+            </tr>
+            <tr>
+              <td><code>figure</code></td>
+              <td><code>margin-inline: 0</code></td>
+            </tr>
+            <tr>
+              <td><code>figcaption</code></td>
+              <td><code>font-family: var(--font-ui)</code></td>
+            </tr>
+            <tr>
+              <td><code>figcaption</code></td>
+              <td><code>font-size: var(--type-body-sm-size)</code></td>
+            </tr>
+            <tr>
+              <td><code>figcaption</code></td>
+              <td><code>line-height: var(--type-body-sm-lh)</code></td>
+            </tr>
+            <tr>
+              <td><code>figcaption</code></td>
+              <td><code>color: var(--text-muted)</code></td>
+            </tr>
+            <tr>
+              <td><code>figcaption</code></td>
+              <td><code>margin-top: var(--space-1)</code></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

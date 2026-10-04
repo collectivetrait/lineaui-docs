@@ -34,6 +34,45 @@ export default function TypographyPage() {
           </div>
         </div>
 
+        <h3>Paragraphs</h3>
+        <p>
+          Body paragraphs use the UI font at 1rem / 1.5rem (16px / 24px). The
+          base layer adds a bottom margin of one line (24px) so paragraphs stack
+          with consistent rhythm.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<p class="mb-3">The ln type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
+<p class="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
+<p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <p className="mb-3">The ln type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
+            <p className="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
+            <p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>
+          </div>
+        </div>
+
+        <h3>Headings</h3>
+        <p>
+          Heading elements <code>h1</code>–<code>h6</code> receive size, line
+          height, and font-family styles from the base layer. No classes needed.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<h1 class="mb-3">Heading level one</h1>
+<h2 class="mb-3">Heading level two</h2>
+<h3 class="mb-3">Heading level three</h3>
+<h4 class="mb-3">Heading level four</h4>
+<h5 class="mb-3">Heading level five</h5>
+<h6>Heading level six</h6>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <h1 className="mb-3">Heading level one</h1>
+            <h2 className="mb-3">Heading level two</h2>
+            <h3 className="mb-3">Heading level three</h3>
+            <h4 className="mb-3">Heading level four</h4>
+            <h5 className="mb-3">Heading level five</h5>
+            <h6>Heading level six</h6>
+          </div>
+        </div>
+
         <h3>Heading style classes</h3>
         <p>
           Apply heading visual styles to any element. Unlike the heading
@@ -74,25 +113,18 @@ export default function TypographyPage() {
           </div>
         </div>
 
-        <h3>Text size helpers</h3>
+        <h3>Responsive</h3>
         <p>
-          Size-only helpers that apply any scale step to any element without
-          changing the font family. Use <code>.text-lead</code>,{" "}
-          <code>.text-body-lg</code>, <code>.text-body-sm</code>,{" "}
-          <code>.text-body-xs</code>, and <code>.text-meta</code>.
+          Heading style classes and display sizes support responsive breakpoint
+          suffixes: <code>@sm</code>, <code>@md</code>, <code>@lg</code>,{" "}
+          <code>@xl</code>, <code>@2xl</code>.
         </p>
         <div className="component-demo">
-          <CodeBlock language="html">{`<p class="text-lead mb-3">text-lead — 18px / 24px, prose font</p>
-<p class="text-body-lg mb-3">text-body-lg — 18px / 24px</p>
-<p class="text-body-sm mb-3">text-body-sm — 14px / 24px</p>
-<p class="text-body-xs mb-3">text-body-xs — 12px / 16px</p>
-<p class="text-meta">text-meta — 12px / 16px, mono font</p>`}</CodeBlock>
+          <CodeBlock language="html">{`<div class="h4 h2@md mb-3">h4 on mobile, h2 from md up</div>
+<div class="text-display-2 text-display-1@lg">Display 2 on mobile, display 1 from lg up</div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <p className="text-lead mb-3">text-lead — 18px / 24px, prose font</p>
-            <p className="text-body-lg mb-3">text-body-lg — 18px / 24px</p>
-            <p className="text-body-sm mb-3">text-body-sm — 14px / 24px</p>
-            <p className="text-body-xs mb-3">text-body-xs — 12px / 16px</p>
-            <p className="text-meta">text-meta — 12px / 16px, mono font</p>
+            <div className="h4 h2@md mb-3">h4 on mobile, h2 from md up</div>
+            <div className="text-display-2 text-display-1@lg">Display 2 on mobile, display 1 from lg up</div>
           </div>
         </div>
       </section>
@@ -105,7 +137,8 @@ export default function TypographyPage() {
           automatically from <code>@layer base</code>. No class names needed
           for standard prose content.
         </p>
-        <CodeBlock language="html">{`<article>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<article>
   <h1>Title</h1>
   <p class="lead">Lead paragraph.</p>
   <p>Body copy — no extra classes needed.</p>
@@ -114,7 +147,7 @@ export default function TypographyPage() {
   <ul><li>List item</li></ul>
   <pre><code>code block</code></pre>
 </article>`}</CodeBlock>
-
+          <div className="component-demo__preview">
         <article className="docs-prose-specimen">
           <h1>Typographic defaults</h1>
           <p className="lead">
@@ -205,6 +238,8 @@ export default function TypographyPage() {
 );`}</code>
           </pre>
         </article>
+          </div>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -219,9 +254,7 @@ export default function TypographyPage() {
   font-size: var(--type-h2-size);
   line-height: var(--type-h2-lh);
 }`}</CodeBlock>
-        <div className="docs-scroll-x">
-          <TypeScaleTable />
-        </div>
+        <TypeScaleTable />
         <p>
           On smaller viewports (below <code>md</code>), <code>h1</code> scales
           down to 2.25rem / 3rem to preserve rhythm on narrow screens.
@@ -275,6 +308,40 @@ export default function TypographyPage() {
             </span>
           </dd>
         </dl>
+      </section>
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.lead</code></td>
+              <td>Lead paragraph (prose font, larger size)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.h1</code>–<code>.h6</code></td>
+              <td>Heading visual styles without margin</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.text-display-1</code></td>
+              <td>Display size 1 (hero headings)</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.text-display-2</code></td>
+              <td>Display size 2 (section heroes)</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

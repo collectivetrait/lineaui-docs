@@ -4,7 +4,7 @@ export default function FontsPage() {
   return (
     <article>
       <section className="docs-section">
-        <h1 className="text-display-2">Font utilities</h1>
+        <h1 className="text-display-2">Fonts</h1>
         <p className="lead text-subtle">
           Utility classes for font weight, font style, and font family. These
           override any inherited or component-level font settings.
@@ -15,16 +15,19 @@ export default function FontsPage() {
         <h2>Font weight</h2>
         <p>
           Set the weight of any text element. Use <code>.fw-normal</code> (400),{" "}
-          <code>.fw-medium</code> (500), or <code>.fw-semibold</code> (600).
+          <code>.fw-medium</code> (500), <code>.fw-semibold</code> (600), or{" "}
+          <code>.fw-bold</code> (700).
         </p>
         <div className="component-demo">
           <CodeBlock language="html">{`<p class="fw-normal mb-3">Normal weight (400)</p>
 <p class="fw-medium mb-3">Medium weight (500)</p>
-<p class="fw-semibold">Semibold weight (600)</p>`}</CodeBlock>
+<p class="fw-semibold mb-3">Semibold weight (600)</p>
+<p class="fw-bold">Bold weight (700)</p>`}</CodeBlock>
           <div className="component-demo__preview">
             <p className="fw-normal mb-3">Normal weight (400)</p>
             <p className="fw-medium mb-3">Medium weight (500)</p>
-            <p className="fw-semibold">Semibold weight (600)</p>
+            <p className="fw-semibold mb-3">Semibold weight (600)</p>
+            <p className="fw-bold">Bold weight (700)</p>
           </div>
         </div>
       </section>
@@ -67,55 +70,79 @@ export default function FontsPage() {
       </section>
 
       <section className="docs-section">
+        <h2>Responsive</h2>
+        <p>
+          All font utilities support responsive breakpoint suffixes:{" "}
+          <code>@sm</code>, <code>@md</code>, <code>@lg</code>,{" "}
+          <code>@xl</code>, <code>@2xl</code>.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<p class="fw-normal fw-bold@md mb-3">Normal weight on mobile, bold from md up</p>
+<p class="fs-normal fs-italic@lg mb-3">Normal style on mobile, italic from lg up</p>
+<p class="font-ui font-mono@md">UI font on mobile, mono from md up</p>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <p className="fw-normal fw-bold@md mb-3">Normal weight on mobile, bold from md up</p>
+            <p className="fs-normal fs-italic@lg mb-3">Normal style on mobile, italic from lg up</p>
+            <p className="font-ui font-mono@md">UI font on mobile, mono from md up</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
         <h2>Reference</h2>
         <table>
           <thead>
             <tr>
               <th>Class</th>
               <th>Property</th>
-              <th>Value</th>
+              <th>Responsive</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><code>.fw-normal</code></td>
-              <td><code>font-weight</code></td>
-              <td>400</td>
+              <td><code>font-weight: 400</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.fw-medium</code></td>
-              <td><code>font-weight</code></td>
-              <td>500</td>
+              <td><code>font-weight: 500</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.fw-semibold</code></td>
-              <td><code>font-weight</code></td>
-              <td>600</td>
+              <td><code>font-weight: 600</code></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.fw-bold</code></td>
+              <td><code>font-weight: 700</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.fs-normal</code></td>
-              <td><code>font-style</code></td>
-              <td>normal</td>
+              <td><code>font-style: normal</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.fs-italic</code></td>
-              <td><code>font-style</code></td>
-              <td>italic</td>
+              <td><code>font-style: italic</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.font-prose</code></td>
-              <td><code>font-family</code></td>
-              <td><code>var(--font-prose)</code></td>
+              <td><code>font-family: var(--font-prose)</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.font-ui</code></td>
-              <td><code>font-family</code></td>
-              <td><code>var(--font-ui)</code></td>
+              <td><code>font-family: var(--font-ui)</code></td>
+              <td>Yes</td>
             </tr>
             <tr>
               <td><code>.font-mono</code></td>
-              <td><code>font-family</code></td>
-              <td><code>var(--font-mono)</code></td>
+              <td><code>font-family: var(--font-mono)</code></td>
+              <td>Yes</td>
             </tr>
           </tbody>
         </table>

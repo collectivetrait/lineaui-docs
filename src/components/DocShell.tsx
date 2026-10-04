@@ -25,8 +25,10 @@ export function DocShell({ children }: { children: React.ReactNode }) {
           <SideNav />
         </aside>
         <main className="docs-shell__main">
-          <TableOfContents />
-          <div className="docs-page-content">{children}</div>
+          <div className="docs-page-content">
+            {children}
+            <TableOfContents />
+          </div>
         </main>
       </div>
     </div>
