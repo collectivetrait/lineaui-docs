@@ -748,7 +748,7 @@
   display: none;
   position: fixed;
   bottom: var(--space-3);
-  left: var(--space-3);
+  right: calc(var(--space-3) + var(--space-5) + var(--space-1));
   z-index: 10000;
   place-items: center;
   width: var(--space-5);
