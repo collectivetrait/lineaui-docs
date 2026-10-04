@@ -96,6 +96,32 @@ export default function TabsPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-tabs</code></td><td>Tabs container</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs__list</code></td><td>Tab button row</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs__tab</code></td><td>Individual tab button</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs__icon</code></td><td>Tab icon</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs__badge</code></td><td>Tab count badge</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs__panel</code></td><td>Tab content panel</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs--pills</code></td><td>Pill-style segmented control</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs--boxed</code></td><td>Boxed tab style</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs--vertical</code></td><td>Vertical side-tab layout</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs--fill</code></td><td>Equal-width tabs</td><td>No</td></tr>
+            <tr><td><code>.ln-tabs--sm</code></td><td>Smaller tab size</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

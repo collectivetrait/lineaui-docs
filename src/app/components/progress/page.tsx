@@ -93,6 +93,31 @@ export default function ProgressPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-progress</code></td><td>Progress bar container</td><td>No</td></tr>
+            <tr><td><code>.ln-progress__header</code></td><td>Label and value row</td><td>No</td></tr>
+            <tr><td><code>.ln-progress__label</code></td><td>Progress label text</td><td>No</td></tr>
+            <tr><td><code>.ln-progress__value</code></td><td>Percentage or fraction text</td><td>No</td></tr>
+            <tr><td><code>.ln-progress__track</code></td><td>Background track</td><td>No</td></tr>
+            <tr><td><code>.ln-progress__bar</code></td><td>Filled bar (set width via <code>--progress</code>)</td><td>No</td></tr>
+            <tr><td><code>.ln-progress--xs</code></td><td>4px track height</td><td>No</td></tr>
+            <tr><td><code>.ln-progress--sm</code></td><td>8px track height</td><td>No</td></tr>
+            <tr><td><code>.ln-progress--md</code></td><td>16px track height</td><td>No</td></tr>
+            <tr><td><code>.ln-progress--indeterminate</code></td><td>Animated indeterminate state</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

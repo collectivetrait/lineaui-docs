@@ -43,6 +43,26 @@ export default function SpinnerPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-spinner</code></td><td>Spinning loading indicator</td><td>No</td></tr>
+            <tr><td><code>.ln-spinner__label</code></td><td>Visually hidden accessible label</td><td>No</td></tr>
+            <tr><td><code>.ln-spinner--sm</code></td><td>16px size</td><td>No</td></tr>
+            <tr><td><code>.ln-spinner--md</code></td><td>24px size (default)</td><td>No</td></tr>
+            <tr><td><code>.ln-spinner--lg</code></td><td>32px size</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

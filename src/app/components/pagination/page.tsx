@@ -118,6 +118,30 @@ export default function PaginationPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-pagination</code></td><td>Pagination container</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination__list</code></td><td>Flex row of page links</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination__link</code></td><td>Individual page link or arrow</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination__ellipsis</code></td><td>Truncation indicator</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination__summary</code></td><td>Page count summary text</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination--sm</code></td><td>Smaller link targets</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination--simple</code></td><td>Previous / Next only</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination--compact</code></td><td>Compact link style</td><td>No</td></tr>
+            <tr><td><code>.ln-pagination--text</code></td><td>Text-link style pagination</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

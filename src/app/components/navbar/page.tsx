@@ -142,6 +142,36 @@ export default function NavbarPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-navbar</code></td><td>Top navigation bar container</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__inner</code></td><td>Flex row centred at container-wide width</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__brand</code></td><td>Brand logo / name link</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__nav</code></td><td>Primary nav link group</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__item</code></td><td>Nav list item</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__link</code></td><td>Navigation link</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__actions</code></td><td>Right-side action slot</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__toggle</code></td><td>Mobile menu toggle button</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar__panel</code></td><td>Collapsible mobile nav panel</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar--sticky</code></td><td>Stick to viewport top</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar--bordered</code></td><td>Bottom border separator</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar--transparent</code></td><td>Transparent background until scrolled</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar--center</code></td><td>Centre-align nav links</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar--compact</code></td><td>Reduced height (48px)</td><td>No</td></tr>
+            <tr><td><code>.ln-navbar--actions-visible</code></td><td>Keep actions visible on mobile</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

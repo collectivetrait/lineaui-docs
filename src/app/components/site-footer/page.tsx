@@ -87,6 +87,34 @@ export default function SiteFooterPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-site-footer</code></td><td>Footer container</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__inner</code></td><td>Centred inner wrapper</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__brand</code></td><td>Brand / logo area</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__columns</code></td><td>Auto-fit link-column grid</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__heading</code></td><td>Column heading</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__links</code></td><td>Link list</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__link</code></td><td>Individual footer link</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__social</code></td><td>Social icon row</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__bottom</code></td><td>Bottom bar (legal, secondary links)</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer__legal</code></td><td>Copyright / legal text</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer--compact</code></td><td>Reduced column spacing</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer--center</code></td><td>Centre-aligned layout</td><td>No</td></tr>
+            <tr><td><code>.ln-site-footer--inverse</code></td><td>Dark background variant</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

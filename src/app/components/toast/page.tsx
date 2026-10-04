@@ -62,6 +62,37 @@ export default function ToastPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-toast</code></td><td>Toast notification container</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__icon</code></td><td>Leading status icon</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__content</code></td><td>Body content wrapper</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__title</code></td><td>Toast title</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__body</code></td><td>Toast body text</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__action</code></td><td>Action button area</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__close</code></td><td>Dismiss button</td><td>No</td></tr>
+            <tr><td><code>.ln-toast__timer</code></td><td>Auto-dismiss progress bar</td><td>No</td></tr>
+            <tr><td><code>.ln-toast--solid</code></td><td>Filled background variant</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region</code></td><td>Fixed-position toast container</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region--top-start</code></td><td>Position: top left</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region--top-center</code></td><td>Position: top centre</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region--top-end</code></td><td>Position: top right</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region--bottom-start</code></td><td>Position: bottom left</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region--bottom-center</code></td><td>Position: bottom centre</td><td>No</td></tr>
+            <tr><td><code>.ln-toast-region--bottom-end</code></td><td>Position: bottom right</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

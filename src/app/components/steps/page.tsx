@@ -211,6 +211,30 @@ export default function StepsPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-steps</code></td><td>Steps container (flex row)</td><td>No</td></tr>
+            <tr><td><code>.ln-steps__item</code></td><td>Individual step</td><td>No</td></tr>
+            <tr><td><code>.ln-steps__marker</code></td><td>Step number or icon circle</td><td>No</td></tr>
+            <tr><td><code>.ln-steps__connector</code></td><td>Line between steps</td><td>No</td></tr>
+            <tr><td><code>.ln-steps__label</code></td><td>Step label text</td><td>No</td></tr>
+            <tr><td><code>.ln-steps__description</code></td><td>Step description text</td><td>No</td></tr>
+            <tr><td><code>.ln-steps--vertical</code></td><td>Vertical stacked layout</td><td>No</td></tr>
+            <tr><td><code>.ln-steps--dots</code></td><td>Dot indicator style</td><td>No</td></tr>
+            <tr><td><code>.ln-steps--compact</code></td><td>Smaller markers</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

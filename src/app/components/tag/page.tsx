@@ -49,6 +49,26 @@ export default function TagPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-tag</code></td><td>Inline tag / chip</td><td>No</td></tr>
+            <tr><td><code>.ln-tag__icon</code></td><td>Leading icon</td><td>No</td></tr>
+            <tr><td><code>.ln-tag__label</code></td><td>Tag label text</td><td>No</td></tr>
+            <tr><td><code>.ln-tag__remove</code></td><td>Dismiss / remove button</td><td>No</td></tr>
+            <tr><td><code>.ln-tag--selectable</code></td><td>Toggle-selectable tag</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

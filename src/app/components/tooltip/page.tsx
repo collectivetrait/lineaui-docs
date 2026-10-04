@@ -29,6 +29,27 @@ export default function TooltipPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-tooltip</code></td><td>Tooltip container</td><td>No</td></tr>
+            <tr><td><code>.ln-tooltip__arrow</code></td><td>Directional arrow</td><td>No</td></tr>
+            <tr><td><code>.ln-tooltip--top</code></td><td>Arrow on bottom (tooltip above)</td><td>No</td></tr>
+            <tr><td><code>.ln-tooltip--bottom</code></td><td>Arrow on top (tooltip below)</td><td>No</td></tr>
+            <tr><td><code>.ln-tooltip--start</code></td><td>Arrow on right (tooltip left)</td><td>No</td></tr>
+            <tr><td><code>.ln-tooltip--end</code></td><td>Arrow on left (tooltip right)</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

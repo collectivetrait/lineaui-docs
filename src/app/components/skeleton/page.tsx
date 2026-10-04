@@ -33,6 +33,29 @@ export default function SkeletonPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-skeleton</code></td><td>Skeleton container with vertical gap</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton__line</code></td><td>Text-line placeholder (24px)</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton__block</code></td><td>Rectangular block placeholder</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton__circle</code></td><td>Circular placeholder (avatar, icon)</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton--text-body</code></td><td>Body text line height (24px)</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton--text-sm</code></td><td>Small text line height (20px)</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton--text-h2</code></td><td>H2 line height (48px)</td><td>No</td></tr>
+            <tr><td><code>.ln-skeleton--text-h3</code></td><td>H3 line height (32px)</td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }
