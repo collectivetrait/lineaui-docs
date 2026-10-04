@@ -45,7 +45,7 @@
 }
 
 .docs-shell__sidebar {
-  overflow-y: auto;
+  overflow-y: hidden;
   border-right: 1px solid var(--border);
   background: var(--surface);
   padding-top: var(--space-3);
@@ -53,6 +53,10 @@
   position: sticky;
   top: 48px;
   height: calc(100svh - 48px);
+}
+
+.docs-shell__sidebar:hover {
+  overflow-y: auto;
 }
 
 .docs-shell__main {
@@ -120,6 +124,10 @@
   position: sticky;
   top: calc(48px + var(--space-3));
   max-height: calc(100svh - 48px - var(--space-6));
+  overflow-y: hidden;
+}
+
+.docs-toc:hover {
   overflow-y: auto;
 }
 
