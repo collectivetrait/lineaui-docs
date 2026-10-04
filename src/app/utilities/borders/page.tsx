@@ -69,6 +69,33 @@ export default function BorderUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.border</code></td><td><code>outline: var(--border-1) solid var(--border)</code></td><td>No</td></tr>
+            <tr><td><code>.border-0</code></td><td><code>outline: 0</code></td><td>No</td></tr>
+            <tr><td><code>.border-2</code></td><td><code>outline: var(--border-2) solid var(--border)</code></td><td>No</td></tr>
+            <tr><td><code>.border-3</code></td><td><code>outline: var(--border-3) solid var(--border)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-none</code></td><td><code>border-radius: var(--radius-none)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-xs</code></td><td><code>border-radius: var(--radius-xs)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-sm</code></td><td><code>border-radius: var(--radius-sm)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-md</code></td><td><code>border-radius: var(--radius-md)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-lg</code></td><td><code>border-radius: var(--radius-lg)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-xl</code></td><td><code>border-radius: var(--radius-xl)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-pill</code></td><td><code>border-radius: var(--radius-pill)</code></td><td>No</td></tr>
+            <tr><td><code>.rounded-circle</code></td><td><code>border-radius: var(--radius-circle)</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

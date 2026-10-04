@@ -85,6 +85,33 @@ export default function OverflowUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.overflow-auto</code></td><td><code>overflow: auto</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-hidden</code></td><td><code>overflow: hidden</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-visible</code></td><td><code>overflow: visible</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-scroll</code></td><td><code>overflow: scroll</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-x-auto</code></td><td><code>overflow-x: auto</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-x-hidden</code></td><td><code>overflow-x: hidden</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-x-visible</code></td><td><code>overflow-x: visible</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-x-scroll</code></td><td><code>overflow-x: scroll</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-y-auto</code></td><td><code>overflow-y: auto</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-y-hidden</code></td><td><code>overflow-y: hidden</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-y-visible</code></td><td><code>overflow-y: visible</code></td><td>No</td></tr>
+            <tr><td><code>.overflow-y-scroll</code></td><td><code>overflow-y: scroll</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

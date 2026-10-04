@@ -101,6 +101,30 @@ export default function DisplayUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.d-none</code></td><td><code>display: none</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-inline</code></td><td><code>display: inline</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-inline-block</code></td><td><code>display: inline-block</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-block</code></td><td><code>display: block</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-flex</code></td><td><code>display: flex</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-inline-flex</code></td><td><code>display: inline-flex</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-grid</code></td><td><code>display: grid</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-inline-grid</code></td><td><code>display: inline-grid</code></td><td>Yes</td></tr>
+            <tr><td><code>.d-contents</code></td><td><code>display: contents</code></td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

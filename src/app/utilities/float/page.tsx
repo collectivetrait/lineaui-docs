@@ -70,6 +70,24 @@ export default function FloatUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.float-start</code></td><td><code>float: left</code></td><td>Yes</td></tr>
+            <tr><td><code>.float-end</code></td><td><code>float: right</code></td><td>Yes</td></tr>
+            <tr><td><code>.float-none</code></td><td><code>float: none</code></td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

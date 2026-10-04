@@ -40,6 +40,30 @@ export default function ColorUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.text-primary</code></td><td><code>color: var(--primary-text)</code></td><td>No</td></tr>
+            <tr><td><code>.text-secondary</code></td><td><code>color: var(--secondary-text)</code></td><td>No</td></tr>
+            <tr><td><code>.text-success</code></td><td><code>color: var(--success-text)</code></td><td>No</td></tr>
+            <tr><td><code>.text-warning</code></td><td><code>color: var(--warning-text)</code></td><td>No</td></tr>
+            <tr><td><code>.text-danger</code></td><td><code>color: var(--danger-text)</code></td><td>No</td></tr>
+            <tr><td><code>.text-info</code></td><td><code>color: var(--info-text)</code></td><td>No</td></tr>
+            <tr><td><code>.text-muted</code></td><td><code>color: var(--text-muted)</code></td><td>No</td></tr>
+            <tr><td><code>.text-subtle</code></td><td><code>color: var(--text-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.text-inverse</code></td><td><code>color: var(--text-inverse)</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

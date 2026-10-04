@@ -91,6 +91,36 @@ export default function SizingUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.w-25</code></td><td><code>width: 25%</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-50</code></td><td><code>width: 50%</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-75</code></td><td><code>width: 75%</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-100</code></td><td><code>width: 100%</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-auto</code></td><td><code>width: auto</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-measure</code></td><td><code>width: var(--measure)</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-contained</code></td><td><code>width: var(--container)</code></td><td>Yes</td></tr>
+            <tr><td><code>.w-wide</code></td><td><code>width: var(--container-wide)</code></td><td>Yes</td></tr>
+            <tr><td><code>.h-25</code></td><td><code>height: 25%</code></td><td>No</td></tr>
+            <tr><td><code>.h-50</code></td><td><code>height: 50%</code></td><td>No</td></tr>
+            <tr><td><code>.h-75</code></td><td><code>height: 75%</code></td><td>No</td></tr>
+            <tr><td><code>.h-100</code></td><td><code>height: 100%</code></td><td>No</td></tr>
+            <tr><td><code>.h-auto</code></td><td><code>height: auto</code></td><td>No</td></tr>
+            <tr><td><code>.mw-100</code></td><td><code>max-width: 100%</code></td><td>No</td></tr>
+            <tr><td><code>.mh-100</code></td><td><code>max-height: 100%</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

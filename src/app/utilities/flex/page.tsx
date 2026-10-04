@@ -215,6 +215,50 @@ export default function FlexUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.flex-row</code></td><td><code>flex-direction: row</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-column</code></td><td><code>flex-direction: column</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-row-reverse</code></td><td><code>flex-direction: row-reverse</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-column-reverse</code></td><td><code>flex-direction: column-reverse</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-wrap</code></td><td><code>flex-wrap: wrap</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-nowrap</code></td><td><code>flex-wrap: nowrap</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-wrap-reverse</code></td><td><code>flex-wrap: wrap-reverse</code></td><td>Yes</td></tr>
+            <tr><td><code>.flex-fill</code></td><td><code>flex: 1 1 auto</code></td><td>No</td></tr>
+            <tr><td><code>.flex-grow-0</code></td><td><code>flex-grow: 0</code></td><td>No</td></tr>
+            <tr><td><code>.flex-grow-1</code></td><td><code>flex-grow: 1</code></td><td>No</td></tr>
+            <tr><td><code>.flex-shrink-0</code></td><td><code>flex-shrink: 0</code></td><td>No</td></tr>
+            <tr><td><code>.flex-shrink-1</code></td><td><code>flex-shrink: 1</code></td><td>No</td></tr>
+            <tr><td><code>.justify-content-start</code></td><td><code>justify-content: flex-start</code></td><td>Yes</td></tr>
+            <tr><td><code>.justify-content-center</code></td><td><code>justify-content: center</code></td><td>Yes</td></tr>
+            <tr><td><code>.justify-content-end</code></td><td><code>justify-content: flex-end</code></td><td>Yes</td></tr>
+            <tr><td><code>.justify-content-between</code></td><td><code>justify-content: space-between</code></td><td>Yes</td></tr>
+            <tr><td><code>.justify-content-around</code></td><td><code>justify-content: space-around</code></td><td>Yes</td></tr>
+            <tr><td><code>.justify-content-evenly</code></td><td><code>justify-content: space-evenly</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-items-start</code></td><td><code>align-items: flex-start</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-items-center</code></td><td><code>align-items: center</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-items-end</code></td><td><code>align-items: flex-end</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-items-baseline</code></td><td><code>align-items: baseline</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-items-stretch</code></td><td><code>align-items: stretch</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-self-start</code></td><td><code>align-self: flex-start</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-self-center</code></td><td><code>align-self: center</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-self-end</code></td><td><code>align-self: flex-end</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-self-baseline</code></td><td><code>align-self: baseline</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-self-stretch</code></td><td><code>align-self: stretch</code></td><td>Yes</td></tr>
+            <tr><td><code>.align-self-auto</code></td><td><code>align-self: auto</code></td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

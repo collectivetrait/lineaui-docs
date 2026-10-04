@@ -71,6 +71,38 @@ export default function BackgroundUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.bg-primary</code></td><td><code>background-color: var(--primary)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-primary-subtle</code></td><td><code>background-color: var(--primary-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-secondary</code></td><td><code>background-color: var(--secondary)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-secondary-subtle</code></td><td><code>background-color: var(--secondary-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-success</code></td><td><code>background-color: var(--success)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-success-subtle</code></td><td><code>background-color: var(--success-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-warning</code></td><td><code>background-color: var(--warning)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-warning-subtle</code></td><td><code>background-color: var(--warning-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-danger</code></td><td><code>background-color: var(--danger)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-danger-subtle</code></td><td><code>background-color: var(--danger-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-info</code></td><td><code>background-color: var(--info)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-info-subtle</code></td><td><code>background-color: var(--info-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-canvas</code></td><td><code>background-color: var(--canvas)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-surface</code></td><td><code>background-color: var(--surface)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-surface-raised</code></td><td><code>background-color: var(--surface-raised)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-surface-sunken</code></td><td><code>background-color: var(--surface-sunken)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-surface-inverse</code></td><td><code>background-color: var(--surface-inverse)</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

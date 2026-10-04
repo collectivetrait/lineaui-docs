@@ -137,6 +137,38 @@ export default function SpacingUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.p-&#123;0–18&#125;</code></td><td><code>padding (all sides)</code></td><td>Yes</td></tr>
+            <tr><td><code>.pt-&#123;0–18&#125;</code></td><td><code>padding-top</code></td><td>Yes</td></tr>
+            <tr><td><code>.pb-&#123;0–18&#125;</code></td><td><code>padding-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.ps-&#123;0–18&#125;</code></td><td><code>padding-left</code></td><td>Yes</td></tr>
+            <tr><td><code>.pe-&#123;0–18&#125;</code></td><td><code>padding-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.px-&#123;0–18&#125;</code></td><td><code>padding-left + padding-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.py-&#123;0–18&#125;</code></td><td><code>padding-top + padding-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.m-&#123;0–18|auto&#125;</code></td><td><code>margin (all sides)</code></td><td>Yes</td></tr>
+            <tr><td><code>.mt-&#123;0–18|auto&#125;</code></td><td><code>margin-top</code></td><td>Yes</td></tr>
+            <tr><td><code>.mb-&#123;0–18|auto&#125;</code></td><td><code>margin-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.ms-&#123;0–18|auto&#125;</code></td><td><code>margin-left</code></td><td>Yes</td></tr>
+            <tr><td><code>.me-&#123;0–18|auto&#125;</code></td><td><code>margin-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.mx-&#123;0–18|auto&#125;</code></td><td><code>margin-left + margin-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.my-&#123;0–18|auto&#125;</code></td><td><code>margin-top + margin-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.gap-&#123;0–18&#125;</code></td><td><code>gap</code></td><td>Yes</td></tr>
+            <tr><td><code>.row-gap-&#123;0–18&#125;</code></td><td><code>row-gap</code></td><td>Yes</td></tr>
+            <tr><td><code>.col-gap-&#123;0–18&#125;</code></td><td><code>column-gap</code></td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

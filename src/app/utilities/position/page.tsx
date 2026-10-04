@@ -36,6 +36,26 @@ export default function PositionUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.position-static</code></td><td><code>position: static</code></td><td>No</td></tr>
+            <tr><td><code>.position-relative</code></td><td><code>position: relative</code></td><td>No</td></tr>
+            <tr><td><code>.position-absolute</code></td><td><code>position: absolute</code></td><td>No</td></tr>
+            <tr><td><code>.position-fixed</code></td><td><code>position: fixed</code></td><td>No</td></tr>
+            <tr><td><code>.position-sticky</code></td><td><code>position: sticky</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

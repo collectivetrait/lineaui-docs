@@ -37,6 +37,26 @@ export default function OpacityUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.opacity-0</code></td><td><code>opacity: 0</code></td><td>No</td></tr>
+            <tr><td><code>.opacity-25</code></td><td><code>opacity: 0.25</code></td><td>No</td></tr>
+            <tr><td><code>.opacity-50</code></td><td><code>opacity: 0.5</code></td><td>No</td></tr>
+            <tr><td><code>.opacity-75</code></td><td><code>opacity: 0.75</code></td><td>No</td></tr>
+            <tr><td><code>.opacity-100</code></td><td><code>opacity: 1</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

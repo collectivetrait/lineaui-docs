@@ -39,6 +39,27 @@ export default function ShadowUtilities() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Property</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.shadow-0</code></td><td><code>box-shadow: var(--shadow-0)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-1</code></td><td><code>box-shadow: var(--shadow-1)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-2</code></td><td><code>box-shadow: var(--shadow-2)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-3</code></td><td><code>box-shadow: var(--shadow-3)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-4</code></td><td><code>box-shadow: var(--shadow-4)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-inset</code></td><td><code>box-shadow: var(--shadow-inset)</code></td><td>No</td></tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }
