@@ -72,17 +72,17 @@ export default function CustomizationPage() {
           <tbody>
             <tr>
               <td><code>$font-prose</code></td>
-              <td>Charter, Bitstream Charter, serif</td>
+              <td>Charter, Bitstream Charter, Sitka Text, Cambria, serif</td>
               <td>Headings, editorial text</td>
             </tr>
             <tr>
               <td><code>$font-ui</code></td>
-              <td>Inter, Roboto, sans-serif</td>
+              <td>Inter, Roboto, Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif</td>
               <td>Body copy, interface text</td>
             </tr>
             <tr>
               <td><code>$font-mono</code></td>
-              <td>ui-monospace, Cascadia Code, monospace</td>
+              <td>ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace</td>
               <td>Code, tabular data</td>
             </tr>
             <tr>
@@ -182,14 +182,53 @@ export default function CustomizationPage() {
       </section>
 
       <section className="docs-section">
-        <h2>Layout containers</h2>
+        <h2>Layout</h2>
         <p>
-          Adjust the default and wide container max-widths to fit your design.
+          Adjust container widths, the prose measure, and the page gutter.
         </p>
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $container: 60rem,       // default 56.25rem (900px)
-  $container-wide: 80rem   // default 75rem (1200px)
+  $container-wide: 80rem,  // default 75rem (1200px)
+  $measure: 40rem,         // default 37.5rem (~70ch)
+  $gutter: 1.5rem,         // default 1rem (mobile)
+  $gutter-lg: 3rem         // default 2rem (md+)
 );`}</CodeBlock>
+        <table>
+          <thead>
+            <tr>
+              <th>Variable</th>
+              <th>Default</th>
+              <th>Purpose</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>$container</code></td>
+              <td>56.25rem (900px)</td>
+              <td>Default container max-width</td>
+            </tr>
+            <tr>
+              <td><code>$container-wide</code></td>
+              <td>75rem (1200px)</td>
+              <td>Wide container max-width</td>
+            </tr>
+            <tr>
+              <td><code>$measure</code></td>
+              <td>37.5rem (~70ch)</td>
+              <td>Max-width for prose content</td>
+            </tr>
+            <tr>
+              <td><code>$gutter</code></td>
+              <td>1rem</td>
+              <td>Page side gutter on mobile</td>
+            </tr>
+            <tr>
+              <td><code>$gutter-lg</code></td>
+              <td>2rem</td>
+              <td>Page side gutter on md and above</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section className="docs-section">
@@ -239,17 +278,17 @@ export default function CustomizationPage() {
             </tr>
             <tr>
               <td><code>$font-prose</code></td>
-              <td>Charter, serif</td>
+              <td>Charter, Bitstream Charter, Sitka Text, Cambria, serif</td>
               <td>Serif font stack for headings and editorial text</td>
             </tr>
             <tr>
               <td><code>$font-ui</code></td>
-              <td>Inter, sans-serif</td>
+              <td>Inter, Roboto, Helvetica Neue, Arial Nova, Nimbus Sans, Arial, sans-serif</td>
               <td>Sans-serif font stack for body and interface text</td>
             </tr>
             <tr>
               <td><code>$font-mono</code></td>
-              <td>ui-monospace, monospace</td>
+              <td>ui-monospace, Cascadia Code, Source Code Pro, Menlo, Consolas, DejaVu Sans Mono, monospace</td>
               <td>Monospace font stack for code</td>
             </tr>
             <tr>
@@ -281,6 +320,21 @@ export default function CustomizationPage() {
               <td><code>$container-wide</code></td>
               <td>75rem (1200px)</td>
               <td>Wide container max-width</td>
+            </tr>
+            <tr>
+              <td><code>$measure</code></td>
+              <td>37.5rem (~70ch)</td>
+              <td>Max-width for prose content</td>
+            </tr>
+            <tr>
+              <td><code>$gutter</code></td>
+              <td>1rem</td>
+              <td>Page side gutter on mobile</td>
+            </tr>
+            <tr>
+              <td><code>$gutter-lg</code></td>
+              <td>2rem</td>
+              <td>Page side gutter on md and above</td>
             </tr>
             <tr>
               <td><code>$blocks</code></td>
