@@ -4,11 +4,49 @@ export default function TextPage() {
   return (
     <article>
       <section className="docs-section">
-        <h1 className="text-display-2">Text utilities</h1>
+        <h1 className="text-display-2">Text</h1>
         <p className="lead text-subtle">
-          Utility classes for text alignment, wrapping, and decoration. Text
-          alignment supports responsive breakpoint suffixes.
+          Utility classes for text size, alignment, wrapping, and decoration.
+          Text size and alignment support responsive breakpoint suffixes.
         </p>
+      </section>
+
+      <section className="docs-section">
+        <h2>Text size</h2>
+        <p>
+          Size utilities apply a scale step to any element without changing
+          the font family. Use <code>.text-body-lg</code>,{" "}
+          <code>.text-body-sm</code>, <code>.text-body-xs</code>, and{" "}
+          <code>.text-meta</code>.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<p class="text-body-lg mb-3">text-body-lg — 18px / 24px</p>
+<p class="text-body-sm mb-3">text-body-sm — 14px / 24px</p>
+<p class="text-body-xs mb-3">text-body-xs — 12px / 16px</p>
+<p class="text-meta">text-meta — 12px / 16px, mono font</p>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <p className="text-body-lg mb-3">text-body-lg — 18px / 24px</p>
+            <p className="text-body-sm mb-3">text-body-sm — 14px / 24px</p>
+            <p className="text-body-xs mb-3">text-body-xs — 12px / 16px</p>
+            <p className="text-meta">text-meta — 12px / 16px, mono font</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Responsive text size</h2>
+        <p>
+          Combine a base size with a responsive override. The suffixed class
+          applies from the named breakpoint upward.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<p class="text-body-sm text-body-lg@md mb-3">Small on mobile, large from md up</p>
+<p class="text-meta text-body-lg@lg">Meta on mobile, large from lg up</p>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <p className="text-body-sm text-body-lg@md mb-3">Small on mobile, large from md up</p>
+            <p className="text-meta text-body-lg@lg">Meta on mobile, large from lg up</p>
+          </div>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -99,6 +137,26 @@ export default function TextPage() {
             </tr>
           </thead>
           <tbody>
+            <tr>
+              <td><code>.text-body-lg</code></td>
+              <td><code>font-size: var(--type-body-lg-size)</code></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.text-body-sm</code></td>
+              <td><code>font-size: var(--type-body-sm-size)</code></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.text-body-xs</code></td>
+              <td><code>font-size: var(--type-body-xs-size)</code></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.text-meta</code></td>
+              <td><code>font-size: var(--type-meta-size)</code></td>
+              <td>Yes</td>
+            </tr>
             <tr>
               <td><code>.text-start</code></td>
               <td><code>text-align: start</code></td>

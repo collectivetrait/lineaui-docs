@@ -21,7 +21,6 @@ const NAV = [
   {
     group: "Layout",
     links: [
-      { label: "Shell", href: "/layout/shell" },
       { label: "Breakpoints", href: "/layout/breakpoints" },
       { label: "Container", href: "/layout/container" },
       { label: "Grid", href: "/layout/grid" },
@@ -102,13 +101,6 @@ const NAV = [
       { label: "Shadows", href: "/utilities/shadows" },
       { label: "Sizing", href: "/utilities/sizing" },
       { label: "Spacing", href: "/utilities/spacing" },
-    ],
-  },
-  {
-    group: "Helpers",
-    links: [
-      { label: "Typography helpers", href: "/helpers/typography" },
-      { label: "Grid overlay", href: "/helpers/grid-overlay" },
     ],
   },
 ];
