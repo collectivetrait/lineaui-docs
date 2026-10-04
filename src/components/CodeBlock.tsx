@@ -1,4 +1,5 @@
 import hljs from 'highlight.js';
+import { CopyButton } from './CopyButton';
 
 interface CodeBlockProps {
   language: string;
@@ -38,6 +39,7 @@ export function CodeBlock({ language, filename, children }: CodeBlockProps) {
         </svg>
         <span>{label}</span>
         <span className="code-block__lang">{language}</span>
+        <CopyButton text={code} />
       </div>
       <pre className="code-block__body">
         <code

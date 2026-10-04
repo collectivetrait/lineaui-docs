@@ -339,6 +339,26 @@
   letter-spacing: 0.06em;
 }
 
+.code-block__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--text-subtle);
+}
+
+.code-block__copy:hover {
+  color: var(--text);
+}
+
+.code-block__copy svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
 /* Override _code.scss's pre styles when inside .code-block */
 .code-block__body {
   margin: 0;
