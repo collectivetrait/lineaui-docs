@@ -2,17 +2,6 @@ import { CodeBlock } from "@/components/CodeBlock";
 import { QuantityInit } from "@/components/QuantityInit";
 import { GalleryInit } from "@/components/GalleryInit";
 
-const BLOCKS = [
-  { name: "Price", class: "ln-price", description: "Formatted price display with sale, discount, and period support." },
-  { name: "Rating", class: "ln-rating", description: "Star rating display with numeric value and review count." },
-  { name: "Swatch", class: "ln-swatch", description: "Color, text, and image option selectors for product variants." },
-  { name: "Quantity", class: "ln-quantity", description: "Increment/decrement number input for cart quantities." },
-  { name: "Gallery", class: "ln-gallery", description: "Image gallery with scroll-snap slides, thumbnails, and dots." },
-  { name: "Product Card", class: "ln-product-card", description: "Commerce-ready card with media, vendor, title, price, and actions." },
-  { name: "Line Item", class: "ln-line-item", description: "Cart or order row with image, details, quantity, and price." },
-  { name: "Order Summary", class: "ln-order-summary", description: "Checkout totals with subtotal, shipping, tax, and actions." },
-];
-
 export default function EcommercePatterns() {
   return (
     <article>
@@ -572,29 +561,43 @@ export default function EcommercePatterns() {
         </div>
       </section>
 
-      {/* --- Reference table --- */}
       <section className="docs-section">
-        <h2>Block reference</h2>
-        <div className="docs-scroll-x">
-          <table>
-            <thead>
-              <tr>
-                <th>Block</th>
-                <th>Class</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {BLOCKS.map((block) => (
-                <tr key={block.class}>
-                  <td><strong>{block.name}</strong></td>
-                  <td><code>{block.class}</code></td>
-                  <td>{block.description}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-price</code></td><td>Formatted price display</td><td>No</td></tr>
+            <tr><td><code>.ln-price--sale</code></td><td>Sale price layout with original and discount</td><td>No</td></tr>
+            <tr><td><code>.ln-price--sm</code></td><td>Small size variant</td><td>No</td></tr>
+            <tr><td><code>.ln-price--lg</code></td><td>Large size variant</td><td>No</td></tr>
+            <tr><td><code>.ln-rating</code></td><td>Star rating display</td><td>No</td></tr>
+            <tr><td><code>.ln-rating--compact</code></td><td>Compact rating layout</td><td>No</td></tr>
+            <tr><td><code>.ln-swatch</code></td><td>Variant selector group</td><td>No</td></tr>
+            <tr><td><code>.ln-swatch--text</code></td><td>Text label swatches</td><td>No</td></tr>
+            <tr><td><code>.ln-swatch--image</code></td><td>Image swatches</td><td>No</td></tr>
+            <tr><td><code>.ln-quantity</code></td><td>Increment/decrement input</td><td>No</td></tr>
+            <tr><td><code>.ln-quantity--compact</code></td><td>Compact quantity control</td><td>No</td></tr>
+            <tr><td><code>.ln-gallery</code></td><td>Image gallery with scroll-snap</td><td>No</td></tr>
+            <tr><td><code>.ln-gallery--thumbs-start</code></td><td>Thumbnails on the left side</td><td>No</td></tr>
+            <tr><td><code>.ln-gallery--grid</code></td><td>Grid layout instead of carousel</td><td>No</td></tr>
+            <tr><td><code>.ln-product-card</code></td><td>Commerce card with media, body, and actions</td><td>No</td></tr>
+            <tr><td><code>.ln-product-card--horizontal</code></td><td>Horizontal card layout</td><td>No</td></tr>
+            <tr><td><code>.ln-product-card--compact</code></td><td>Compact card</td><td>No</td></tr>
+            <tr><td><code>.ln-product-card--flat</code></td><td>No background or border</td><td>No</td></tr>
+            <tr><td><code>.ln-line-item</code></td><td>Cart or order row</td><td>No</td></tr>
+            <tr><td><code>.ln-line-item--compact</code></td><td>Compact line item</td><td>No</td></tr>
+            <tr><td><code>.ln-line-item--readonly</code></td><td>Read-only line item (no remove button)</td><td>No</td></tr>
+            <tr><td><code>.ln-order-summary</code></td><td>Checkout totals panel</td><td>No</td></tr>
+            <tr><td><code>.ln-order-summary--sticky</code></td><td>Sticky positioning</td><td>No</td></tr>
+            <tr><td><code>.ln-order-summary--compact</code></td><td>Compact spacing</td><td>No</td></tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

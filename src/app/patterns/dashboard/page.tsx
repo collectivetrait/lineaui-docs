@@ -1,12 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
 
-const BLOCKS = [
-  { name: "Stat", class: "ln-stat", description: "Key metric display with label, value, delta, and optional sparkline." },
-  { name: "Data List", class: "ln-data-list", description: "Key-value pairs in vertical or horizontal layout." },
-  { name: "Toolbar", class: "ln-toolbar", description: "Horizontal action bar with grouping, search, and count." },
-  { name: "Timeline", class: "ln-timeline", description: "Vertical sequence of events with markers and connector lines." },
-];
-
 export default function DashboardPatterns() {
   return (
     <article>
@@ -238,29 +231,43 @@ export default function DashboardPatterns() {
         </div>
       </section>
 
-      {/* --- Reference Table --- */}
       <section className="docs-section">
-        <h2>Block reference</h2>
-        <div className="docs-scroll-x">
-          <table>
-            <thead>
-              <tr>
-                <th>Block</th>
-                <th>Class</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              {BLOCKS.map((block) => (
-                <tr key={block.class}>
-                  <td><strong>{block.name}</strong></td>
-                  <td><code>{block.class}</code></td>
-                  <td>{block.description}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>.ln-stat</code></td><td>Key metric display</td><td>No</td></tr>
+            <tr><td><code>.ln-stat--sm</code></td><td>Small size variant</td><td>No</td></tr>
+            <tr><td><code>.ln-stat--lg</code></td><td>Large size variant</td><td>No</td></tr>
+            <tr><td><code>.ln-stat--flat</code></td><td>No background or border</td><td>No</td></tr>
+            <tr><td><code>.ln-stat--inline</code></td><td>Horizontal layout</td><td>No</td></tr>
+            <tr><td><code>.ln-stat__delta--positive</code></td><td>Positive delta indicator</td><td>No</td></tr>
+            <tr><td><code>.ln-stat__delta--negative</code></td><td>Negative delta indicator</td><td>No</td></tr>
+            <tr><td><code>.ln-data-list</code></td><td>Key-value pair list</td><td>No</td></tr>
+            <tr><td><code>.ln-data-list--horizontal</code></td><td>Horizontal layout</td><td>No</td></tr>
+            <tr><td><code>.ln-data-list--divided</code></td><td>Dividers between items</td><td>No</td></tr>
+            <tr><td><code>.ln-data-list--striped</code></td><td>Alternating row backgrounds</td><td>No</td></tr>
+            <tr><td><code>.ln-data-list--compact</code></td><td>Compact spacing</td><td>No</td></tr>
+            <tr><td><code>.ln-data-list--cols-2</code></td><td>Two-column grid layout</td><td>No</td></tr>
+            <tr><td><code>.ln-toolbar</code></td><td>Horizontal action bar</td><td>No</td></tr>
+            <tr><td><code>.ln-toolbar--bulk</code></td><td>Bulk action mode</td><td>No</td></tr>
+            <tr><td><code>.ln-toolbar--sticky</code></td><td>Sticky positioning</td><td>No</td></tr>
+            <tr><td><code>.ln-toolbar--compact</code></td><td>Compact spacing</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline</code></td><td>Vertical event sequence</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline--compact</code></td><td>Compact spacing</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline__marker--success</code></td><td>Success marker color</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline__marker--primary</code></td><td>Primary marker color</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline__marker--warning</code></td><td>Warning marker color</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline__marker--danger</code></td><td>Danger marker color</td><td>No</td></tr>
+            <tr><td><code>.ln-timeline__marker--info</code></td><td>Info marker color</td><td>No</td></tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );
