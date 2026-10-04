@@ -770,7 +770,7 @@
   color: var(--text);
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 47.99rem) {
   .back-to-top {
     display: inline-grid;
   }
