@@ -60,6 +60,56 @@ export default function InputGroupPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-input-group</code></td>
+              <td>Input group container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-input-group__addon</code></td>
+              <td>Text addon (prefix or suffix)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-input-group__control</code></td>
+              <td>Input element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-input-group__button</code></td>
+              <td>Button inside the group</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-input-group__icon</code></td>
+              <td>Icon overlay inside the group</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-input-group--sm</code></td>
+              <td>Small size (2rem height)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-input-group--lg</code></td>
+              <td>Large size (3rem height)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

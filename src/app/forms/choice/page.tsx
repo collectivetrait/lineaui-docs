@@ -189,6 +189,76 @@ export default function ChoicePage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-choice</code></td>
+              <td>Choice group container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__option</code></td>
+              <td>Individual option row (label element)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__input</code></td>
+              <td>Custom checkbox or radio input</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__body</code></td>
+              <td>Content wrapper for label and description</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__label</code></td>
+              <td>Option label text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__description</code></td>
+              <td>Secondary description text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__hint</code></td>
+              <td>Hint text below option</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice__aside</code></td>
+              <td>Right-side value (e.g. price)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice--card</code></td>
+              <td>Card-style options with borders</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice--switch</code></td>
+              <td>Toggle switch style</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-choice--inline</code></td>
+              <td>Horizontal inline layout</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

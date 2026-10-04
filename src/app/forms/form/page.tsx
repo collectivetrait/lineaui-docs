@@ -106,6 +106,81 @@ export default function FormPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-form</code></td>
+              <td>Form layout container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__section</code></td>
+              <td>Grouped section with top border separator</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__header</code></td>
+              <td>Section heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__title</code></td>
+              <td>Section title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__description</code></td>
+              <td>Section description text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__row</code></td>
+              <td>Auto-fit grid row for side-by-side fields</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__actions</code></td>
+              <td>Action bar with top border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__actions--plain</code></td>
+              <td>Action bar without top border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__actions--end</code></td>
+              <td>Right-aligned actions</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form__actions--sticky</code></td>
+              <td>Sticky action bar at bottom</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form--aside</code></td>
+              <td>Two-column section layout (label + fields)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-form--compact</code></td>
+              <td>Reduced spacing between fields</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }
