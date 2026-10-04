@@ -695,6 +695,12 @@
 .code-block .hljs-emphasis { font-style: italic; }
 .code-block .hljs-strong   { font-weight: 600; }
 
+/* --- Floating utility buttons: force circles --- */
+
+.grid-toggle {
+  border-radius: 50%;
+}
+
 /* --- TOC toggle (next to grid toggle) --- */
 
 .toc-toggle {
@@ -713,7 +719,7 @@
     height: var(--space-5);
     padding: 0;
     border: none;
-    border-radius: var(--radius-sm);
+    border-radius: 50%;
     background: transparent;
     color: var(--text-muted);
     cursor: pointer;
@@ -755,7 +761,7 @@
   height: var(--space-5);
   padding: 0;
   border: none;
-  border-radius: var(--radius-sm);
+  border-radius: 50%;
   background: var(--surface-raised);
   color: var(--text-muted);
   cursor: pointer;
