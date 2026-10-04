@@ -61,7 +61,7 @@
 }
 
 @media (min-width: 48rem) {
-  .docs-page-content > article {
+  .docs-page-content > article:has(> .docs-toc) {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 200px;
     column-gap: var(--space-8);
