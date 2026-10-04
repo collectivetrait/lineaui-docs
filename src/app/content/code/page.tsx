@@ -4,7 +4,7 @@ export default function CodePage() {
   return (
     <article>
       <section className="docs-section">
-        <h1 className="text-display-2">Code block</h1>
+        <h1 className="text-display-2">Code</h1>
         <p className="lead text-subtle">
           A structured code container with an optional header bar showing
           filename, language badge, and copy button. Syntax tokens are
@@ -58,6 +58,61 @@ export default greet;`}</code></pre>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-code</code></td>
+              <td>Code block container with syntax highlighting</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code__header</code></td>
+              <td>File name and language label bar</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code__lang</code></td>
+              <td>Language label in the header</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code__body</code></td>
+              <td>Scrollable code area (<code>&lt;pre&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code__line</code></td>
+              <td>Individual line with line number</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code__line--highlight</code></td>
+              <td>Highlighted line with accent border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code--wrap</code></td>
+              <td>Enable word wrapping</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-code--flush</code></td>
+              <td>Remove border-radius and bottom margin</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

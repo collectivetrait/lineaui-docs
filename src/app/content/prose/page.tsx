@@ -68,6 +68,46 @@ export default function ProsePage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-prose</code></td>
+              <td>Long-form content wrapper (serif font, prose measure)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-prose--sm</code></td>
+              <td>Smaller body text size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-prose--lg</code></td>
+              <td>Larger body text size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-prose--ui</code></td>
+              <td>Sans-serif font instead of serif</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-prose--wide-media</code></td>
+              <td>Allow images and figures to break out to container width</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

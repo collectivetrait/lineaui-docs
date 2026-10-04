@@ -94,6 +94,116 @@ export default function CardPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-card</code></td>
+              <td>Card container with outline border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__media</code></td>
+              <td>Full-bleed image area</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__header</code></td>
+              <td>Header wrapper</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__eyebrow</code></td>
+              <td>Uppercase label above title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__title</code></td>
+              <td>Card heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__subtitle</code></td>
+              <td>Secondary text below title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__body</code></td>
+              <td>Main content area</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__footer</code></td>
+              <td>Footer area pushed to bottom</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__actions</code></td>
+              <td>Action button row</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__link</code></td>
+              <td>Stretched link overlay</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--flat</code></td>
+              <td>Remove outline border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--shadow-&#123;1–4&#125;</code></td>
+              <td>Elevation shadow levels</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--interactive</code></td>
+              <td>Hover lift and shadow effect</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--horizontal</code></td>
+              <td>Side-by-side media and content</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--pad-sm</code></td>
+              <td>Compact padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--pad-md</code></td>
+              <td>Default padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--pad-lg</code></td>
+              <td>Generous padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--subtle</code></td>
+              <td>Sunken background</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card--&#123;role&#125;</code></td>
+              <td>Role colour (primary, success, warning, danger, info, secondary)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

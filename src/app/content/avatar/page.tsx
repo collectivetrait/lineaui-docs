@@ -102,6 +102,106 @@ export default function AvatarPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-avatar</code></td>
+              <td>Avatar container (40px default)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__img</code></td>
+              <td>Photo image element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__initials</code></td>
+              <td>Letter initials fallback</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__status</code></td>
+              <td>Status indicator dot</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__status--success</code></td>
+              <td>Green status</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__status--warning</code></td>
+              <td>Yellow status</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__status--danger</code></td>
+              <td>Red status</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar__status--neutral</code></td>
+              <td>Grey status</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar--xs</code></td>
+              <td>24px size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar--sm</code></td>
+              <td>32px size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar--md</code></td>
+              <td>40px size (default)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar--lg</code></td>
+              <td>48px size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar--xl</code></td>
+              <td>64px size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar--square</code></td>
+              <td>Rounded-square shape</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar-group</code></td>
+              <td>Overlapping avatar row</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar-group__more</code></td>
+              <td>Overflow count indicator</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-avatar-group--spread</code></td>
+              <td>Remove overlap between avatars</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

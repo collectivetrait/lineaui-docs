@@ -46,6 +46,81 @@ export default function PageHeaderPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-page-header</code></td>
+              <td>Page header container with bottom margin</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__breadcrumb</code></td>
+              <td>Breadcrumb slot above the title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__eyebrow</code></td>
+              <td>Uppercase label above the title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__title</code></td>
+              <td>Page heading (h1 scale)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__lead</code></td>
+              <td>Subtitle or lead paragraph</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__meta</code></td>
+              <td>Metadata row below the title</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__actions</code></td>
+              <td>Action button row</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header__tabs</code></td>
+              <td>Tab bar below the header</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header--hero</code></td>
+              <td>Larger display title with extra bottom margin</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header--compact</code></td>
+              <td>Smaller title with reduced margin</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header--center</code></td>
+              <td>Centre-aligned content</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-page-header--bordered</code></td>
+              <td>Bottom border separator</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

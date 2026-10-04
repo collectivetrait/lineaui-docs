@@ -4,7 +4,7 @@ export default function ListPage() {
   return (
     <article>
       <section className="docs-section">
-        <h1 className="text-display-2">Structured list</h1>
+        <h1 className="text-display-2">List</h1>
         <p className="lead text-subtle">
           Rows with icons, descriptions, metadata, and actions. Used for
           settings lists, notification feeds, and sidebar navigation. Default
@@ -107,6 +107,91 @@ export default function ListPage() {
             </ul>
           </div>
         </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-list</code></td>
+              <td>Unstyled list container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__item</code></td>
+              <td>List row with flex layout</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__icon</code></td>
+              <td>Leading icon slot</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__media</code></td>
+              <td>Leading media slot (avatar, thumbnail)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__content</code></td>
+              <td>Title and description wrapper</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__title</code></td>
+              <td>Primary text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__description</code></td>
+              <td>Secondary muted text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__meta</code></td>
+              <td>Trailing metadata</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list__action</code></td>
+              <td>Trailing action slot</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list--divided</code></td>
+              <td>Border between items</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list--bordered</code></td>
+              <td>Outlined container with internal dividers</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list--interactive</code></td>
+              <td>Hover highlight on items</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list--compact</code></td>
+              <td>Reduced item height (32px)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-list--spacious</code></td>
+              <td>Increased item height (64px)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

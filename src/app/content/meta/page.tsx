@@ -4,7 +4,7 @@ export default function MetaPage() {
   return (
     <article>
       <section className="docs-section">
-        <h1 className="text-display-2">Metadata line</h1>
+        <h1 className="text-display-2">Meta</h1>
         <p className="lead text-subtle">
           An inline row of metadata items separated by dots. Uses the UI font
           at small size with muted color. Common for article bylines, product
@@ -50,6 +50,56 @@ export default function MetaPage() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-meta</code></td>
+              <td>Inline metadata row (mono font, muted)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-meta__item</code></td>
+              <td>Individual metadata value</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-meta__icon</code></td>
+              <td>Icon within a meta item</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-meta__link</code></td>
+              <td>Clickable meta item</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-meta__separator</code></td>
+              <td>Middle-dot divider between items</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-meta--sm</code></td>
+              <td>Smaller text size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-meta--stacked</code></td>
+              <td>Vertical column layout</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
     </article>
   );

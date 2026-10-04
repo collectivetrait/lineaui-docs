@@ -152,6 +152,61 @@ export default function AccordionPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-accordion</code></td>
+              <td>Accordion container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion__item</code></td>
+              <td>Individual expandable item (uses <code>&lt;details&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion__summary</code></td>
+              <td>Clickable header row (uses <code>&lt;summary&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion__title</code></td>
+              <td>Title text within the summary</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion__icon</code></td>
+              <td>Chevron icon that rotates on open</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion__content</code></td>
+              <td>Expandable body content</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion--flush</code></td>
+              <td>Remove item borders</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-accordion--sm</code></td>
+              <td>Compact size with smaller text</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

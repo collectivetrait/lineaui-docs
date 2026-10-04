@@ -61,6 +61,66 @@ export default function QuotePage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-quote</code></td>
+              <td>Blockquote container (serif font)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote__text</code></td>
+              <td>Quote body text (italic)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote__footer</code></td>
+              <td>Attribution row with avatar and cite</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote__cite</code></td>
+              <td>Citation text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote__avatar</code></td>
+              <td>Author photo in the footer</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote--pull</code></td>
+              <td>Pull-quote style with left accent border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote--card</code></td>
+              <td>Card-style with background and border-radius</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote--bordered</code></td>
+              <td>Outlined with border and padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-quote--&#123;role&#125;</code></td>
+              <td>Role colour (primary, success, warning, danger, info, secondary)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }
