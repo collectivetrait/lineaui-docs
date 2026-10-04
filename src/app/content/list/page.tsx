@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ListPage() {
   return (
@@ -12,6 +13,8 @@ export default function ListPage() {
           and <code>--spacious</code> expands to 64px.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Divided list</h2>

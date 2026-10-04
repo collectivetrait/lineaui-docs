@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function PageHeaderPage() {
   return (
@@ -12,6 +13,8 @@ export default function PageHeaderPage() {
           dashboard header.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Standard page header</h2>

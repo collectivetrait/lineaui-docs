@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function BreakpointsPage() {
   return (
@@ -10,6 +11,8 @@ export default function BreakpointsPage() {
           use <code>min-width</code> media queries for a mobile-first approach.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Breakpoint values</h2>

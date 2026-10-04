@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function FiguresPage() {
   return (
@@ -11,6 +12,8 @@ export default function FiguresPage() {
           base layer applies sensible defaults automatically.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default figure</h2>

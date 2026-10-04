@@ -1,5 +1,6 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ToastPage() {
   return (
@@ -16,6 +17,8 @@ export default function ToastPage() {
           toasts are created via <code>Toast.show()</code> in JavaScript.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default toast</h2>

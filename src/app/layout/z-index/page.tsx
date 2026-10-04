@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ZIndexPage() {
   return (
@@ -10,6 +11,8 @@ export default function ZIndexPage() {
           system that eliminates specificity wars.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Z-index utilities</h2>

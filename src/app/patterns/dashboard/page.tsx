@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function DashboardPatterns() {
   return (
@@ -11,6 +12,8 @@ export default function DashboardPatterns() {
           interfaces.
         </p>
       </section>
+
+      <TableOfContents />
 
       {/* --- Stat --- */}
       <section className="docs-section">

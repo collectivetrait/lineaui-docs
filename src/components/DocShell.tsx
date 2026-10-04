@@ -3,7 +3,6 @@ import { SidebarToggle } from "./SidebarToggle";
 import { ThemeToggle } from "./ThemeToggle";
 import { GridToggle } from "./GridToggle";
 import { PreviewGridToggles } from "./PreviewGridToggles";
-import { TableOfContents } from "./TableOfContents";
 import Link from "next/link";
 
 export function DocShell({ children }: { children: React.ReactNode }) {
@@ -25,10 +24,7 @@ export function DocShell({ children }: { children: React.ReactNode }) {
           <SideNav />
         </aside>
         <main className="docs-shell__main">
-          <div className="docs-page-content">
-            {children}
-            <TableOfContents />
-          </div>
+          <div className="docs-page-content">{children}</div>
         </main>
       </div>
     </div>

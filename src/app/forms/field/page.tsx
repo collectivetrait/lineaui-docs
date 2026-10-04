@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function FieldPage() {
   return (
@@ -11,6 +12,8 @@ export default function FieldPage() {
           via <code>aria-invalid=&quot;true&quot;</code> on the input.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default field</h2>

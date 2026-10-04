@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function SpinnerPage() {
   return (
@@ -11,6 +12,8 @@ export default function SpinnerPage() {
           and <code>--lg</code> (32px). Role modifiers set the spinner color.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Sizes</h2>

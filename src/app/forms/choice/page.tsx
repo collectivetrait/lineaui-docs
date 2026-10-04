@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ChoicePage() {
   return (
@@ -13,6 +14,8 @@ export default function ChoicePage() {
           and <code>aria-invalid</code>.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Checkbox group</h2>

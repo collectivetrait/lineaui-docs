@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function AvatarPage() {
   return (
@@ -12,6 +13,8 @@ export default function AvatarPage() {
           state.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Sizes</h2>

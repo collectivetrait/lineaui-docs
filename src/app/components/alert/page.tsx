@@ -1,5 +1,6 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function AlertPage() {
   return (
@@ -14,6 +15,8 @@ export default function AlertPage() {
           info, success, warning, and danger.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Roles</h2>

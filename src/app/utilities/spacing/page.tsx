@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function SpacingUtilities() {
   return (
@@ -10,6 +11,8 @@ export default function SpacingUtilities() {
           scale. All spacing utilities support responsive breakpoint suffixes.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Padding</h2>

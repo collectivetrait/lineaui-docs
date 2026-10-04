@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function QuotePage() {
   return (
@@ -11,6 +12,8 @@ export default function QuotePage() {
           variant for testimonials.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Pull quote</h2>

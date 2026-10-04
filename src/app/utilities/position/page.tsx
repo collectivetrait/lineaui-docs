@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function PositionUtilities() {
   return (
@@ -12,6 +13,8 @@ export default function PositionUtilities() {
           style.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Position values</h2>

@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function TextPage() {
   return (
@@ -10,6 +11,8 @@ export default function TextPage() {
           Text size and alignment support responsive breakpoint suffixes.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Text size</h2>

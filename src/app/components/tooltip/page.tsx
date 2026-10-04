@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function TooltipPage() {
   return (
@@ -13,6 +14,8 @@ export default function TooltipPage() {
           markup.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Static tooltip</h2>

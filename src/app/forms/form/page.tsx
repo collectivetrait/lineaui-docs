@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function FormPage() {
   return (
@@ -10,6 +11,8 @@ export default function FormPage() {
           grid-based rows, and sticky action bars.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default stacked layout</h2>

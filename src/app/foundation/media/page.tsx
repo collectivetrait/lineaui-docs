@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function MediaPage() {
   return (
@@ -12,6 +13,8 @@ export default function MediaPage() {
           their source files, so they will generally break vertical rhythm.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Base element defaults</h2>

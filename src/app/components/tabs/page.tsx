@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function TabsPage() {
   const [activeTab, setActiveTab] = useState(0);
@@ -17,6 +18,8 @@ export default function TabsPage() {
           toggling via the <code>hidden</code> attribute.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Underline tabs</h2>

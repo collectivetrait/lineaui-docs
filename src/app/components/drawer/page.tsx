@@ -1,5 +1,6 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function DrawerPage() {
   return (
@@ -15,6 +16,8 @@ export default function DrawerPage() {
           <code>--start</code> and <code>--bottom</code> direction modifiers.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default drawer</h2>

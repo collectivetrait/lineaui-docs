@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function FloatUtilities() {
   return (
@@ -10,6 +11,8 @@ export default function FloatUtilities() {
           container, allowing inline content to wrap around it.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Float classes</h2>

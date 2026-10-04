@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function OpacityUtilities() {
   return (
@@ -10,6 +11,8 @@ export default function OpacityUtilities() {
           its children.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Opacity values</h2>

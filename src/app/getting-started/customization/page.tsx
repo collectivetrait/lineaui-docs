@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function CustomizationPage() {
   return (
@@ -11,6 +12,8 @@ export default function CustomizationPage() {
           configuration map.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Using Sass source</h2>

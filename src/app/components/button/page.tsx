@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ButtonPage() {
   return (
@@ -13,6 +14,8 @@ export default function ButtonPage() {
           <code>&lt;input type=&quot;submit&quot;&gt;</code>.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Variants</h2>

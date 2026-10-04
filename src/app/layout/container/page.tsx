@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ContainerPage() {
   return (
@@ -11,6 +12,8 @@ export default function ContainerPage() {
           modifiers to switch to narrower or wider tracks.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Variants</h2>

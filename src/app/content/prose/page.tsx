@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ProsePage() {
   return (
@@ -11,6 +12,8 @@ export default function ProsePage() {
           alignment classes. No BEM elements — it styles all child HTML.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default</h2>

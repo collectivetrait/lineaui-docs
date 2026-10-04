@@ -1,5 +1,6 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function TagPage() {
   return (
@@ -13,6 +14,8 @@ export default function TagPage() {
           toggle variant with <code>--selectable</code> and <code>aria-pressed</code>.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default and outline</h2>

@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function InputGroupPage() {
   return (
@@ -10,6 +11,8 @@ export default function InputGroupPage() {
           visually-connected control. Border radii are fused automatically.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Addon + control</h2>

@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function FontsPage() {
   return (
@@ -10,6 +11,8 @@ export default function FontsPage() {
           override any inherited or component-level font settings.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Font weight</h2>

@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ShadowUtilities() {
   return (
@@ -11,6 +12,8 @@ export default function ShadowUtilities() {
           <code>shadow-inset</code> for an inner shadow.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Elevation levels</h2>

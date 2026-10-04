@@ -1,6 +1,7 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { QuantityInit } from "@/components/QuantityInit";
 import { GalleryInit } from "@/components/GalleryInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function EcommercePatterns() {
   return (
@@ -15,6 +16,8 @@ export default function EcommercePatterns() {
           action blocks to build complete shopping experiences.
         </p>
       </section>
+
+      <TableOfContents />
 
       {/* --- Price --- */}
       <section className="docs-section">

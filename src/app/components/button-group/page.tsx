@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ButtonGroupPage() {
   return (
@@ -11,6 +12,8 @@ export default function ButtonGroupPage() {
           instances. Default layout is horizontal with a small gap.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default group</h2>

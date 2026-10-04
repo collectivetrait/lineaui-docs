@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ClusterPage() {
   return (
@@ -10,6 +11,8 @@ export default function ClusterPage() {
           for button groups, tag lists, meta lines, and toolbars.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default cluster</h2>

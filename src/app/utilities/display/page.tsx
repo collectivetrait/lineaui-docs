@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function DisplayUtilities() {
   return (
@@ -14,6 +15,8 @@ export default function DisplayUtilities() {
           <code>none</code>.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Basic display values</h2>

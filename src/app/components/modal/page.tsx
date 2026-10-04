@@ -1,5 +1,6 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function ModalPage() {
   return (
@@ -15,6 +16,8 @@ export default function ModalPage() {
           Trigger with <code>data-ln-dialog</code> on a button.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default modal</h2>

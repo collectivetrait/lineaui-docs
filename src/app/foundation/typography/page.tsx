@@ -1,5 +1,6 @@
 import { TypeScaleTable } from "@/components/TypeScaleTable";
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function TypographyPage() {
   return (
@@ -12,6 +13,8 @@ export default function TypographyPage() {
           and heading line heights are whole multiples of 24px.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Available classes</h2>

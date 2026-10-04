@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function SiteFooterPage() {
   return (
@@ -11,6 +12,8 @@ export default function SiteFooterPage() {
           flips to a dark background. <code>--compact</code> tightens spacing.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default footer</h2>

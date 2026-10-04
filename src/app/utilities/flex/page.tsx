@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function FlexUtilities() {
   return (
@@ -11,6 +12,8 @@ export default function FlexUtilities() {
           <code>d-inline-flex</code> to activate flexbox layout.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Direction</h2>

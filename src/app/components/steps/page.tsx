@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function StepsPage() {
   return (
@@ -12,6 +13,8 @@ export default function StepsPage() {
           completed or failed steps.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Horizontal steps</h2>

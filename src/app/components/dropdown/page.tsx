@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function DropdownPage() {
   const [dropdown1Open, setDropdown1Open] = useState(false);
@@ -18,6 +19,8 @@ export default function DropdownPage() {
           <code>aria-expanded</code> toggling without the Popover API.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Basic dropdown</h2>

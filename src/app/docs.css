@@ -61,11 +61,19 @@
 }
 
 @media (min-width: 48rem) {
-  .docs-page-content {
+  .docs-page-content > article {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 200px;
-    gap: var(--space-8);
-    align-items: start;
+    column-gap: var(--space-8);
+  }
+
+  .docs-page-content > article > .docs-section:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .docs-page-content > article > .docs-toc {
+    grid-column: 2;
+    grid-row: 2 / span 99;
   }
 }
 

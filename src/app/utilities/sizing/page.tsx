@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function SizingUtilities() {
   return (
@@ -10,6 +11,8 @@ export default function SizingUtilities() {
           using percentage values and semantic size tokens.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Width</h2>

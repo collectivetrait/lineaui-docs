@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function EmptyStatePage() {
   return (
@@ -11,6 +12,8 @@ export default function EmptyStatePage() {
           action buttons.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default</h2>

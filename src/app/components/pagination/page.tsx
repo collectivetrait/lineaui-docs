@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function PaginationPage() {
   return (
@@ -12,6 +13,8 @@ export default function PaginationPage() {
           <code>--sm</code> (32px) to <code>--lg</code> (48px).
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default pagination</h2>

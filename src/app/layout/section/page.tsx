@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function SectionPage() {
   return (
@@ -12,6 +13,8 @@ export default function SectionPage() {
           backgrounds and spacing modifiers for vertical rhythm.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default section with header</h2>

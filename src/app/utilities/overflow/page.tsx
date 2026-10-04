@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function OverflowUtilities() {
   return (
@@ -11,6 +12,8 @@ export default function OverflowUtilities() {
           <code>overflow-x</code> and <code>overflow-y</code> independently.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Overflow</h2>

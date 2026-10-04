@@ -1,5 +1,6 @@
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableSelectInit } from "@/components/TableSelectInit";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function TablesPage() {
   return (
@@ -13,6 +14,8 @@ export default function TablesPage() {
           stacking.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Base element defaults</h2>

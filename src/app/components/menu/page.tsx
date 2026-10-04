@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function MenuPage() {
   return (
@@ -11,6 +12,8 @@ export default function MenuPage() {
           states and <code>aria-expanded</code> for collapsible submenus.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Sidebar menu</h2>

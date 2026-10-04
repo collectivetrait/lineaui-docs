@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function DividerPage() {
   return (
@@ -11,6 +12,8 @@ export default function DividerPage() {
           labels, vertical orientation, and spacing modifiers.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Default horizontal</h2>

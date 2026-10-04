@@ -1,4 +1,5 @@
 import { CodeBlock } from "@/components/CodeBlock";
+import { TableOfContents } from "@/components/TableOfContents";
 
 export default function BorderUtilities() {
   return (
@@ -11,6 +12,8 @@ export default function BorderUtilities() {
           radius utilities control corner rounding.
         </p>
       </section>
+
+      <TableOfContents />
 
       <section className="docs-section">
         <h2>Border weight</h2>
