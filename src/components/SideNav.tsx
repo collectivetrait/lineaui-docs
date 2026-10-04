@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const NAV = [
   {
@@ -106,6 +109,8 @@ const NAV = [
 ];
 
 export function SideNav() {
+  const pathname = usePathname();
+
   return (
     <nav aria-label="Documentation navigation">
       <ul className="docs-sidenav">
@@ -115,7 +120,11 @@ export function SideNav() {
             <ul className="docs-sidenav-links">
               {section.links.map((link) => (
                 <li key={link.href}>
-                  <Link href={link.href} className="docs-sidenav-link">
+                  <Link
+                    href={link.href}
+                    className={`docs-sidenav-link${pathname === link.href ? " docs-sidenav-link--active" : ""}`}
+                    aria-current={pathname === link.href ? "page" : undefined}
+                  >
                     {link.label}
                   </Link>
                 </li>

@@ -127,6 +127,10 @@
   color: var(--link);
 }
 
+.docs-sidenav-link--active {
+  color: var(--primary);
+}
+
 /* --- Feature cards grid --- */
 
 .docs-card-grid {
