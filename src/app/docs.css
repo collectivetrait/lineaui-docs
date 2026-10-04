@@ -698,42 +698,48 @@
 /* --- TOC toggle (next to grid toggle) --- */
 
 .toc-toggle {
-  position: fixed;
-  bottom: var(--space-3);
-  right: calc(var(--space-3) + var(--space-5) + var(--space-1));
-  z-index: 10000;
-  display: inline-grid;
-  place-items: center;
-  width: var(--space-5);
-  height: var(--space-5);
-  padding: 0;
-  border: none;
-  border-radius: var(--radius-sm);
-  background: transparent;
-  color: var(--text-muted);
-  cursor: pointer;
-}
-
-.toc-toggle > svg {
-  width: 1rem;
-  height: 1rem;
-}
-
-.toc-toggle:hover {
-  color: var(--text);
-  background: var(--surface-raised);
-}
-
-.toc-toggle[aria-pressed="true"] {
-  color: var(--primary-text);
-}
-
-.hide-toc .docs-toc {
   display: none;
 }
 
-.hide-toc .docs-page-content > article:has(> .docs-toc) {
-  grid-template-columns: 1fr;
+@media (min-width: 48rem) {
+  .toc-toggle {
+    position: fixed;
+    bottom: var(--space-3);
+    right: calc(var(--space-3) + var(--space-5) + var(--space-1));
+    z-index: 10000;
+    display: inline-grid;
+    place-items: center;
+    width: var(--space-5);
+    height: var(--space-5);
+    padding: 0;
+    border: none;
+    border-radius: var(--radius-sm);
+    background: transparent;
+    color: var(--text-muted);
+    cursor: pointer;
+  }
+
+  .toc-toggle > svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .toc-toggle:hover {
+    color: var(--text);
+    background: var(--surface-raised);
+  }
+
+  .toc-toggle[aria-pressed="true"] {
+    color: var(--primary-text);
+  }
+
+  .hide-toc .docs-toc {
+    display: none;
+  }
+
+  .hide-toc .docs-page-content > article:has(> .docs-toc) {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- Back to top (sm and below) --- */
