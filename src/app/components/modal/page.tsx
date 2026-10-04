@@ -117,6 +117,86 @@ export default function ModalPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-modal</code></td>
+              <td>Modal container (applied to <code>&lt;dialog&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal__close</code></td>
+              <td>Close button</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal__header</code></td>
+              <td>Header area</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal__title</code></td>
+              <td>Modal heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal__body</code></td>
+              <td>Scrollable body area</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal__footer</code></td>
+              <td>Footer with action buttons</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--sm</code></td>
+              <td>Small modal (400px max-width)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--md</code></td>
+              <td>Medium modal (560px, default)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--lg</code></td>
+              <td>Large modal (800px)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--full</code></td>
+              <td>Full viewport modal</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--scroll-body</code></td>
+              <td>Constrains height with scrollable body</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--center</code></td>
+              <td>Centre-align text and actions</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-modal--danger</code></td>
+              <td>Danger-coloured title</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

@@ -79,6 +79,56 @@ export default function BreadcrumbPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-breadcrumb</code></td>
+              <td>Breadcrumb container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-breadcrumb__list</code></td>
+              <td>Ordered list of items</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-breadcrumb__item</code></td>
+              <td>Individual breadcrumb item</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-breadcrumb__link</code></td>
+              <td>Clickable breadcrumb link</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-breadcrumb__current</code></td>
+              <td>Current page label (non-link)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-breadcrumb--sm</code></td>
+              <td>Small size variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-breadcrumb--truncate</code></td>
+              <td>Collapse middle items for long paths</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

@@ -106,6 +106,91 @@ export default function DropdownPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-dropdown</code></td>
+              <td>Dropdown container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__toggle</code></td>
+              <td>Trigger element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__menu</code></td>
+              <td>Popover menu panel</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__item</code></td>
+              <td>Menu item (link or button)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__icon</code></td>
+              <td>Item leading icon</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__label</code></td>
+              <td>Item text label</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__shortcut</code></td>
+              <td>Keyboard shortcut hint</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__heading</code></td>
+              <td>Section heading inside menu</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown__divider</code></td>
+              <td>Separator line between groups</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown--end</code></td>
+              <td>Right-align menu</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown--up</code></td>
+              <td>Open menu above trigger</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown--start</code></td>
+              <td>Left-align menu</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown--wide</code></td>
+              <td>Match menu width to trigger</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-dropdown--&#123;role&#125;</code></td>
+              <td>Role modifier (primary, secondary, success, warning, danger, info)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

@@ -78,6 +78,66 @@ export default function BadgePage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-badge</code></td>
+              <td>Inline badge</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge__dot</code></td>
+              <td>Coloured status dot</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge__icon</code></td>
+              <td>Badge icon</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge--solid</code></td>
+              <td>Filled background variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge--outline</code></td>
+              <td>Bordered variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge--sm</code></td>
+              <td>Small size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge--pill</code></td>
+              <td>Pill-shaped border radius</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge--count</code></td>
+              <td>Numeric counter variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-badge--&#123;role&#125;</code></td>
+              <td>Role modifier (primary, secondary, success, warning, danger, info)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

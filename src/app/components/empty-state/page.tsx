@@ -43,6 +43,61 @@ export default function EmptyStatePage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-empty-state</code></td>
+              <td>Centred empty state container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state__media</code></td>
+              <td>Illustration or image</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state__icon</code></td>
+              <td>Icon element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state__title</code></td>
+              <td>Heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state__body</code></td>
+              <td>Description text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state__actions</code></td>
+              <td>Action buttons container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state--compact</code></td>
+              <td>Reduced padding and smaller illustration</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-empty-state--sunken</code></td>
+              <td>Sunken background surface</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

@@ -49,6 +49,76 @@ export default function DrawerPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-drawer</code></td>
+              <td>Drawer container (applied to <code>&lt;dialog&gt;</code>)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer__close</code></td>
+              <td>Close button</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer__header</code></td>
+              <td>Header with bottom border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer__title</code></td>
+              <td>Drawer heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer__body</code></td>
+              <td>Scrollable body area</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer__footer</code></td>
+              <td>Footer with top border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer--start</code></td>
+              <td>Slide in from the left</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer--bottom</code></td>
+              <td>Slide up from the bottom</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer--sm</code></td>
+              <td>320px width</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer--md</code></td>
+              <td>400px width (default)</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-drawer--lg</code></td>
+              <td>560px width</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

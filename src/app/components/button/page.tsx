@@ -362,6 +362,106 @@ export default function ButtonPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-button</code></td>
+              <td>Button element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button__label</code></td>
+              <td>Label wrapper</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button__icon</code></td>
+              <td>Icon element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button__spinner</code></td>
+              <td>Loading spinner</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button__badge</code></td>
+              <td>Badge element</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--neutral</code></td>
+              <td>Neutral variant with border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--subtle</code></td>
+              <td>Subtle tinted background</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--outline</code></td>
+              <td>Outlined variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--ghost</code></td>
+              <td>Transparent background</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--link</code></td>
+              <td>Link-style button</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--sm</code></td>
+              <td>Small size (32px height)</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--lg</code></td>
+              <td>Large size (48px height)</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--block</code></td>
+              <td>Full-width button</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--icon</code></td>
+              <td>Square icon-only button</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--pill</code></td>
+              <td>Pill-shaped border radius</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--square</code></td>
+              <td>No border radius</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button--&#123;role&#125;</code></td>
+              <td>Role modifier (primary, secondary, success, warning, danger, info)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

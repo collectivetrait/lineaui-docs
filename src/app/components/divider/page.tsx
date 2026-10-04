@@ -89,6 +89,56 @@ export default function DividerPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-divider</code></td>
+              <td>Horizontal divider line</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-divider__label</code></td>
+              <td>Centred label with divider lines on each side</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-divider--vertical</code></td>
+              <td>Vertical divider</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-divider--strong</code></td>
+              <td>Thicker border</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-divider--space-md</code></td>
+              <td>24px vertical spacing</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-divider--space-lg</code></td>
+              <td>48px vertical spacing</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-divider--space-xl</code></td>
+              <td>72px vertical spacing</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

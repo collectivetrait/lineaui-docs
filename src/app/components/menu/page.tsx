@@ -189,6 +189,101 @@ export default function MenuPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-menu</code></td>
+              <td>Menu container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__group</code></td>
+              <td>Section group with top border separator</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__heading</code></td>
+              <td>Section heading label</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__item</code></td>
+              <td>List item wrapper</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__link</code></td>
+              <td>Clickable menu link</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__icon</code></td>
+              <td>Leading icon</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__label</code></td>
+              <td>Item text label</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__badge</code></td>
+              <td>Trailing badge or count</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__shortcut</code></td>
+              <td>Keyboard shortcut hint</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__submenu</code></td>
+              <td>Nested submenu list</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu__divider</code></td>
+              <td>Separator line</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu--compact</code></td>
+              <td>Smaller item height and font size</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu--rail</code></td>
+              <td>Icon-only collapsed sidebar</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu--toc</code></td>
+              <td>Table-of-contents style with left indicator</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu--pills</code></td>
+              <td>Pill-shaped active indicator</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-menu--&#123;role&#125;</code></td>
+              <td>Role modifier (primary, secondary, success, warning, danger, info)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

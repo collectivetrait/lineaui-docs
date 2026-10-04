@@ -114,6 +114,81 @@ export default function AlertPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-alert</code></td>
+              <td>Alert container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert__icon</code></td>
+              <td>Leading icon</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert__content</code></td>
+              <td>Content wrapper</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert__title</code></td>
+              <td>Alert heading</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert__body</code></td>
+              <td>Alert body text</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert__actions</code></td>
+              <td>Action buttons container</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert__dismiss</code></td>
+              <td>Dismiss button</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert--solid</code></td>
+              <td>Filled background variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert--accent</code></td>
+              <td>Left border accent variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert--banner</code></td>
+              <td>Full-width banner variant</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert--compact</code></td>
+              <td>Reduced padding</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-alert--&#123;role&#125;</code></td>
+              <td>Role modifier (primary, secondary, success, warning, danger, info)</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }

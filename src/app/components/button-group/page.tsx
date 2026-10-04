@@ -107,6 +107,41 @@ export default function ButtonGroupPage() {
           </div>
         </div>
       </section>
+
+      <section className="docs-section">
+        <h2>Reference</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Class</th>
+              <th>Description</th>
+              <th>Responsive</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>.ln-button-group</code></td>
+              <td>Inline flex wrapper for buttons</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button-group--attached</code></td>
+              <td>Join buttons with no gap</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button-group--vertical</code></td>
+              <td>Stack buttons vertically</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-button-group--fill</code></td>
+              <td>Stretch buttons to fill width equally</td>
+              <td>No</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </article>
   );
 }
