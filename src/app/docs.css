@@ -29,7 +29,7 @@
 .docs-shell__header-inner {
   max-width: var(--container-wide);
   margin-inline: auto;
-  padding-inline: var(--gutter);
+  padding-inline: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
