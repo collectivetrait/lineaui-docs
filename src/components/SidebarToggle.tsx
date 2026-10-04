@@ -6,14 +6,14 @@ export function SidebarToggle() {
   const [open, setOpen] = useState(false);
 
   const close = useCallback(() => {
-    const shell = document.querySelector(".ln-shell") as HTMLElement | null;
+    const shell = document.querySelector(".docs-shell") as HTMLElement | null;
     if (!shell) return;
     delete shell.dataset.sidebar;
     setOpen(false);
   }, []);
 
   function toggle() {
-    const shell = document.querySelector(".ln-shell") as HTMLElement | null;
+    const shell = document.querySelector(".docs-shell") as HTMLElement | null;
     if (!shell) return;
     const next = !open;
     setOpen(next);
@@ -25,7 +25,7 @@ export function SidebarToggle() {
   }
 
   useEffect(() => {
-    const shell = document.querySelector(".ln-shell") as HTMLElement | null;
+    const shell = document.querySelector(".docs-shell") as HTMLElement | null;
     if (!shell) return;
     const observer = new MutationObserver(() => {
       setOpen(shell.dataset.sidebar === "open");
@@ -38,7 +38,7 @@ export function SidebarToggle() {
     if (!open) return;
 
     function handleClick(e: MouseEvent) {
-      const sidebar = document.querySelector(".ln-shell__sidebar");
+      const sidebar = document.querySelector(".docs-shell__sidebar");
       const toggle = document.querySelector(".docs-sidebar-toggle");
       if (
         sidebar && !sidebar.contains(e.target as Node) &&

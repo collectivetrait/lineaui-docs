@@ -8,25 +8,27 @@ import Link from "next/link";
 
 export function DocShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="ln-shell">
-      <header className="ln-shell__header">
-        <SidebarToggle />
-        <Link href="/" className="docs-site-logo">
-          ln
-        </Link>
-        <ThemeToggle />
+    <div className="docs-shell">
+      <header className="docs-shell__header">
+        <div className="docs-shell__header-inner">
+          <SidebarToggle />
+          <Link href="/" className="docs-site-logo">
+            ln
+          </Link>
+          <ThemeToggle />
+        </div>
       </header>
       <GridToggle />
       <PreviewGridToggles />
-      <aside className="ln-shell__sidebar">
-        <SideNav />
-      </aside>
-      <main className="ln-shell__main">
-        <div className="docs-page-layout">
-          <div className="docs-page-content">{children}</div>
+      <div className="docs-shell__body">
+        <aside className="docs-shell__sidebar">
+          <SideNav />
+        </aside>
+        <main className="docs-shell__main">
           <TableOfContents />
-        </div>
-      </main>
+          <div className="docs-page-content">{children}</div>
+        </main>
+      </div>
     </div>
   );
 }
