@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { NavbarToggle } from "@/components/NavbarToggle";
+import { GridToggle } from "@/components/GridToggle";
+import { BackToTop } from "@/components/BackToTop";
+import { PreviewGridToggles } from "@/components/PreviewGridToggles";
 
 const FEATURES = [
   {
@@ -67,6 +70,10 @@ const FOOTER_COLS = [
 export default function Home() {
   return (
     <>
+      <GridToggle />
+      <BackToTop />
+      <PreviewGridToggles />
+
       {/* Navbar */}
       <nav className="ln-navbar ln-navbar--bordered ln-navbar--sticky">
         <div className="ln-navbar__inner">
