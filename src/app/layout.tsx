@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import "./demo.css";
-import "./docs.css";
 import { DocShell } from "@/components/DocShell";
 
 export const metadata: Metadata = {
@@ -17,6 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/docs.css" />
       </head>
       <body>
         <DocShell>{children}</DocShell>
