@@ -193,7 +193,7 @@ export default function TypographyPage() {
           <ul>
             <li>Unordered lists use the primary colour for list markers</li>
             <li>Line height matches the body grid step — 24px</li>
-            <li>Indent is set to <code>--space-4</code> (2rem)</li>
+            <li>Indent is set to <code>--s4</code> (2rem)</li>
           </ul>
           <ol>
             <li>Ordered lists use tabular numerals</li>
@@ -212,17 +212,17 @@ export default function TypographyPage() {
             </thead>
             <tbody>
               <tr>
-                <td><code>--type-body-size</code></td>
+                <td><code>--t-body-s</code></td>
                 <td>1rem</td>
                 <td>Body copy</td>
               </tr>
               <tr>
-                <td><code>--type-lead-size</code></td>
+                <td><code>--t-lead-s</code></td>
                 <td>1.125rem</td>
                 <td>Lead paragraph</td>
               </tr>
               <tr>
-                <td><code>--type-h1-size</code></td>
+                <td><code>--t-h1-s</code></td>
                 <td>2.5rem</td>
                 <td>Page title</td>
               </tr>
@@ -254,8 +254,8 @@ export default function TypographyPage() {
         </p>
         <CodeBlock language="css">{`/* reference any scale token in your own CSS */
 .my-heading {
-  font-size: var(--type-h2-size);
-  line-height: var(--type-h2-lh);
+  font-size: var(--t-h2-s);
+  line-height: var(--t-h2-lh);
 }`}</CodeBlock>
         <TypeScaleTable />
         <p>
@@ -273,18 +273,18 @@ export default function TypographyPage() {
         </p>
         <CodeBlock language="css">{`/* override globally */
 :root {
-  --font-prose: 'Georgia', serif;
-  --font-ui: 'Inter', sans-serif;
-  --font-mono: 'Fira Code', monospace;
+  --f-prose: 'Georgia', serif;
+  --f-ui: 'Inter', sans-serif;
+  --f-mono: 'Fira Code', monospace;
 }
 
 /* or scope to a single section */
 .my-section {
-  --font-prose: var(--font-ui);
+  --f-prose: var(--f-ui);
 }`}</CodeBlock>
         <dl>
           <dt>
-            <code>--font-prose</code>
+            <code>--f-prose</code>
           </dt>
           <dd>
             <span className="docs-font-sample" data-font="prose">
@@ -293,7 +293,7 @@ export default function TypographyPage() {
             </span>
           </dd>
           <dt>
-            <code>--font-ui</code>
+            <code>--f-ui</code>
           </dt>
           <dd>
             <span className="docs-font-sample" data-font="ui">
@@ -302,7 +302,7 @@ export default function TypographyPage() {
             </span>
           </dd>
           <dt>
-            <code>--font-mono</code>
+            <code>--f-mono</code>
           </dt>
           <dd>
             <span className="docs-font-sample" data-font="mono">

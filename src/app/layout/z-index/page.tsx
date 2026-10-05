@@ -141,7 +141,7 @@ export default function ZIndexPage() {
 }
 
 @layer tokens {
-  :root { --space-1: 0.5rem; /* … */ }
+  :root { --s1: 0.5rem; /* … */ }
 }
 
 @layer base {

@@ -54,11 +54,11 @@ export default function ShadowUtilities() {
             </tr>
           </thead>
           <tbody>
-            <tr><td><code>.shadow-0</code></td><td><code>box-shadow: var(--shadow-0)</code></td><td>No</td></tr>
-            <tr><td><code>.shadow-1</code></td><td><code>box-shadow: var(--shadow-1)</code></td><td>No</td></tr>
-            <tr><td><code>.shadow-2</code></td><td><code>box-shadow: var(--shadow-2)</code></td><td>No</td></tr>
-            <tr><td><code>.shadow-3</code></td><td><code>box-shadow: var(--shadow-3)</code></td><td>No</td></tr>
-            <tr><td><code>.shadow-4</code></td><td><code>box-shadow: var(--shadow-4)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-0</code></td><td><code>box-shadow: var(--sh0)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-1</code></td><td><code>box-shadow: var(--sh1)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-2</code></td><td><code>box-shadow: var(--sh2)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-3</code></td><td><code>box-shadow: var(--sh3)</code></td><td>No</td></tr>
+            <tr><td><code>.shadow-4</code></td><td><code>box-shadow: var(--sh4)</code></td><td>No</td></tr>
             <tr><td><code>.shadow-inset</code></td><td><code>box-shadow: var(--shadow-inset)</code></td><td>No</td></tr>
           </tbody>
         </table>

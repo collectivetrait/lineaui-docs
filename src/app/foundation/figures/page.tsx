@@ -82,23 +82,23 @@ export default function FiguresPage() {
             </tr>
             <tr>
               <td><code>figcaption</code></td>
-              <td><code>font-family: var(--font-ui)</code></td>
+              <td><code>font-family: var(--f-ui)</code></td>
             </tr>
             <tr>
               <td><code>figcaption</code></td>
-              <td><code>font-size: var(--type-body-sm-size)</code></td>
+              <td><code>font-size: var(--t-body-sm-s)</code></td>
             </tr>
             <tr>
               <td><code>figcaption</code></td>
-              <td><code>line-height: var(--type-body-sm-lh)</code></td>
+              <td><code>line-height: var(--t-body-sm-lh)</code></td>
             </tr>
             <tr>
               <td><code>figcaption</code></td>
-              <td><code>color: var(--text-muted)</code></td>
+              <td><code>color: var(--c-muted)</code></td>
             </tr>
             <tr>
               <td><code>figcaption</code></td>
-              <td><code>margin-top: var(--space-1)</code></td>
+              <td><code>margin-top: var(--s1)</code></td>
             </tr>
           </tbody>
         </table>

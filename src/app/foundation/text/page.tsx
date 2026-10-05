@@ -142,22 +142,22 @@ export default function TextPage() {
           <tbody>
             <tr>
               <td><code>.text-body-lg</code></td>
-              <td><code>font-size: var(--type-body-lg-size)</code></td>
+              <td><code>font-size: var(--t-body-lg-s)</code></td>
               <td>Yes</td>
             </tr>
             <tr>
               <td><code>.text-body-sm</code></td>
-              <td><code>font-size: var(--type-body-sm-size)</code></td>
+              <td><code>font-size: var(--t-body-sm-s)</code></td>
               <td>Yes</td>
             </tr>
             <tr>
               <td><code>.text-body-xs</code></td>
-              <td><code>font-size: var(--type-body-xs-size)</code></td>
+              <td><code>font-size: var(--t-body-xs-s)</code></td>
               <td>Yes</td>
             </tr>
             <tr>
               <td><code>.text-meta</code></td>
-              <td><code>font-size: var(--type-meta-size)</code></td>
+              <td><code>font-size: var(--t-meta-s)</code></td>
               <td>Yes</td>
             </tr>
             <tr>

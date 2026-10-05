@@ -7,7 +7,7 @@ export default function GridPage() {
       <section className="docs-section">
         <h1 className="text-display-2">Grid</h1>
         <p className="lead text-subtle">
-          A CSS Grid wrapper with a default gap of <code>--space-3</code>{" "}
+          A CSS Grid wrapper with a default gap of <code>--s3</code>{" "}
           (24px). Set column counts with <code>--cols-&#123;n&#125;</code>{" "}
           modifiers, or use <code>--auto</code> for a responsive auto-fit
           layout.

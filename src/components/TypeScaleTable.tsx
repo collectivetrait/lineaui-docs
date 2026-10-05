@@ -33,7 +33,7 @@ export function TypeScaleTable() {
         {SCALE.map(({ token, fontRole, sizePx, lhPx, sample }) => (
           <tr key={token}>
             <td>
-              <code>--type-{token}</code>
+              <code>--t-{token}</code>
             </td>
             <td>{fontRole}</td>
             <td>{sizePx}px</td>

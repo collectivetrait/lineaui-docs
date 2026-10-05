@@ -134,17 +134,17 @@ export default function FontsPage() {
             </tr>
             <tr>
               <td><code>.font-prose</code></td>
-              <td><code>font-family: var(--font-prose)</code></td>
+              <td><code>font-family: var(--f-prose)</code></td>
               <td>Yes</td>
             </tr>
             <tr>
               <td><code>.font-ui</code></td>
-              <td><code>font-family: var(--font-ui)</code></td>
+              <td><code>font-family: var(--f-ui)</code></td>
               <td>Yes</td>
             </tr>
             <tr>
               <td><code>.font-mono</code></td>
-              <td><code>font-family: var(--font-mono)</code></td>
+              <td><code>font-family: var(--f-mono)</code></td>
               <td>Yes</td>
             </tr>
           </tbody>

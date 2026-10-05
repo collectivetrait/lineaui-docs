@@ -38,17 +38,17 @@ export default function TablesPage() {
   </thead>
   <tbody>
     <tr>
-      <td><code>--space-1</code></td>
+      <td><code>--s1</code></td>
       <td>0.5rem</td>
       <td>Tight spacing</td>
     </tr>
     <tr>
-      <td><code>--space-2</code></td>
+      <td><code>--s2</code></td>
       <td>1rem</td>
       <td>Default gap</td>
     </tr>
     <tr>
-      <td><code>--space-3</code></td>
+      <td><code>--s3</code></td>
       <td>1.5rem</td>
       <td>Section gap</td>
     </tr>
@@ -66,17 +66,17 @@ export default function TablesPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td><code>--space-1</code></td>
+                  <td><code>--s1</code></td>
                   <td>0.5rem</td>
                   <td>Tight spacing</td>
                 </tr>
                 <tr>
-                  <td><code>--space-2</code></td>
+                  <td><code>--s2</code></td>
                   <td>1rem</td>
                   <td>Default gap</td>
                 </tr>
                 <tr>
-                  <td><code>--space-3</code></td>
+                  <td><code>--s3</code></td>
                   <td>1.5rem</td>
                   <td>Section gap</td>
                 </tr>

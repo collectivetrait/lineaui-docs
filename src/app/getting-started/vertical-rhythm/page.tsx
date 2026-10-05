@@ -54,7 +54,7 @@ export default function VerticalRhythmPage() {
         <h2>Spacing tokens</h2>
         <p>
           The space token scale counts 8px steps. The token name is the
-          multiplier, so <code>--space-3</code> equals 3 &times; 8px = 24px
+          multiplier, so <code>--s3</code> equals 3 &times; 8px = 24px
           (one full line).
         </p>
         <table>
@@ -67,64 +67,34 @@ export default function VerticalRhythmPage() {
           </thead>
           <tbody>
             <tr>
-              <td><code>--space-half</code></td>
+              <td><code>--s-h</code></td>
               <td>4px (0.25rem)</td>
               <td>—</td>
             </tr>
             <tr>
-              <td><code>--space-1</code></td>
+              <td><code>--s1</code></td>
               <td>8px (0.5rem)</td>
               <td>—</td>
             </tr>
             <tr>
-              <td><code>--space-2</code></td>
+              <td><code>--s2</code></td>
               <td>16px (1rem)</td>
               <td>—</td>
             </tr>
             <tr>
-              <td><code>--space-3</code></td>
+              <td><code>--s3</code></td>
               <td>24px (1.5rem)</td>
               <td>1 line</td>
             </tr>
             <tr>
-              <td><code>--space-4</code></td>
+              <td><code>--s4</code></td>
               <td>32px (2rem)</td>
               <td>—</td>
-            </tr>
-            <tr>
-              <td><code>--space-5</code></td>
-              <td>40px (2.5rem)</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><code>--space-6</code></td>
-              <td>48px (3rem)</td>
-              <td>2 lines</td>
-            </tr>
-            <tr>
-              <td><code>--space-8</code></td>
-              <td>64px (4rem)</td>
-              <td>—</td>
-            </tr>
-            <tr>
-              <td><code>--space-9</code></td>
-              <td>72px (4.5rem)</td>
-              <td>3 lines</td>
-            </tr>
-            <tr>
-              <td><code>--space-12</code></td>
-              <td>96px (6rem)</td>
-              <td>4 lines</td>
-            </tr>
-            <tr>
-              <td><code>--space-18</code></td>
-              <td>144px (9rem)</td>
-              <td>6 lines</td>
             </tr>
           </tbody>
         </table>
         <p>
-          Use <code>--space-half</code> only for inline internals such as badge
+          Use <code>--s-h</code> only for inline internals such as badge
           padding or tag gaps — it sits below the base grid.
         </p>
       </section>

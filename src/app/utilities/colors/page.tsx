@@ -61,9 +61,9 @@ export default function ColorUtilities() {
             <tr><td><code>.text-warning</code></td><td><code>color: var(--warning-text)</code></td><td>No</td></tr>
             <tr><td><code>.text-danger</code></td><td><code>color: var(--danger-text)</code></td><td>No</td></tr>
             <tr><td><code>.text-info</code></td><td><code>color: var(--info-text)</code></td><td>No</td></tr>
-            <tr><td><code>.text-muted</code></td><td><code>color: var(--text-muted)</code></td><td>No</td></tr>
-            <tr><td><code>.text-subtle</code></td><td><code>color: var(--text-subtle)</code></td><td>No</td></tr>
-            <tr><td><code>.text-inverse</code></td><td><code>color: var(--text-inverse)</code></td><td>No</td></tr>
+            <tr><td><code>.text-muted</code></td><td><code>color: var(--c-muted)</code></td><td>No</td></tr>
+            <tr><td><code>.text-subtle</code></td><td><code>color: var(--c-subtle)</code></td><td>No</td></tr>
+            <tr><td><code>.text-inverse</code></td><td><code>color: var(--c-inverse)</code></td><td>No</td></tr>
           </tbody>
         </table>
       </section>
