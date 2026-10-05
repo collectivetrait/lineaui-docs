@@ -8,6 +8,8 @@ const NAV = [
     group: "Getting Started",
     links: [
       { label: "Introduction", href: "/getting-started" },
+      { label: "BEM", href: "/getting-started/bem" },
+      { label: "Vertical Rhythm", href: "/getting-started/vertical-rhythm" },
       { label: "Customization", href: "/getting-started/customization" },
     ],
   },
