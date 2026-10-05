@@ -253,6 +253,24 @@ export default function VerticalRhythmPage() {
       </section>
 
       <section className="docs-section">
+        <h2>Further reading</h2>
+        <ul>
+          <li>
+            <a href="https://zellwk.com/blog/why-vertical-rhythms/" target="_blank" rel="noopener noreferrer">Why is Vertical Rhythm an Important Typography Practice?</a>{" "}
+            — Zell Liew on the reasoning behind vertical rhythm
+          </li>
+          <li>
+            <a href="https://24ways.org/2006/compose-to-a-vertical-rhythm/" target="_blank" rel="noopener noreferrer">Compose to a Vertical Rhythm</a>{" "}
+            — Richard Rutter&rsquo;s foundational article on 24 ways
+          </li>
+          <li>
+            <a href="https://builttoadapt.io/8-point-grid-vertical-rhythm-90d05ad95032" target="_blank" rel="noopener noreferrer">8-Point Grid: Vertical Rhythm</a>{" "}
+            — Elliot Dahl on combining the 8px grid with vertical rhythm
+          </li>
+        </ul>
+      </section>
+
+      <section className="docs-section">
         <h2>Grid overlay</h2>
         <p>
           Toggle the baseline grid overlay to verify alignment. Click the grid

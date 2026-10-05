@@ -141,6 +141,24 @@ export default function BemPage() {
       </section>
 
       <section className="docs-section">
+        <h2>Further reading</h2>
+        <ul>
+          <li>
+            <a href="https://getbem.com" target="_blank" rel="noopener noreferrer">getbem.com</a>{" "}
+            — the official BEM methodology site
+          </li>
+          <li>
+            <a href="https://en.bem.info/methodology/" target="_blank" rel="noopener noreferrer">en.bem.info/methodology</a>{" "}
+            — in-depth documentation from Yandex, the creators of BEM
+          </li>
+          <li>
+            <a href="https://css-tricks.com/bem-101/" target="_blank" rel="noopener noreferrer">BEM 101</a>{" "}
+            — a practical introduction on CSS-Tricks
+          </li>
+        </ul>
+      </section>
+
+      <section className="docs-section">
         <h2>Reference</h2>
         <table>
           <thead>
