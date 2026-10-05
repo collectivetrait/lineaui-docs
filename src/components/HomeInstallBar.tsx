@@ -14,7 +14,7 @@ export function HomeInstallBar() {
   }, []);
 
   return (
-    <div className="home-install">
+    <div className="home-install rounder-none">
       <span className="home-install__prompt">$</span>
       <span className="home-install__command">{command}</span>
       <button

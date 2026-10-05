@@ -113,70 +113,74 @@ export default function Home() {
 
       {/* 1. Hero */}
       <section className="ln-section ln-section--wide ln-section--space-2xl">
+        <div className="ln-section__inner">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
           <div>
             <div className="mb-2">
-              <span className="ln-badge ln-badge--success">
+              <span className="ln-badge ln-badge--primary">
                 <span className="ln-badge__dot" />
-                v0.1 preview
+                v1.0
               </span>
             </div>
             <p className="ln-section__eyebrow">BEM / Vertical rhythm / Cascade layers</p>
-            <h1 className="text-display-1 font-prose mb-3">
+            <h1 className="text-display-1 font-prose fw-bold mb-4">
               Interfaces that keep the{" "}
-              <em className="home-accent fs-italic">beat</em>.
+              <em className="home-accent fs-italic">beat.</em>
             </h1>
-            <p className="mb-3">
+            <p className="lead mb-4">
               linea-ui is a small CSS and JS library built on BEM naming and an
               8px vertical rhythm. Readable class names, accessible defaults and
               a footprint you can reason about.
             </p>
-            <div className="ln-cluster ln-cluster--gap-sm mb-3">
-              <Link href="/getting-started" className="ln-button ln-button--lg">
+            <div className="ln-cluster ln-cluster--gap-sm mb-4">
+              <Link href="/getting-started" className="ln-button ln-button--lg rounded-none">
                 Get started &rarr;
               </Link>
-              <Link href="/components/button" className="ln-button ln-button--outline ln-button--lg">
+              <Link href="/components/button" className="ln-button ln-button--outline ln-button--lg rounded-none">
                 Explore components
               </Link>
             </div>
             <HomeInstallBar />
           </div>
 
-          <div className="home-specimen" id="home-specimen">
-            <div className="home-specimen__header">
-              <span>specimen.html</span>
-              <HomeSpecimenToggle />
-            </div>
-            <div className="home-specimen__body">
-              <div className="ln-alert ln-alert--success">
-                <svg className="ln-alert__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                </svg>
-                <div className="ln-alert__content">
-                  <p className="ln-alert__body">Saved. <code>ln-alert--success</code></p>
-                </div>
+          <div>
+              <div className="home-specimen bg-surface" id="home-specimen">
+                  <div className="home-specimen__header">
+                      <span>specimen.html</span>
+                      <HomeSpecimenToggle />
+                  </div>
+                  <div className="home-specimen__body">
+                      <div className="ln-alert ln-alert--success bg-surface-sunken border mb-1">
+                          <svg className="ln-alert__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                          </svg>
+                          <div className="ln-alert__content">
+                              <p className="ln-alert__body"><strong>Saved.</strong> ln-alert ln-alert--success</p>
+                          </div>
+                      </div>
+                      <div className="ln-field mb-1">
+                          <label className="ln-field__label">Email address</label>
+                          <div className="ln-field__control">
+                              <input className="bg-surface-sunken" type="email" defaultValue="ada@example.com" readOnly />
+                          </div>
+                      </div>
+                      <div className="ln-cluster ln-cluster--gap-sm mb-1">
+                          <span className="ln-button">Subscribe</span>
+                          <span className="ln-button ln-button--outline">Cancel</span>
+                      </div>
+                      <div className="ln-card bg-surface-sunken">
+                          <h3 className="ln-card__title h2">Card title</h3>
+                          <div className="ln-card__body">
+                              <p>
+                                  Every block above sits on the same 24px line. Toggle the
+                                  baseline to check.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
               </div>
-              <div className="ln-field">
-                <label className="ln-field__label">Email address</label>
-                <div className="ln-field__control">
-                  <input type="email" defaultValue="ada@example.com" readOnly />
-                </div>
-              </div>
-              <div className="ln-cluster ln-cluster--gap-sm">
-                <span className="ln-button">Subscribe</span>
-                <span className="ln-button ln-button--outline">Cancel</span>
-              </div>
-              <div className="ln-card">
-                <h3 className="ln-card__title">Card title</h3>
-                <div className="ln-card__body">
-                  <p>
-                    Every block above sits on the same 24px line. Toggle the
-                    baseline to check.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
         </div>
       </section>
 
@@ -197,24 +201,19 @@ export default function Home() {
 
       {/* 3. Principles */}
       <section className="ln-section ln-section--wide ln-section--space-2xl">
-        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-5@md ln-grid--gap-lg mb-4">
-          <div className="ln-grid__item ln-grid__item--span-3@md">
-            <p className="ln-section__eyebrow">
-              <span className="home-accent">01</span> / Principles
-            </p>
-            <h2 className="text-display-2 font-prose">
-              Six opinions, written down so you can disagree with them.
-            </h2>
-          </div>
-          <div className="ln-grid__item ln-grid__item--span-2@md align-self-end">
-            <p>
-              Every default in linea-ui traces back to one of these. Each one is
-              a SASS variable or a single layer away from your own rules.
-            </p>
-          </div>
-        </div>
+        <div className="ln-section__inner">
+        <p className="ln-section__eyebrow">
+          <span className="home-accent">01</span> / Principles
+        </p>
+        <h2 className="text-display-2 font-prose">
+          Six opinions, written down so you can disagree with them.
+        </h2>
+        <p className="prose font-ui">
+          Every default in linea-ui traces back to one of these. Each one is
+          a SASS variable or a single layer away from your own rules.
+        </p>
 
-        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@sm ln-grid--cols-4@lg ln-grid--gap-md">
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@sm ln-grid--cols-4@lg ln-grid--gap-0 bg-surface-raised border">
           {PRINCIPLES.map((p) => (
             <div key={p.number} className="ln-card">
               <div className="ln-card__eyebrow">
@@ -230,10 +229,12 @@ export default function Home() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* 4. Code showcase */}
       <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-sunken">
+        <div className="ln-section__inner">
         <div className="ln-section__header">
           <p className="ln-section__eyebrow">
             <span className="home-accent">02</span> / Markup
@@ -247,10 +248,12 @@ export default function Home() {
           </p>
         </div>
         <HomeCodeShowcase />
+        </div>
       </section>
 
       {/* 5. Rhythm */}
       <section className="ln-section ln-section--wide ln-section--space-2xl">
+        <div className="ln-section__inner">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
           <div>
             <p className="ln-section__eyebrow">
@@ -279,10 +282,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        </div>
       </section>
 
       {/* 6. Stats row */}
       <section className="ln-section ln-section--wide ln-section--space-lg ln-section--bordered">
+        <div className="ln-section__inner">
         <div className="ln-grid ln-grid--cols-2 ln-grid--cols-4@md ln-grid--gap-md home-stats">
           {STATS.map((s) => (
             <div key={s.label} className="ln-stat ln-stat--flat home-stats__item">
@@ -294,10 +299,12 @@ export default function Home() {
             </div>
           ))}
         </div>
+        </div>
       </section>
 
       {/* 7. CTA */}
       <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-inverse">
+        <div className="ln-section__inner">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
           <div>
             <h2 className="text-display-2 font-prose">Ready to build?</h2>
@@ -314,6 +321,7 @@ export default function Home() {
               View source
             </a>
           </div>
+        </div>
         </div>
       </section>
 

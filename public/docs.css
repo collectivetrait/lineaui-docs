@@ -1046,8 +1046,6 @@ h3:hover > .docs-heading-anchor,
 .home-specimen {
   outline: var(--bd1) solid var(--border);
   outline-offset: calc(-1 * var(--bd1));
-  background: var(--surface-sunken);
-  border-radius: var(--r-md);
   overflow: hidden;
 }
 
@@ -1189,7 +1187,6 @@ h3:hover > .docs-heading-anchor,
   gap: var(--s2);
   padding: var(--s1) var(--s2);
   background: var(--surface-sunken);
-  border-radius: var(--r-sm);
   outline: var(--bd1) solid var(--border);
   outline-offset: calc(-1 * var(--bd1));
   font: var(--t-body-sm-s)/var(--t-body-sm-lh) var(--f-mono);

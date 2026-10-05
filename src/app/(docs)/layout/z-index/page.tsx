@@ -111,7 +111,9 @@ export default function ZIndexPage() {
 
 <!-- Utilities always override block-level styles -->
 <div class="ln-section ln-section--space-lg border p-0">
-  <p>The p-0 utility removes the section padding.</p>
+  <div class="ln-section__inner">
+    <p>The p-0 utility removes the section padding.</p>
+  </div>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
             <div className="ln-card border mb-3">
@@ -120,7 +122,9 @@ export default function ZIndexPage() {
               </div>
             </div>
             <div className="ln-section ln-section--space-lg border p-0">
-              <p>The p-0 utility removes the section padding.</p>
+              <div className="ln-section__inner">
+                <p>The p-0 utility removes the section padding.</p>
+              </div>
             </div>
           </div>
         </div>

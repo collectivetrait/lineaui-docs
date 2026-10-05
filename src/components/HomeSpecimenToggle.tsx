@@ -12,7 +12,7 @@ export function HomeSpecimenToggle() {
   }
 
   return (
-    <button type="button" className="ln-button ln-button--ghost ln-button--sm" onClick={toggle}>
+    <button type="button" className="ln-button ln-button--outline ln-button--sm" onClick={toggle}>
       Baseline {on ? "on" : "off"}
     </button>
   );
