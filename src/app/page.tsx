@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NavbarToggle } from "@/components/NavbarToggle";
+import { SiteHeader } from "@/components/SiteHeader";
 import { GridToggle } from "@/components/GridToggle";
 import { BackToTop } from "@/components/BackToTop";
 import { PreviewGridToggles } from "@/components/PreviewGridToggles";
@@ -69,62 +69,11 @@ const FOOTER_COLS = [
 
 export default function Home() {
   return (
-    <>
+    <div className="docs-shell">
+      <SiteHeader />
       <GridToggle />
       <BackToTop />
       <PreviewGridToggles />
-
-      {/* Navbar */}
-      <nav className="ln-navbar ln-navbar--bordered ln-navbar--sticky">
-        <div className="ln-navbar__inner">
-          <Link href="/" className="ln-navbar__brand">
-            ln
-          </Link>
-          <div className="ln-navbar__nav">
-            <Link href="/getting-started" className="ln-navbar__link">
-              Docs
-            </Link>
-            <Link href="/components/button" className="ln-navbar__link">
-              Components
-            </Link>
-            <Link href="/layout/grid" className="ln-navbar__link">
-              Layout
-            </Link>
-            <Link href="/utilities/spacing" className="ln-navbar__link">
-              Utilities
-            </Link>
-          </div>
-          <div className="ln-navbar__actions">
-            <Link
-              href="/getting-started"
-              className="ln-button ln-button--sm"
-            >
-              Get Started
-            </Link>
-          </div>
-          <NavbarToggle />
-          <div className="ln-navbar__panel" aria-hidden="true">
-            <Link href="/getting-started" className="ln-navbar__link">
-              Docs
-            </Link>
-            <Link href="/components/button" className="ln-navbar__link">
-              Components
-            </Link>
-            <Link href="/layout/grid" className="ln-navbar__link">
-              Layout
-            </Link>
-            <Link href="/utilities/spacing" className="ln-navbar__link">
-              Utilities
-            </Link>
-            <Link
-              href="/getting-started"
-              className="ln-button ln-button--sm ln-button--block"
-            >
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero */}
       <section className="ln-section ln-section--space-3xl ln-section--center">
@@ -295,6 +244,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
