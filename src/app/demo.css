@@ -1,0 +1,326 @@
+/* ---------------------------------------------------------------
+   Demo infrastructure — code blocks, component demos, syntax
+   highlighting, and preview controls. Reusable across any site
+   that showcases ln components.
+   --------------------------------------------------------------- */
+
+/* --- Syntax token definitions (mapped to ln semantic tokens) --- */
+:root {
+  --syntax-keyword:     var(--primary-text);
+  --syntax-string:      var(--success-text);
+  --syntax-comment:     var(--c-muted);
+  --syntax-function:    var(--info-text);
+  --syntax-constant:    var(--warning-text);
+  --syntax-operator:    var(--c-muted);
+  --syntax-punctuation: var(--c-subtle);
+  --syntax-tag:         var(--danger-text);
+  --syntax-attribute:   var(--secondary-text);
+}
+
+/* --- Code block: highlighted code with line numbers, header, and language badge --- */
+
+.code-block {
+  position: relative;
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  background: var(--surface-sunken);
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+  margin-bottom: var(--s4);
+}
+
+.code-block:last-child {
+  margin-bottom: 0;
+}
+
+.code-block__header {
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  padding: var(--s-h) var(--s2);
+  background: color-mix(in srgb, var(--surface-sunken) 80%, var(--surface));
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+  font-family: var(--f-mono);
+  font-size: var(--t-meta-s);
+  line-height: var(--s2);
+  color: var(--c-muted);
+  letter-spacing: 0.02em;
+}
+
+.code-block__header svg {
+  width: 0.875rem;
+  height: 0.875rem;
+  flex: none;
+  color: var(--c-subtle);
+}
+
+.code-block__lang {
+  margin-left: auto;
+  font-size: 0.6875rem;
+  line-height: var(--s2);
+  color: var(--c-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.code-block__copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--c-subtle);
+}
+
+.code-block__copy:hover {
+  color: var(--text);
+}
+
+.code-block__copy svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+/* Override _code.scss's pre styles when inside .code-block */
+.code-block__body {
+  margin: 0;
+  padding: var(--s1) 0;
+  overflow: hidden;
+  text-wrap: wrap;
+  font-family: var(--f-mono);
+  font-size: 0.8125rem;
+  line-height: 0;
+  color: var(--text);
+  tab-size: 2;
+  counter-reset: line;
+  background: transparent;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.code-block__body code {
+  display: block;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.code-block__line {
+  display: block;
+  padding: 0 var(--s2) 0 2.5rem;
+  position: relative;
+  line-height: 1.5rem;
+}
+
+.code-block__line::before {
+  content: counter(line);
+  counter-increment: line;
+  position: absolute;
+  left: 0;
+  width: 1.75rem;
+  text-align: right;
+  color: var(--c-disabled);
+  font-variant-numeric: tabular-nums;
+  user-select: none;
+  pointer-events: none;
+}
+
+.code-block__line--highlight {
+  background: color-mix(in srgb, var(--primary) 10%, transparent);
+  box-shadow: inset 3px 0 0 var(--primary-text);
+}
+
+/* --- Component demo: code block + live preview grouped together --- */
+
+.component-demo {
+  border-radius: var(--r-sm);
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+  margin-bottom: var(--s4);
+}
+
+.component-demo:last-child {
+  margin-bottom: 0;
+}
+
+.component-demo__preview {
+  position: static;
+  background: var(--surface);
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+  border-radius: 0 0 var(--r-sm) var(--r-sm);
+}
+
+.component-demo__preview-inner {
+  position: relative;
+  padding: var(--s3);
+}
+
+.component-demo__preview-sizer--full {
+  width: 100%;
+}
+
+.component-demo__preview-sizer--narrow {
+  max-width: 500px;
+}
+
+.component-demo__preview-sizer--xs {
+  max-width: 320px;
+}
+
+.component-demo__preview-sizer--sm {
+  max-width: 400px;
+}
+
+.component-demo .code-block {
+  position: static;
+  border-radius: var(--r-sm) var(--r-sm) 0 0;
+  margin-bottom: 0;
+  outline: 0;
+}
+
+/* --- Preview diagnostic toolbar --- */
+
+.preview-diagnostic {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding-top: var(--s1);
+}
+
+.preview-grid-toggle {
+  display: inline-flex;
+  color: var(--c-muted);
+  cursor: pointer;
+}
+
+.preview-grid-toggle svg {
+  width: 14px;
+  height: 14px;
+}
+
+.preview-grid-toggle:hover {
+  color: var(--text);
+}
+
+.preview-grid-toggle[aria-pressed="true"] {
+  color: var(--primary-text);
+}
+
+/* --- Floating utility buttons: force circles --- */
+
+.grid-toggle {
+  border-radius: 50%;
+}
+
+/* --- Syntax token colors (scoped to .code-block to avoid polluting prose specimens) --- */
+
+.code-block .hljs-keyword,
+.code-block .hljs-selector-tag,
+.code-block .hljs-built_in,
+.code-block .hljs-type,
+.code-block .hljs-meta .hljs-keyword {
+  color: var(--syntax-keyword);
+}
+
+.code-block .hljs-string,
+.code-block .hljs-regexp,
+.code-block .hljs-addition,
+.code-block .hljs-template-variable {
+  color: var(--syntax-string);
+}
+
+.code-block .hljs-comment,
+.code-block .hljs-doctag,
+.code-block .hljs-quote {
+  color: var(--syntax-comment);
+  font-style: italic;
+}
+
+.code-block .hljs-title,
+.code-block .hljs-title\.function_,
+.code-block .hljs-section {
+  color: var(--syntax-function);
+}
+
+.code-block .hljs-number,
+.code-block .hljs-literal,
+.code-block .hljs-variable\.constant_,
+.code-block .hljs-symbol,
+.code-block .hljs-link {
+  color: var(--syntax-constant);
+}
+
+.code-block .hljs-operator,
+.code-block .hljs-deletion {
+  color: var(--syntax-operator);
+}
+
+.code-block .hljs-punctuation {
+  color: var(--syntax-punctuation);
+}
+
+.code-block .hljs-tag,
+.code-block .hljs-name {
+  color: var(--syntax-tag);
+}
+
+.code-block .hljs-attr,
+.code-block .hljs-attribute,
+.code-block .hljs-property {
+  color: var(--syntax-attribute);
+}
+
+.code-block .hljs-variable,
+.code-block .hljs-params {
+  color: var(--text);
+}
+
+.code-block .hljs-meta {
+  color: var(--c-muted);
+}
+
+.code-block .hljs-emphasis { font-style: italic; }
+.code-block .hljs-strong   { font-weight: 600; }
+
+/* --- Placeholder blocks for demos (stands in for real images) --- */
+
+.docs-placeholder {
+  background-color: var(--border);
+  width: 100%;
+}
+
+.docs-placeholder--4x3 {
+  aspect-ratio: 4/3;
+}
+
+.docs-placeholder--square {
+  aspect-ratio: 1;
+}
+
+.docs-placeholder--fill {
+  height: 100%;
+}
+
+/* --- Gallery placeholder images --- */
+
+.docs-gallery-img {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: grid;
+  place-items: center;
+  font: 600 1.5rem/1 var(--f-ui);
+  color: var(--c-subtle);
+}
+
+.docs-gallery-img--1 { background-color: color-mix(in srgb, var(--primary) 20%, var(--surface-sunken)); }
+.docs-gallery-img--2 { background-color: color-mix(in srgb, var(--success) 20%, var(--surface-sunken)); }
+.docs-gallery-img--3 { background-color: color-mix(in srgb, var(--warning) 20%, var(--surface-sunken)); }
