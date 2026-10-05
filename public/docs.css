@@ -965,41 +965,187 @@
 
 /* --- Home page --- */
 
-.home-hero-code {
-  margin: 0;
-  padding: var(--s3);
-  background: var(--surface-sunken);
-  border-radius: var(--r-sm);
-  outline: var(--bd1) solid var(--border);
-  outline-offset: calc(-1 * var(--bd1));
-  overflow-x: auto;
-  font: var(--t-body-sm-s)/var(--t-body-sm-lh) var(--f-mono);
-  color: var(--c-muted);
+/* 1. home-accent — purple accent color for highlighted words */
+.home-accent {
+  color: var(--primary-text);
 }
 
-.home-code-block {
+/* 2. home-specimen — hero specimen panel container */
+.home-specimen {
+  outline: var(--bd1) solid var(--border);
+  outline-offset: calc(-1 * var(--bd1));
+  background: var(--surface-sunken);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+/* 3. home-specimen__header — specimen header bar */
+.home-specimen__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--s1) var(--s2);
+  font: var(--t-meta-s)/var(--t-meta-lh) var(--f-mono);
+  color: var(--c-muted);
+  border-bottom: var(--bd1) solid var(--border);
+}
+
+/* 4. home-specimen__body — specimen body with stacked components */
+.home-specimen__body {
   display: flex;
   flex-direction: column;
+  gap: var(--s2);
+  padding: var(--s3);
 }
 
-.home-code-block .home-hero-code {
-  flex: 1;
+/* 5. home-ticker — ticker band overflow/color handling */
+.home-ticker {
+  overflow: hidden;
+  color: var(--on-primary);
+  white-space: nowrap;
 }
 
-.home-code-preview {
+/* 6. home-principle__header — card eyebrow flex layout */
+.home-principle__header {
   display: flex;
-  align-items: flex-start;
-  padding: var(--s4);
-  background: var(--surface-sunken);
-  border-radius: var(--r-sm);
-  outline: var(--bd1) solid var(--border);
-  outline-offset: calc(-1 * var(--bd1));
-}
-
-.home-code-preview > * {
+  justify-content: space-between;
+  align-items: baseline;
   width: 100%;
 }
 
+/* 7. home-principle__number — purple number in card header */
+.home-principle__number {
+  font: var(--t-body-sm-s)/var(--t-body-sm-lh) var(--f-mono);
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+/* 8. home-principle__accent — small purple dash at card bottom */
+.home-principle__accent::after {
+  content: "";
+  display: block;
+  width: var(--s3);
+  height: 2px;
+  margin-top: var(--s2);
+  background: var(--primary);
+}
+
+/* 9. home-showcase__panel — code showcase 2-col grid */
+.home-showcase__panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  outline: var(--bd1) solid var(--border);
+  outline-offset: calc(-1 * var(--bd1));
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+
+@media (max-width: 48rem) {
+  .home-showcase__panel {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 10. home-showcase__preview — live preview area */
+.home-showcase__preview {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--s4);
+  background: var(--surface);
+}
+
+.home-showcase__preview > * {
+  width: 100%;
+}
+
+/* The code side needs flush code block — remove its border-radius and margin */
+.home-showcase__panel .code-block {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* 11. home-specimen-row — type specimen row */
+.home-specimen-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--s3);
+  padding: var(--s2) 0;
+  border-top: var(--bd1) solid var(--border);
+}
+
+.home-specimen-row:first-child {
+  border-top: none;
+}
+
+/* 12. home-specimen-meta — measurement labels */
+.home-specimen-meta {
+  flex: 0 0 5rem;
+  font: var(--t-meta-s)/var(--t-meta-lh) var(--f-mono);
+  color: var(--c-muted);
+  text-align: right;
+}
+
+/* 13. home-specimen-sample — sample text container */
+.home-specimen-sample {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* home-stats__item — vertical border between stats */
+.home-stats__item + .home-stats__item {
+  border-left: var(--bd1) solid var(--border);
+  padding-left: var(--s3);
+}
+
+/* home-install — install command bar */
+.home-install {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  padding: var(--s1) var(--s2);
+  background: var(--surface-sunken);
+  border-radius: var(--r-sm);
+  outline: var(--bd1) solid var(--border);
+  outline-offset: calc(-1 * var(--bd1));
+  font: var(--t-body-sm-s)/var(--t-body-sm-lh) var(--f-mono);
+  color: var(--c-muted);
+  max-width: max-content;
+}
+
+.home-install__prompt {
+  color: var(--c-subtle);
+  user-select: none;
+}
+
+.home-install__command {
+  flex: 1;
+  color: var(--text);
+}
+
+/* Responsive: scale display text on small screens */
+@media (max-width: 48rem) {
+  .text-display-1 {
+    font-size: var(--t-display-2-s);
+    line-height: var(--t-display-2-lh);
+  }
+  .text-display-2 {
+    font-size: var(--t-h1-s);
+    line-height: var(--t-h1-lh);
+  }
+
+  .home-specimen-meta {
+    flex: 0 0 4rem;
+    font-size: 0.625rem;
+  }
+
+  .home-stats__item + .home-stats__item {
+    border-left: none;
+  }
+}
+
+/* ln-site-footer padding */
 .ln-site-footer__inner {
   padding: var(--s4) var(--gutter);
 }

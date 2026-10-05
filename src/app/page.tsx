@@ -3,49 +3,65 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { GridToggle } from "@/components/GridToggle";
 import { BackToTop } from "@/components/BackToTop";
 import { PreviewGridToggles } from "@/components/PreviewGridToggles";
+import { HomeInstallBar } from "@/components/HomeInstallBar";
+import { HomeSpecimenToggle } from "@/components/HomeSpecimenToggle";
+import { HomeBaselineToggle } from "@/components/HomeBaselineToggle";
+import { HomeCodeShowcase } from "@/components/HomeCodeShowcase";
 
-const FEATURES = [
+const PRINCIPLES = [
   {
-    title: "Zero-class typography",
-    body: "Semantic HTML gets beautiful defaults out of the box. Headings, paragraphs, lists, and tables look right without a single class name.",
+    number: "01",
+    code: ".ln-*",
+    title: "Minimalism",
+    body: "Each component ships the styles it needs and nothing more. Fewer decisions to undo when your design takes over.",
   },
   {
-    title: "8px / 24px rhythm grid",
-    body: "Every size, space, and line-height token snaps to an 8px base grid. Vertical rhythm flows from a 24px line grid.",
+    number: "02",
+    code: ".__element",
+    title: "Readability",
+    body: "BEM class names describe what an element is. Your markup stays legible six months later, for you and for whoever comes next.",
   },
   {
-    title: "Configurable prefix",
-    body: "The ln- class prefix is a Sass variable. Override it to avoid conflicts with any existing styles or libraries.",
+    number: "03",
+    code: "<h1> <p> <table>",
+    title: "Ease of use",
+    body: "Link one stylesheet and write semantic HTML. Headings, lists and tables look right before you add a single class.",
   },
   {
-    title: "CSS cascade layers",
-    body: "Seven layers give you predictable specificity: reset, tokens, base, layout, blocks, helpers, utilities. Override any rule without fighting specificity wars.",
+    number: "04",
+    code: ":focus-visible",
+    title: "Accessibility",
+    body: "Contrast-checked tokens, visible focus rings and scripts that respect keyboard users and reduced motion settings.",
   },
   {
-    title: "OS-aware dark mode",
-    body: "Colour tokens use light-dark() so they follow the OS automatically. Toggle per-page with a data-theme attribute.",
+    number: "05",
+    code: "Score",
+    title: "Small footprint",
+    body: "Import modules one by one through SASS @use. The JS layer is optional and lives only where markup asks for it.",
   },
   {
-    title: "Modular SCSS",
-    body: "Import only what you need via Sass @use. No global namespace pollution, no deprecated @import chains.",
+    number: "06",
+    code: "8px / 24px",
+    title: "Vertical rhythm",
+    body: "Every size and space snaps to an 8px grid, and text flows on a 24px baseline. Pages line up without manual nudging.",
   },
 ];
 
 const STATS = [
-  { label: "Minified CSS", value: "165", unit: "KB" },
+  { label: "CSS, min + gzip", value: "XX", unit: "KB" },
+  { label: "JS, min + gzip", value: "XX", unit: "KB" },
   { label: "Components", value: "30+" },
-  { label: "JS required", value: "Zero" },
-  { label: "Cascade layers", value: "7" },
+  { label: "Base unit", value: "8", unit: "px" },
 ];
 
 const FOOTER_COLS = [
   {
     heading: "Library",
     links: [
-      { label: "Getting Started", href: "/getting-started" },
+      { label: "Getting started", href: "/getting-started" },
       { label: "Principles", href: "/getting-started/principles" },
-      { label: "BEM", href: "/getting-started/bem" },
-      { label: "Vertical Rhythm", href: "/getting-started/vertical-rhythm" },
+      { label: "BEM conventions", href: "/getting-started/bem" },
+      { label: "Vertical rhythm", href: "/getting-started/vertical-rhythm" },
     ],
   },
   {
@@ -54,17 +70,37 @@ const FOOTER_COLS = [
       { label: "Foundation", href: "/foundation/typography" },
       { label: "Layout", href: "/layout/grid" },
       { label: "Components", href: "/components/button" },
-      { label: "Utilities", href: "/utilities/spacing" },
+      { label: "JavaScript modules", href: "/components/button" },
     ],
   },
   {
     heading: "Resources",
     links: [
       { label: "Customization", href: "/getting-started/customization" },
-      { label: "Patterns", href: "/patterns/dashboard" },
+      { label: "Accessibility notes", href: "/getting-started/principles" },
+      { label: "Changelog", href: "#" },
       { label: "GitHub", href: "https://github.com" },
     ],
   },
+];
+
+const SPECIMEN_ROWS = [
+  { size: "80", lh: "96", text: "Display", className: "text-display-1" },
+  { size: "40", lh: "48", text: "Heading one", className: "h1" },
+  { size: "32", lh: "48", text: "Heading two", className: "h2 fs-italic" },
+  {
+    size: "20",
+    lh: "24",
+    text: "Heading three, set in the sans",
+    className: "h3 font-ui fw-semibold",
+  },
+  {
+    size: "16",
+    lh: "24",
+    text: "Body copy runs on a 24px line. Paragraph spacing is one full line, so a page of mixed content keeps its cadence from top to bottom.",
+    className: "",
+  },
+  { size: "12", lh: "16", text: "CAPTION AND MONO LABELS", className: "h6" },
 ];
 
 export default function Home() {
@@ -75,141 +111,204 @@ export default function Home() {
       <BackToTop />
       <PreviewGridToggles />
 
-      {/* Hero */}
-      <section className="ln-section ln-section--space-3xl ln-section--center">
-        <div>
-          <span className="ln-badge ln-badge--primary ln-badge--solid">
-            v0.1
-          </span>
-        </div>
-        <header className="ln-page-header ln-page-header--hero ln-page-header--center">
-          <p className="ln-page-header__eyebrow">
-            SCSS / BEM / Cascade Layers
-          </p>
-          <h1 className="ln-page-header__title">
-            Build interfaces with rhythm.
-          </h1>
-          <p className="ln-page-header__lead">
-            ln is a CSS library built on an 8px grid, cascade layers, and
-            semantic HTML. No framework lock-in. No build magic required.
-            Just clean, predictable styles.
-          </p>
-          <div className="ln-page-header__actions">
-            <Link
-              href="/getting-started"
-              className="ln-button ln-button--lg"
-            >
-              Get Started
-            </Link>
-            <a
-              href="https://github.com"
-              className="ln-button ln-button--outline ln-button--lg"
-            >
-              View on GitHub
-            </a>
+      {/* 1. Hero */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl">
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
+          <div>
+            <div className="mb-2">
+              <span className="ln-badge ln-badge--success">
+                <span className="ln-badge__dot" />
+                v0.1 preview
+              </span>
+            </div>
+            <p className="ln-section__eyebrow">BEM / Vertical rhythm / Cascade layers</p>
+            <h1 className="text-display-1 font-prose mb-3">
+              Interfaces that keep the{" "}
+              <em className="home-accent fs-italic">beat</em>.
+            </h1>
+            <p className="mb-3">
+              linea-ui is a small CSS and JS library built on BEM naming and an
+              8px vertical rhythm. Readable class names, accessible defaults and
+              a footprint you can reason about.
+            </p>
+            <div className="ln-cluster ln-cluster--gap-sm mb-3">
+              <Link href="/getting-started" className="ln-button ln-button--lg">
+                Get started &rarr;
+              </Link>
+              <Link href="/components/button" className="ln-button ln-button--outline ln-button--lg">
+                Explore components
+              </Link>
+            </div>
+            <HomeInstallBar />
           </div>
-        </header>
+
+          <div className="home-specimen" id="home-specimen">
+            <div className="home-specimen__header">
+              <span>specimen.html</span>
+              <HomeSpecimenToggle />
+            </div>
+            <div className="home-specimen__body">
+              <div className="ln-alert ln-alert--success">
+                <div className="ln-alert__content">
+                  <p className="ln-alert__body">Saved. <code>ln-alert--success</code></p>
+                </div>
+              </div>
+              <div className="ln-field">
+                <label className="ln-field__label">Email address</label>
+                <div className="ln-field__control">
+                  <input type="email" defaultValue="ada@example.com" readOnly />
+                </div>
+              </div>
+              <div className="ln-cluster ln-cluster--gap-sm">
+                <span className="ln-button">Subscribe</span>
+                <span className="ln-button ln-button--outline">Cancel</span>
+              </div>
+              <div className="ln-card">
+                <h3 className="ln-card__title">Card title</h3>
+                <div className="ln-card__body">
+                  <p>
+                    Every block above sits on the same 24px line. Toggle the
+                    baseline to check.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
-      {/* Feature grid */}
-      <section className="ln-section ln-section--space-xl ln-section--surface-sunken">
-        <header className="ln-section__header">
-          <p className="ln-section__eyebrow">Why ln</p>
-          <h2 className="ln-section__title">Designed for clarity</h2>
-        </header>
-        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@sm ln-grid--cols-3@md ln-grid--gap-md">
-          {FEATURES.map((f) => (
-            <div key={f.title} className="ln-card">
-              <h3 className="ln-card__title">{f.title}</h3>
-              <div className="ln-card__body">
-                <p>{f.body}</p>
+      {/* 2. Ticker band */}
+      <div className="bg-primary py-3 home-ticker" aria-hidden="true">
+        <div className="ln-cluster ln-cluster--justify-center ln-cluster--gap-md ln-cluster--nowrap">
+          <span className="text-display-2 font-prose text-inverse">Ease of use</span>
+          <span className="text-display-2 font-prose text-inverse">/</span>
+          <span className="text-display-2 font-prose text-inverse fs-italic">Accessibility</span>
+          <span className="text-display-2 font-prose text-inverse">/</span>
+          <span className="text-display-2 font-prose text-inverse">Small footprint</span>
+          <span className="text-display-2 font-prose text-inverse">/</span>
+          <span className="text-display-2 font-prose text-inverse fs-italic">Vertical rhythm</span>
+          <span className="text-display-2 font-prose text-inverse">/</span>
+          <span className="text-display-2 font-prose text-inverse">Minimalism</span>
+        </div>
+      </div>
+
+      {/* 3. Principles */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl">
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-5@md ln-grid--gap-lg mb-4">
+          <div className="ln-grid__item ln-grid__item--span-3@md">
+            <p className="ln-section__eyebrow">
+              <span className="home-accent">01</span> / Principles
+            </p>
+            <h2 className="text-display-2 font-prose">
+              Six opinions, written down so you can disagree with them.
+            </h2>
+          </div>
+          <div className="ln-grid__item ln-grid__item--span-2@md align-self-end">
+            <p>
+              Every default in linea-ui traces back to one of these. Each one is
+              a SASS variable or a single layer away from your own rules.
+            </p>
+          </div>
+        </div>
+
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@sm ln-grid--cols-4@lg ln-grid--gap-md">
+          {PRINCIPLES.map((p) => (
+            <div key={p.number} className="ln-card">
+              <div className="ln-card__eyebrow">
+                <div className="home-principle__header">
+                  <span className="home-principle__number">{p.number}</span>
+                  <code>{p.code}</code>
+                </div>
+              </div>
+              <h3 className="ln-card__title">{p.title}</h3>
+              <div className="ln-card__body home-principle__accent">
+                <p>{p.body}</p>
               </div>
             </div>
           ))}
         </div>
       </section>
 
-      {/* Code showcase */}
-      <section className="ln-section ln-section--space-xl">
-        <header className="ln-section__header ln-section--center">
-          <p className="ln-section__eyebrow">Markup</p>
-          <h2 className="ln-section__title">
-            Minimal markup, maximum clarity
+      {/* 4. Code showcase */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-sunken">
+        <div className="ln-section__header">
+          <p className="ln-section__eyebrow">
+            <span className="home-accent">02</span> / Markup
+          </p>
+          <h2 className="text-display-2 font-prose">
+            Class names that read like documentation.
           </h2>
           <p className="ln-section__lead">
-            BEM class names read like documentation. No utility soup, no
-            magic incantations.
+            Block, element, modifier. Pick a component and read its markup next
+            to the result.
           </p>
-        </header>
+        </div>
+        <HomeCodeShowcase />
+      </section>
+
+      {/* 5. Rhythm */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
-          <div className="home-code-block">
-            <pre className="home-hero-code">
-              <code>{`<div class="ln-card">
-  <h3 class="ln-card__title">
-    Card title
-  </h3>
-  <div class="ln-card__body">
-    <p>Card content goes here.</p>
-  </div>
-  <div class="ln-card__actions">
-    <a class="ln-button" href="#">
-      Action
-    </a>
-  </div>
-</div>`}</code>
-            </pre>
+          <div>
+            <p className="ln-section__eyebrow">
+              <span className="home-accent">03</span> / Rhythm
+            </p>
+            <h2 className="text-display-2 font-prose mb-3">
+              Everything lands on the line.
+            </h2>
+            <p className="mb-3">
+              Type sizes, margins and component heights resolve to multiples of
+              one base unit. Line heights step in 8px increments, so every block
+              starts where the grid expects it.
+            </p>
+            <HomeBaselineToggle />
           </div>
-          <div className="home-code-preview">
-            <div className="ln-card">
-              <h3 className="ln-card__title">Card title</h3>
-              <div className="ln-card__body">
-                <p>Card content goes here.</p>
+          <div id="home-rhythm">
+            {SPECIMEN_ROWS.map((row) => (
+              <div key={row.size + row.text} className="home-specimen-row">
+                <div className="home-specimen-meta">
+                  {row.size} / {row.lh}
+                </div>
+                <div className={`home-specimen-sample ${row.className}`}>
+                  {row.text}
+                </div>
               </div>
-              <div className="ln-card__actions">
-                <span className="ln-button">Action</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Stats row */}
-      <section className="ln-section ln-section--space-lg ln-section--surface-sunken ln-section--bordered">
+      {/* 6. Stats row */}
+      <section className="ln-section ln-section--wide ln-section--space-lg ln-section--bordered">
         <div className="ln-grid ln-grid--cols-2 ln-grid--cols-4@md ln-grid--gap-md">
           {STATS.map((s) => (
-            <div key={s.label} className="ln-stat ln-stat--flat">
+            <div key={s.label} className="ln-stat ln-stat--flat home-stats__item">
               <span className="ln-stat__label">{s.label}</span>
               <span className="ln-stat__value">
                 {s.value}
-                {s.unit && (
-                  <span className="ln-stat__unit">{s.unit}</span>
-                )}
+                {s.unit && <span className="ln-stat__unit">{s.unit}</span>}
               </span>
             </div>
           ))}
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="ln-section ln-section--space-2xl ln-section--center ln-section--surface-inverse">
-        <div className="ln-page-header ln-page-header--center">
-          <h2 className="ln-page-header__title">Ready to build?</h2>
-          <p className="ln-page-header__lead">
-            Get up and running in minutes. Install the library, link the
-            stylesheet, and start writing semantic HTML.
-          </p>
-          <div className="ln-page-header__actions">
-            <Link
-              href="/getting-started"
-              className="ln-button ln-button--lg"
-            >
-              Get Started
+      {/* 7. CTA */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-inverse">
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
+          <div>
+            <h2 className="text-display-2 font-prose">Ready to build?</h2>
+            <p className="mt-2">
+              Install the package, link the stylesheet and start writing semantic
+              HTML. Reach for the JS modules only when a component needs them.
+            </p>
+          </div>
+          <div className="ln-cluster ln-cluster--justify-end@md ln-cluster--gap-sm align-self-center">
+            <Link href="/getting-started" className="ln-button ln-button--lg">
+              Read the docs
             </Link>
-            <a
-              href="https://github.com"
-              className="ln-button ln-button--ghost ln-button--lg"
-            >
-              View Source
+            <a href="https://github.com" className="ln-button ln-button--outline ln-button--lg">
+              View source
             </a>
           </div>
         </div>
@@ -225,10 +324,7 @@ export default function Home() {
                 <ul className="ln-site-footer__links">
                   {col.links.map((link) => (
                     <li key={link.label}>
-                      <Link
-                        href={link.href}
-                        className="ln-site-footer__link"
-                      >
+                      <Link href={link.href} className="ln-site-footer__link">
                         {link.label}
                       </Link>
                     </li>
@@ -239,7 +335,7 @@ export default function Home() {
           </div>
           <div className="ln-site-footer__bottom">
             <p className="ln-site-footer__legal">
-              Built with ln. MIT License.
+              Built with linea-ui. MIT License.
             </p>
           </div>
         </div>
