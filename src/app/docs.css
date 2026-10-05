@@ -19,7 +19,7 @@
   padding-inline: 1.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: var(--s2);
   height: 48px;
 }
 
@@ -303,6 +303,154 @@
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.01em;
+}
+
+/* --- Main nav links (desktop) --- */
+
+.docs-shell__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--s-h);
+}
+
+.docs-shell__nav-link {
+  font-family: var(--f-ui);
+  font-size: var(--t-body-sm-s);
+  line-height: var(--t-body-sm-lh);
+  font-weight: 500;
+  color: var(--c-muted);
+  text-decoration: none;
+  padding: var(--s1) var(--s2);
+  transition: color var(--dur-fast) var(--e-standard);
+}
+
+.docs-shell__nav-link:hover {
+  color: var(--text);
+}
+
+/* --- Header actions (search, GitHub, theme toggle) --- */
+
+.docs-shell__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  margin-left: auto;
+}
+
+.docs-shell__search {
+  width: 160px;
+  height: 28px;
+  padding: 0 var(--s2);
+  font-size: var(--t-body-xs-s);
+  background: var(--surface-sunken);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  color: var(--text);
+}
+
+.docs-shell__search::placeholder {
+  color: var(--c-muted);
+}
+
+.docs-shell__github {
+  display: inline-flex;
+  align-items: center;
+  color: var(--c-muted);
+  transition: color var(--dur-fast) var(--e-standard);
+}
+
+.docs-shell__github:hover {
+  color: var(--text);
+}
+
+.docs-shell__github svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* --- Nav toggle button (mobile only, distinct from sidebar toggle) --- */
+
+.docs-nav-toggle {
+  display: none;
+  place-items: center;
+  width: var(--s4);
+  height: var(--s4);
+  padding: 0;
+  border: none;
+  border-radius: var(--r-sm);
+  background: transparent;
+  color: var(--c-muted);
+  cursor: pointer;
+}
+
+.docs-nav-toggle svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.docs-nav-toggle:hover {
+  color: var(--text);
+  background: var(--surface-raised);
+}
+
+/* --- Mobile nav panel (dropdown below header) --- */
+
+.docs-shell__nav-panel {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .docs-shell__nav {
+    display: none;
+  }
+
+  .docs-shell__search {
+    display: none;
+  }
+
+  .docs-nav-toggle {
+    display: inline-grid;
+  }
+
+  .docs-shell[data-nav="open"] .docs-shell__nav-panel {
+    display: block;
+    padding: var(--s2) 1.5rem var(--s3);
+    border-top: 1px solid var(--border);
+  }
+
+  .docs-shell__nav-panel-link {
+    display: block;
+    padding: var(--s2) var(--s3);
+    font-family: var(--f-ui);
+    font-size: var(--t-body-sm-s);
+    line-height: var(--t-body-sm-lh);
+    font-weight: 500;
+    color: var(--c-muted);
+    text-decoration: none;
+    border-radius: var(--r-md);
+  }
+
+  .docs-shell__nav-panel-link:hover {
+    color: var(--text);
+    background: var(--surface-raised);
+  }
+
+  .docs-shell__nav-panel-search {
+    display: block;
+    width: 100%;
+    height: 36px;
+    margin-top: var(--s2);
+    padding: 0 var(--s2);
+    font-size: var(--t-body-sm-s);
+    background: var(--surface-sunken);
+    border: 1px solid var(--border);
+    border-radius: var(--r-sm);
+    color: var(--text);
+  }
+
+  .docs-shell__nav-panel-search::placeholder {
+    color: var(--c-muted);
+  }
 }
 
 /* --- Prose specimen wrapper --- */
