@@ -48,9 +48,9 @@ const PRINCIPLES = [
 ];
 
 const STATS = [
-  { label: "CSS, min + gzip", value: "XX", unit: "KB" },
-  { label: "JS, min + gzip", value: "XX", unit: "KB" },
-  { label: "Components", value: "30+" },
+  { label: "CSS, min + gzip", value: "[XX]", unit: "KB" },
+  { label: "JS, min + gzip", value: "[XX]", unit: "KB" },
+  { label: "Components", value: "[NN]" },
   { label: "Base unit", value: "8", unit: "px" },
 ];
 
@@ -105,7 +105,7 @@ const SPECIMEN_ROWS = [
 
 export default function Home() {
   return (
-    <div className="docs-shell">
+    <div className="docs-shell home-full-width">
       <SiteHeader />
       <GridToggle />
       <BackToTop />
@@ -149,6 +149,9 @@ export default function Home() {
             </div>
             <div className="home-specimen__body">
               <div className="ln-alert ln-alert--success">
+                <svg className="ln-alert__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
                 <div className="ln-alert__content">
                   <p className="ln-alert__body">Saved. <code>ln-alert--success</code></p>
                 </div>
@@ -280,7 +283,7 @@ export default function Home() {
 
       {/* 6. Stats row */}
       <section className="ln-section ln-section--wide ln-section--space-lg ln-section--bordered">
-        <div className="ln-grid ln-grid--cols-2 ln-grid--cols-4@md ln-grid--gap-md">
+        <div className="ln-grid ln-grid--cols-2 ln-grid--cols-4@md ln-grid--gap-md home-stats">
           {STATS.map((s) => (
             <div key={s.label} className="ln-stat ln-stat--flat home-stats__item">
               <span className="ln-stat__label">{s.label}</span>

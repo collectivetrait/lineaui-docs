@@ -16,7 +16,7 @@ const TABS = [
     <p>Card content goes here.</p>
   </div>
   <div class="ln-card__actions">
-    <a class="ln-button" href="#">
+    <a class="ln-button ln-button--primary" href="#">
       Action
     </a>
   </div>
@@ -28,7 +28,7 @@ const TABS = [
           <p>Card content goes here.</p>
         </div>
         <div className="ln-card__actions">
-          <span className="ln-button">Action</span>
+          <span className="ln-button ln-button--primary">Action</span>
         </div>
       </article>
     ),

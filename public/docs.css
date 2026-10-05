@@ -965,6 +965,11 @@
 
 /* --- Home page --- */
 
+/* Full-width override for home page sections */
+.home-full-width {
+  --container-wide: 100%;
+}
+
 /* 1. home-accent — purple accent color for highlighted words */
 .home-accent {
   color: var(--primary-text);
@@ -1028,6 +1033,11 @@
   height: 2px;
   margin-top: var(--s2);
   background: var(--primary);
+}
+
+/* Card eyebrow code — preserve original case */
+.ln-card__eyebrow code {
+  text-transform: none;
 }
 
 /* 9. home-showcase__panel — code showcase 2-col grid */
@@ -1099,6 +1109,12 @@
   padding-left: var(--s3);
 }
 
+/* Stat values — larger on home page */
+.home-stats .ln-stat__value {
+  font-size: var(--t-h1-s);
+  line-height: var(--t-h1-lh);
+}
+
 /* home-install — install command bar */
 .home-install {
   display: flex;
@@ -1142,6 +1158,11 @@
 
   .home-stats__item + .home-stats__item {
     border-left: none;
+  }
+
+  .home-stats .ln-stat__value {
+    font-size: var(--t-h2-s);
+    line-height: var(--t-h2-lh);
   }
 }
 
