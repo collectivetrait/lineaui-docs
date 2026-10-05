@@ -1,8 +1,4 @@
 import type { Metadata } from "next";
-import "ln/dist/styles.css";
-import "./demo.css";
-import "./docs.css";
-import { DocShell } from "@/components/DocShell";
 
 export const metadata: Metadata = {
   title: "ln — UI Library",
@@ -16,9 +12,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <DocShell>{children}</DocShell>
-      </body>
+      <head>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="stylesheet" href="/docs.css" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
