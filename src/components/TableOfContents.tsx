@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { NAV } from "@/data/nav";
 
 interface Heading {
   id: string;
@@ -16,6 +17,15 @@ function slugify(text: string): string {
     .replace(/(^-|-$)/g, "");
 }
 
+function findSectionGroup(pathname: string): string | null {
+  for (const section of NAV) {
+    for (const link of section.links) {
+      if (link.href === pathname) return section.group;
+    }
+  }
+  return null;
+}
+
 export function TableOfContents() {
   const pathname = usePathname();
   const [headings, setHeadings] = useState<Heading[]>([]);
@@ -24,10 +34,20 @@ export function TableOfContents() {
   useEffect(() => {
     setActiveId("");
 
-    // Defer scan until the new page content has committed to the DOM
     const timer = setTimeout(() => {
       const content = document.querySelector(".docs-page-content");
       if (!content) return;
+
+      const h1 = content.querySelector("h1");
+      if (h1 && !h1.parentElement?.querySelector(".docs-breadcrumb")) {
+        const group = findSectionGroup(pathname);
+        if (group) {
+          const crumb = document.createElement("p");
+          crumb.className = "docs-breadcrumb";
+          crumb.textContent = group;
+          h1.parentElement!.insertBefore(crumb, h1);
+        }
+      }
 
       const elements = Array.from(content.querySelectorAll("h2, h3")).filter(
         (el) =>
@@ -36,8 +56,21 @@ export function TableOfContents() {
       );
 
       const usedIds = new Set<string>();
+      let h2Counter = 0;
       const items: Heading[] = elements.map((el) => {
-        const text = el.textContent ?? "";
+        let rawText = "";
+        el.childNodes.forEach((node) => {
+          if (node.nodeType === Node.TEXT_NODE) rawText += node.textContent;
+          else if (
+            node.nodeType === Node.ELEMENT_NODE &&
+            !(node as Element).classList.contains("docs-section-number") &&
+            !(node as Element).classList.contains("docs-heading-anchor")
+          ) {
+            rawText += (node as Element).textContent;
+          }
+        });
+        const text = rawText.trim();
+
         let id = el.id || slugify(text);
         if (usedIds.has(id)) {
           let n = 2;
@@ -46,6 +79,26 @@ export function TableOfContents() {
         }
         usedIds.add(id);
         el.id = id;
+
+        if (el.tagName === "H2") {
+          h2Counter++;
+          if (!el.querySelector(".docs-section-number")) {
+            const num = document.createElement("span");
+            num.className = "docs-section-number";
+            num.textContent = String(h2Counter).padStart(2, "0");
+            el.insertBefore(num, el.firstChild);
+          }
+        }
+
+        if (!el.querySelector(".docs-heading-anchor")) {
+          const anchor = document.createElement("a");
+          anchor.className = "docs-heading-anchor";
+          anchor.href = `#${id}`;
+          anchor.textContent = "#";
+          anchor.setAttribute("aria-label", `Link to ${text}`);
+          el.appendChild(anchor);
+        }
+
         return { id, text, level: el.tagName === "H2" ? 2 : 3 };
       });
 
@@ -69,6 +122,15 @@ export function TableOfContents() {
     return () => clearTimeout(timer);
   }, [pathname]);
 
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      history.pushState(null, "", `#${id}`);
+    }
+  };
+
   if (headings.length === 0) return null;
 
   return (
@@ -83,6 +145,7 @@ export function TableOfContents() {
             <a
               href={`#${h.id}`}
               className={activeId === h.id ? "docs-toc__link is-active" : "docs-toc__link"}
+              onClick={(e) => handleClick(e, h.id)}
             >
               {h.text}
             </a>

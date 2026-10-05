@@ -196,6 +196,25 @@
   padding-top: var(--s1);
 }
 
+.preview-rhythm-check {
+  display: flex;
+  align-items: center;
+  gap: var(--s1);
+  padding: var(--s-h) var(--s1);
+  background: var(--surface-sunken);
+  outline: 1px solid var(--border);
+  outline-offset: -1px;
+  border-radius: var(--r-sm);
+}
+
+.preview-rhythm-check__label {
+  font-family: var(--f-mono);
+  font-size: var(--t-meta-s);
+  line-height: var(--t-meta-lh);
+  color: var(--c-muted);
+  white-space: nowrap;
+}
+
 .preview-grid-toggle {
   display: inline-flex;
   color: var(--c-muted);
@@ -290,6 +309,49 @@
 
 .code-block .hljs-emphasis { font-style: italic; }
 .code-block .hljs-strong   { font-weight: 600; }
+
+/* --- Scroll offset for navbar --- */
+
+.docs-page-content h2[id],
+.docs-page-content h3[id] {
+  scroll-margin-top: calc(48px + var(--s3));
+}
+
+/* --- Section number indicators --- */
+
+.docs-section-number {
+  font-family: var(--f-mono);
+  font-size: var(--t-meta-s);
+  line-height: var(--t-meta-lh);
+  color: var(--primary-text);
+  margin-right: var(--s1);
+}
+
+/* --- Breadcrumb above page title --- */
+
+.docs-breadcrumb {
+  font-family: var(--f-ui);
+  font-size: var(--t-body-sm-s);
+  line-height: var(--t-body-sm-lh);
+  color: var(--c-muted);
+  margin-bottom: var(--s1);
+}
+
+/* --- Heading anchor links --- */
+
+.docs-heading-anchor {
+  color: var(--primary-text);
+  text-decoration: none;
+  margin-left: var(--s1);
+  opacity: 0;
+  transition: opacity var(--dur-fast) var(--e-standard);
+}
+
+h2:hover > .docs-heading-anchor,
+h3:hover > .docs-heading-anchor,
+.docs-heading-anchor:focus {
+  opacity: 1;
+}
 
 /* --- Placeholder blocks for demos (stands in for real images) --- */
 
@@ -469,6 +531,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  border-left: 1px solid var(--primary);
 }
 
 .docs-toc__item {
@@ -485,6 +548,9 @@
   line-height: 1.5rem;
   color: var(--c-muted);
   text-decoration: none;
+  padding-left: var(--s2);
+  border-left: 3px solid transparent;
+  margin-left: -1px;
 }
 
 .docs-toc__link:hover {
@@ -494,6 +560,7 @@
 .docs-toc__link.is-active {
   color: var(--primary-text);
   font-weight: 500;
+  border-left-color: var(--primary);
 }
 
 /* --- Side navigation --- */

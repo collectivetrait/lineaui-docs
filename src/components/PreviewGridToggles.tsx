@@ -50,6 +50,20 @@ export function PreviewGridToggles() {
       diag.className = "preview-diagnostic";
       inner.appendChild(diag);
 
+      const rhythmBox = document.createElement("div");
+      rhythmBox.className = "preview-rhythm-check";
+
+      const rhythmLabel = document.createElement("span");
+      rhythmLabel.className = "preview-rhythm-check__label";
+      rhythmLabel.textContent = "Rhythm check";
+
+      const heightBadge = document.createElement("span");
+      heightBadge.className = "ln-badge";
+      const statusBadge = document.createElement("span");
+      statusBadge.className = "ln-badge";
+
+      rhythmBox.append(rhythmLabel, heightBadge, statusBadge);
+
       const toggle = document.createElement("a");
       toggle.className = "preview-grid-toggle";
       toggle.setAttribute("role", "button");
@@ -64,11 +78,7 @@ export function PreviewGridToggles() {
         toggle.setAttribute("aria-pressed", String(active));
       });
 
-      const heightBadge = document.createElement("span");
-      heightBadge.className = "ln-badge";
-      const statusBadge = document.createElement("span");
-      statusBadge.className = "ln-badge";
-      diag.append(heightBadge, statusBadge, toggle);
+      diag.append(rhythmBox, toggle);
 
       const updateDiag = () => {
         const h = Math.round(inner.getBoundingClientRect().height * 100) / 100;
