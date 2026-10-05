@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "ln/dist/styles.css";
 import "./demo.css";
 import "./docs.css";
 import { DocShell } from "@/components/DocShell";
@@ -16,6 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="stylesheet" href="/styles.css" />
+      </head>
       <body>
         <DocShell>{children}</DocShell>
       </body>
