@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "ln/dist/styles.css";
+import "./demo.css";
 import "./docs.css";
 import { DocShell } from "@/components/DocShell";
 
