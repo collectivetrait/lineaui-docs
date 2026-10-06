@@ -20,8 +20,9 @@ export default function EmptyStatePage() {
         <div className="component-demo">
           <CodeBlock language="html">{`<div class="ln-empty-state">
   <div class="ln-empty-state__icon">
-    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-      <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"/>
+      <path d="M21 21l-6 -6"/>
     </svg>
   </div>
   <h3 class="ln-empty-state__title">No results found</h3>
@@ -33,8 +34,9 @@ export default function EmptyStatePage() {
           <div className="component-demo__preview">
             <div className="ln-empty-state">
               <div className="ln-empty-state__icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                  <path d="M21 21l-6 -6" />
                 </svg>
               </div>
               <h3 className="ln-empty-state__title">No results found</h3>

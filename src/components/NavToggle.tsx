@@ -68,14 +68,15 @@ export function NavToggle() {
       aria-expanded={open}
     >
       {open ? (
-        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
         </svg>
       ) : (
-        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-          <circle cx="8" cy="3" r="1.25" fill="currentColor" />
-          <circle cx="8" cy="8" r="1.25" fill="currentColor" />
-          <circle cx="8" cy="13" r="1.25" fill="currentColor" />
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+          <path d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+          <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+          <path d="M18 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
         </svg>
       )}
     </button>

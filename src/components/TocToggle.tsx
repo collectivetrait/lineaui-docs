@@ -19,8 +19,13 @@ export function TocToggle() {
       title="Toggle table of contents"
       className="toc-toggle"
     >
-      <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
-        <path d="M2 3h8M2 6.5h6M2 10h8M2 13.5h5M12 3v10.5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M9 6l11 0" />
+        <path d="M9 12l11 0" />
+        <path d="M9 18l11 0" />
+        <path d="M5 6l0 .01" />
+        <path d="M5 12l0 .01" />
+        <path d="M5 18l0 .01" />
       </svg>
     </button>
   );
