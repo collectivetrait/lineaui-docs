@@ -16,12 +16,20 @@ function getPreferred(): Theme {
 }
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>("light");
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof document !== "undefined") {
+      const attr = document.documentElement.dataset.theme;
+      if (attr === "light" || attr === "dark") return attr as Theme;
+    }
+    return "light";
+  });
 
   useEffect(() => {
-    const preferred = getPreferred();
-    setTheme(preferred);
-    document.documentElement.dataset.theme = preferred;
+    if (!document.documentElement.dataset.theme) {
+      const preferred = getPreferred();
+      setTheme(preferred);
+      document.documentElement.dataset.theme = preferred;
+    }
   }, []);
 
   function toggle() {
