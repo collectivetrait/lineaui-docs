@@ -952,11 +952,6 @@ h3:hover > .docs-heading-anchor,
     height: 36px;
     font-size: var(--t-body-sm-s);
   }
-
-  .docs-search--panel .docs-search__results,
-  .docs-search--panel .docs-search__empty {
-    width: calc(100vw - 3rem);
-  }
 }
 
 /* --- Prose specimen wrapper --- */
