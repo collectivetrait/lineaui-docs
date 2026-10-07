@@ -2396,14 +2396,13 @@
   }
   .ln-card--horizontal {
     flex-direction: row;
-    margin-right: 1.5rem;
   }
   .ln-card--horizontal .ln-card__media {
     width: 40%;
     max-width: 200px;
     flex-shrink: 0;
     margin: calc(-1 * var(--_pad));
-    margin-right: 0;
+    margin-right: 1.5rem;
   }
   .ln-card--horizontal .ln-card__media-object {
     width: 100%;
