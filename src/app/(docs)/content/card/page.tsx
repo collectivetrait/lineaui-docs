@@ -77,7 +77,7 @@ export default function CardPage() {
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-card ln-card--horizontal">
   <div class="ln-card__media">
-    <div class="bg-surface-sunken p-6 text-center text-muted">Image</div>
+    <div class="ln-card__media-object bg-surface-sunken p-6 text-center text-muted">Image</div>
   </div>
   <div class="ln-card__body">
     <h3 class="ln-card__title">Side-by-side card</h3>
@@ -87,7 +87,7 @@ export default function CardPage() {
           <div className="component-demo__preview">
             <div className="ln-card ln-card--horizontal">
               <div className="ln-card__media">
-                <div className="bg-surface-sunken p-6 text-center text-muted">Image</div>
+                <div className="ln-card__media-object bg-surface-sunken p-6 text-center text-muted">Image</div>
               </div>
               <div className="ln-card__body">
                 <h3 className="ln-card__title">Side-by-side card</h3>
@@ -117,6 +117,11 @@ export default function CardPage() {
             <tr>
               <td><code>.ln-card__media</code></td>
               <td>Full-bleed image area</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td><code>.ln-card__media-object</code></td>
+              <td>Media content (image, video, or placeholder) inside media area</td>
               <td>No</td>
             </tr>
             <tr>
