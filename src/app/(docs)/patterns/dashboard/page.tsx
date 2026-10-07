@@ -27,7 +27,7 @@ export default function DashboardPatterns() {
         </p>
 
         <h3>Default stat</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-stat">
   <span class="ln-stat__label">Revenue</span>
   <span class="ln-stat__value">$48,290<span class="ln-stat__unit">/mo</span></span>
@@ -49,7 +49,7 @@ export default function DashboardPatterns() {
         </div>
 
         <h3>Flat modifier with negative delta</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-stat ln-stat--flat">
   <span class="ln-stat__label">Users</span>
   <span class="ln-stat__value">3,841</span>
@@ -81,7 +81,7 @@ export default function DashboardPatterns() {
         </p>
 
         <h3>Horizontal divided</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-data-list ln-data-list--horizontal ln-data-list--divided">
   <div class="ln-data-list__item">
     <span class="ln-data-list__term">Name</span>
@@ -134,7 +134,7 @@ export default function DashboardPatterns() {
         </p>
 
         <h3>Default toolbar</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-toolbar">
   <div class="ln-toolbar__start">
     <div class="ln-toolbar__group">
@@ -176,7 +176,7 @@ export default function DashboardPatterns() {
         </p>
 
         <h3>Default timeline</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-timeline">
   <div class="ln-timeline__item">
     <div class="ln-timeline__marker ln-timeline__marker--success"></div>

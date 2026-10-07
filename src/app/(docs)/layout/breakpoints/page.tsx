@@ -26,33 +26,27 @@ export default function BreakpointsPage() {
             <tr>
               <th>Name</th>
               <th>Value</th>
-              <th>Pixels</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><code>sm</code></td>
-              <td>36rem</td>
               <td>576px</td>
             </tr>
             <tr>
               <td><code>md</code></td>
-              <td>48rem</td>
               <td>768px</td>
             </tr>
             <tr>
               <td><code>lg</code></td>
-              <td>64rem</td>
               <td>1024px</td>
             </tr>
             <tr>
               <td><code>xl</code></td>
-              <td>80rem</td>
               <td>1280px</td>
             </tr>
             <tr>
               <td><code>2xl</code></td>
-              <td>96rem</td>
               <td>1536px</td>
             </tr>
           </tbody>
@@ -67,7 +61,7 @@ export default function BreakpointsPage() {
           breakpoint upward (mobile-first). This convention works with both BEM
           block modifiers and utility classes.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Grid: 1 column by default, 3 columns from md up -->
 <div class="ln-grid ln-grid--cols-1 ln-grid--cols-3@md">
   <div class="border p-2 text-center">One</div>
@@ -92,7 +86,7 @@ export default function BreakpointsPage() {
           Common responsive utilities include display, text alignment, margin,
           padding, flex direction, and width.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Hidden by default, visible as block from md up -->
 <div class="d-none d-block@md border p-2 mb-3">Visible from md up</div>
 
@@ -111,15 +105,17 @@ export default function BreakpointsPage() {
           Override the default map when importing the library. Custom
           breakpoint names become available as suffixes throughout the system.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $breakpoints: (
-    sm:  30rem,
-    md:  48rem,
-    lg:  62rem,
-    xl:  80rem,
-    '2xl': 100rem,
+    sm:  480px,
+    md:  768px,
+    lg:  992px,
+    xl:  1200px,
+    '2xl': 1600px,
   )
 );`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -135,27 +131,27 @@ export default function BreakpointsPage() {
           <tbody>
             <tr>
               <td><code>sm</code></td>
-              <td>36rem (576px)</td>
+              <td>576px</td>
               <td><code>@sm</code></td>
             </tr>
             <tr>
               <td><code>md</code></td>
-              <td>48rem (768px)</td>
+              <td>768px</td>
               <td><code>@md</code></td>
             </tr>
             <tr>
               <td><code>lg</code></td>
-              <td>64rem (1024px)</td>
+              <td>1024px</td>
               <td><code>@lg</code></td>
             </tr>
             <tr>
               <td><code>xl</code></td>
-              <td>80rem (1280px)</td>
+              <td>1280px</td>
               <td><code>@xl</code></td>
             </tr>
             <tr>
               <td><code>2xl</code></td>
-              <td>96rem (1536px)</td>
+              <td>1536px</td>
               <td><code>@2xl</code></td>
             </tr>
           </tbody>
@@ -163,7 +159,7 @@ export default function BreakpointsPage() {
         <p>
           Responsive suffixes are available on BEM block modifiers (grid, cluster)
           and utility classes with <code>responsive: true</code> (display,
-          spacing, text-align, flex, width, float, font, and text-size utilities).
+          spacing, text-align, flex, width, float, font).
         </p>
       </section>
     </article>

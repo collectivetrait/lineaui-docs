@@ -17,7 +17,7 @@ export default function FieldPage() {
 
       <section className="docs-section">
         <h2>Default field</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-field">
   <label class="ln-field__label">Email address</label>
   <div class="ln-field__control">
@@ -39,7 +39,7 @@ export default function FieldPage() {
 
       <section className="docs-section">
         <h2>Error state</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-field">
   <label class="ln-field__label">Username</label>
   <div class="ln-field__control">
@@ -63,7 +63,7 @@ export default function FieldPage() {
 
       <section className="docs-section">
         <h2>Inline field</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-field ln-field--inline">
   <label class="ln-field__label">Full name</label>
   <div class="ln-field__control">
@@ -83,7 +83,7 @@ export default function FieldPage() {
 
       <section className="docs-section">
         <h2>Small size</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-field ln-field--sm">
   <label class="ln-field__label">ZIP code</label>
   <div class="ln-field__control">

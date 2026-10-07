@@ -14,6 +14,7 @@ export default function FontsPage() {
 
       <TableOfContents />
 
+
       <section className="docs-section">
         <h2>Font weight</h2>
         <p>
@@ -21,7 +22,7 @@ export default function FontsPage() {
           <code>.fw-medium</code> (500), <code>.fw-semibold</code> (600), or{" "}
           <code>.fw-bold</code> (700).
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="fw-normal mb-3">Normal weight (400)</p>
 <p class="fw-medium mb-3">Medium weight (500)</p>
 <p class="fw-semibold mb-3">Semibold weight (600)</p>
@@ -41,7 +42,7 @@ export default function FontsPage() {
           Toggle italic rendering. Use <code>.fs-normal</code> to reset an
           inherited italic, or <code>.fs-italic</code> to apply it.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="fs-normal mb-3">Normal style text</p>
 <p class="fs-italic">Italic style text</p>`}</CodeBlock>
           <div className="component-demo__preview">
@@ -60,7 +61,7 @@ export default function FontsPage() {
           body and interface text, and <code>.font-mono</code> for code and
           tabular data.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="font-prose mb-3">Prose font — Charter, Bitstream Charter, serif</p>
 <p class="font-ui mb-3">UI font — Inter, Roboto, sans-serif</p>
 <p class="font-mono">Mono font — ui-monospace, Cascadia Code, monospace</p>`}</CodeBlock>
@@ -79,7 +80,7 @@ export default function FontsPage() {
           <code>@sm</code>, <code>@md</code>, <code>@lg</code>,{" "}
           <code>@xl</code>, <code>@2xl</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="fw-normal fw-bold@md mb-3">Normal weight on mobile, bold from md up</p>
 <p class="fs-normal fs-italic@lg mb-3">Normal style on mobile, italic from lg up</p>
 <p class="font-ui font-mono@md">UI font on mobile, mono from md up</p>`}</CodeBlock>

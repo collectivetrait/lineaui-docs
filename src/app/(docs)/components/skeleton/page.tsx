@@ -17,7 +17,7 @@ export default function SkeletonPage() {
 
       <section className="docs-section">
         <h2>Text and shapes</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-skeleton">
   <div class="ln-skeleton__circle" style="width: 48px"></div>
   <div class="ln-skeleton__line" style="width: 80%"></div>

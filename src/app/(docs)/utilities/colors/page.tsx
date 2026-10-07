@@ -20,7 +20,7 @@ export default function ColorUtilities() {
           Each class sets the <code>color</code> property to a role token.
           Use <code>text-inverse</code> on dark backgrounds for contrast.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="text-primary border rounded-sm p-2 mb-3">text-primary</p>
 <p class="text-secondary border rounded-sm p-2 mb-3">text-secondary</p>
 <p class="text-success border rounded-sm p-2 mb-3">text-success</p>

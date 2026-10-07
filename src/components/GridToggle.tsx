@@ -19,16 +19,8 @@ export function GridToggle() {
       title="Toggle baseline grid"
       className="grid-toggle"
     >
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M4 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M18 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M18 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M4 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-        <path d="M18 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M24 3h-24v-2h24v2zm0 3h-24v2h24v-2zm0 5h-24v2h24v-2zm0 5h-24v2h24v-2zm0 5h-24v2h24v-2z" />
       </svg>
     </button>
   );

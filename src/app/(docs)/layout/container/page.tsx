@@ -17,7 +17,7 @@ export default function ContainerPage() {
 
       <section className="docs-section">
         <h2>Variants</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Default: 900px centred -->
 <div class="ln-container border p-2 mb-3">
   <p>Default — max-width 900px, centred with gutter padding.</p>

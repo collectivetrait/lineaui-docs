@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const GRID_SVG = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M11 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M18 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M4 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M18 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M4 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M11 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/><path d="M18 19a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"/></svg>`;
+const GRID_SVG = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 3h-24v-2h24v2zm0 3h-24v2h24v-2zm0 5h-24v2h24v-2zm0 5h-24v2h24v-2zm0 5h-24v2h24v-2z"/></svg>`;
 
 export function PreviewGridToggles() {
   const pathname = usePathname();
@@ -48,7 +48,7 @@ export function PreviewGridToggles() {
 
       const diag = document.createElement("div");
       diag.className = "preview-diagnostic";
-      inner.appendChild(diag);
+      preview.appendChild(diag);
 
       const rhythmBox = document.createElement("div");
       rhythmBox.className = "preview-rhythm-check";

@@ -26,7 +26,7 @@ export default function TablesPage() {
           borders. Cells use box-shadow instead of real borders to stay on the
           24px rhythm grid.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<table>
   <caption>Base table — no classes needed</caption>
   <thead>
@@ -88,7 +88,7 @@ export default function TablesPage() {
 
       <section className="docs-section">
         <h2>Striped table</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-table ln-table--striped">
   <table class="ln-table__grid">
     <thead>
@@ -160,7 +160,7 @@ export default function TablesPage() {
           <code>--spacious</code>, <code>--sticky-header</code>, and{" "}
           <code>--sticky-first</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-table ln-table--divided">
   <table class="ln-table__grid">
     <thead>

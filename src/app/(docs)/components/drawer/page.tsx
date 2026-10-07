@@ -21,7 +21,7 @@ export default function DrawerPage() {
 
       <section className="docs-section">
         <h2>Default drawer</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<dialog class="ln-drawer" data-ln-dismissible open>
   <button class="ln-drawer__close" data-ln-dismiss aria-label="Close">&times;</button>
   <div class="ln-drawer__header">

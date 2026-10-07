@@ -18,13 +18,13 @@ export default function AccordionPage() {
 
       <section className="docs-section">
         <h2>Default</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-accordion">
   <details class="ln-accordion__item" open>
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">What is vertical rhythm?</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 9l6 6l6 -6"/>
+      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
+        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
       </svg>
     </summary>
     <div class="ln-accordion__content">
@@ -35,8 +35,8 @@ export default function AccordionPage() {
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">What grid does ln use?</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 9l6 6l6 -6"/>
+      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
+        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
       </svg>
     </summary>
     <div class="ln-accordion__content">
@@ -47,8 +47,8 @@ export default function AccordionPage() {
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">Do borders break the grid?</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 9l6 6l6 -6"/>
+      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
+        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
       </svg>
     </summary>
     <div class="ln-accordion__content">
@@ -62,8 +62,8 @@ export default function AccordionPage() {
               <details className="ln-accordion__item" open>
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">What is vertical rhythm?</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M6 9l6 6l6 -6" />
+                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
                   </svg>
                 </summary>
                 <div className="ln-accordion__content">
@@ -74,8 +74,8 @@ export default function AccordionPage() {
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">What grid does ln use?</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M6 9l6 6l6 -6" />
+                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
                   </svg>
                 </summary>
                 <div className="ln-accordion__content">
@@ -86,8 +86,8 @@ export default function AccordionPage() {
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">Do borders break the grid?</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M6 9l6 6l6 -6" />
+                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
                   </svg>
                 </summary>
                 <div className="ln-accordion__content">
@@ -102,13 +102,13 @@ export default function AccordionPage() {
 
       <section className="docs-section">
         <h2>Flush accordion</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-accordion ln-accordion--flush">
   <details class="ln-accordion__item" open>
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">No borders between items</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 9l6 6l6 -6"/>
+      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
+        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
       </svg>
     </summary>
     <div class="ln-accordion__content">
@@ -118,8 +118,8 @@ export default function AccordionPage() {
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">Useful inside cards</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M6 9l6 6l6 -6"/>
+      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
+        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
       </svg>
     </summary>
     <div class="ln-accordion__content">
@@ -132,8 +132,8 @@ export default function AccordionPage() {
               <details className="ln-accordion__item" open>
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">No borders between items</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M6 9l6 6l6 -6" />
+                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
                   </svg>
                 </summary>
                 <div className="ln-accordion__content">
@@ -143,8 +143,8 @@ export default function AccordionPage() {
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">Useful inside cards</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <path d="M6 9l6 6l6 -6" />
+                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
                   </svg>
                 </summary>
                 <div className="ln-accordion__content">

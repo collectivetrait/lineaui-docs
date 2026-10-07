@@ -22,6 +22,7 @@ export default function CustomizationPage() {
           Pass any settings you want to override with the{" "}
           <code>with</code> keyword.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $prefix: 'my-',
   $font-ui: 'Geist', system-ui, sans-serif,
@@ -33,6 +34,7 @@ export default function CustomizationPage() {
     '2xl': 100rem,
   )
 );`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -43,11 +45,13 @@ export default function CustomizationPage() {
           block class — for example, <code>.ln-button</code> becomes{" "}
           <code>.my-button</code>.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $prefix: 'my-'
 );
 
 // .my-button, .my-card, .my-grid, etc.`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -56,11 +60,13 @@ export default function CustomizationPage() {
           Three font-role variables control the entire type system. Override one
           or all to use your own typefaces.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $font-prose: 'Lora', Georgia, serif,
   $font-ui: 'Inter', system-ui, sans-serif,
   $font-mono: 'JetBrains Mono', monospace
 );`}</CodeBlock>
+        </div>
         <table>
           <thead>
             <tr>
@@ -100,10 +106,12 @@ export default function CustomizationPage() {
           Two variables define the spatial grid. All spacing tokens and
           components derive from these values.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $g: 4px,   // base grid step (default 8px)
   $r: 16px   // line grid step (default 24px)
 );`}</CodeBlock>
+        </div>
         <table>
           <thead>
             <tr>
@@ -134,6 +142,7 @@ export default function CustomizationPage() {
           activate. Custom breakpoint names become available as{" "}
           <code>@&#123;bp&#125;</code> suffixes throughout the system.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $breakpoints: (
     sm:  30rem,
@@ -143,6 +152,7 @@ export default function CustomizationPage() {
     '2xl': 100rem,
   )
 );`}</CodeBlock>
+        </div>
         <table>
           <thead>
             <tr>
@@ -186,6 +196,7 @@ export default function CustomizationPage() {
         <p>
           Adjust container widths, the prose measure, and the page gutter.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $container: 60rem,       // default 56.25rem (900px)
   $container-wide: 80rem,  // default 75rem (1200px)
@@ -193,6 +204,7 @@ export default function CustomizationPage() {
   $gutter: 1.5rem,         // default 1rem (mobile)
   $gutter-lg: 3rem         // default 2rem (md+)
 );`}</CodeBlock>
+        </div>
         <table>
           <thead>
             <tr>
@@ -237,9 +249,11 @@ export default function CustomizationPage() {
           By default every block is included in the output. To reduce file size,
           pass a list of only the blocks you need.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $blocks: (button, card, table, alert)
 );`}</CodeBlock>
+        </div>
         <p>
           An empty list (the default) emits all blocks. Any block not in the
           list is excluded from the compiled CSS.
@@ -253,11 +267,13 @@ export default function CustomizationPage() {
           follow the OS preference. To force a theme, set{" "}
           <code>data-theme</code> on any ancestor element.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="html">{`<!-- Force dark on the whole page -->
 <html data-theme="dark">…</html>
 
 <!-- Light island inside a dark page -->
 <section data-theme="light">…</section>`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">

@@ -28,7 +28,7 @@ export default function TypographyPage() {
           Use <code>.lead</code> on introductory paragraphs that need more
           visual weight than body text. It sets the prose font at lead size.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="lead">Introductory sentence in prose font, slightly larger than body.</p>`}</CodeBlock>
           <div className="component-demo__preview">
             <p className="lead">
@@ -43,7 +43,7 @@ export default function TypographyPage() {
           base layer adds a bottom margin of one line (24px) so paragraphs stack
           with consistent rhythm.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="mb-3">The ln type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
 <p class="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
 <p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>`}</CodeBlock>
@@ -59,7 +59,7 @@ export default function TypographyPage() {
           Heading elements <code>h1</code>–<code>h6</code> receive size, line
           height, and font-family styles from the base layer. No classes needed.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<h1 class="mb-3">Heading level one</h1>
 <h2 class="mb-3">Heading level two</h2>
 <h3 class="mb-3">Heading level three</h3>
@@ -84,7 +84,7 @@ export default function TypographyPage() {
           <code>div</code>, <code>span</code>, or any other tag. Use{" "}
           <code>.h1</code> through <code>.h6</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="h1 mb-3">Heading one style on a div</div>
 <div class="h2 mb-3">Heading two style on a div</div>
 <div class="h3 mb-3">Heading three style on a div</div>
@@ -107,7 +107,7 @@ export default function TypographyPage() {
           the prose font. Use <code>.text-display-1</code> and{" "}
           <code>.text-display-2</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<h1 class="text-display-1 mb-3">Hero heading</h1>
 <h2 class="text-display-2">Section hero</h2>`}</CodeBlock>
           <div className="component-demo__preview">
@@ -122,7 +122,7 @@ export default function TypographyPage() {
           suffixes: <code>@sm</code>, <code>@md</code>, <code>@lg</code>,{" "}
           <code>@xl</code>, <code>@2xl</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="h4 h2@md mb-3">h4 on mobile, h2 from md up</div>
 <div class="text-display-2 text-display-1@lg">Display 2 on mobile, display 1 from lg up</div>`}</CodeBlock>
           <div className="component-demo__preview">
@@ -140,7 +140,7 @@ export default function TypographyPage() {
           automatically from <code>@layer base</code>. No class names needed
           for standard prose content.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<article>
   <h1>Title</h1>
   <p class="lead">Lead paragraph.</p>
@@ -252,11 +252,13 @@ export default function TypographyPage() {
           <code>:root</code>. Reference them in your own stylesheets to stay
           on-grid without importing the full library.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="css">{`/* reference any scale token in your own CSS */
 .my-heading {
   font-size: var(--t-h2-s);
   line-height: var(--t-h2-lh);
 }`}</CodeBlock>
+        </div>
         <TypeScaleTable />
         <p>
           On smaller viewports (below <code>md</code>), <code>h1</code> scales
@@ -271,6 +273,7 @@ export default function TypographyPage() {
           <code>:root</code> to swap the entire type stack, or on a scoped
           element to change a single section.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="css">{`/* override globally */
 :root {
   --f-prose: 'Georgia', serif;
@@ -282,6 +285,7 @@ export default function TypographyPage() {
 .my-section {
   --f-prose: var(--f-ui);
 }`}</CodeBlock>
+        </div>
         <dl>
           <dt>
             <code>--f-prose</code>

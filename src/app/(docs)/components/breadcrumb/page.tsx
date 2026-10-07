@@ -17,7 +17,7 @@ export default function BreadcrumbPage() {
 
       <section className="docs-section">
         <h2>Default breadcrumb</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-breadcrumb" aria-label="Breadcrumb">
   <ol class="ln-breadcrumb__list">
     <li class="ln-breadcrumb__item">
@@ -51,7 +51,7 @@ export default function BreadcrumbPage() {
 
       <section className="docs-section">
         <h2>Small breadcrumb</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-breadcrumb ln-breadcrumb--sm" aria-label="Breadcrumb">
   <ol class="ln-breadcrumb__list">
     <li class="ln-breadcrumb__item">

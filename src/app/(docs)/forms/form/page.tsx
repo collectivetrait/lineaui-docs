@@ -16,7 +16,7 @@ export default function FormPage() {
 
       <section className="docs-section">
         <h2>Default stacked layout</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<form class="ln-form">
   <div class="ln-form__section">
     <h3 class="ln-form__heading">Account details</h3>
@@ -66,7 +66,7 @@ export default function FormPage() {
 
       <section className="docs-section">
         <h2>Row layout</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<form class="ln-form">
   <div class="ln-form__row">
     <div class="ln-field">

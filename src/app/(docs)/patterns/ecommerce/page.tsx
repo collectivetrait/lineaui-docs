@@ -28,7 +28,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Default price</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-price">
   <span class="ln-price__currency">$</span>
   <span class="ln-price__current">49.99</span>
@@ -42,7 +42,7 @@ export default function EcommercePatterns() {
         </div>
 
         <h3>Sale price</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-price ln-price--sale">
   <span class="ln-price__currency">$</span>
   <span class="ln-price__current">29.99</span>
@@ -71,7 +71,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Default rating</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-rating">
   <div class="ln-rating__stars" style="--rating: 4"></div>
   <span class="ln-rating__value">4.0</span>
@@ -87,7 +87,7 @@ export default function EcommercePatterns() {
         </div>
 
         <h3>Custom color</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-rating">
   <div class="ln-rating__stars" style="--rating: 3.5; --star-color: var(--warning-text)"></div>
   <span class="ln-rating__value">3.5</span>
@@ -113,7 +113,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Color swatches</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-swatch">
   <label class="ln-swatch__option">
     <input class="ln-swatch__input" type="radio" name="color" value="black" checked>
@@ -155,7 +155,7 @@ export default function EcommercePatterns() {
         </div>
 
         <h3>Text swatches</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-swatch ln-swatch--text">
   <label class="ln-swatch__option">
     <input class="ln-swatch__input" type="radio" name="size" value="s" checked>
@@ -197,7 +197,7 @@ export default function EcommercePatterns() {
         </div>
 
         <h3>Text swatches with custom colors</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-swatch ln-swatch--text">
   <label class="ln-swatch__option">
     <input class="ln-swatch__input" type="radio" name="plan" value="basic" checked>
@@ -242,7 +242,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Default quantity</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-quantity" data-ln-quantity>
   <button class="ln-quantity__decrement" type="button">−</button>
   <input class="ln-quantity__input" type="number" value="1" min="1" max="10">
@@ -268,7 +268,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Gallery with thumbnails</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-gallery" data-ln-gallery>
   <div class="ln-gallery__main">
     <div class="ln-gallery__slide">
@@ -332,7 +332,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Default product card</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-product-card">
   <div class="ln-product-card__media">
     <div class="ln-product-card__img">
@@ -385,7 +385,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Default line item</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-line-item">
   <div class="ln-line-item__media">
     <div class="docs-placeholder docs-placeholder--fill"></div>
@@ -417,7 +417,7 @@ export default function EcommercePatterns() {
         </div>
 
         <h3>Multiple line items</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div>
   <div class="ln-line-item">
     <div class="ln-line-item__media">
@@ -514,7 +514,7 @@ export default function EcommercePatterns() {
         </p>
 
         <h3>Default order summary</h3>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-order-summary">
   <div class="ln-order-summary__header">Order Summary</div>
   <div class="ln-order-summary__row">

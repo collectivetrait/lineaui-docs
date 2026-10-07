@@ -23,7 +23,7 @@ export default function OverflowUtilities() {
           <code>overflow-visible</code> to let content overflow, and{" "}
           <code>overflow-scroll</code> to always show scrollbars.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="overflow-hidden border rounded-sm p-2 w-50 mb-3">
   <p class="text-nowrap">overflow-hidden clips this very long line of text that extends beyond the w-50 container.</p>
 </div>
@@ -51,7 +51,7 @@ export default function OverflowUtilities() {
           <code>overflow-x-scroll</code> and their <code>-y-</code>{" "}
           counterparts target a single axis.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="overflow-x-auto border rounded-sm p-2">
   <table>
     <thead>

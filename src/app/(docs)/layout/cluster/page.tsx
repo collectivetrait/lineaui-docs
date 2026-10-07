@@ -16,7 +16,7 @@ export default function ClusterPage() {
 
       <section className="docs-section">
         <h2>Default cluster</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-cluster">
   <span class="bg-surface-raised rounded-sm p-1 px-2">Design</span>
   <span class="bg-surface-raised rounded-sm p-1 px-2">Tokens</span>
@@ -38,7 +38,7 @@ export default function ClusterPage() {
 
       <section className="docs-section">
         <h2>Justify and alignment modifiers</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Space between -->
 <div class="ln-cluster ln-cluster--gap-md ln-cluster--justify-between mb-3">
   <span class="bg-surface-raised rounded-sm p-1 px-2">Left item</span>
@@ -69,7 +69,7 @@ export default function ClusterPage() {
           Justify, align, and nowrap modifiers accept a{" "}
           <code>@&#123;breakpoint&#125;</code> suffix for responsive behaviour.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Centred on mobile, space-between from md up -->
 <div class="ln-cluster ln-cluster--gap-md ln-cluster--justify-center ln-cluster--justify-between@md border p-2 mb-3">
   <span class="bg-surface-raised rounded-sm p-1 px-2">Left</span>

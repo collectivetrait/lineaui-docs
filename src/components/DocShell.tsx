@@ -1,6 +1,7 @@
 import { SideNav } from "./SideNav";
 import { SidebarToggle } from "./SidebarToggle";
 import { SiteHeader } from "./SiteHeader";
+import { SiteFooter } from "./SiteFooter";
 import { GridToggle } from "./GridToggle";
 import { TocToggle } from "./TocToggle";
 import { BackToTop } from "./BackToTop";
@@ -8,7 +9,7 @@ import { PreviewGridToggles } from "./PreviewGridToggles";
 
 export function DocShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="docs-shell">
+    <div className="docs-shell docs-docs">
       <SiteHeader before={<SidebarToggle />} />
       <GridToggle />
       <TocToggle />
@@ -22,6 +23,7 @@ export function DocShell({ children }: { children: React.ReactNode }) {
           <div className="docs-page-content">{children}</div>
         </main>
       </div>
+      <SiteFooter />
     </div>
   );
 }

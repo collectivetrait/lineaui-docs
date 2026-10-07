@@ -21,7 +21,7 @@ export default function SizingUtilities() {
           values or semantic tokens. <code>w-auto</code> resets to the
           intrinsic width.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2 w-25 mb-3">w-25</div>
 <div class="border rounded-sm p-2 w-50 mb-3">w-50</div>
 <div class="border rounded-sm p-2 w-75 mb-3">w-75</div>
@@ -44,7 +44,7 @@ export default function SizingUtilities() {
           percentage of the parent. The parent must have an explicit height
           for percentage values to take effect.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex gap-3 border rounded-sm p-2 docs-height-container">
   <div class="border rounded-sm p-2 h-25">h-25</div>
   <div class="border rounded-sm p-2 h-50">h-50</div>
@@ -70,7 +70,7 @@ export default function SizingUtilities() {
           <code>mw-100</code> caps width at 100% of the parent.{" "}
           <code>mh-100</code> caps height at 100% of the parent.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2 mw-100 mb-3">mw-100 — never exceeds parent width</div>
 <div class="border rounded-sm p-2 mh-100">mh-100 — never exceeds parent height</div>`}</CodeBlock>
           <div className="component-demo__preview">
@@ -87,7 +87,7 @@ export default function SizingUtilities() {
           <code>.w-*@sm</code>, <code>.w-*@md</code>, <code>.w-*@lg</code>,{" "}
           <code>.w-*@xl</code>, <code>.w-*@2xl</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2 w-100 w-50@lg">Full width on mobile, half at lg</div>`}</CodeBlock>
           <div className="component-demo__preview">
             <div className="border rounded-sm p-2 w-100 w-50@lg">Full width on mobile, half at lg</div>

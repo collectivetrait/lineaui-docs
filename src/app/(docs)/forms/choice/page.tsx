@@ -19,7 +19,7 @@ export default function ChoicePage() {
 
       <section className="docs-section">
         <h2>Checkbox group</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-choice">
   <label class="ln-choice__option">
     <input class="ln-choice__input" type="checkbox" checked>
@@ -55,7 +55,7 @@ export default function ChoicePage() {
 
       <section className="docs-section">
         <h2>Radio group</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-choice">
   <label class="ln-choice__option">
     <input class="ln-choice__input" type="radio" name="plan" checked>
@@ -91,7 +91,7 @@ export default function ChoicePage() {
 
       <section className="docs-section">
         <h2>Switch toggle</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-choice ln-choice--switch">
   <label class="ln-choice__option">
     <input class="ln-choice__input" type="checkbox" checked>
@@ -119,7 +119,7 @@ export default function ChoicePage() {
 
       <section className="docs-section">
         <h2>Card variant</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-choice ln-choice--card">
   <label class="ln-choice__option">
     <input class="ln-choice__input" type="radio" name="shipping" checked>
@@ -159,7 +159,7 @@ export default function ChoicePage() {
 
       <section className="docs-section">
         <h2>Inline choice</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-choice ln-choice--inline">
   <label class="ln-choice__option">
     <input class="ln-choice__input" type="checkbox" checked>

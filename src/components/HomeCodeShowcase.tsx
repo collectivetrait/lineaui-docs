@@ -11,7 +11,7 @@ const TABS = [
     id: "card",
     label: "Card",
     code: `<article class="ln-card">
-  <h3 class="ln-card__title">Card title</h3>
+  <h3 class="ln-card__title h2">Card title</h3>
   <div class="ln-card__body">
     <p>Card content goes here.</p>
   </div>
@@ -23,7 +23,7 @@ const TABS = [
 </article>`,
     preview: (
       <article className="ln-card">
-        <h3 className="ln-card__title">Card title</h3>
+        <h3 className="ln-card__title h2">Card title</h3>
         <div className="ln-card__body">
           <p>Card content goes here.</p>
         </div>
@@ -77,8 +77,7 @@ const TABS = [
     code: `<div class="ln-field">
   <label class="ln-field__label">Email</label>
   <div class="ln-field__control">
-    <input type="email"
-      placeholder="you@example.com" />
+    <input type="email" placeholder="you@example.com" />
   </div>
 </div>`,
     preview: (
@@ -107,8 +106,8 @@ export function HomeCodeShowcase() {
     .join("\n");
 
   return (
-    <div className="ln-tabs">
-      <div className="ln-tabs__list" role="tablist">
+    <div className="ln-tabs bg-canvas border shadow-2">
+      <div className="ln-tabs__list bg-surface border pt-1 px-2" role="tablist">
         {TABS.map((t, i) => (
           <button
             key={t.id}
@@ -122,16 +121,12 @@ export function HomeCodeShowcase() {
         ))}
       </div>
 
-      <div className="ln-tabs__panel" role="tabpanel">
+      <div className="ln-tabs__panel pt-0 home-showcase" role="tabpanel">
         <div className="home-showcase__panel">
           <div className="code-block">
             <div className="code-block__header">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" />
-                <path d="M9 9l1 0" />
-                <path d="M9 13l6 0" />
-                <path d="M9 17l6 0" />
+              <svg viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                <path d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm1 5h4.586l-4.586-4.586v4.586z" />
               </svg>
               <span>index.html</span>
               <span className="code-block__lang">html</span>

@@ -20,7 +20,7 @@ export default function AlertPage() {
 
       <section className="docs-section">
         <h2>Roles</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-alert ln-alert--info">
   <div class="ln-alert__content">
     <div class="ln-alert__title">Information</div>
@@ -78,7 +78,7 @@ export default function AlertPage() {
 
       <section className="docs-section">
         <h2>Accent variant</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-alert ln-alert--accent ln-alert--info">
   <div class="ln-alert__content">
     <div class="ln-alert__title">Tip</div>
@@ -98,7 +98,7 @@ export default function AlertPage() {
 
       <section className="docs-section">
         <h2>Dismissible</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-alert ln-alert--success" data-ln-dismissible>
   <div class="ln-alert__content">
     <div class="ln-alert__title">Saved</div>

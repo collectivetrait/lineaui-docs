@@ -22,7 +22,7 @@ export default function ToastPage() {
 
       <section className="docs-section">
         <h2>Default toast</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-toast ln-toast--success border" role="alert" data-ln-dismissible>
   <div class="ln-toast__content">
     <div class="ln-toast__title">Changes saved</div>
@@ -46,7 +46,7 @@ export default function ToastPage() {
 
       <section className="docs-section">
         <h2>Solid variant</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-toast ln-toast--solid ln-toast--danger" role="alert" data-ln-dismissible>
   <div class="ln-toast__content">
     <div class="ln-toast__title">Error</div>

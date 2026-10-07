@@ -18,7 +18,7 @@ export default function StepsPage() {
 
       <section className="docs-section">
         <h2>Horizontal steps</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-steps">
   <div class="ln-steps__item is-complete">
     <div class="ln-steps__marker">1</div>
@@ -68,7 +68,7 @@ export default function StepsPage() {
 
       <section className="docs-section">
         <h2>Vertical steps</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-steps ln-steps--vertical">
   <div class="ln-steps__item is-complete">
     <div class="ln-steps__marker">1</div>
@@ -108,7 +108,7 @@ export default function StepsPage() {
 
       <section className="docs-section">
         <h2>Dot steps</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-steps ln-steps--dots">
   <div class="ln-steps__item is-complete">
     <div class="ln-steps__marker"></div>
@@ -144,7 +144,7 @@ export default function StepsPage() {
 
       <section className="docs-section">
         <h2>Steps with color roles</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-steps ln-steps--info">
   <div class="ln-steps__item is-complete">
     <div class="ln-steps__marker">1</div>

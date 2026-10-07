@@ -19,7 +19,7 @@ export default function TooltipPage() {
 
       <section className="docs-section">
         <h2>Static tooltip</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-tooltip ln-tooltip--top" style="position: relative; display: inline-block">
   This is a tooltip
   <div class="ln-tooltip__arrow"></div>

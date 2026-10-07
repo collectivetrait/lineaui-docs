@@ -18,7 +18,7 @@ export default function CardPage() {
 
       <section className="docs-section">
         <h2>Default card</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-card">
   <div class="ln-card__header">
     <span class="ln-card__eyebrow">Component</span>
@@ -54,7 +54,7 @@ export default function CardPage() {
 
       <section className="docs-section">
         <h2>Interactive card with shadow</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-card ln-card--interactive">
   <div class="ln-card__body">
     <h3 class="ln-card__title">Hover to see the lift effect</h3>
@@ -74,7 +74,7 @@ export default function CardPage() {
 
       <section className="docs-section">
         <h2>Horizontal layout</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-card ln-card--horizontal">
   <div class="ln-card__media">
     <div class="bg-surface-sunken p-6 text-center text-muted">Image</div>

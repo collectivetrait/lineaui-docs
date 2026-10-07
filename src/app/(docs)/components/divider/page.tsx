@@ -17,7 +17,7 @@ export default function DividerPage() {
 
       <section className="docs-section">
         <h2>Default horizontal</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p>Content above the divider.</p>
 <hr class="ln-divider" />
 <p>Content below the divider.</p>`}</CodeBlock>
@@ -31,7 +31,7 @@ export default function DividerPage() {
 
       <section className="docs-section">
         <h2>With label</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-divider">
   <span class="ln-divider__label">Or continue with</span>
 </div>`}</CodeBlock>
@@ -45,7 +45,7 @@ export default function DividerPage() {
 
       <section className="docs-section">
         <h2>Vertical</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex align-items-center gap-3" style="height:48px">
   <span>Left</span>
   <div class="ln-divider ln-divider--vertical"></div>
@@ -63,7 +63,7 @@ export default function DividerPage() {
 
       <section className="docs-section">
         <h2>Strong variant</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<hr class="ln-divider ln-divider--strong" />`}</CodeBlock>
           <div className="component-demo__preview">
             <hr className="ln-divider ln-divider--strong" />
@@ -73,7 +73,7 @@ export default function DividerPage() {
 
       <section className="docs-section">
         <h2>Spacing modifiers</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p>Content above medium spacing.</p>
 <hr class="ln-divider ln-divider--space-md" />
 <p>Content above large spacing.</p>

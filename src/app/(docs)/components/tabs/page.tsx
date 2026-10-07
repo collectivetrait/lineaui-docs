@@ -23,7 +23,7 @@ export default function TabsPage() {
 
       <section className="docs-section">
         <h2>Underline tabs</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-tabs">
   <div class="ln-tabs__list">
     <button class="ln-tabs__tab" aria-selected="true">Overview</button>
@@ -58,7 +58,7 @@ export default function TabsPage() {
 
       <section className="docs-section">
         <h2>Pill tabs</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-tabs ln-tabs--pills">
   <div class="ln-tabs__list">
     <button class="ln-tabs__tab" aria-selected="true">Day</button>
@@ -80,7 +80,7 @@ export default function TabsPage() {
 
       <section className="docs-section">
         <h2>Boxed tabs</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-tabs ln-tabs--boxed">
   <div class="ln-tabs__list">
     <button class="ln-tabs__tab" aria-selected="true">Code</button>

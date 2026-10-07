@@ -24,7 +24,7 @@ export default function FiguresPage() {
           <code>&lt;figcaption&gt;</code> uses the UI font at small body size
           with muted colour and an 8px top margin.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<figure>
   <img src="/placeholder.svg" alt="Example figure image">
   <figcaption>A descriptive caption for the image above.</figcaption>
@@ -44,7 +44,7 @@ export default function FiguresPage() {
           Figures can wrap any block content, not just images. Use them to
           annotate code samples, diagrams, or embedded content.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<figure>
   <pre><code>@use 'ln/scss' with ($prefix: 'my-');</code></pre>
   <figcaption>Importing the library with a custom prefix.</figcaption>

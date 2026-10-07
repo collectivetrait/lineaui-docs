@@ -24,7 +24,7 @@ export default function DropdownPage() {
 
       <section className="docs-section">
         <h2>Basic dropdown</h2>
-        <div className="component-demo" style={{ overflow: 'visible' }}>
+        <div className="component-demo shadow-2" style={{ overflow: 'visible' }}>
           <CodeBlock language="html">{`<div class="ln-dropdown">
   <button class="ln-dropdown__toggle" aria-expanded="false">
     Actions ▾
@@ -58,7 +58,7 @@ export default function DropdownPage() {
 
       <section className="docs-section">
         <h2>Dropdown with headings</h2>
-        <div className="component-demo" style={{ overflow: 'visible' }}>
+        <div className="component-demo shadow-2" style={{ overflow: 'visible' }}>
           <CodeBlock language="html">{`<div class="ln-dropdown">
   <button class="ln-dropdown__toggle" aria-expanded="false">
     More ▾

@@ -17,7 +17,7 @@ export default function QuotePage() {
 
       <section className="docs-section">
         <h2>Pull quote</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-quote ln-quote--pull">
   <p class="ln-quote__text">Every vertical measurement lands on an 8px grid,
      and every line of running text sits on a 24px line grid.</p>
@@ -39,7 +39,7 @@ export default function QuotePage() {
 
       <section className="docs-section">
         <h2>Card testimonial</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-quote ln-quote--card">
   <p class="ln-quote__text">The rhythm system made our layouts consistent
      across every page without any manual adjustment.</p>

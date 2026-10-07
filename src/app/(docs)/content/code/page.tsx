@@ -17,7 +17,7 @@ export default function CodePage() {
 
       <section className="docs-section">
         <h2>Default</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-code">
   <div class="ln-code__header">
     <span class="ln-code__filename">index.js</span>
@@ -51,7 +51,7 @@ export default greet;`}</code></pre>
           The <code>--flush</code> modifier removes border-radius and bottom
           margin for embedding inside other containers.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-code ln-code--flush">
   <pre class="ln-code__body"><code>npm install ln</code></pre>
 </div>`}</CodeBlock>

@@ -18,7 +18,7 @@ export default function AvatarPage() {
 
       <section className="docs-section">
         <h2>Sizes</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex align-items-center gap-2">
   <div class="ln-avatar ln-avatar--xs">
     <span class="ln-avatar__initials">XS</span>
@@ -60,7 +60,7 @@ export default function AvatarPage() {
 
       <section className="docs-section">
         <h2>Status indicator</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex align-items-center gap-3">
   <div class="ln-avatar ln-avatar--lg">
     <span class="ln-avatar__initials">AV</span>
@@ -88,7 +88,7 @@ export default function AvatarPage() {
 
       <section className="docs-section">
         <h2>Avatar group</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-avatar-group">
   <div class="ln-avatar"><span class="ln-avatar__initials">AB</span></div>
   <div class="ln-avatar"><span class="ln-avatar__initials">CD</span></div>

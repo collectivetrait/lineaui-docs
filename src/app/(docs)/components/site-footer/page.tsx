@@ -17,7 +17,7 @@ export default function SiteFooterPage() {
 
       <section className="docs-section">
         <h2>Default footer</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<footer class="ln-site-footer">
   <div class="ln-site-footer__inner">
     <div class="ln-site-footer__brand"><strong>Acme Inc.</strong></div>

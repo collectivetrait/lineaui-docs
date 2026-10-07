@@ -42,8 +42,8 @@ export function TableOfContents() {
       if (h1 && !h1.parentElement?.querySelector(".docs-breadcrumb")) {
         const group = findSectionGroup(pathname);
         if (group) {
-          const crumb = document.createElement("p");
-          crumb.className = "docs-breadcrumb";
+          const crumb = document.createElement("div");
+          crumb.className = "docs-breadcrumb ln-meta";
           crumb.textContent = group;
           h1.parentElement!.insertBefore(crumb, h1);
         }

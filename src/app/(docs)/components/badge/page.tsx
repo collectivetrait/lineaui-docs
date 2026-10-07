@@ -18,7 +18,7 @@ export default function BadgePage() {
 
       <section className="docs-section">
         <h2>Variants</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-badge ln-badge--primary">Subtle</span>
 <span class="ln-badge ln-badge--solid ln-badge--primary">Solid</span>
 <span class="ln-badge ln-badge--outline ln-badge--primary">Outline</span>`}</CodeBlock>
@@ -34,7 +34,7 @@ export default function BadgePage() {
 
       <section className="docs-section">
         <h2>Roles</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-badge ln-badge--success">Success</span>
 <span class="ln-badge ln-badge--warning">Warning</span>
 <span class="ln-badge ln-badge--danger">Danger</span>
@@ -52,7 +52,7 @@ export default function BadgePage() {
 
       <section className="docs-section">
         <h2>Dotted badges</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-badge ln-badge--success"><span class="ln-badge__dot"></span>Online</span>
 <span class="ln-badge ln-badge--warning"><span class="ln-badge__dot"></span>Away</span>
 <span class="ln-badge ln-badge--danger"><span class="ln-badge__dot"></span>Offline</span>
@@ -70,7 +70,7 @@ export default function BadgePage() {
 
       <section className="docs-section">
         <h2>Count</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-badge ln-badge--count ln-badge--solid ln-badge--danger">42</span>
 <span class="ln-badge ln-badge--count ln-badge--primary">8</span>`}</CodeBlock>
           <div className="component-demo__preview">

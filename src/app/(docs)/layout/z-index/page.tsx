@@ -21,7 +21,7 @@ export default function ZIndexPage() {
           <code>.z-&#123;value&#125;</code> classes. Values follow a
           stepped scale so layers stay consistent across the project.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="docs-z-stack">
   <div class="docs-z-stack__layer docs-z-stack__layer--1 z-10 border p-2 bg-surface">z-10</div>
   <div class="docs-z-stack__layer docs-z-stack__layer--2 z-20 border p-2 bg-surface">z-20</div>
@@ -101,7 +101,7 @@ export default function ZIndexPage() {
           means you can always apply a utility on top of any component class
           without resorting to <code>!important</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- The utility text-center overrides any text-align set by ln-card -->
 <div class="ln-card border mb-3">
   <div class="ln-card__body text-center">
@@ -137,6 +137,7 @@ export default function ZIndexPage() {
           All rules in the library are assigned to their respective layers
           using <code>@layer</code> blocks.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="css">{`/* Compiled output — layer order declaration */
 @layer reset, tokens, base, layout, blocks, helpers, utilities;
 
@@ -167,6 +168,7 @@ export default function ZIndexPage() {
 @layer utilities {
   .text-center { text-align: center; }
 }`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">

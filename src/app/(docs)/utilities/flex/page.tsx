@@ -22,7 +22,7 @@ export default function FlexUtilities() {
           <code>flex-column</code>, <code>flex-row-reverse</code>, and{" "}
           <code>flex-column-reverse</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex flex-row gap-2 border rounded-sm p-2 mb-3">
   <span class="bg-surface-raised rounded-sm p-2">One</span>
   <span class="bg-surface-raised rounded-sm p-2">Two</span>
@@ -56,7 +56,7 @@ export default function FlexUtilities() {
           <code>flex-nowrap</code> to keep them on one line, and{" "}
           <code>flex-wrap-reverse</code> to wrap in reverse order.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex flex-wrap gap-2 border rounded-sm p-2">
   <span class="bg-surface-raised rounded-sm p-2">One</span>
   <span class="bg-surface-raised rounded-sm p-2">Two</span>
@@ -84,7 +84,7 @@ export default function FlexUtilities() {
           whether an item grows. <code>flex-shrink-0</code> prevents an item
           from shrinking.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex gap-2 border rounded-sm p-2 mb-3">
   <span class="bg-surface-raised rounded-sm p-2">Fixed</span>
   <span class="bg-surface-raised rounded-sm p-2 flex-fill text-center">flex-fill</span>
@@ -127,7 +127,7 @@ export default function FlexUtilities() {
           axis: <code>start</code>, <code>center</code>, <code>end</code>,{" "}
           <code>between</code>, <code>around</code>, <code>evenly</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex justify-content-between border rounded-sm p-2 mb-3">
   <span class="bg-surface-raised rounded-sm p-2">Left</span>
   <span class="bg-surface-raised rounded-sm p-2">Centre</span>
@@ -165,7 +165,7 @@ export default function FlexUtilities() {
           Values: <code>start</code>, <code>center</code>, <code>end</code>,{" "}
           <code>baseline</code>, <code>stretch</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex align-items-center gap-2 border rounded-sm p-2 mb-3">
   <span class="bg-surface-raised rounded-sm p-2">Short</span>
   <span class="bg-surface-raised rounded-sm p-4">Tall item</span>
@@ -203,7 +203,7 @@ export default function FlexUtilities() {
           generate responsive variants: <code>.flex-column@md</code>,{" "}
           <code>.justify-content-between@lg</code>, etc.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex flex-column flex-row@md gap-3 border rounded-sm p-2">
   <span class="bg-surface-raised rounded-sm p-2">Stacked on mobile</span>
   <span class="bg-surface-raised rounded-sm p-2">Row from md up</span>

@@ -17,7 +17,7 @@ export default function ProsePage() {
 
       <section className="docs-section">
         <h2>Default</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-prose">
   <h2>The vertical rhythm system</h2>
   <p>The library runs on two nested grids: a base grid of 8px for every box,
@@ -58,7 +58,7 @@ export default function ProsePage() {
           The <code>--ui</code> modifier switches to the sans-serif font for
           help text and documentation contexts.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-prose ln-prose--ui">
   <p>This prose block uses the system sans-serif font instead of the
      default serif stack. Useful for documentation and help text.</p>

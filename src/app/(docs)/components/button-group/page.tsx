@@ -17,7 +17,7 @@ export default function ButtonGroupPage() {
 
       <section className="docs-section">
         <h2>Default group</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-button-group">
   <button class="ln-button ln-button--outline">Left</button>
   <button class="ln-button ln-button--outline">Center</button>
@@ -39,7 +39,7 @@ export default function ButtonGroupPage() {
           The <code>--attached</code> modifier removes the gap and joins buttons
           into a segmented control with internal divider borders.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-button-group ln-button-group--attached">
   <button class="ln-button ln-button--outline">Day</button>
   <button class="ln-button ln-button--outline">Week</button>
@@ -57,7 +57,7 @@ export default function ButtonGroupPage() {
 
       <section className="docs-section">
         <h2>Vertical group</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-button-group ln-button-group--vertical ln-button-group--attached">
   <button class="ln-button ln-button--outline">Top</button>
   <button class="ln-button ln-button--outline">Middle</button>
@@ -80,7 +80,7 @@ export default function ButtonGroupPage() {
           all children so they share the available space equally. Works with
           both horizontal and vertical groups.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-button-group ln-button-group--attached ln-button-group--fill">
   <button class="ln-button ln-button--outline">Yes</button>
   <button class="ln-button ln-button--outline">No</button>
@@ -95,7 +95,7 @@ export default function ButtonGroupPage() {
           </div>
         </div>
 
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-button-group ln-button-group--vertical ln-button-group--attached ln-button-group--fill">
   <button class="ln-button ln-button--outline">Top</button>
   <button class="ln-button ln-button--outline">Middle</button>

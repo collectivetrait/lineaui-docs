@@ -18,7 +18,7 @@ export default function PageHeaderPage() {
 
       <section className="docs-section">
         <h2>Standard page header</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-page-header ln-page-header--bordered">
   <span class="ln-page-header__eyebrow">Documentation</span>
   <h1 class="ln-page-header__title">Getting Started</h1>
@@ -38,7 +38,7 @@ export default function PageHeaderPage() {
 
       <section className="docs-section">
         <h2>Compact variant</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-page-header ln-page-header--compact">
   <h1 class="ln-page-header__title">Dashboard</h1>
 </div>`}</CodeBlock>

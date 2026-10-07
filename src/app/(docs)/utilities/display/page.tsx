@@ -26,7 +26,7 @@ export default function DisplayUtilities() {
           and height, <code>d-flex</code> for flexbox layout, and{" "}
           <code>d-none</code> to hide elements.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-block border rounded-sm p-2 mb-3">d-block</div>
 <div class="mb-3">
   <span class="d-inline-block bg-surface-raised rounded-sm p-2">d-inline-block</span>
@@ -64,7 +64,7 @@ export default function DisplayUtilities() {
           formatting contexts, and <code>d-contents</code> to make the element
           invisible to the box model while keeping its children in flow.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-inline-flex gap-2 border rounded-sm p-2 mb-3">
   <span class="bg-surface-raised rounded-sm p-2">d-inline-flex</span>
   <span class="bg-surface-raised rounded-sm p-2">item</span>
@@ -95,7 +95,7 @@ export default function DisplayUtilities() {
           <code>.d-*@sm</code>, <code>.d-*@md</code>, <code>.d-*@lg</code>,{" "}
           <code>.d-*@xl</code>, <code>.d-*@2xl</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-none d-block@md border rounded-sm p-2 mb-3">Hidden on mobile, visible from md up</div>
 <div class="d-block d-none@lg border rounded-sm p-2">Visible until lg, then hidden</div>`}</CodeBlock>
           <div className="component-demo__preview">

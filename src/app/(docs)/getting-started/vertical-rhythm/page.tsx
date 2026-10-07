@@ -212,10 +212,12 @@ export default function VerticalRhythmPage() {
           Override <code>$g</code> and <code>$r</code> to change the grid
           density. The entire token scale recalculates automatically.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $g: 4px,   // tighter grid
   $r: 16px   // shorter line height
 );`}</CodeBlock>
+        </div>
         <p>
           Keep <code>$r</code> as a whole multiple of <code>$g</code> so that
           line-grid multiples remain on the base grid.
@@ -247,7 +249,9 @@ export default function VerticalRhythmPage() {
           button at the bottom-right corner of any page, or add the{" "}
           <code>show-grid</code> class to <code>&lt;body&gt;</code>.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="html">{`<body class="show-grid">…</body>`}</CodeBlock>
+        </div>
         <p>
           The overlay draws horizontal lines at every 24px step and vertical
           lines at every 8px step, using the primary colour at low opacity.

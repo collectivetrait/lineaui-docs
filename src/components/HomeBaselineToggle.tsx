@@ -12,8 +12,8 @@ export function HomeBaselineToggle() {
   }
 
   return (
-    <button type="button" className="ln-button ln-button--outline ln-button--sm" onClick={toggle}>
-      Baseline overlay {on ? "on" : "off"}
+    <button type="button" className={`ln-button ln-button--outline ln-button--sm home-baseline-toggle ${on ? "home-baseline-toggle--on" : ""}`} onClick={toggle}>
+      <span className="home-baseline-toggle__dot" /> Baseline {on ? "on" : "off"}
     </button>
   );
 }

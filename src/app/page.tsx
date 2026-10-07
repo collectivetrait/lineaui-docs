@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import { GridToggle } from "@/components/GridToggle";
 import { BackToTop } from "@/components/BackToTop";
 import { PreviewGridToggles } from "@/components/PreviewGridToggles";
@@ -54,35 +55,6 @@ const STATS = [
   { label: "Base unit", value: "8", unit: "px" },
 ];
 
-const FOOTER_COLS = [
-  {
-    heading: "Library",
-    links: [
-      { label: "Getting started", href: "/getting-started" },
-      { label: "Principles", href: "/getting-started/principles" },
-      { label: "BEM conventions", href: "/getting-started/bem" },
-      { label: "Vertical rhythm", href: "/getting-started/vertical-rhythm" },
-    ],
-  },
-  {
-    heading: "Docs",
-    links: [
-      { label: "Foundation", href: "/foundation/typography" },
-      { label: "Layout", href: "/layout/grid" },
-      { label: "Components", href: "/components/button" },
-      { label: "JavaScript modules", href: "/components/button" },
-    ],
-  },
-  {
-    heading: "Resources",
-    links: [
-      { label: "Customization", href: "/getting-started/customization" },
-      { label: "Accessibility notes", href: "/getting-started/principles" },
-      { label: "Changelog", href: "#" },
-      { label: "GitHub", href: "https://github.com" },
-    ],
-  },
-];
 
 const SPECIMEN_ROWS = [
   { size: "80", lh: "96", text: "Display", className: "text-display-1" },
@@ -112,12 +84,12 @@ export default function Home() {
       <PreviewGridToggles />
 
       {/* 1. Hero */}
-      <section className="ln-section ln-section--wide ln-section--space-2xl">
-        <div className="ln-section__inner">
+      <section className="home-hero show-grid ln-section ln-section--wide ln-section--space-2xl">
+        <div className="home-hero__inner ln-section__inner">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
           <div>
             <div className="mb-2">
-              <span className="ln-badge ln-badge--primary">
+              <span className="ln-badge ln-badge--secondary">
                 <span className="ln-badge__dot" />
                 v1.0
               </span>
@@ -133,10 +105,10 @@ export default function Home() {
               a footprint you can reason about.
             </p>
             <div className="ln-cluster ln-cluster--gap-sm mb-4">
-              <Link href="/getting-started" className="ln-button ln-button--lg rounded-none">
+              <Link href="/getting-started" className="ln-button ln-button--lg">
                 Get started &rarr;
               </Link>
-              <Link href="/components/button" className="ln-button ln-button--outline ln-button--lg rounded-none">
+              <Link href="/components/button" className="ln-button ln-button--outline ln-button--lg bg-surface-sunken">
                 Explore components
               </Link>
             </div>
@@ -144,16 +116,15 @@ export default function Home() {
           </div>
 
           <div>
-              <div className="home-specimen bg-surface" id="home-specimen">
+              <div className="home-specimen bg-surface shadow-4" id="home-specimen">
                   <div className="home-specimen__header">
                       <span>specimen.html</span>
                       <HomeSpecimenToggle />
                   </div>
                   <div className="home-specimen__body">
                       <div className="ln-alert ln-alert--success bg-surface-sunken border mb-1">
-                          <svg className="ln-alert__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                              <path d="M9 12l2 2l4 -4" />
+                          <svg className="ln-alert__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
+                              <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm7 7.457l-9.005 9.565-4.995-5.865.761-.649 4.271 5.016 8.24-8.752.728.685z" />
                           </svg>
                           <div className="ln-alert__content">
                               <p className="ln-alert__body"><strong>Saved.</strong> ln-alert ln-alert--success</p>
@@ -162,7 +133,7 @@ export default function Home() {
                       <div className="ln-field mb-1">
                           <label className="ln-field__label">Email address</label>
                           <div className="ln-field__control">
-                              <input className="bg-surface-sunken" type="email" defaultValue="ada@example.com" readOnly />
+                              <input className="bg-surface-sunken pointer-none" type="email" defaultValue="ada@example.com" readOnly autoComplete="off" data-lpignore="true" />
                           </div>
                       </div>
                       <div className="ln-cluster ln-cluster--gap-sm mb-1">
@@ -185,23 +156,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 2. Ticker band */}
-      <div className="bg-primary py-3 home-ticker" aria-hidden="true">
-        <div className="ln-cluster ln-cluster--justify-center ln-cluster--gap-md ln-cluster--nowrap">
-          <span className="text-display-2 font-prose text-inverse">Ease of use</span>
-          <span className="text-display-2 font-prose text-inverse">/</span>
-          <span className="text-display-2 font-prose text-inverse fs-italic">Accessibility</span>
-          <span className="text-display-2 font-prose text-inverse">/</span>
-          <span className="text-display-2 font-prose text-inverse">Small footprint</span>
-          <span className="text-display-2 font-prose text-inverse">/</span>
-          <span className="text-display-2 font-prose text-inverse fs-italic">Vertical rhythm</span>
-          <span className="text-display-2 font-prose text-inverse">/</span>
-          <span className="text-display-2 font-prose text-inverse">Minimalism</span>
-        </div>
-      </div>
-
-      {/* 3. Principles */}
-      <section className="ln-section ln-section--wide ln-section--space-2xl">
+      {/* 2. Principles */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-sunken">
         <div className="ln-section__inner">
         <p className="ln-section__eyebrow">
           <span className="home-accent">01</span> / Principles
@@ -214,16 +170,16 @@ export default function Home() {
           a SASS variable or a single layer away from your own rules.
         </p>
 
-        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@sm ln-grid--cols-4@lg ln-grid--gap-0 bg-surface-raised border">
+        <div className="home-principles ln-grid ln-grid--cols-1 ln-grid--cols-2@sm ln-grid--cols-4@lg ln-grid--gap-0 bg-surface-raised shadow-2">
           {PRINCIPLES.map((p) => (
-            <div key={p.number} className="ln-card">
-              <div className="ln-card__eyebrow">
+            <div key={p.number} className="ln-card border-0">
+              <div className="ln-card__eyebrow home-principle__eyebrow">
                 <div className="home-principle__header">
                   <span className="home-principle__number">{p.number}</span>
                   <code>{p.code}</code>
                 </div>
               </div>
-              <h3 className="ln-card__title">{p.title}</h3>
+              <h3 className="ln-card__title h2 font-prose">{p.title}</h3>
               <div className="ln-card__body home-principle__accent">
                 <p>{p.body}</p>
               </div>
@@ -233,8 +189,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 4. Code showcase */}
-      <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-sunken">
+      {/* 3. Code showcase */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl">
         <div className="ln-section__inner">
         <div className="ln-section__header">
           <p className="ln-section__eyebrow">
@@ -252,8 +208,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. Rhythm */}
-      <section className="ln-section ln-section--wide ln-section--space-2xl">
+      {/* 4. Rhythm */}
+      <section className="ln-section ln-section--wide ln-section--space-2xl ln-section--surface-sunken">
         <div className="ln-section__inner">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
           <div>
@@ -286,14 +242,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 6. Stats row */}
-      <section className="ln-section ln-section--wide ln-section--space-lg ln-section--bordered">
+      {/* 5. Stats row */}
+      <section className="ln-section ln-section--wide ln-section--space-lg">
         <div className="ln-section__inner">
         <div className="ln-grid ln-grid--cols-2 ln-grid--cols-4@md ln-grid--gap-md home-stats">
           {STATS.map((s) => (
             <div key={s.label} className="ln-stat ln-stat--flat home-stats__item">
               <span className="ln-stat__label">{s.label}</span>
-              <span className="ln-stat__value">
+              <span className="ln-stat__value home-stats__value">
                 {s.value}
                 {s.unit && <span className="ln-stat__unit">{s.unit}</span>}
               </span>
@@ -314,7 +270,7 @@ export default function Home() {
               HTML. Reach for the JS modules only when a component needs them.
             </p>
           </div>
-          <div className="ln-cluster ln-cluster--justify-end@md ln-cluster--gap-sm align-self-center">
+          <div className="ln-cluster ln-cluster--justify-center ln-cluster--gap-sm align-self-center">
             <Link href="/getting-started" className="ln-button ln-button--lg">
               Read the docs
             </Link>
@@ -326,32 +282,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="ln-site-footer">
-        <div className="ln-site-footer__inner">
-          <div className="ln-site-footer__columns">
-            {FOOTER_COLS.map((col) => (
-              <div key={col.heading}>
-                <p className="ln-site-footer__heading">{col.heading}</p>
-                <ul className="ln-site-footer__links">
-                  {col.links.map((link) => (
-                    <li key={link.label}>
-                      <Link href={link.href} className="ln-site-footer__link">
-                        {link.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="ln-site-footer__bottom">
-            <p className="ln-site-footer__legal">
-              Built with linea-ui. MIT License.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

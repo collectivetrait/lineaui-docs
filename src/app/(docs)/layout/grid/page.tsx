@@ -18,7 +18,7 @@ export default function GridPage() {
 
       <section className="docs-section">
         <h2>Fixed columns</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-grid ln-grid--cols-3">
   <div class="border p-2 text-center">One</div>
   <div class="border p-2 text-center">Two</div>
@@ -47,7 +47,7 @@ export default function GridPage() {
           <code>repeat(auto-fit, minmax(…, 1fr))</code> to fill columns from a
           minimum track size.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-grid ln-grid--auto">
   <div class="border p-2 text-center">One</div>
   <div class="border p-2 text-center">Two</div>
@@ -71,7 +71,7 @@ export default function GridPage() {
           Child items can span multiple columns or start at a specific column
           with the <code>ln-grid__item</code> element and its modifiers.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-grid ln-grid--cols-4">
   <div class="ln-grid__item ln-grid__item--span-2 border p-2 text-center">span-2</div>
   <div class="border p-2 text-center">3</div>
@@ -96,7 +96,7 @@ export default function GridPage() {
           to change the column count at different viewport widths. Combine a
           base column count with a responsive override for mobile-first layouts.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- 1 column on mobile, 3 columns from md up -->
 <div class="ln-grid ln-grid--cols-1 ln-grid--cols-3@md">
   <div class="border p-2 text-center">One</div>
@@ -126,7 +126,7 @@ export default function GridPage() {
           Reposition items at different breakpoints with{" "}
           <code>--start-&#123;n&#125;@&#123;bp&#125;</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Item starts at column 1 by default, column 3 from md up -->
 <div class="ln-grid ln-grid--cols-4">
   <div class="ln-grid__item ln-grid__item--span-2 ln-grid__item--start-3@md border p-2 text-center">
@@ -149,7 +149,7 @@ export default function GridPage() {
 
       <section className="docs-section">
         <h2>Gap modifiers</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Compact gap -->
 <div class="ln-grid ln-grid--cols-3 ln-grid--gap-xs mb-3">
   <div class="border p-2 text-center">A</div>

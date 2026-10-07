@@ -17,7 +17,7 @@ export default function MenuPage() {
 
       <section className="docs-section">
         <h2>Sidebar menu</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-menu">
   <div class="ln-menu__group">
     <div class="ln-menu__heading">Main</div>
@@ -93,7 +93,7 @@ export default function MenuPage() {
 
       <section className="docs-section">
         <h2>Table of contents menu</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-menu ln-menu--toc">
   <ul>
     <li class="ln-menu__item">
@@ -149,7 +149,7 @@ export default function MenuPage() {
 
       <section className="docs-section">
         <h2>Pill menu</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-menu ln-menu--pills">
   <ul>
     <li class="ln-menu__item">

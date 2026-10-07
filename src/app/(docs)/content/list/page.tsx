@@ -18,7 +18,7 @@ export default function ListPage() {
 
       <section className="docs-section">
         <h2>Divided list</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<ul class="ln-list ln-list--divided">
   <li class="ln-list__item">
     <div class="ln-list__content">
@@ -66,7 +66,7 @@ export default function ListPage() {
 
       <section className="docs-section">
         <h2>Bordered interactive list</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<ul class="ln-list ln-list--bordered ln-list--interactive">
   <li class="ln-list__item">
     <div class="ln-list__content">

@@ -109,6 +109,7 @@ export const NAV: NavSection[] = [
       { label: "Float", href: "/utilities/float" },
       { label: "Opacity", href: "/utilities/opacity" },
       { label: "Overflow", href: "/utilities/overflow" },
+      { label: "Pointer Events", href: "/utilities/pointer-events" },
       { label: "Position", href: "/utilities/position" },
       { label: "Shadows", href: "/utilities/shadows" },
       { label: "Sizing", href: "/utilities/sizing" },

@@ -17,7 +17,7 @@ export default function SpinnerPage() {
 
       <section className="docs-section">
         <h2>Sizes</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-spinner ln-spinner--sm"></span>
 <span class="ln-spinner"></span>
 <span class="ln-spinner ln-spinner--lg"></span>`}</CodeBlock>
@@ -33,7 +33,7 @@ export default function SpinnerPage() {
 
       <section className="docs-section">
         <h2>Spinner role colors</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-spinner ln-spinner--primary"></span>
 <span class="ln-spinner ln-spinner--success"></span>
 <span class="ln-spinner ln-spinner--danger"></span>`}</CodeBlock>

@@ -18,7 +18,7 @@ export default function NavbarPage() {
 
       <section className="docs-section">
         <h2>Standard navbar</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--bordered">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Acme</a>
@@ -62,7 +62,7 @@ export default function NavbarPage() {
           links inside <code>__panel</code>. Resize the browser to see the
           collapse in action.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--bordered">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Acme</a>
@@ -120,7 +120,7 @@ export default function NavbarPage() {
 
       <section className="docs-section">
         <h2>Compact navbar</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--compact ln-navbar--bordered">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Dashboard</a>

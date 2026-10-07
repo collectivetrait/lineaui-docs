@@ -22,7 +22,7 @@ export default function BorderUtilities() {
           <code>border-2</code> or <code>border-3</code> for heavier weights,
           and <code>border-0</code> to remove it.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2 mb-3">border — 1px solid</div>
 <div class="border-2 rounded-sm p-2 mb-3">border-2 — 2px solid</div>
 <div class="border-3 rounded-sm p-2 mb-3">border-3 — 3px solid</div>
@@ -44,7 +44,7 @@ export default function BorderUtilities() {
           <code>rounded-circle</code> for a perfect circle (requires equal
           width and height).
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="d-inline-block border p-2 rounded-none mb-3">rounded-none</span>
 <span class="d-inline-block border p-2 rounded-xs mb-3">rounded-xs</span>
 <span class="d-inline-block border p-2 rounded-sm mb-3">rounded-sm</span>

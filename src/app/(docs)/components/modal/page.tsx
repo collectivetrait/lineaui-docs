@@ -21,7 +21,7 @@ export default function ModalPage() {
 
       <section className="docs-section">
         <h2>Default modal</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<dialog class="ln-modal" data-ln-dismissible open>
   <button class="ln-modal__close" data-ln-dismiss aria-label="Close">&times;</button>
   <div class="ln-modal__header">
@@ -55,7 +55,7 @@ export default function ModalPage() {
 
       <section className="docs-section">
         <h2>Small modal</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<dialog class="ln-modal ln-modal--sm" data-ln-dismissible open>
   <button class="ln-modal__close" data-ln-dismiss aria-label="Close">&times;</button>
   <div class="ln-modal__header">
@@ -89,7 +89,7 @@ export default function ModalPage() {
 
       <section className="docs-section">
         <h2>Danger modal</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<dialog class="ln-modal ln-modal--danger" data-ln-dismissible open>
   <button class="ln-modal__close" data-ln-dismiss aria-label="Close">&times;</button>
   <div class="ln-modal__header">

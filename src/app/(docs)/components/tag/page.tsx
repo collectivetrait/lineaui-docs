@@ -19,7 +19,7 @@ export default function TagPage() {
 
       <section className="docs-section">
         <h2>Default and outline</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-tag ln-tag--primary">Default</span>
 <span class="ln-tag ln-tag--outline ln-tag--primary">Outline</span>
 <span class="ln-tag ln-tag--success">Success</span>
@@ -37,7 +37,7 @@ export default function TagPage() {
 
       <section className="docs-section">
         <h2>Removable tag</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<span class="ln-tag ln-tag--primary" data-ln-dismissible>
   React
   <button class="ln-tag__remove" data-ln-dismiss aria-label="Remove">&times;</button>

@@ -23,7 +23,7 @@ export default function PositionUtilities() {
           <code>position-relative</code>, <code>position-absolute</code>,{" "}
           <code>position-fixed</code>, and <code>position-sticky</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="position-relative border rounded-sm p-3 mb-3">
   <p>This container is <code>position-relative</code>.</p>
   <p>Absolutely positioned children are anchored to it.</p>

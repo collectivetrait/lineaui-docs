@@ -20,7 +20,7 @@ export default function FloatUtilities() {
           Use <code>float-start</code> to float left, <code>float-end</code>{" "}
           to float right, and <code>float-none</code> to clear float.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2 mb-3">
   <div class="float-start bg-surface-raised rounded-sm p-2 me-2 mb-1">float-start</div>
   <p>This text wraps around the floated element on the left side. The float-start utility positions the element to the inline start edge.</p>
@@ -60,7 +60,7 @@ export default function FloatUtilities() {
           <code>.float-none@lg</code>, <code>.float-*@xl</code>,{" "}
           <code>.float-*@2xl</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2">
   <div class="float-none float-end@md bg-surface-raised rounded-sm p-2 ms-2 mb-1">Floats right from md up</div>
   <p>On small screens this element sits in normal flow. From the md breakpoint upward it floats to the end edge.</p>

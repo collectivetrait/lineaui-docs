@@ -24,7 +24,7 @@ export default function MediaPage() {
           scale down to fit their container while preserving their intrinsic
           aspect ratio.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Images and video are responsive by default — no classes needed -->
 <img src="/placeholder.svg" alt="Responsive image">
 <video src="/sample.mp4" controls>…</video>`}</CodeBlock>
@@ -32,11 +32,13 @@ export default function MediaPage() {
             <img src="/placeholder.svg" alt="Responsive image" />
           </div>
         </div>
+        <div className="component-demo shadow-2">
         <CodeBlock language="css">{`/* Base layer — applied automatically */
 img, video {
   max-inline-size: 100%;
   block-size: auto;
 }`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -46,7 +48,7 @@ img, video {
           and captions. The <code>__frame</code> element holds the media and
           applies ratios and overflow clipping.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-media ln-media--bordered">
   <div class="ln-media__frame">
     <img class="ln-media__img" src="/placeholder.svg" alt="Placeholder image">
@@ -66,7 +68,7 @@ img, video {
 
       <section className="docs-section">
         <h2>Aspect ratios</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-media ln-media--ratio-1x1 ln-media--bordered">
   <div class="ln-media__frame">
     <img class="ln-media__img" src="/placeholder.svg" alt="1:1 ratio">

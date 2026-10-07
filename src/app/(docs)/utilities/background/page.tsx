@@ -21,7 +21,7 @@ export default function BackgroundUtilities() {
           contrast. Subtle variants use a lighter tint and keep default text
           color.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="bg-primary text-inverse border rounded-sm p-2 mb-3">bg-primary</div>
 <div class="bg-secondary text-inverse border rounded-sm p-2 mb-3">bg-secondary</div>
 <div class="bg-success text-inverse border rounded-sm p-2 mb-3">bg-success</div>
@@ -59,7 +59,7 @@ export default function BackgroundUtilities() {
           <code>bg-surface-raised</code> / <code>bg-surface-sunken</code> for
           elevation variation.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="bg-canvas border rounded-sm p-2 mb-3">bg-canvas</div>
 <div class="bg-surface border rounded-sm p-2 mb-3">bg-surface</div>
 <div class="bg-surface-raised border rounded-sm p-2 mb-3">bg-surface-raised</div>

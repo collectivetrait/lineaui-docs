@@ -21,7 +21,7 @@ export default function OpacityUtilities() {
           <code>opacity-25</code>, <code>opacity-50</code>,{" "}
           <code>opacity-75</code>, and <code>opacity-100</code> (fully opaque).
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="d-flex gap-3">
   <span class="bg-surface-raised rounded-sm p-2 opacity-100">opacity-100</span>
   <span class="bg-surface-raised rounded-sm p-2 opacity-75">opacity-75</span>

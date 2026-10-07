@@ -19,7 +19,7 @@ export default function SectionPage() {
 
       <section className="docs-section">
         <h2>Default section with header</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<section class="ln-section ln-section--space-lg border mb-3">
   <div class="ln-section__inner">
     <div class="ln-section__header">
@@ -58,7 +58,7 @@ export default function SectionPage() {
 
       <section className="docs-section">
         <h2>Centre and inverse surface</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<section class="ln-section ln-section--space-xl ln-section--surface-inverse ln-section--center border">
   <div class="ln-section__inner">
     <h2 class="ln-section__title">Hero band</h2>
@@ -83,8 +83,8 @@ export default function SectionPage() {
           <code>--narrow</code> modifier constrains the inner element to the
           prose measure width.
         </p>
-        <div className="component-demo">
-          <CodeBlock language="html">{`<section class="ln-section ln-section--bordered ln-section--space-lg border mb-3">
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<section class="ln-section ln-section--space-lg border mb-3">
   <div class="ln-section__inner">
     <p>Section with a top border separator.</p>
   </div>
@@ -96,7 +96,7 @@ export default function SectionPage() {
   </div>
 </section>`}</CodeBlock>
           <div className="component-demo__preview">
-            <section className="ln-section ln-section--bordered ln-section--space-lg border mb-3">
+            <section className="ln-section ln-section--space-lg border mb-3">
               <div className="ln-section__inner">
                 <p>Section with a top border separator.</p>
               </div>
@@ -174,11 +174,6 @@ export default function SectionPage() {
             <tr>
               <td><code>.ln-section--surface-inverse</code></td>
               <td>Inverse (dark) background with light text</td>
-              <td>No</td>
-            </tr>
-            <tr>
-              <td><code>.ln-section--bordered</code></td>
-              <td>Top border separator</td>
               <td>No</td>
             </tr>
             <tr>

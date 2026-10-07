@@ -20,7 +20,9 @@ export default function GettingStarted() {
           Add ln to your project as a dependency. For local development, use the
           file: protocol to link the local package directly.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="shell">npm install ln</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -29,7 +31,9 @@ export default function GettingStarted() {
           Import the compiled stylesheet at the root of your application. The JS
           bundle is optional — it only adds interactive enhancements.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="css">{`import 'ln/dist/styles.css';`}</CodeBlock>
+        </div>
       </section>
     </article>
   );

@@ -16,7 +16,7 @@ export default function InputGroupPage() {
 
       <section className="docs-section">
         <h2>Addon + control</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-input-group">
   <span class="ln-input-group__addon">https://</span>
   <input class="ln-input-group__control" type="text" placeholder="example.com">
@@ -32,7 +32,7 @@ export default function InputGroupPage() {
 
       <section className="docs-section">
         <h2>Button + control</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-input-group">
   <input class="ln-input-group__control" type="text" placeholder="Search...">
   <button class="ln-input-group__button ln-button ln-button--solid">Search</button>
@@ -48,7 +48,7 @@ export default function InputGroupPage() {
 
       <section className="docs-section">
         <h2>Addon on both sides</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-input-group">
   <span class="ln-input-group__addon">$</span>
   <input class="ln-input-group__control" type="text" placeholder="0.00">

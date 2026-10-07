@@ -17,7 +17,7 @@ export default function ProgressPage() {
 
       <section className="docs-section">
         <h2>Determinate</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-progress">
   <div class="ln-progress__header">
     <span class="ln-progress__label">Uploading</span>
@@ -43,7 +43,7 @@ export default function ProgressPage() {
 
       <section className="docs-section">
         <h2>Indeterminate</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-progress ln-progress--indeterminate ln-progress--success">
   <div class="ln-progress__track">
     <div class="ln-progress__bar"></div>
@@ -61,7 +61,7 @@ export default function ProgressPage() {
 
       <section className="docs-section">
         <h2>Progress role colors</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-progress ln-progress--success" style="margin-bottom: 8px">
   <div class="ln-progress__track">
     <div class="ln-progress__bar" style="--progress: 80%"></div>

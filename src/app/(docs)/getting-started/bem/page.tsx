@@ -45,15 +45,19 @@ export default function BemPage() {
           <code>ln-</code>). Elements use double underscores and modifiers use
           double dashes.
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="text">{`.{prefix}{block}
 .{prefix}{block}__{element}
 .{prefix}{block}--{modifier}
 .{prefix}{block}__{element}--{modifier}`}</CodeBlock>
+        </div>
         <p>In practice:</p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="html">{`<button class="ln-button ln-button--solid ln-button--lg">
   <span class="ln-button__icon">…</span>
   <span class="ln-button__label">Save</span>
 </button>`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
@@ -62,11 +66,13 @@ export default function BemPage() {
           The <code>ln-</code> prefix namespaces every block class to avoid
           collisions with other CSS. Override it via the Sass source:
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use 'ln/scss' with (
   $prefix: 'my-'
 );
 
 // .my-button, .my-card, .my-alert, etc.`}</CodeBlock>
+        </div>
         <p>
           Utility classes (<code>.d-flex</code>, <code>.m-3</code>, etc.) and
           helper classes (<code>.h1</code>, <code>.text-display-1</code>, etc.)
@@ -81,6 +87,7 @@ export default function BemPage() {
           <code>tools/_bem.scss</code> to generate the class names. Every block
           file follows the same pattern:
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="scss">{`@use '../tools/bem' as b;
 
 @include b.block('card') {
@@ -94,6 +101,7 @@ export default function BemPage() {
     // .ln-card--horizontal { … }
   }
 }`}</CodeBlock>
+        </div>
         <p>
           The <code>block</code> mixin emits{" "}
           <code>.#&#123;$prefix&#125;#&#123;$name&#125;</code>, so changing the
@@ -107,7 +115,9 @@ export default function BemPage() {
           All block styles are emitted inside the <code>blocks</code> cascade
           layer. The full layer order is:
         </p>
+        <div className="component-demo shadow-2">
         <CodeBlock language="css">{`@layer reset, tokens, base, layout, blocks, helpers, utilities;`}</CodeBlock>
+        </div>
         <p>
           This means utilities and helpers always override block defaults
           without needing specificity tricks. A <code>.d-flex</code> utility on

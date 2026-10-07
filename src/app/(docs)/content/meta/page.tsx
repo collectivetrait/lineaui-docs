@@ -17,7 +17,7 @@ export default function MetaPage() {
 
       <section className="docs-section">
         <h2>Default</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-meta">
   <span class="ln-meta__item">Essay</span>
   <span class="ln-meta__separator"></span>
@@ -39,7 +39,7 @@ export default function MetaPage() {
 
       <section className="docs-section">
         <h2>Small size</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-meta ln-meta--sm">
   <span class="ln-meta__item">SKU-4821</span>
   <span class="ln-meta__separator"></span>

@@ -18,7 +18,7 @@ export default function PaginationPage() {
 
       <section className="docs-section">
         <h2>Default pagination</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-pagination" aria-label="Pagination">
   <ul class="ln-pagination__list">
     <li><a class="ln-pagination__link" href="#">&larr; Prev</a></li>
@@ -50,7 +50,7 @@ export default function PaginationPage() {
 
       <section className="docs-section">
         <h2>Simple pagination</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-pagination ln-pagination--simple" aria-label="Pagination">
   <ul class="ln-pagination__list">
     <li><a class="ln-pagination__link" href="#">&larr; Previous</a></li>
@@ -70,7 +70,7 @@ export default function PaginationPage() {
 
       <section className="docs-section">
         <h2>Compact pagination</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-pagination ln-pagination--compact" aria-label="Pagination">
   <ul class="ln-pagination__list">
     <li><a class="ln-pagination__link" href="#">&larr;</a></li>
@@ -92,7 +92,7 @@ export default function PaginationPage() {
 
       <section className="docs-section">
         <h2>Text pagination</h2>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-pagination ln-pagination--text" aria-label="Pagination">
   <ul class="ln-pagination__list">
     <li><a class="ln-pagination__link" href="#">&larr; Prev</a></li>

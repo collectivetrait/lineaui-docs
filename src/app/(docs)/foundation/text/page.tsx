@@ -22,7 +22,7 @@ export default function TextPage() {
           <code>.text-body-sm</code>, <code>.text-body-xs</code>, and{" "}
           <code>.text-meta</code>.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="text-body-lg mb-3">text-body-lg — 18px / 24px</p>
 <p class="text-body-sm mb-3">text-body-sm — 14px / 24px</p>
 <p class="text-body-xs mb-3">text-body-xs — 12px / 16px</p>
@@ -42,7 +42,7 @@ export default function TextPage() {
           Combine a base size with a responsive override. The suffixed class
           applies from the named breakpoint upward.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="text-body-sm text-body-lg@md mb-3">Small on mobile, large from md up</p>
 <p class="text-meta text-body-lg@lg">Meta on mobile, large from lg up</p>`}</CodeBlock>
           <div className="component-demo__preview">
@@ -60,7 +60,7 @@ export default function TextPage() {
           support responsive suffixes (<code>@sm</code>, <code>@md</code>,{" "}
           <code>@lg</code>, <code>@xl</code>, <code>@2xl</code>).
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="text-start border p-2 mb-3">Left-aligned text (default).</p>
 <p class="text-center border p-2 mb-3">Centre-aligned text.</p>
 <p class="text-end border p-2">Right-aligned text.</p>`}</CodeBlock>
@@ -78,7 +78,7 @@ export default function TextPage() {
           Combine a base alignment with a responsive override. The suffixed
           class applies from the named breakpoint upward.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Left on mobile, centred from md up -->
 <p class="text-start text-center@md border p-2 mb-3">Centred from md up.</p>
 
@@ -97,7 +97,7 @@ export default function TextPage() {
           Control how text wraps within its container. These utilities are not
           responsive.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="text-wrap border p-2 mb-3">Text with default wrapping behaviour.</p>
 <p class="text-nowrap border p-2 mb-3">Text that will not wrap to a new line.</p>
 <p class="text-balance border p-2 mb-3">Text balanced across lines for even line lengths.</p>
@@ -117,7 +117,7 @@ export default function TextPage() {
           Override or remove text decoration. Useful for removing underlines
           from links or adding strikethrough to deleted content.
         </p>
-        <div className="component-demo">
+        <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<a href="#" class="text-decoration-none mb-3 d-block">Link with no underline</a>
 <span class="text-decoration-underline mb-3 d-block">Underlined text</span>
 <span class="text-decoration-line-through">Struck-through text</span>`}</CodeBlock>
