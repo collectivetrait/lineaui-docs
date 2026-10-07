@@ -451,6 +451,7 @@
   figure > video,
   figure > code {
     margin: 0;
+    margin-bottom: 0.5rem;
   }
   figure:last-child {
     margin-bottom: 0;
