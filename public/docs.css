@@ -479,7 +479,7 @@ h3:hover > .docs-heading-anchor,
 
   .docs-shell__sidebar {
     position: fixed;
-    top: 0;
+    top: 4rem;
     bottom: 0;
     left: 0;
     width: 240px;
