@@ -261,22 +261,6 @@ export default function CustomizationPage() {
       </section>
 
       <section className="docs-section">
-        <h2>Dark mode</h2>
-        <p>
-          Colour tokens use <code>light-dark()</code>, so they automatically
-          follow the OS preference. To force a theme, set{" "}
-          <code>data-theme</code> on any ancestor element.
-        </p>
-        <div className="component-demo shadow-2">
-        <CodeBlock language="html">{`<!-- Force dark on the whole page -->
-<html data-theme="dark">…</html>
-
-<!-- Light island inside a dark page -->
-<section data-theme="light">…</section>`}</CodeBlock>
-        </div>
-      </section>
-
-      <section className="docs-section">
         <h2>Reference</h2>
         <table>
           <thead>

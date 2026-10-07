@@ -28,6 +28,7 @@ export const NAV: NavSection[] = [
       { label: "Media", href: "/foundation/media" },
       { label: "Figures", href: "/foundation/figures" },
       { label: "Tables", href: "/foundation/tables" },
+      { label: "Theme", href: "/foundation/theme" },
     ],
   },
   {

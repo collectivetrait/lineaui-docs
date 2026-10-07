@@ -1,13 +1,12 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 const STORAGE_KEY = "ln:theme";
 
 type Theme = "light" | "dark";
 
 function getPreferred(): Theme {
-  if (typeof window === "undefined") return "light";
   const stored = localStorage.getItem(STORAGE_KEY) as Theme | null;
   if (stored === "light" || stored === "dark") return stored;
   return window.matchMedia("(prefers-color-scheme: dark)").matches
@@ -16,18 +15,12 @@ function getPreferred(): Theme {
 }
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof document !== "undefined") {
-      const attr = document.documentElement.dataset.theme;
-      if (attr === "light" || attr === "dark") return attr as Theme;
-    }
-    return "light";
-  });
+  const [theme, setTheme] = useState<Theme>("light");
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    const preferred = getPreferred();
+    setTheme(preferred);
     if (!document.documentElement.dataset.theme) {
-      const preferred = getPreferred();
-      setTheme(preferred);
       document.documentElement.dataset.theme = preferred;
     }
   }, []);
