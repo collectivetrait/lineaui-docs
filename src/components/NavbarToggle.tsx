@@ -32,8 +32,8 @@ export function NavbarToggle() {
       aria-label="Toggle navigation"
       onClick={toggle}
     >
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M4 22h-4v-4h4v4zm0-12h-4v4h4v-4zm0-8h-4v4h4v-4zm3 0v4h17v-4h-17zm0 12h17v-4h-17v4zm0 8h17v-4h-17v4z" />
+      <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+        <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
       </svg>
     </button>
   );

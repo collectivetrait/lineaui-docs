@@ -154,8 +154,8 @@ export default function ButtonPage() {
 <button class="ln-button ln-button--outline">
   <span class="ln-button__label">Next</span>
   <span class="ln-button__icon">
-    <svg viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
-      <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z"/>
+    <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+      <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
     </svg>
   </span>
 </button>`}</CodeBlock>
@@ -172,8 +172,8 @@ export default function ButtonPage() {
               <button className="ln-button ln-button--outline">
                 <span className="ln-button__label">Next</span>
                 <span className="ln-button__icon">
-                  <svg viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
-                    <path d="M4 .755l14.374 11.245-14.374 11.219.619.781 15.381-12-15.391-12-.609.755z" />
+                  <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+                    <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
                   </svg>
                 </span>
               </button>
