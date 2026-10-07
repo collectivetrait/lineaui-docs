@@ -449,7 +449,7 @@
   }
   figure > img,
   figure > video,
-  figure > code {
+  figure > pre {
     margin: 0;
     margin-bottom: 0.5rem;
   }
@@ -2324,10 +2324,11 @@
     margin: calc(-1 * var(--_pad));
     margin-bottom: 0;
   }
-  .ln-card__media > img {
+  .ln-card__media-object {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    align-content: center;
   }
   .ln-card__header {
     margin-bottom: 1.5rem;
@@ -2406,8 +2407,7 @@
     margin: calc(-1 * var(--_pad));
     margin-right: 0;
   }
-  .ln-card--horizontal .ln-card__media > img {
-    height: 100%;
+  .ln-card--horizontal .ln-card__media-object {
     object-fit: cover;
   }
   .ln-card--pad-sm {
