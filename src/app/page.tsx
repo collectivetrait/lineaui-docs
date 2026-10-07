@@ -184,7 +184,7 @@ export default function Home() {
                   <code>{p.code}</code>
                 </div>
               </div>
-              <h3 className="ln-card__title h2 font-prose">{p.title}</h3>
+              <h3 className="ln-card__title h2 font-prose mb-2">{p.title}</h3>
               <div className="ln-card__body home-principle__accent">
                 <p>{p.body}</p>
               </div>
