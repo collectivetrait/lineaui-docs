@@ -753,25 +753,6 @@ h3:hover > .docs-heading-anchor,
 
 /* --- Search bar --- */
 
-.docs-search {
-  position: relative;
-}
-
-.docs-search__input {
-  width: 160px;
-  height: 28px;
-  padding: 0 var(--s2);
-  font-size: var(--t-body-xs-s);
-  background: var(--surface-sunken);
-  border: 1px solid var(--border);
-  border-radius: var(--r-sm);
-  color: var(--text);
-}
-
-.docs-search__input::placeholder {
-  color: var(--c-muted);
-}
-
 .docs-search__results {
   position: absolute;
   top: 100%;
