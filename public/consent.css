@@ -1,0 +1,112 @@
+/* --- Cookie consent banner --- */
+
+.docs-consent {
+  position: fixed;
+  bottom: var(--s3);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  width: calc(100% - var(--s3) * 2);
+  max-width: 560px;
+  padding: var(--s3);
+  background: var(--surface-raised);
+  box-shadow: var(--sh4), inset 0 0 0 1px var(--border);
+  border-radius: var(--r-md);
+}
+
+.docs-consent__text {
+  flex: 1;
+  margin: 0;
+  font-size: var(--t-body-sm-s);
+  line-height: var(--t-body-sm-lh);
+  color: var(--text);
+}
+
+.docs-consent__actions {
+  display: flex;
+  gap: var(--s1);
+  flex-shrink: 0;
+}
+
+.docs-consent__btn {
+  padding: var(--s1) var(--s2);
+  font-family: var(--f-ui);
+  font-size: var(--t-body-sm-s);
+  line-height: var(--t-body-sm-lh);
+  font-weight: 500;
+  border: none;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+}
+
+.docs-consent__btn--accept {
+  background: var(--primary);
+  color: var(--primary-contrast);
+}
+
+.docs-consent__btn--accept:hover {
+  background: var(--primary-hover);
+}
+
+.docs-consent__btn--decline {
+  background: transparent;
+  color: var(--c-muted);
+}
+
+.docs-consent__btn--decline:hover {
+  color: var(--text);
+  background: var(--surface-sunken);
+}
+
+@media (max-width: 600px) {
+  .docs-consent {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* --- Cookie consent reset (toolbar button) --- */
+
+.docs-consent-reset {
+  position: fixed;
+  bottom: var(--s3);
+  right: calc(var(--s3) + var(--s4) + var(--s1));
+  z-index: 10000;
+  display: inline-grid;
+  place-items: center;
+  width: var(--s4);
+  height: var(--s4);
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--c-muted);
+  cursor: pointer;
+}
+
+.docs-consent-reset > svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.docs-consent-reset:hover {
+  color: var(--text);
+  background: var(--surface-raised);
+}
+
+/* Docs pages: shift left for toc-toggle */
+@media (min-width: 768px) {
+  .docs-docs ~ .docs-consent-reset {
+    right: calc(var(--s3) + (var(--s4) + var(--s1)) * 2);
+  }
+}
+
+/* Mobile: shift left for back-to-top + grid-toggle */
+@media (max-width: 767px) {
+  .docs-consent-reset {
+    right: calc(var(--s3) + (var(--s4) + var(--s1)) * 2);
+  }
+}

@@ -1,4 +1,6 @@
 import type { Metadata, Viewport } from "next";
+import { CookieConsent } from "@/components/CookieConsent";
+import { CookieConsentReset } from "@/components/CookieConsentReset";
 
 const description =
   "linea-ui is a lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Readable class names, accessible defaults, and a small footprint.";
@@ -69,6 +71,7 @@ export default function RootLayout({
         <script src="/theme-init.js" />
         <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="/docs.css" />
+        <link rel="stylesheet" href="/consent.css" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -100,7 +103,14 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
+        <CookieConsentReset />
+
+      </body>
     </html>
   );
 }

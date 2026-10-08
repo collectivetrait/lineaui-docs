@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-
-"use client";
-
-import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+import { TabsDemo } from "@/components/TabsDemo";
 
 export const metadata: Metadata = {
   title: "Tabs",
@@ -12,8 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function TabsPage() {
-  const [activeTab, setActiveTab] = useState(0);
-
   return (
     <article>
       <section className="docs-section">
@@ -42,23 +37,7 @@ export default function TabsPage() {
   <div class="ln-tabs__panel" hidden>Pricing content goes here.</div>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <div className="ln-tabs">
-              <div className="ln-tabs__list">
-                {["Overview", "Features", "Pricing"].map((label, i) => (
-                  <button
-                    key={label}
-                    className="ln-tabs__tab"
-                    aria-selected={activeTab === i ? "true" : "false"}
-                    onClick={() => setActiveTab(i)}
-                  >
-                    {label}
-                  </button>
-                ))}
-              </div>
-              <div className="ln-tabs__panel" hidden={activeTab !== 0}>Overview content goes here.</div>
-              <div className="ln-tabs__panel" hidden={activeTab !== 1}>Features content goes here.</div>
-              <div className="ln-tabs__panel" hidden={activeTab !== 2}>Pricing content goes here.</div>
-            </div>
+            <TabsDemo />
           </div>
         </div>
       </section>

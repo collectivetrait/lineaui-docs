@@ -1393,3 +1393,53 @@ h3:hover > .docs-heading-anchor,
   min-height: calc(100vh - 4rem);
   padding: var(--s6) var(--s3);
 }
+
+/* --- About page --- */
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  min-height: calc(100vh - 4rem);
+  padding: var(--s6) var(--gutter) var(--s4);
+}
+
+.about-page__inner {
+  width: 100%;
+  max-width: 40rem;
+}
+
+.about-page__rule {
+  width: 5rem;
+  height: 2px;
+  background: var(--primary);
+  margin-top: var(--s3);
+}
+
+.about-page__body {
+  margin-top: var(--s4);
+}
+
+.about-page__body p + p {
+  margin-top: var(--s3);
+}
+
+.about-page__attribution {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: var(--s6);
+  padding-top: calc(var(--s3) - 1px);
+  border-top: 1px solid var(--border);
+  font-size: var(--t-body-sm-s);
+  line-height: var(--t-body-sm-lh);
+  color: var(--c-muted);
+}
+
+.about-page__attribution a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.about-page__attribution a:hover {
+  text-decoration: underline;
+}

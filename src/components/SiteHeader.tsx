@@ -15,7 +15,7 @@ export function SiteHeader({ before }: { before?: React.ReactNode }) {
           <Link href="/getting-started" className="docs-shell__nav-link">Documentation</Link>
           <Link href="#" className="docs-shell__nav-link">Icons</Link>
           <Link href="#" className="docs-shell__nav-link">Showcase</Link>
-          <Link href="#" className="docs-shell__nav-link">About</Link>
+          <Link href="/about" className="docs-shell__nav-link">About</Link>
         </nav>
         <div className="docs-shell__actions">
           <SearchBar />
@@ -33,7 +33,7 @@ export function SiteHeader({ before }: { before?: React.ReactNode }) {
           <Link href="/getting-started" className="docs-shell__nav-panel-link">Documentation</Link>
           <Link href="#" className="docs-shell__nav-panel-link">Icons</Link>
           <Link href="#" className="docs-shell__nav-panel-link">Showcase</Link>
-          <Link href="#" className="docs-shell__nav-panel-link">About</Link>
+          <Link href="/about" className="docs-shell__nav-panel-link">About</Link>
         </nav>
         <SearchBar className="docs-search--panel" />
       </div>
