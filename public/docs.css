@@ -1390,6 +1390,6 @@ h3:hover > .docs-heading-anchor,
   display: grid;
   place-items: center;
   text-align: center;
-  min-height: 60vh;
+  min-height: calc(100vh - 4rem);
   padding: var(--s6) var(--s3);
 }
