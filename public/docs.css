@@ -1402,3 +1402,13 @@ h3:hover > .docs-heading-anchor,
   border-color: var(--secondary-border) !important;
   color: var(--secondary-text) !important;
 }
+
+/* --- 404 page --- */
+
+.docs-not-found {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  min-height: 60vh;
+  padding: var(--s6) var(--s3);
+}
