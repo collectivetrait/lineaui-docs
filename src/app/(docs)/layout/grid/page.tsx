@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Grid",
+  description: "A CSS Grid wrapper with configurable columns and gap. Set column counts with modifier classes or use auto-fit for responsive layouts.",
+};
 
 export default function GridPage() {
   return (

@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
+
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Principles",
+  description: "The design decisions behind linea-ui: minimalism, readability, ease of use, accessibility, small footprint, and vertical rhythm.",
+};
 
 export default function PrinciplesPage() {
   return (

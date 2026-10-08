@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Shadows",
+  description: "Utility classes for box shadows using linea-ui elevation token scale.",
+};
 
 export default function ShadowUtilities() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Page Header",
+  description: "A structured header block with title, subtitle, breadcrumb, and action slots for top-of-page content.",
+};
 
 export default function PageHeaderPage() {
   return (

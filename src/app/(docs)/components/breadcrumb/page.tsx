@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Breadcrumb",
+  description: "Navigation breadcrumb trail showing the current page position in the site hierarchy.",
+};
 
 export default function BreadcrumbPage() {
   return (

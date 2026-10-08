@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Empty State",
+  description: "Placeholder content for empty views. Includes icon, heading, description, and action slots.",
+};
 
 export default function EmptyStatePage() {
   return (

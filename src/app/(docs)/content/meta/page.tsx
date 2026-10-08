@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Meta",
+  description: "A key-value display block for metadata like dates, authors, and status fields.",
+};
 
 export default function MetaPage() {
   return (

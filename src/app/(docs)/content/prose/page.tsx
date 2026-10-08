@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Prose",
+  description: "A content wrapper that applies typographic styling to raw HTML. Ideal for CMS content and markdown output.",
+};
 
 export default function ProsePage() {
   return (

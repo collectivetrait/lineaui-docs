@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "BEM",
+  description: "Every component in linea-ui follows the Block Element Modifier convention. Learn how BEM naming keeps styles predictable and composable.",
+};
 
 export default function BemPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Input Group",
+  description: "Combine inputs with prepended or appended text, icons, or buttons in a single visual unit.",
+};
 
 export default function InputGroupPage() {
   return (

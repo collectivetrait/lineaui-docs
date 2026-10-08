@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Cluster",
+  description: "A flexbox row that wraps its children with a consistent gap. Use it for inline groups of buttons, tags, or badges.",
+};
 
 export default function ClusterPage() {
   return (

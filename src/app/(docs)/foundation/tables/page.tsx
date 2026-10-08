@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableSelectInit } from "@/components/TableSelectInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Tables",
+  description: "Base styling for HTML tables plus the ln-table block for striped rows, hover states, and responsive horizontal scroll.",
+};
 
 export default function TablesPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Fonts",
+  description: "Utility classes for font weight, font style, and font family in linea-ui.",
+};
 
 export default function FontsPage() {
   return (

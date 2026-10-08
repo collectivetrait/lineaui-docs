@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Dashboard",
+  description: "A full-page dashboard pattern combining navbar, sidebar, cards, and data display components.",
+};
 
 export default function DashboardPatterns() {
   return (

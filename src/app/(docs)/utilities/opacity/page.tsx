@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Opacity",
+  description: "Utility classes for element opacity from 0 to 100 in stepped increments.",
+};
 
 export default function OpacityUtilities() {
   return (

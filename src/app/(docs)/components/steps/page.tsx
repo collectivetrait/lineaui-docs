@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Steps",
+  description: "A multi-step progress indicator for wizards and onboarding flows. Supports horizontal and vertical layouts.",
+};
 
 export default function StepsPage() {
   return (

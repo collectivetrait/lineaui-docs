@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Alert",
+  description: "Contextual feedback messages with icon, title, and body slots. Supports success, warning, danger, and info variants.",
+};
 
 export default function AlertPage() {
   return (

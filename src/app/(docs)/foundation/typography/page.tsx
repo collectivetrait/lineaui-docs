@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { TypeScaleTable } from "@/components/TypeScaleTable";
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Typography",
+  description: "The linea-ui type system is built on a 24px vertical rhythm grid. Font sizes, line heights, and spacing are whole multiples of 8px.",
+};
 
 export default function TypographyPage() {
   return (

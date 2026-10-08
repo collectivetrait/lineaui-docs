@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
+
 "use client";
 
 import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Dropdown",
+  description: "A toggleable overlay menu for actions or navigation links. Supports dividers, icons, and nested groups.",
+};
 
 export default function DropdownPage() {
   const [dropdown1Open, setDropdown1Open] = useState(false);

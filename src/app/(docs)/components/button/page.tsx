@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Button",
+  description: "An inline-flex control with solid, outline, ghost, and link variants. Three sizes and six role colors for every use case.",
+};
 
 export default function ButtonPage() {
   return (

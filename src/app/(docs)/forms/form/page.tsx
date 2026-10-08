@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Form",
+  description: "Form layout patterns with field spacing, inline layouts, and validation state styling.",
+};
 
 export default function FormPage() {
   return (

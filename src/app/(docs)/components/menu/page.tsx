@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Menu",
+  description: "A vertical navigation list for sidebars and settings panels. Supports icons, badges, and nested groups.",
+};
 
 export default function MenuPage() {
   return (

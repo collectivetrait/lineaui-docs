@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Choice",
+  description: "Custom-styled checkboxes and radio buttons with label alignment and group layouts.",
+};
 
 export default function ChoicePage() {
   return (

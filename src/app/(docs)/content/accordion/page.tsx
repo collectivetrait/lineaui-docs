@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Accordion",
+  description: "Collapsible content panels for organizing long-form content. Toggle sections open and closed with accessible keyboard support.",
+};
 
 export default function AccordionPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Sizing",
+  description: "Utility classes for width and height using percentage and viewport-relative values.",
+};
 
 export default function SizingUtilities() {
   return (

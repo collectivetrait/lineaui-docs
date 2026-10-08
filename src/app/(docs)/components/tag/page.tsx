@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Tag",
+  description: "Small labels for categorization and filtering. Available in multiple colors with optional dismiss button.",
+};
 
 export default function TagPage() {
   return (

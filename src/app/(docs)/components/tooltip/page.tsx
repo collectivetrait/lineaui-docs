@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Tooltip",
+  description: "A small overlay that displays additional information on hover or focus. Supports multiple placement options.",
+};
 
 export default function TooltipPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Button Group",
+  description: "Group related buttons into a single horizontal row with shared borders and rounded corners.",
+};
 
 export default function ButtonGroupPage() {
   return (

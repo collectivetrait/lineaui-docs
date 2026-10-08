@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Float",
+  description: "Utility classes for CSS float and clearfix patterns.",
+};
 
 export default function FloatUtilities() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Badge",
+  description: "Small status indicators and counters. Available in solid and secondary variants with optional dot indicator.",
+};
 
 export default function BadgePage() {
   return (

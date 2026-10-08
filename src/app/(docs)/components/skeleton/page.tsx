@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Skeleton",
+  description: "Placeholder loading shapes that mimic content layout while data is being fetched.",
+};
 
 export default function SkeletonPage() {
   return (

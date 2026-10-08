@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "List",
+  description: "Styled list variants including flush lists, bordered lists, and horizontal inline lists.",
+};
 
 export default function ListPage() {
   return (

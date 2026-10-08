@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Card",
+  description: "A flexible container with optional header, body, footer, and image slots for grouping related content.",
+};
 
 export default function CardPage() {
   return (

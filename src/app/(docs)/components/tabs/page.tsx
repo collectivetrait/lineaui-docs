@@ -1,8 +1,15 @@
+import type { Metadata } from "next";
+
 "use client";
 
 import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Tabs",
+  description: "Tabbed navigation for switching between content panels. Supports horizontal tabs with active state indicators.",
+};
 
 export default function TabsPage() {
   const [activeTab, setActiveTab] = useState(0);

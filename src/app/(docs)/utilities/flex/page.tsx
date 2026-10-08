@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Flex",
+  description: "Utility classes for flexbox alignment, direction, wrap, grow, and shrink properties.",
+};
 
 export default function FlexUtilities() {
   return (

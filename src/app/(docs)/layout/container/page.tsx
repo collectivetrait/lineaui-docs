@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Container",
+  description: "A max-width wrapper that centres content and applies responsive side padding. The foundation of page layout in linea-ui.",
+};
 
 export default function ContainerPage() {
   return (

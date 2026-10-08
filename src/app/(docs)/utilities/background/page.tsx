@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Background",
+  description: "Utility classes for background colors using linea-ui semantic surface tokens.",
+};
 
 export default function BackgroundUtilities() {
   return (

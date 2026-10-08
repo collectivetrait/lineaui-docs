@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Site Footer",
+  description: "A structured page footer block with columns for links, branding, and legal text.",
+};
 
 export default function SiteFooterPage() {
   return (

@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { QuantityInit } from "@/components/QuantityInit";
 import { GalleryInit } from "@/components/GalleryInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "E-commerce",
+  description: "Product listing and detail page patterns built with linea-ui card, grid, and form components.",
+};
 
 export default function EcommercePatterns() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Figures",
+  description: "Base styling for the HTML figure and figcaption elements in linea-ui.",
+};
 
 export default function FiguresPage() {
   return (

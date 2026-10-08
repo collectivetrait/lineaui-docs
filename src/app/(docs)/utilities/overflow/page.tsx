@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Overflow",
+  description: "Utility classes for CSS overflow behaviour: visible, hidden, scroll, and auto.",
+};
 
 export default function OverflowUtilities() {
   return (

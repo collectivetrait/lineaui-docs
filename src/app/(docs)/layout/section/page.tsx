@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Section",
+  description: "A full-width page band with block padding derived from rhythm tokens. Use sections to structure vertical page flow.",
+};
 
 export default function SectionPage() {
   return (

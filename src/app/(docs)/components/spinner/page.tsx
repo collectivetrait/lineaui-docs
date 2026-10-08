@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Spinner",
+  description: "An animated loading indicator available in multiple sizes for inline and overlay use.",
+};
 
 export default function SpinnerPage() {
   return (

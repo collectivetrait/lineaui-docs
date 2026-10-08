@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Introduction",
+  description: "Install linea-ui via npm, import the compiled CSS, and add the JS bundle to your page. Get started with BEM-based UI components.",
+};
 
 export default function GettingStarted() {
   return (

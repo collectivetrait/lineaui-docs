@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Drawer",
+  description: "A sliding overlay panel anchored to a screen edge. Use it for navigation menus, filters, or detail views.",
+};
 
 export default function DrawerPage() {
   return (

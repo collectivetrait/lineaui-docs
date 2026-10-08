@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Avatar",
+  description: "Circular image or initial placeholders for user profiles. Available in multiple sizes.",
+};
 
 export default function AvatarPage() {
   return (

@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Toast",
+  description: "Temporary notification messages that appear and auto-dismiss. Supports success, warning, danger, and info variants.",
+};
 
 export default function ToastPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Progress",
+  description: "A horizontal progress bar for showing completion status. Supports labels, sizes, and contextual colors.",
+};
 
 export default function ProgressPage() {
   return (

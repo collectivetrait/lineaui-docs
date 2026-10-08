@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Borders",
+  description: "Utility classes for border width, color, and radius using linea-ui design tokens.",
+};
 
 export default function BorderUtilities() {
   return (

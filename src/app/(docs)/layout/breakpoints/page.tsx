@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Breakpoints",
+  description: "Five named breakpoints define the responsive grid in linea-ui. All breakpoints are mobile-first min-width values.",
+};
 
 export default function BreakpointsPage() {
   return (

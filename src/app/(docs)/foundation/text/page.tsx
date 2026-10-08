@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Text",
+  description: "Utility classes for text size, alignment, wrapping, and decoration in linea-ui.",
+};
 
 export default function TextPage() {
   return (

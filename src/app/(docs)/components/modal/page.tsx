@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { DismissInit } from "@/components/DismissInit";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Modal",
+  description: "A dialog overlay for confirmations, forms, or focused content. Includes header, body, and footer sections.",
+};
 
 export default function ModalPage() {
   return (

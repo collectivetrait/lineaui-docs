@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
+
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+
+export const metadata: Metadata = {
+  title: "Divider",
+  description: "A horizontal or vertical rule for separating content sections. Supports labels and custom spacing.",
+};
 
 export default function DividerPage() {
   return (
