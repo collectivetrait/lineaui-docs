@@ -18,9 +18,9 @@ const PRINCIPLES = [
   },
   {
     number: "02",
-    code: ".__element",
-    title: "Readability",
-    body: "BEM class names describe what an element is. Your markup stays legible six months later, for you and for whoever comes next.",
+    code: "__element",
+    title: "Specificity",
+    body: "BEM class names describe what an element is and keep every rule scoped to its block. No selector reaches into another component, so styles never collide.",
   },
   {
     number: "03",
@@ -32,19 +32,31 @@ const PRINCIPLES = [
     number: "04",
     code: ":focus-visible",
     title: "Accessibility",
-    body: "Contrast-checked tokens, visible focus rings and scripts that respect keyboard users and reduced motion settings.",
+    body: "Contrast-checked tokens, visible focus states and scripts that respect keyboard users and reduced motion settings.",
   },
   {
     number: "05",
-    code: "Score",
+    code: "@use",
     title: "Small footprint",
-    body: "Import modules one by one through SASS @use. The JS layer is optional and lives only where markup asks for it.",
+    body: "Import modules one by one through SASS @use. The JS layer is optional and adds behavior only where markup asks for it.",
   },
   {
     number: "06",
     code: "8px / 24px",
-    title: "Vertical rhythm",
-    body: "Every size and space snaps to an 8px grid, and text flows on a 24px baseline. Pages line up without manual nudging.",
+    title: "Readability",
+    body: "Text follows a vertical rhythm: every size and space snap to a grid, and lines flow on a stable baseline. The eye moves down the page at a steady pace.",
+  },
+  {
+    number: "07",
+    code: "@md @lg",
+    title: "Responsiveness",
+    body: "Layouts, headings and utilities adapt through breakpoint suffixes like @md and @lg. The rhythm holds at every screen size.",
+  },
+  {
+    number: "08",
+    code: "light-dark()",
+    title: "Native first",
+    body: "Built on what browsers already support: cascade layers, custom properties and light-dark(). No vendor prefixes, polyfills or workarounds to carry around.",
   },
 ];
 
@@ -57,12 +69,12 @@ const STATS = [
 
 
 const SPECIMEN_ROWS = [
-  { size: "80", lh: "96", text: "Display", className: "text-display-1" },
-  { size: "40", lh: "48", text: "Heading one", className: "h1" },
-  { size: "32", lh: "48", text: "Heading two", className: "h2 fs-italic" },
+  { size: "88", lh: "96", text: "Display", className: "text-display-1" },
+  { size: "48", lh: "56", text: "Heading one", className: "h1" },
+  { size: "32", lh: "40", text: "Heading two", className: "h2 fs-italic" },
   {
     size: "20",
-    lh: "24",
+    lh: "32",
     text: "Heading three, set in the sans",
     className: "h3 font-ui fw-semibold",
   },
@@ -72,7 +84,7 @@ const SPECIMEN_ROWS = [
     text: "Body copy runs on a 24px line. Paragraph spacing is one full line, so a page of mixed content keeps its cadence from top to bottom.",
     className: "",
   },
-  { size: "12", lh: "16", text: "CAPTION AND MONO LABELS", className: "h6" },
+  { size: "13", lh: "16", text: "CAPTION AND MONO LABELS", className: "h6" },
 ];
 
 export default function Home() {
@@ -94,26 +106,24 @@ export default function Home() {
                 v1.0
               </span>
             </div>
-            <p className="ln-section__eyebrow">BEM / Vertical rhythm / Cascade layers</p>
+            <p className="ln-section__eyebrow">BEM / VERTICAL RHYTHM / CASCADE LAYERS</p>
             <h1 className="text-display-1 font-prose fw-bold mb-4">
               Interfaces that keep the{" "}
               <em className="home-accent fs-italic">beat.</em>
             </h1>
             <p className="lead mb-4">
-              linea-ui is a small CSS and JS library built on BEM naming and an
-              8px vertical rhythm. Readable class names, accessible defaults and
-              a footprint you can reason about.
+              Linea UI is a small CSS and JS library built on BEM and vertical
+              rhythm principles. Intuitive class names, accessible defaults and
+              a light footprint.
             </p>
             <div className="ln-cluster ln-cluster--gap-sm mb-4">
-              <Link href="/getting-started" className="ln-button ln-button--lg">
+              <Link href="/getting-started/introduction" className="ln-button ln-button--lg">
                 <span className="ln-button__label">Get started</span>
                 <span className="ln-button__icon">
-                  <svg viewBox="0 0 640 640" fill="currentColor" aria-hidden="true">
-                    <path d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z" />
-                  </svg>
+                  <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </span>
               </Link>
-              <Link href="/components/button" className="ln-button ln-button--outline ln-button--lg bg-surface-sunken">
+              <Link href="/components/alert" className="ln-button ln-button--outline ln-button--lg bg-surface-sunken">
                 Explore components
               </Link>
             </div>
@@ -128,9 +138,7 @@ export default function Home() {
                   </div>
                   <div className="home-specimen__body">
                       <div className="ln-alert ln-alert--success bg-surface-sunken border mb-1">
-                          <svg className="ln-alert__icon" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true">
-                              <path d="M320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576zM320 112C205.1 112 112 205.1 112 320C112 434.9 205.1 528 320 528C434.9 528 528 434.9 528 320C528 205.1 434.9 112 320 112zM390.7 233.9C398.5 223.2 413.5 220.8 424.2 228.6C434.9 236.4 437.3 251.4 429.5 262.1L307.4 430.1C303.3 435.8 296.9 439.4 289.9 439.9C282.9 440.4 276 437.9 271.1 433L215.2 377.1C205.8 367.7 205.8 352.5 215.2 343.2C224.6 333.9 239.8 333.8 249.1 343.2L285.1 379.2L390.7 234z" />
-                          </svg>
+                          <i className="fa-solid fa-circle-check ln-alert__icon" aria-hidden="true"></i>
                           <div className="ln-alert__content">
                               <p className="ln-alert__body"><strong>Saved.</strong> ln-alert ln-alert--success</p>
                           </div>
@@ -149,8 +157,7 @@ export default function Home() {
                           <h3 className="ln-card__title h2">Card title</h3>
                           <div className="ln-card__body">
                               <p>
-                                  Every block above sits on the same 24px line. Toggle the
-                                  baseline to check.
+                                  Every block above sits on the same 24px line. Sizes and gaps come in 8px steps, three to a line. Toggle the baseline to draw that grid over the panel.
                               </p>
                           </div>
                       </div>
@@ -168,10 +175,10 @@ export default function Home() {
           <span className="home-accent">01</span> / Principles
         </p>
         <h2 className="text-display-2 font-prose">
-          Six opinions, written down so you can disagree with them.
+          Strong opinions built into every component.
         </h2>
         <p className="prose font-ui">
-          Every default in linea-ui traces back to one of these. Each one is
+          Every decision in Linea UI traces back to one of these. Each one is
           a SASS variable or a single layer away from your own rules.
         </p>
 
@@ -199,14 +206,13 @@ export default function Home() {
         <div className="ln-section__inner">
         <div className="ln-section__header">
           <p className="ln-section__eyebrow">
-            <span className="home-accent">02</span> / Markup
+            <span className="home-accent">02</span> / Markup playground
           </p>
           <h2 className="text-display-2 font-prose">
-            Class names that read like documentation.
+            Class names that say what each element is.
           </h2>
           <p className="ln-section__lead">
-            Block, element, modifier. Pick a component and read its markup next
-            to the result.
+            Block, element, modifier. Every block and its internal components follow a standard naming pattern, so the markup alone tells you what each part is and which block its styles belong to. If you know BEM, you already know how to use Linea UI.
           </p>
         </div>
         <HomeCodeShowcase />
@@ -226,8 +232,8 @@ export default function Home() {
             </h2>
             <p className="mb-3">
               Type sizes, margins and component heights resolve to multiples of
-              one base unit. Line heights step in 8px increments, so every block
-              starts where the grid expects it.
+              one base unit. Line heights step in regular increments, so every
+              block starts where the grid expects it.
             </p>
             <HomeBaselineToggle />
           </div>
@@ -276,10 +282,10 @@ export default function Home() {
             </p>
           </div>
           <div className="ln-cluster ln-cluster--justify-center ln-cluster--gap-sm align-self-center">
-            <Link href="/getting-started" className="ln-button ln-button--lg">
+            <Link href="/getting-started/introduction" className="ln-button ln-button--lg">
               Read the docs
             </Link>
-            <a href="https://github.com" className="ln-button ln-button--outline ln-button--lg">
+            <a href="https://github.com/collectivetrait/linea-ui" target="_blank" rel="noopener noreferrer" className="ln-button ln-button--outline ln-button--lg">
               View source
             </a>
           </div>

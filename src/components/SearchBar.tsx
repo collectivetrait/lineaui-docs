@@ -77,7 +77,7 @@ export function SearchBar({ className }: { className?: string }) {
         ref={inputRef}
         className="docs-search__input"
         type="search"
-        placeholder="Search..."
+        placeholder="Search…"
         aria-label="Search documentation"
         value={query}
         onChange={(e) => {

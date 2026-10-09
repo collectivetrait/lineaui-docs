@@ -310,6 +310,15 @@
   letter-spacing: -0.01em;
 }
 
+.docs-site-logo__name {
+  font-family: var(--f-prose);
+}
+
+.docs-site-logo__ui {
+  font-family: var(--f-ui);
+  color: var(--primary);
+}
+
 /* --- Main nav links (desktop) --- */
 
 .docs-shell__nav {
