@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
 
-"use client";
-
-import { useState } from "react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
+import { DropdownBasicPreview, DropdownHeadingsPreview } from "./DropdownPreview";
 
 export const metadata: Metadata = {
   title: "Dropdown",
@@ -12,9 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default function DropdownPage() {
-  const [dropdown1Open, setDropdown1Open] = useState(false);
-  const [dropdown2Open, setDropdown2Open] = useState(false);
-
   return (
     <article>
       <section className="docs-section">
@@ -44,21 +39,7 @@ export default function DropdownPage() {
   </div>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <div className="ln-dropdown">
-              <button
-                className="ln-dropdown__toggle"
-                aria-expanded={dropdown1Open ? "true" : "false"}
-                onClick={() => setDropdown1Open(!dropdown1Open)}
-              >
-                Actions ▾
-              </button>
-              <div className="ln-dropdown__menu">
-                <a className="ln-dropdown__item" href="#">Edit</a>
-                <a className="ln-dropdown__item" href="#">Duplicate</a>
-                <div className="ln-dropdown__divider"></div>
-                <a className="ln-dropdown__item ln-dropdown__item--danger" href="#">Delete</a>
-              </div>
-            </div>
+            <DropdownBasicPreview />
           </div>
         </div>
       </section>
@@ -88,31 +69,7 @@ export default function DropdownPage() {
   </div>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <div className="ln-dropdown">
-              <button
-                className="ln-dropdown__toggle"
-                aria-expanded={dropdown2Open ? "true" : "false"}
-                onClick={() => setDropdown2Open(!dropdown2Open)}
-              >
-                More ▾
-              </button>
-              <div className="ln-dropdown__menu">
-                <div className="ln-dropdown__heading">Navigate</div>
-                <a className="ln-dropdown__item" href="#">
-                  <span className="ln-dropdown__label">Go to file</span>
-                  <span className="ln-dropdown__shortcut">⌘P</span>
-                </a>
-                <a className="ln-dropdown__item" href="#">
-                  <span className="ln-dropdown__label">Go to line</span>
-                  <span className="ln-dropdown__shortcut">⌘G</span>
-                </a>
-                <div className="ln-dropdown__divider"></div>
-                <div className="ln-dropdown__heading">Actions</div>
-                <a className="ln-dropdown__item" href="#">
-                  <span className="ln-dropdown__label">Copy link</span>
-                </a>
-              </div>
-            </div>
+            <DropdownHeadingsPreview />
           </div>
         </div>
       </section>
