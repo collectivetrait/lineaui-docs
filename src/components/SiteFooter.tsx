@@ -6,8 +6,6 @@ const FOOTER_COLS = [
     links: [
       { label: "Getting started", href: "/getting-started" },
       { label: "Principles", href: "/getting-started/principles" },
-      { label: "BEM", href: "/getting-started/bem" },
-      { label: "Vertical rhythm", href: "/getting-started/vertical-rhythm" },
       { label: "Customization", href: "/getting-started/customization" },
     ],
   },
@@ -17,14 +15,12 @@ const FOOTER_COLS = [
       { label: "Foundation", href: "/foundation/typography" },
       { label: "Layout", href: "/layout/grid" },
       { label: "Components", href: "/components/alert" },
-      { label: "Icons", href: "/icons" },
     ],
   },
   {
     heading: "Project",
     links: [
       { label: "About", href: "/about" },
-      { label: "Showcase", href: "#" },
       { label: "Changelog", href: "#" },
       { label: "GitHub", href: "https://github.com/collectivetrait/linea-ui" },
     ],
