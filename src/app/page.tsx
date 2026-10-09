@@ -157,7 +157,7 @@ export default function Home() {
                           <h3 className="ln-card__title h2">Card title</h3>
                           <div className="ln-card__body">
                               <p>
-                                  Every block above sits on the same 24px line. Sizes and gaps come in 8px steps, three to a line. Toggle the baseline to draw that grid over the panel.
+                                  Every block above sits on the same regular line. Sizes and gaps come in consistent steps, three to a line. Toggle the baseline to draw that grid over the panel.
                               </p>
                           </div>
                       </div>
