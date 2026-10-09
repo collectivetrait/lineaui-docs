@@ -112,7 +112,7 @@ export default function Home() {
               <em className="home-accent fs-italic">beat.</em>
             </h1>
             <p className="lead mb-4">
-              Linea UI is a small CSS and JS library built on BEM and vertical
+              Linea UI is a small SCSS and JS library built on BEM and vertical
               rhythm principles. Intuitive class names, accessible defaults and
               a light footprint.
             </p>

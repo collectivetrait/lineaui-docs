@@ -6,7 +6,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 export const metadata: Metadata = {
   title: "Introduction",
   description:
-    "Linea UI is a lightweight CSS and JS component library built on BEM naming, an 8 px vertical rhythm, and cascade layers. Install it via npm, import the compiled CSS, and start building.",
+    "Linea UI is a lightweight SCSS and JS component library built on BEM naming, an 8 px vertical rhythm, and cascade layers. Install it via npm, import the compiled CSS, and start building.",
 };
 
 export default function GettingStarted() {
@@ -15,7 +15,7 @@ export default function GettingStarted() {
       <section className="docs-section">
         <h1 className="text-display-2">Introduction</h1>
         <p className="lead text-subtle">
-          Linea UI is a lightweight CSS and JavaScript component library built
+          Linea UI is a lightweight SCSS and JavaScript component library built
           on two core principles:{" "}
           <a href="/getting-started/bem">BEM naming</a> and an{" "}
           <a href="/getting-started/vertical-rhythm">8 px vertical rhythm</a>.

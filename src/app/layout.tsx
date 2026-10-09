@@ -3,7 +3,7 @@ import { CookieConsent } from "@/components/CookieConsent";
 import { CookieConsentReset } from "@/components/CookieConsentReset";
 
 const description =
-  "linea-ui is a lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Readable class names, accessible defaults, and a small footprint.";
+  "Linea UI is a lightweight SCSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Intuitive class names, accessible defaults, and a light footprint.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://linea-ui.com"),
@@ -69,6 +69,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script src="/theme-init.js" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossOrigin="anonymous" referrerPolicy="no-referrer" />
         <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="/docs.css" />
         <link rel="stylesheet" href="/consent.css" />
@@ -83,13 +84,13 @@ export default function RootLayout({
                   name: "linea-ui",
                   url: "https://linea-ui.com",
                   description:
-                    "A lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers.",
+                    "A lightweight SCSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers.",
                 },
                 {
                   "@type": "SoftwareSourceCode",
                   name: "linea-ui",
                   description:
-                    "Lightweight CSS and JS component library with BEM naming, 8px vertical rhythm, and cascade layers.",
+                    "Lightweight SCSS and JS component library with BEM naming, 8px vertical rhythm, and cascade layers.",
                   programmingLanguage: ["CSS", "SCSS", "JavaScript"],
                   runtimePlatform: "Browser",
                   license: "https://opensource.org/licenses/MIT",
