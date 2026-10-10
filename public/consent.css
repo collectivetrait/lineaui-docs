@@ -71,10 +71,6 @@
 /* --- Cookie consent reset (toolbar button) --- */
 
 .docs-consent-reset {
-  position: fixed;
-  bottom: var(--s3);
-  right: calc(var(--s3) + var(--s4) + var(--s1));
-  z-index: 10000;
   display: inline-grid;
   place-items: center;
   width: var(--s4);
@@ -95,18 +91,4 @@
 .docs-consent-reset:hover {
   color: var(--text);
   background: var(--surface-raised);
-}
-
-/* Docs pages: shift left for toc-toggle */
-@media (min-width: 768px) {
-  .docs-docs ~ .docs-consent-reset {
-    right: calc(var(--s3) + (var(--s4) + var(--s1)) * 2);
-  }
-}
-
-/* Mobile: shift left for back-to-top + grid-toggle */
-@media (max-width: 767px) {
-  .docs-consent-reset {
-    right: calc(var(--s3) + (var(--s4) + var(--s1)) * 2);
-  }
 }

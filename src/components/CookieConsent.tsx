@@ -50,7 +50,7 @@ export function CookieConsent({ gaId }: { gaId: string }) {
       {loaded && consent === null && (
         <div className="docs-consent" role="dialog" aria-label="Cookie consent">
           <p className="docs-consent__text">
-            This site uses cookies to improve your experience and analyze site traffic.
+            This site uses cookies to measure traffic via Google Analytics.
           </p>
           <div className="docs-consent__actions">
             <button

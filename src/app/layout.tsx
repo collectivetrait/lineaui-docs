@@ -1,15 +1,16 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { CookieConsent } from "@/components/CookieConsent";
-import { CookieConsentReset } from "@/components/CookieConsentReset";
+
 
 const description =
-  "Linea UI is a lightweight SCSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Intuitive class names, accessible defaults, and a light footprint.";
+  "linea-ui is a lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Readable class names, accessible defaults, and a small footprint.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://linea-ui.com"),
   title: {
-    default: "linea-ui — CSS component library",
-    template: "%s — linea-ui",
+    default: "Linea UI - SCSS & JS Library Built On BEM & Vertical Rhythm",
+    template: "%s - Linea UI",
   },
   description,
   keywords: [
@@ -49,6 +50,16 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png" }],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
@@ -69,10 +80,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <script src="/theme-init.js" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossOrigin="anonymous" referrerPolicy="no-referrer" />
+        <link rel="stylesheet" href="/fa.css" />
         <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="/docs.css" />
         <link rel="stylesheet" href="/consent.css" />
+        <Script src="/bundle.js" strategy="afterInteractive" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -84,13 +96,13 @@ export default function RootLayout({
                   name: "linea-ui",
                   url: "https://linea-ui.com",
                   description:
-                    "A lightweight SCSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers.",
+                    "A lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers.",
                 },
                 {
                   "@type": "SoftwareSourceCode",
                   name: "linea-ui",
                   description:
-                    "Lightweight SCSS and JS component library with BEM naming, 8px vertical rhythm, and cascade layers.",
+                    "Lightweight CSS and JS component library with BEM naming, 8px vertical rhythm, and cascade layers.",
                   programmingLanguage: ["CSS", "SCSS", "JavaScript"],
                   runtimePlatform: "Browser",
                   license: "https://opensource.org/licenses/MIT",
@@ -106,11 +118,10 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        {process.env.NEXT_PUBLIC_GA_ID && (
-          <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} />
-        )}
-        <CookieConsentReset />
-
+        {process.env.NEXT_PUBLIC_SHOW_COOKIE_CONSENT !== "false" &&
+          process.env.NEXT_PUBLIC_GA_ID && (
+            <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} />
+          )}
       </body>
     </html>
   );

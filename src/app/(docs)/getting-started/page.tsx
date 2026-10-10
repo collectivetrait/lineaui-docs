@@ -1,46 +1,38 @@
 import type { Metadata } from "next";
-
-import { CodeBlock } from "@/components/CodeBlock";
-import { TableOfContents } from "@/components/TableOfContents";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Introduction",
-  description: "Install linea-ui via npm, import the compiled CSS, and add the JS bundle to your page. Get started with BEM-based UI components.",
+  title: "Getting Started",
+  description: "Guides for installing, configuring and understanding Linea UI.",
 };
 
-export default function GettingStarted() {
+const PAGES = [
+  { href: "/getting-started/introduction", label: "Introduction", description: "Install Linea UI, import the CSS and JS, and write your first page." },
+  { href: "/getting-started/principles", label: "Principles", description: "The eight design principles that shape every default in the library." },
+  { href: "/getting-started/bem", label: "BEM", description: "How Linea UI uses Block, Element, Modifier naming for predictable selectors." },
+  { href: "/getting-started/vertical-rhythm", label: "Vertical Rhythm", description: "The 8 px grid and 24 px baseline that keep every page aligned." },
+  { href: "/getting-started/customization", label: "Customization", description: "Override tokens, swap layers and build a custom stylesheet." },
+];
+
+export default function GettingStartedIndex() {
   return (
     <article>
       <section className="docs-section">
-        <h1 className="text-display-2">Introduction</h1>
+        <h1 className="text-display-2">Getting Started</h1>
         <p className="lead text-subtle">
-          Install ln via npm, import the compiled CSS, and add the JS bundle to
-          your page.
+          Guides for installing, configuring and understanding Linea UI.
         </p>
       </section>
 
-      <TableOfContents />
-
       <section className="docs-section">
-        <h2>Installation</h2>
-        <p>
-          Add ln to your project as a dependency. For local development, use the
-          file: protocol to link the local package directly.
-        </p>
-        <div className="component-demo shadow-2">
-        <CodeBlock language="shell">npm install ln</CodeBlock>
-        </div>
-      </section>
-
-      <section className="docs-section">
-        <h2>Usage</h2>
-        <p>
-          Import the compiled stylesheet at the root of your application. The JS
-          bundle is optional — it only adds interactive enhancements.
-        </p>
-        <div className="component-demo shadow-2">
-        <CodeBlock language="css">{`import 'ln/dist/styles.css';`}</CodeBlock>
-        </div>
+        <ul className="docs-index-list">
+          {PAGES.map((page) => (
+            <li key={page.href}>
+              <Link href={page.href}>{page.label}</Link>
+              <span>{page.description}</span>
+            </li>
+          ))}
+        </ul>
       </section>
     </article>
   );

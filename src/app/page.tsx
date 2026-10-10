@@ -8,6 +8,7 @@ import { HomeInstallBar } from "@/components/HomeInstallBar";
 import { HomeSpecimenToggle } from "@/components/HomeSpecimenToggle";
 import { HomeBaselineToggle } from "@/components/HomeBaselineToggle";
 import { HomeCodeShowcase } from "@/components/HomeCodeShowcase";
+import { CookieConsentReset } from "@/components/CookieConsentReset";
 
 const PRINCIPLES = [
   {
@@ -61,20 +62,20 @@ const PRINCIPLES = [
 ];
 
 const STATS = [
-  { label: "CSS, min + gzip", value: "[XX]", unit: "KB" },
-  { label: "JS, min + gzip", value: "[XX]", unit: "KB" },
-  { label: "Components", value: "[NN]" },
+  { label: "CSS, min + gzip", value: "26", unit: "KB" },
+  { label: "JS, min + gzip", value: "6", unit: "KB" },
+  { label: "Components", value: "52" },
   { label: "Base unit", value: "8", unit: "px" },
 ];
 
 
 const SPECIMEN_ROWS = [
-  { size: "88", lh: "96", text: "Display", className: "text-display-1" },
-  { size: "48", lh: "56", text: "Heading one", className: "h1" },
-  { size: "32", lh: "40", text: "Heading two", className: "h2 fs-italic" },
+  { size: "80", lh: "96", text: "Display", className: "text-display-1" },
+  { size: "40", lh: "48", text: "Heading one", className: "h1" },
+  { size: "32", lh: "48", text: "Heading two", className: "h2 fs-italic" },
   {
     size: "20",
-    lh: "32",
+    lh: "24",
     text: "Heading three, set in the sans",
     className: "h3 font-ui fw-semibold",
   },
@@ -84,16 +85,15 @@ const SPECIMEN_ROWS = [
     text: "Body copy runs on a 24px line. Paragraph spacing is one full line, so a page of mixed content keeps its cadence from top to bottom.",
     className: "",
   },
-  { size: "13", lh: "16", text: "CAPTION AND MONO LABELS", className: "h6" },
+  { size: "12", lh: "16", text: "CAPTION AND MONO LABELS", className: "h6" },
 ];
+
+const showGridTools = process.env.NEXT_PUBLIC_SHOW_GRID_TOOLS !== "false";
 
 export default function Home() {
   return (
     <div className="docs-shell home-full-width">
       <SiteHeader />
-      <GridToggle />
-      <BackToTop />
-      <PreviewGridToggles />
 
       {/* 1. Hero */}
       <section className="home-hero show-grid ln-section ln-section--wide ln-section--space-2xl">
@@ -117,7 +117,7 @@ export default function Home() {
               a light footprint.
             </p>
             <div className="ln-cluster ln-cluster--gap-sm mb-4">
-              <Link href="/getting-started/introduction" className="ln-button ln-button--lg">
+              <Link href="/getting-started" className="ln-button ln-button--lg">
                 <span className="ln-button__label">Get started</span>
                 <span className="ln-button__icon">
                   <i className="fa-solid fa-arrow-right" aria-hidden="true"></i>
@@ -282,7 +282,7 @@ export default function Home() {
             </p>
           </div>
           <div className="ln-cluster ln-cluster--justify-center ln-cluster--gap-sm align-self-center">
-            <Link href="/getting-started/introduction" className="ln-button ln-button--lg">
+            <Link href="/getting-started" className="ln-button ln-button--lg">
               Read the docs
             </Link>
             <a href="https://github.com/collectivetrait/linea-ui" target="_blank" rel="noopener noreferrer" className="ln-button ln-button--outline ln-button--lg">
@@ -293,6 +293,14 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="docs-fixed-buttons">
+        {showGridTools && <GridToggle />}
+        <BackToTop />
+        {showGridTools && <PreviewGridToggles />}
+        {process.env.NEXT_PUBLIC_SHOW_COOKIE_CONSENT !== "false" && (
+          <CookieConsentReset />
+        )}
+      </div>
       <SiteFooter />
     </div>
   );

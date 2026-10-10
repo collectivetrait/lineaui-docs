@@ -4,41 +4,55 @@ import { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { NAV } from "@/data/nav";
 
-interface SearchResult {
-  label: string;
-  href: string;
-  group: string;
+interface SearchBarProps {
+  className?: string;
 }
 
-const allPages: SearchResult[] = NAV.flatMap((section) =>
-  section.links.map((link) => ({
-    label: link.label,
-    href: link.href,
-    group: section.group,
-  }))
-);
-
-export function SearchBar({ className }: { className?: string }) {
+export function SearchBar({ className }: SearchBarProps) {
   const [query, setQuery] = useState("");
-  const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
-  const ref = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const results =
-    query.length < 1
-      ? []
-      : allPages.filter(
-          (p) =>
-            p.label.toLowerCase().includes(query.toLowerCase()) ||
-            p.group.toLowerCase().includes(query.toLowerCase())
-        );
+  const results = query.trim()
+    ? NAV.flatMap((section) =>
+        section.links
+          .filter((link) =>
+            link.label.toLowerCase().includes(query.toLowerCase())
+          )
+          .map((link) => ({ ...link, group: section.group }))
+      )
+    : [];
+
+  function navigate(href: string) {
+    setQuery("");
+    setActiveIndex(-1);
+    router.push(href);
+  }
+
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (!results.length) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setActiveIndex((i) => (i < results.length - 1 ? i + 1 : 0));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setActiveIndex((i) => (i > 0 ? i - 1 : results.length - 1));
+    } else if (e.key === "Enter" && activeIndex >= 0) {
+      e.preventDefault();
+      navigate(results[activeIndex].href);
+    }
+  }
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (ref.current && !ref.current.contains(e.target as Node)) {
-        setOpen(false);
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(e.target as Node)
+      ) {
+        setQuery("");
+        setActiveIndex(-1);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
@@ -49,63 +63,41 @@ export function SearchBar({ className }: { className?: string }) {
     setActiveIndex(-1);
   }, [query]);
 
-  function navigate(href: string) {
-    setQuery("");
-    setOpen(false);
-    router.push(href);
-  }
-
-  function handleKeyDown(e: React.KeyboardEvent) {
-    if (e.key === "ArrowDown") {
-      e.preventDefault();
-      setActiveIndex((i) => Math.min(i + 1, results.length - 1));
-    } else if (e.key === "ArrowUp") {
-      e.preventDefault();
-      setActiveIndex((i) => Math.max(i - 1, 0));
-    } else if (e.key === "Enter" && activeIndex >= 0 && results[activeIndex]) {
-      e.preventDefault();
-      navigate(results[activeIndex].href);
-    } else if (e.key === "Escape") {
-      setOpen(false);
-      inputRef.current?.blur();
-    }
-  }
+  const classes = ["docs-search", className].filter(Boolean).join(" ");
 
   return (
-    <div className={`docs-search ${className || ""}`} ref={ref}>
+    <div ref={containerRef} className={classes}>
       <input
-        ref={inputRef}
+        type="text"
         className="docs-search__input"
-        type="search"
-        placeholder="Search…"
-        aria-label="Search documentation"
+        placeholder="Search..."
         value={query}
-        onChange={(e) => {
-          setQuery(e.target.value);
-          setOpen(true);
-        }}
-        onFocus={() => query.length > 0 && setOpen(true)}
+        onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
+        aria-label="Search documentation"
+        aria-expanded={results.length > 0}
+        aria-controls="search-results"
+        role="combobox"
+        aria-autocomplete="list"
       />
-      {open && results.length > 0 && (
-        <ul className="docs-search__results" role="listbox">
-          {results.map((r, i) => (
+      {query.trim() && results.length > 0 && (
+        <ul id="search-results" className="docs-search__results" role="listbox">
+          {results.map((result, i) => (
             <li
-              key={r.href}
+              key={result.href}
+              className={`docs-search__result${i === activeIndex ? " docs-search__result--active" : ""}`}
               role="option"
               aria-selected={i === activeIndex}
-              className={`docs-search__result ${i === activeIndex ? "docs-search__result--active" : ""}`}
-              onMouseDown={() => navigate(r.href)}
-              onMouseEnter={() => setActiveIndex(i)}
+              onMouseDown={() => navigate(result.href)}
             >
-              <span className="docs-search__result-label">{r.label}</span>
-              <span className="docs-search__result-group">{r.group}</span>
+              <span>{result.label}</span>
+              <span className="docs-search__result-group">{result.group}</span>
             </li>
           ))}
         </ul>
       )}
-      {open && query.length > 0 && results.length === 0 && (
-        <div className="docs-search__empty">No results</div>
+      {query.trim() && results.length === 0 && (
+        <div className="docs-search__empty">No results found</div>
       )}
     </div>
   );

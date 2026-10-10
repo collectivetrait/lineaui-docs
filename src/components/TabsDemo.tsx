@@ -1,27 +1,40 @@
-"use client";
+import { useId } from "react";
 
-import { useState } from "react";
+interface TabsDemoProps {
+  variant?: string;
+  tabs?: string[];
+  panels?: string[];
+}
 
-export function TabsDemo() {
-  const [activeTab, setActiveTab] = useState(0);
+export function TabsDemo({ variant, tabs = ["Overview", "Features", "Pricing"], panels }: TabsDemoProps) {
+  const id = useId().replace(/:/g, "");
+  const className = variant ? `ln-tabs ln-tabs--${variant}` : "ln-tabs";
 
   return (
-    <div className="ln-tabs">
+    <div className={className} data-ln-tabs="">
       <div className="ln-tabs__list">
-        {["Overview", "Features", "Pricing"].map((label, i) => (
+        {tabs.map((label, i) => (
           <button
             key={label}
             className="ln-tabs__tab"
-            aria-selected={activeTab === i ? "true" : "false"}
-            onClick={() => setActiveTab(i)}
+            id={`${id}-tab-${i}`}
+            aria-controls={`${id}-panel-${i}`}
+            aria-selected={i === 0 ? "true" : "false"}
           >
             {label}
           </button>
         ))}
       </div>
-      <div className="ln-tabs__panel" hidden={activeTab !== 0}>Overview content goes here.</div>
-      <div className="ln-tabs__panel" hidden={activeTab !== 1}>Features content goes here.</div>
-      <div className="ln-tabs__panel" hidden={activeTab !== 2}>Pricing content goes here.</div>
+      {tabs.map((label, i) => (
+        <div
+          key={label}
+          className="ln-tabs__panel"
+          id={`${id}-panel-${i}`}
+          aria-labelledby={`${id}-tab-${i}`}
+        >
+          {panels?.[i] ?? `${label} content goes here.`}
+        </div>
+      ))}
     </div>
   );
 }

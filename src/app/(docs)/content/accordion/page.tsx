@@ -30,9 +30,7 @@ export default function AccordionPage() {
   <details class="ln-accordion__item" open>
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">What is vertical rhythm?</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
-        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
-      </svg>
+      <i class="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
     </summary>
     <div class="ln-accordion__content">
       <p>Vertical rhythm is a design principle where all vertical
@@ -42,9 +40,7 @@ export default function AccordionPage() {
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">What grid does ln use?</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
-        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
-      </svg>
+      <i class="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
     </summary>
     <div class="ln-accordion__content">
       <p>An 8px base grid for all boxes, and a 24px line grid for
@@ -54,9 +50,7 @@ export default function AccordionPage() {
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">Do borders break the grid?</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
-        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
-      </svg>
+      <i class="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
     </summary>
     <div class="ln-accordion__content">
       <p>No. All visible borders use inset box-shadows, which take no
@@ -69,9 +63,7 @@ export default function AccordionPage() {
               <details className="ln-accordion__item" open>
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">What is vertical rhythm?</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
-                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
-                  </svg>
+                  <i className="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
                 </summary>
                 <div className="ln-accordion__content">
                   <p>Vertical rhythm is a design principle where all vertical
@@ -81,9 +73,7 @@ export default function AccordionPage() {
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">What grid does ln use?</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
-                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
-                  </svg>
+                  <i className="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
                 </summary>
                 <div className="ln-accordion__content">
                   <p>An 8px base grid for all boxes, and a 24px line grid for
@@ -93,9 +83,7 @@ export default function AccordionPage() {
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">Do borders break the grid?</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
-                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
-                  </svg>
+                  <i className="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
                 </summary>
                 <div className="ln-accordion__content">
                   <p>No. All visible borders use inset box-shadows, which take no
@@ -114,9 +102,7 @@ export default function AccordionPage() {
   <details class="ln-accordion__item" open>
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">No borders between items</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
-        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
-      </svg>
+      <i class="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
     </summary>
     <div class="ln-accordion__content">
       <p>The flush modifier removes all divider lines.</p>
@@ -125,9 +111,7 @@ export default function AccordionPage() {
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
       <span class="ln-accordion__title">Useful inside cards</span>
-      <svg class="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" aria-hidden="true">
-        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/>
-      </svg>
+      <i class="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
     </summary>
     <div class="ln-accordion__content">
       <p>When embedded in a card body, flush avoids doubled borders.</p>
@@ -139,9 +123,7 @@ export default function AccordionPage() {
               <details className="ln-accordion__item" open>
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">No borders between items</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
-                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
-                  </svg>
+                  <i className="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
                 </summary>
                 <div className="ln-accordion__content">
                   <p>The flush modifier removes all divider lines.</p>
@@ -150,9 +132,7 @@ export default function AccordionPage() {
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
                   <span className="ln-accordion__title">Useful inside cards</span>
-                  <svg className="ln-accordion__icon" viewBox="0 0 24 24" fill="currentColor" fillRule="evenodd" clipRule="evenodd" aria-hidden="true">
-                    <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" />
-                  </svg>
+                  <i className="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
                 </summary>
                 <div className="ln-accordion__content">
                   <p>When embedded in a card body, flush avoids doubled borders.</p>

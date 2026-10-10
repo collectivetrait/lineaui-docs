@@ -37,38 +37,36 @@ const TABS = [
     id: "button",
     label: "Button",
     code: `<a class="ln-button" href="#">
-  Primary
+  Default
+</a>
+<a class="ln-button ln-button--outline" href="#">
+  Outline
 </a>
 <a class="ln-button ln-button--ghost" href="#">
   Ghost
-</a>
-<a class="ln-button ln-button--link" href="#">
-  Link
 </a>`,
     preview: (
       <div className="ln-cluster ln-cluster--gap-sm">
-        <span className="ln-button">Primary</span>
+        <span className="ln-button">Default</span>
+        <span className="ln-button ln-button--outline">Outline</span>
         <span className="ln-button ln-button--ghost">Ghost</span>
-        <span className="ln-button ln-button--link">Link</span>
       </div>
     ),
   },
   {
     id: "alert",
     label: "Alert",
-    code: `<div class="ln-alert">
+    code: `<div class="ln-alert ln-alert--success">
   <div class="ln-alert__content">
-    <p class="ln-alert__title">Heads up</p>
     <p class="ln-alert__body">
-      Your session expires in five minutes.
+      Changes saved successfully.
     </p>
   </div>
 </div>`,
     preview: (
-      <div className="ln-alert">
+      <div className="ln-alert ln-alert--success">
         <div className="ln-alert__content">
-          <p className="ln-alert__title">Heads up</p>
-          <p className="ln-alert__body">Your session expires in five minutes.</p>
+          <p className="ln-alert__body">Changes saved successfully.</p>
         </div>
       </div>
     ),
@@ -76,29 +74,31 @@ const TABS = [
   {
     id: "field",
     label: "Form field",
-    code: `<div class="ln-field">
-  <label class="ln-field__label">Full name</label>
-  <div class="ln-field__control">
-    <input type="text" placeholder="Ada Lovelace" />
+    code: `<form class="ln-form">
+  <div class="ln-field">
+    <label class="ln-field__label">Email</label>
+    <div class="ln-field__control">
+      <input type="email" placeholder="you@example.com" />
+    </div>
   </div>
-  <p class="ln-field__hint">
-    As it appears on your invoices.
-  </p>
-</div>
-<button class="ln-button" type="submit">
-  Save
-</button>`,
+  <div class="ln-form__actions ln-form__actions--plain">
+    <button class="ln-button" type="submit">
+      Save
+    </button>
+  </div>
+</form>`,
     preview: (
-      <div>
+      <form className="ln-form">
         <div className="ln-field">
-          <label className="ln-field__label">Full name</label>
+          <label className="ln-field__label">Email</label>
           <div className="ln-field__control">
-            <input type="text" placeholder="Ada Lovelace" readOnly />
+            <input type="email" placeholder="you@example.com" readOnly />
           </div>
-          <p className="ln-field__hint">As it appears on your invoices.</p>
         </div>
-        <span className="ln-button">Save</span>
-      </div>
+        <div className="ln-form__actions ln-form__actions--plain">
+          <span className="ln-button">Save</span>
+        </div>
+      </form>
     ),
   },
 ];
@@ -119,7 +119,7 @@ export function HomeCodeShowcase() {
 
   return (
     <div className="ln-tabs bg-canvas border shadow-2">
-      <div className="ln-tabs__list bg-surface border pt-1 px-2" role="tablist">
+      <div className="ln-tabs__list bg-surface border px-2" role="tablist">
         {TABS.map((t, i) => (
           <button
             key={t.id}

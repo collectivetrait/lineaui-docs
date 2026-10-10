@@ -6,6 +6,8 @@
 
 /* --- Syntax token definitions (mapped to ln semantic tokens) --- */
 :root {
+  background-color: var(--surface);
+  overscroll-behavior-y: none;
   --syntax-keyword:     var(--primary-text);
   --syntax-string:      var(--success-text);
   --syntax-comment:     var(--c-muted);
@@ -61,9 +63,8 @@
   margin-bottom: -1px;
 }
 
-.code-block__header svg {
-  width: 0.875rem;
-  height: 0.875rem;
+.code-block__header > i {
+  font-size: 0.875rem;
   flex: none;
   color: var(--c-subtle);
 }
@@ -100,9 +101,8 @@
   color: var(--secondary-text);
 }
 
-.code-block__copy svg {
-  width: 0.875rem;
-  height: 0.875rem;
+.code-block__copy > i {
+  font-size: 0.875rem;
 }
 
 /* Override _code.scss's pre styles when inside .code-block */
@@ -174,6 +174,10 @@
   outline-offset: -1px;
 }
 
+.component-demo__preview a:hover {
+  text-decoration: none;
+}
+
 .component-demo__preview-inner {
   padding: var(--s3);
 }
@@ -233,9 +237,8 @@
   cursor: pointer;
 }
 
-.preview-grid-toggle svg {
-  width: 14px;
-  height: 14px;
+.preview-grid-toggle > i {
+  font-size: 14px;
 }
 
 .preview-grid-toggle:hover {
@@ -252,9 +255,8 @@
   border-radius: 50%;
 }
 
-.grid-toggle svg {
-  width: 1rem;
-  height: 1rem;
+.grid-toggle > i {
+  font-size: 1rem;
 }
 
 /* --- Syntax token colors (scoped to .code-block to avoid polluting prose specimens) --- */
@@ -693,9 +695,8 @@ h3:hover > .docs-heading-anchor,
   cursor: pointer;
 }
 
-.docs-sidebar-toggle svg {
-  width: 1rem;
-  height: 1rem;
+.docs-sidebar-toggle > i {
+  font-size: 1rem;
 }
 
 .docs-sidebar-toggle:hover {
@@ -709,14 +710,38 @@ h3:hover > .docs-heading-anchor,
   }
 }
 
-/* --- Site logo / wordmark link in DocShell header --- */
+/* --- Site logo --- */
 
 .docs-site-logo {
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: var(--text);
+  display: inline-flex;
   text-decoration: none;
-  letter-spacing: -0.01em;
+}
+
+.docs-site-logo__img {
+  display: block;
+  height: 1rem;
+  width: auto;
+}
+
+.docs-site-logo__img--dark {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .docs-site-logo__img--light {
+    display: none;
+  }
+  :root:not([data-theme="light"]) .docs-site-logo__img--dark {
+    display: block;
+  }
+}
+
+:root[data-theme="dark"] .docs-site-logo__img--light {
+  display: none;
+}
+
+:root[data-theme="dark"] .docs-site-logo__img--dark {
+  display: block;
 }
 
 /* --- Main nav links (desktop) --- */
@@ -742,6 +767,10 @@ h3:hover > .docs-heading-anchor,
   color: var(--text);
 }
 
+.docs-shell__nav-link.is-active {
+  color: var(--text);
+}
+
 /* --- Header actions (search, GitHub, theme toggle) --- */
 
 .docs-shell__actions {
@@ -752,6 +781,10 @@ h3:hover > .docs-heading-anchor,
 }
 
 /* --- Search bar --- */
+
+.docs-search {
+  position: relative;
+}
 
 .docs-search__results {
   position: absolute;
@@ -814,6 +847,7 @@ h3:hover > .docs-heading-anchor,
   display: inline-flex;
   align-items: center;
   color: var(--c-muted);
+  text-decoration: none;
   transition: color var(--dur-fast) var(--e-standard);
 }
 
@@ -821,9 +855,8 @@ h3:hover > .docs-heading-anchor,
   color: var(--text);
 }
 
-.docs-shell__github svg {
-  width: 1rem;
-  height: 1rem;
+.docs-shell__github > i {
+  font-size: 1rem;
 }
 
 .docs-shell__theme-toggle {
@@ -841,9 +874,8 @@ h3:hover > .docs-heading-anchor,
   line-height: 1;
 }
 
-.docs-shell__theme-toggle svg {
-  width: 1rem;
-  height: 1rem;
+.docs-shell__theme-toggle > i {
+  font-size: 1rem;
 }
 
 .docs-shell__theme-toggle:hover {
@@ -865,9 +897,8 @@ h3:hover > .docs-heading-anchor,
   cursor: pointer;
 }
 
-.docs-nav-toggle svg {
-  width: 1rem;
-  height: 1rem;
+.docs-nav-toggle > i {
+  font-size: 1rem;
 }
 
 .docs-nav-toggle:hover {
@@ -890,11 +921,15 @@ h3:hover > .docs-heading-anchor,
     width: 100%;
   }
 
+  .docs-search {
+    position: static;
+  }
+
   .docs-search__results,
   .docs-search__empty {
     right: auto;
-    left: 0;
-    width: 100%;
+    left: var(--s1);
+    width: calc(100% - var(--s1) * 2);
   }
 
   .docs-nav-toggle {
@@ -922,6 +957,10 @@ h3:hover > .docs-heading-anchor,
   .docs-shell__nav-panel-link:hover {
     color: var(--text);
     background: var(--surface-raised);
+  }
+
+  .docs-shell__nav-panel-link.is-active {
+    color: var(--text);
   }
 
   .docs-search--panel {
@@ -1013,7 +1052,26 @@ h3:hover > .docs-heading-anchor,
 .type-sample[data-token="meta"]       { font-size: var(--t-meta-s);       line-height: var(--t-meta-lh); }
 .type-sample[data-token="code"]       { font-size: var(--t-code-s);       line-height: var(--t-code-lh); }
 
-/* --- TOC toggle (next to grid toggle) --- */
+/* --- Fixed button toolbar --- */
+
+.docs-fixed-buttons {
+  position: fixed;
+  bottom: var(--s3);
+  right: var(--s3);
+  z-index: 10000;
+  display: flex;
+  gap: var(--s1);
+  align-items: center;
+}
+
+.docs-fixed-buttons > .grid-toggle,
+.docs-fixed-buttons > .toc-toggle,
+.docs-fixed-buttons > .back-to-top {
+  position: static;
+  z-index: auto;
+}
+
+/* --- TOC toggle (desktop only) --- */
 
 .toc-toggle {
   display: none;
@@ -1021,10 +1079,6 @@ h3:hover > .docs-heading-anchor,
 
 @media (min-width: 768px) {
   .toc-toggle {
-    position: fixed;
-    bottom: var(--s3);
-    right: calc(var(--s3) + var(--s4) + var(--s1));
-    z-index: 10000;
     display: inline-grid;
     place-items: center;
     width: var(--s4);
@@ -1037,9 +1091,8 @@ h3:hover > .docs-heading-anchor,
     cursor: pointer;
   }
 
-  .toc-toggle > svg {
-    width: 1rem;
-    height: 1rem;
+  .toc-toggle > i {
+    font-size: 1rem;
   }
 
   .toc-toggle:hover {
@@ -1060,14 +1113,10 @@ h3:hover > .docs-heading-anchor,
   }
 }
 
-/* --- Back to top (sm and below) --- */
+/* --- Back to top (mobile only) --- */
 
 .back-to-top {
   display: none;
-  position: fixed;
-  bottom: var(--s3);
-  right: var(--s3);
-  z-index: 10000;
   place-items: center;
   width: var(--s4);
   height: var(--s4);
@@ -1079,9 +1128,8 @@ h3:hover > .docs-heading-anchor,
   cursor: pointer;
 }
 
-.back-to-top > svg {
-  width: 1rem;
-  height: 1rem;
+.back-to-top > i {
+  font-size: 1rem;
 }
 
 .back-to-top:hover {
@@ -1091,10 +1139,6 @@ h3:hover > .docs-heading-anchor,
 @media (max-width: 767px) {
   .back-to-top {
     display: inline-grid;
-  }
-
-  .grid-toggle {
-    right: calc(var(--s3) + var(--s4) + var(--s1));
   }
 }
 
@@ -1396,18 +1440,6 @@ h3:hover > .docs-heading-anchor,
 
 /* --- About page --- */
 
-.about-page {
-  display: flex;
-  justify-content: center;
-  min-height: calc(100vh - 4rem);
-  padding: var(--s6) var(--gutter) var(--s4);
-}
-
-.about-page__inner {
-  width: 100%;
-  max-width: 40rem;
-}
-
 .about-page__rule {
   width: 5rem;
   height: 2px;
@@ -1423,23 +1455,32 @@ h3:hover > .docs-heading-anchor,
   margin-top: var(--s3);
 }
 
-.about-page__attribution {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-top: var(--s6);
-  padding-top: calc(var(--s3) - 1px);
+/* --- Section index pages --- */
+
+.docs-index-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-index-list li {
+  padding: var(--s2) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.docs-index-list li:first-child {
   border-top: 1px solid var(--border);
-  font-size: var(--t-body-sm-s);
-  line-height: var(--t-body-sm-lh);
+}
+
+.docs-index-list a {
+  font-weight: var(--fw-semibold);
+  font-size: var(--t-body-lg-s);
+  line-height: var(--t-body-lg-lh);
+}
+
+.docs-index-list span {
+  display: block;
   color: var(--c-muted);
+  margin-top: calc(var(--s1) / 2);
 }
 
-.about-page__attribution a {
-  color: var(--link);
-  text-decoration: none;
-}
-
-.about-page__attribution a:hover {
-  text-decoration: underline;
-}

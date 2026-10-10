@@ -12,7 +12,7 @@ export const NAV: NavSection[] = [
   {
     group: "Getting Started",
     links: [
-      { label: "Introduction", href: "/getting-started" },
+      { label: "Introduction", href: "/getting-started/introduction" },
       { label: "Principles", href: "/getting-started/principles" },
       { label: "BEM", href: "/getting-started/bem" },
       { label: "Vertical Rhythm", href: "/getting-started/vertical-rhythm" },
@@ -29,6 +29,7 @@ export const NAV: NavSection[] = [
       { label: "Figures", href: "/foundation/figures" },
       { label: "Tables", href: "/foundation/tables" },
       { label: "Theme", href: "/foundation/theme" },
+      { label: "Icons", href: "/foundation/icons" },
     ],
   },
   {
@@ -115,6 +116,13 @@ export const NAV: NavSection[] = [
       { label: "Shadows", href: "/utilities/shadows" },
       { label: "Sizing", href: "/utilities/sizing" },
       { label: "Spacing", href: "/utilities/spacing" },
+    ],
+  },
+  {
+    group: "Project",
+    links: [
+      { label: "About", href: "/project/about" },
+      { label: "Changelog", href: "/project/changelog" },
     ],
   },
 ];

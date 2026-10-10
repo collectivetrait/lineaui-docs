@@ -6,9 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint && stylelint \"src/**/*.css\"",
-    "lint:js": "eslint",
-    "lint:css": "stylelint \"src/**/*.css\""
+    "lint": "eslint"
   },
   "dependencies": {
     "@next/third-parties": "^16.4.0",
@@ -23,8 +21,6 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
-    "stylelint": "^17.16.0",
-    "stylelint-config-standard": "^40.0.0",
     "typescript": "^5"
   }
 }

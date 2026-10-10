@@ -12,16 +12,16 @@ const FOOTER_COLS = [
   {
     heading: "Reference",
     links: [
-      { label: "Foundation", href: "/foundation/typography" },
-      { label: "Layout", href: "/layout/grid" },
-      { label: "Components", href: "/components/alert" },
+      { label: "Foundation", href: "/foundation" },
+      { label: "Layout", href: "/layout" },
+      { label: "Components", href: "/components" },
     ],
   },
   {
     heading: "Project",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Changelog", href: "#" },
+      { label: "About", href: "/project/about" },
+      { label: "Changelog", href: "/project/changelog" },
       { label: "GitHub", href: "https://github.com/collectivetrait/linea-ui" },
     ],
   },
@@ -34,8 +34,8 @@ export function SiteFooter() {
         <div className="ln-site-footer__columns">
           <div>
             <Link href="/" className="docs-site-logo">
-              <span className="docs-site-logo__name">Linea</span>{" "}
-              <span className="docs-site-logo__ui">UI</span>
+              <img src="/logo-mono-light.svg" alt="Linea UI" className="docs-site-logo__img docs-site-logo__img--light" width="395" height="66" />
+              <img src="/logo-mono-dark.svg" alt="Linea UI" className="docs-site-logo__img docs-site-logo__img--dark" width="395" height="66" />
             </Link>
             <p className="ln-site-footer__description">
               An opinionated SCSS and JS library for content sites, stores and dashboards.
