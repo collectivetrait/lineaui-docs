@@ -715,6 +715,7 @@ h3:hover > .docs-heading-anchor,
 .docs-site-logo {
   display: inline-flex;
   text-decoration: none;
+  margin-top: -4px;
 }
 
 .docs-site-logo__img {
