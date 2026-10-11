@@ -33,10 +33,12 @@ export function SiteFooter() {
       <div className="ln-site-footer__inner docs-footer__inner">
         <div className="ln-site-footer__columns">
           <div>
-            <Link href="/" className="docs-site-logo">
-              <img src="/logo-mono-light.svg" alt="Linea UI" className="docs-site-logo__img docs-site-logo__img--light" width="395" height="66" />
-              <img src="/logo-mono-dark.svg" alt="Linea UI" className="docs-site-logo__img docs-site-logo__img--dark" width="395" height="66" />
-            </Link>
+            <p className="ln-site-footer__heading">
+              <Link href="/" className="docs-site-logo">
+                <img src="/logo-mono-light.svg" alt="Linea UI" className="docs-site-logo__img docs-site-logo__img--light" width="395" height="66" />
+                <img src="/logo-mono-dark.svg" alt="Linea UI" className="docs-site-logo__img docs-site-logo__img--dark" width="395" height="66" />
+              </Link>
+            </p>
             <p className="ln-site-footer__description">
               An opinionated SCSS and JS library for content sites, stores and dashboards.
             </p>
