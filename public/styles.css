@@ -2862,7 +2862,7 @@
     color: var(--link-hover);
   }
   .ln-site-footer__description {
-    margin-top: var(--s2);
+    margin-top: 0;
   }
   .ln-site-footer__social {
     display: flex;
