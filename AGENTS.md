@@ -56,5 +56,10 @@ re-stage the files, and reattempt the commit. If the build fails, stop and ask
 the user for input instead of trying to fix it. Never skip hooks with
 `--no-verify`.
 
+## Run check-preview-rhythm before pushing
+When the user asks to push, run `check-preview-rhythm` on every docs page
+affected by the changes before executing the push. If any preview fails the
+8px-grid check, stop and ask the user for input instead of pushing.
+
 ## Never push automatically
 Never push to a remote repository unless the user explicitly asks for it.
