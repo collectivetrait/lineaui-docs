@@ -42,9 +42,13 @@ The Linea UI class prefix is `ln-`. Never hardcode a different prefix in
 component markup or in `docs.css` overrides.
 
 ## Run skills on changed code before committing
-Before creating a git commit, run every applicable skill against only the new
-or changed code and fix any issues they surface. Do not commit until all skills
-pass cleanly.
+Before creating a git commit, run every applicable skill (e.g. `check-bem`,
+`check-a11y-compat`) against only the new or changed code and fix any issues
+they surface. Also review changes for potential security issues — XSS via
+`dangerouslySetInnerHTML` or unsanitized user-facing content, open redirects,
+exposed secrets or API keys, and insecure script loading — even when the site
+has no users or database. Do not commit until all skills pass cleanly and no
+security concerns remain.
 
 ## Fix linter errors on commit failure
 If a commit fails because a linter reports errors, fix every reported issue,
