@@ -30,7 +30,7 @@ export default function GettingStarted() {
       <section className="docs-section">
         <h2>Installation</h2>
         <p>
-          Add linea-ui to your project as a dependency. For local development,
+          Add Linea UI to your project as a dependency. For local development,
           use the <code>file:</code> protocol to link the local package
           directly.
         </p>

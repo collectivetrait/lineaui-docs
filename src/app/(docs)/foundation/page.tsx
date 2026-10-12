@@ -13,7 +13,7 @@ const PAGES = [
   { href: "/foundation/media", label: "Media", description: "Responsive images, video and embedded content." },
   { href: "/foundation/figures", label: "Figures", description: "Figure and figcaption styles." },
   { href: "/foundation/tables", label: "Tables", description: "Table base styles and modifiers." },
-  { href: "/foundation/icons", label: "Icons", description: "Icon library integration and usage with linea-ui components." },
+  { href: "/foundation/icons", label: "Icons", description: "Icon library integration and usage with Linea UI components." },
   { href: "/foundation/theme", label: "Theme", description: "Light and dark mode tokens and switching." },
 ];
 

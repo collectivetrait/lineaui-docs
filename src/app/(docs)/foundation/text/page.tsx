@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Text",
-  description: "Utility classes for text size, alignment, wrapping, and decoration in linea-ui.",
+  description: "Utility classes for text size, alignment, wrapping, and decoration in Linea UI.",
 };
 
 export default function TextPage() {

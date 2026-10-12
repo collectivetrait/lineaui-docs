@@ -3,7 +3,7 @@
 import { useCallback, useState } from "react";
 
 export function HomeInstallBar() {
-  const command = "npm install linea-ui";
+  const command = "npm install @collectivetrait/lineaui";
   const [copied, setCopied] = useState(false);
 
   const handleCopy = useCallback(() => {

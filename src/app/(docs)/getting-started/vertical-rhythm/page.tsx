@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Vertical Rhythm",
-  description: "Every size, spacing, and line-height token in linea-ui derives from two base values: 8px and 24px. Learn how the rhythm system works.",
+  description: "Every size, spacing, and line-height token in Linea UI derives from two base values: 8px and 24px. Learn how the rhythm system works.",
 };
 
 export default function VerticalRhythmPage() {

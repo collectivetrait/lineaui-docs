@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Container",
-  description: "A max-width wrapper that centres content and applies responsive side padding. The foundation of page layout in linea-ui.",
+  description: "A max-width wrapper that centres content and applies responsive side padding. The foundation of page layout in Linea UI.",
 };
 
 export default function ContainerPage() {

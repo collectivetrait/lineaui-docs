@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Background",
-  description: "Utility classes for background colors using linea-ui semantic surface tokens.",
+  description: "Utility classes for background colors using Linea UI semantic surface tokens.",
 };
 
 export default function BackgroundUtilities() {

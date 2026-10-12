@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Figures",
-  description: "Base styling for the HTML figure and figcaption elements in linea-ui.",
+  description: "Base styling for the HTML figure and figcaption elements in Linea UI.",
 };
 
 export default function FiguresPage() {

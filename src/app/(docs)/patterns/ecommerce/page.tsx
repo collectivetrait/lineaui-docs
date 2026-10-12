@@ -7,7 +7,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "E-commerce",
-  description: "Product listing and detail page patterns built with linea-ui card, grid, and form components.",
+  description: "Product listing and detail page patterns built with Linea UI card, grid, and form components.",
 };
 
 export default function EcommercePatterns() {

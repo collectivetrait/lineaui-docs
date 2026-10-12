@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Customization",
-  description: "Override SASS settings at import time to tailor linea-ui to your project. Customize tokens, breakpoints, and component styles.",
+  description: "Override SASS settings at import time to tailor Linea UI to your project. Customize tokens, breakpoints, and component styles.",
 };
 
 export default function CustomizationPage() {

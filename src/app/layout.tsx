@@ -5,10 +5,10 @@ import { LineaUIInit } from "@/components/LineaUIInit";
 
 
 const description =
-  "linea-ui is a lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Readable class names, accessible defaults, and a small footprint.";
+  "Linea UI is a lightweight SCSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers. Readable class names, accessible defaults, and a small footprint.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://linea-ui.com"),
+  metadataBase: new URL("https://lineaui.com"),
   title: {
     default: "Linea UI - SCSS & JS Library Built On BEM & Vertical Rhythm",
     template: "%s - Linea UI",
@@ -29,15 +29,15 @@ export const metadata: Metadata = {
   authors: [{ name: "Andrés Villarreal" }],
   creator: "Andrés Villarreal",
   openGraph: {
-    title: "linea-ui — CSS component library",
+    title: "Linea UI — CSS component library",
     description,
-    siteName: "linea-ui",
+    siteName: "lineaui",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "linea-ui — CSS component library",
+    title: "Linea UI — CSS component library",
     description,
   },
   robots: {
@@ -96,14 +96,14 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "WebSite",
-                  name: "linea-ui",
-                  url: "https://linea-ui.com",
+                  name: "lineaui",
+                  url: "https://lineaui.com",
                   description:
                     "A lightweight CSS and JS component library built on BEM naming, an 8px vertical rhythm, and cascade layers.",
                 },
                 {
                   "@type": "SoftwareSourceCode",
-                  name: "linea-ui",
+                  name: "lineaui",
                   description:
                     "Lightweight CSS and JS component library with BEM naming, 8px vertical rhythm, and cascade layers.",
                   programmingLanguage: ["CSS", "SCSS", "JavaScript"],

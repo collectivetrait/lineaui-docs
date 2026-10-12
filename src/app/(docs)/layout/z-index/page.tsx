@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Z-index",
-  description: "Utility classes for controlling stacking order, plus the cascade layer that governs z-index tokens in linea-ui.",
+  description: "Utility classes for controlling stacking order, plus the cascade layer that governs z-index tokens in Linea UI.",
 };
 
 export default function ZIndexPage() {

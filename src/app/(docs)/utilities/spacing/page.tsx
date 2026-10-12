@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Spacing",
-  description: "Utility classes for margin and padding using linea-ui spacing token scale.",
+  description: "Utility classes for margin and padding using Linea UI spacing token scale.",
 };
 
 export default function SpacingUtilities() {

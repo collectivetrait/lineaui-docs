@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Borders",
-  description: "Utility classes for border width, color, and radius using linea-ui design tokens.",
+  description: "Utility classes for border width, color, and radius using Linea UI design tokens.",
 };
 
 export default function BorderUtilities() {

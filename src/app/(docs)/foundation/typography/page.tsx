@@ -6,7 +6,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Typography",
-  description: "The linea-ui type system is built on a 24px vertical rhythm grid. Font sizes, line heights, and spacing are whole multiples of 8px.",
+  description: "The Linea UI type system is built on a 24px vertical rhythm grid. Font sizes, line heights, and spacing are whole multiples of 8px.",
 };
 
 export default function TypographyPage() {

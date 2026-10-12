@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Shadows",
-  description: "Utility classes for box shadows using linea-ui elevation token scale.",
+  description: "Utility classes for box shadows using Linea UI elevation token scale.",
 };
 
 export default function ShadowUtilities() {

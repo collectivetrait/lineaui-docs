@@ -7,7 +7,7 @@ export default function IconsPage() {
       <section className="docs-section">
         <h1 className="text-display-2">Icons</h1>
         <p className="lead text-subtle">
-          linea-ui does not ship its own icon set. Instead, the library is
+          Linea UI does not ship its own icon set. Instead, the library is
           designed to work seamlessly with any icon font or SVG icon library.
           Pick whichever fits your project and drop it in.
         </p>
@@ -19,7 +19,7 @@ export default function IconsPage() {
         <h2>Recommended icon libraries</h2>
         <p>
           Any icon library that renders via CSS classes on an{" "}
-          <code>&lt;i&gt;</code> element works out of the box with linea-ui
+          <code>&lt;i&gt;</code> element works out of the box with Linea UI
           components. Here are three popular choices:
         </p>
         <ul>
@@ -111,7 +111,7 @@ export default function IconsPage() {
         <h2>Sizing</h2>
         <p>
           Font Awesome icons scale with <code>font-size</code>. Use
-          linea-ui typography utilities to resize, or apply Font
+          Linea UI typography utilities to resize, or apply Font
           Awesome&rsquo;s own sizing classes like <code>fa-lg</code>,{" "}
           <code>fa-2x</code>, <code>fa-3x</code>.
         </p>
@@ -138,7 +138,7 @@ export default function IconsPage() {
         <h2>Color</h2>
         <p>
           Icons inherit the current text <code>color</code>. Apply any
-          linea-ui text-color utility to change it.
+          Linea UI text-color utility to change it.
         </p>
 
         <div className="component-demo shadow-2">
@@ -160,7 +160,7 @@ export default function IconsPage() {
       <section className="docs-section">
         <h2>With components</h2>
         <p>
-          Icons work naturally inside linea-ui components. Place an{" "}
+          Icons work naturally inside Linea UI components. Place an{" "}
           <code>&lt;i&gt;</code> element alongside text or inside buttons,
           alerts, and badges.
         </p>

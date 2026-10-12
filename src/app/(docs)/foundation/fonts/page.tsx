@@ -5,7 +5,7 @@ import { TableOfContents } from "@/components/TableOfContents";
 
 export const metadata: Metadata = {
   title: "Fonts",
-  description: "Utility classes for font weight, font style, and font family in linea-ui.",
+  description: "Utility classes for font weight, font style, and font family in Linea UI.",
 };
 
 export default function FontsPage() {
