@@ -98,15 +98,14 @@ export default function Home() {
       {/* 1. Hero */}
       <section className="home-hero show-grid ln-section ln-section--wide ln-section--space-2xl">
         <div className="home-hero__inner ln-section__inner">
-        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg align-items-center">
           <div>
-            <div className="mb-2">
-              <span className="ln-badge ln-badge--secondary">
+            <p className="ln-section__eyebrow">
+              <span className="ln-badge ln-badge--secondary" style={{ textTransform: "lowercase", marginTop: "-1px", marginRight: "0.5rem", display: "inline-block" }}>
                 <span className="ln-badge__dot" />
                 v1.0
               </span>
-            </div>
-            <p className="ln-section__eyebrow">BEM / VERTICAL RHYTHM / CASCADE LAYERS</p>
+              BEM / VERTICAL RHYTHM / CASCADE LAYERS</p>
             <h1 className="text-display-1 font-prose fw-bold mb-4">
               Interfaces that keep the{" "}
               <em className="home-accent fs-italic">beat.</em>
@@ -154,8 +153,8 @@ export default function Home() {
                           <span className="ln-button ln-button--outline">Cancel</span>
                       </div>
                       <div className="ln-card bg-surface-sunken">
-                          <h3 className="ln-card__title h2">Card title</h3>
-                          <div className="ln-card__body">
+                          <h3 className="ln-card__title mb-1">Finally, a regular baseline</h3>
+                          <div className="ln-card__body mb-0">
                               <p>
                                   Every block above sits on the same regular line. Sizes and gaps come in consistent steps, three to a line. Toggle the baseline to draw that grid over the panel.
                               </p>

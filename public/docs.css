@@ -1165,11 +1165,6 @@ h3:hover > .docs-heading-anchor,
 
 /* --- Home page --- */
 
-.home-hero {
-    position: relative;
-    min-height: calc(100vh - 4rem);
-}
-
 /* Hero background grid — decorative, low opacity, behind content */
 .home-hero.show-grid::before {
   opacity: 0.35;
