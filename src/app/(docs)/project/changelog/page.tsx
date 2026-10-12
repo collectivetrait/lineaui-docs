@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import fs from "fs";
+import { createRequire } from "module";
 import path from "path";
 import { TableOfContents } from "@/components/TableOfContents";
 
@@ -15,7 +16,9 @@ interface ChangelogEntry {
 }
 
 function parseChangelog(): ChangelogEntry[] {
-  const filePath = path.resolve(process.cwd(), "..", "ln", "CHANGELOG.md");
+  const require = createRequire(import.meta.url);
+  const pkgDir = path.dirname(require.resolve("@collectivetrait/lineaui/package.json"));
+  const filePath = path.join(pkgDir, "CHANGELOG.md");
   const raw = fs.readFileSync(filePath, "utf-8");
   const lines = raw.split("\n");
 
