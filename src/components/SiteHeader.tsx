@@ -36,7 +36,7 @@ export function SiteHeader({ before }: { before?: React.ReactNode }) {
         </nav>
         <div className="docs-shell__actions">
           <SearchBar />
-          <a className="docs-shell__github" href="#" aria-label="GitHub">
+          <a className="docs-shell__github" href="https://github.com/collectivetrait/lineaui" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i className="fa-brands fa-github" aria-hidden="true"></i>
           </a>
           <ThemeToggle />
