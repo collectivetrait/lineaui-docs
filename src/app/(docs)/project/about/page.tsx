@@ -14,8 +14,7 @@ export default function AboutPage() {
         <h1 className="text-display-2">About Linea UI</h1>
         <p className="lead text-subtle">
           Linea UI is an opinionated SCSS and JS library for content sites,
-          stores and dashboards, and the first public project from Collective
-          Trait.
+          stores and dashboards.
         </p>
       </section>
 
@@ -53,13 +52,11 @@ export default function AboutPage() {
       <section className="docs-section">
         <h2>Collective Trait</h2>
         <p>
-          Linea UI is the first public project from Collective Trait.
+          Linea UI is the first public project from{" "}
+          <a href="https://collectivetrait.com" target="_blank">Collective Trait</a>.
           It{"'"}s also the base of the agency{"'"}s client work, so its
           components run on real sites every day, and what comes up there
           finds its way back into the library.
-        </p>
-        <p>
-          <a href="https://collectivetrait.com">Collective Trait</a>
         </p>
         <p>
           Questions, bugs and suggestions are welcome on{" "}
