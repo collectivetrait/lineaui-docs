@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   devIndicators: process.env.NEXT_PUBLIC_SHOW_DEV_INDICATOR === "false"
     ? false
     : undefined,
-  transpilePackages: ["ln"],
+  transpilePackages: ["@collectivetrait/lineaui"],
   async redirects() {
     return [
       {

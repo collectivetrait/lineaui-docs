@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { CookieConsent } from "@/components/CookieConsent";
+import "@collectivetrait/lineaui/dist/styles.css";
+import { LineaUIInit } from "@/components/LineaUIInit";
 
 
 const description =
@@ -79,12 +80,14 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script src="/theme-init.js" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem("ln:theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}catch(e){}})()`,
+          }}
+        />
         <link rel="stylesheet" href="/fa.css" />
-        <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href="/docs.css" />
         <link rel="stylesheet" href="/consent.css" />
-        <Script src="/bundle.js" strategy="afterInteractive" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -117,6 +120,7 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <LineaUIInit />
         {children}
         {process.env.NEXT_PUBLIC_SHOW_COOKIE_CONSENT !== "false" &&
           process.env.NEXT_PUBLIC_GA_ID && (
