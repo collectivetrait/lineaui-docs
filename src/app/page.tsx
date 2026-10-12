@@ -285,7 +285,7 @@ export default function Home() {
             <Link href="/getting-started" className="ln-button ln-button--lg">
               Read the docs
             </Link>
-            <a href="https://github.com/collectivetrait/linea-ui" target="_blank" rel="noopener noreferrer" className="ln-button ln-button--outline ln-button--lg">
+            <a href="https://github.com/collectivetrait/lineaui" target="_blank" rel="noopener noreferrer" className="ln-button ln-button--outline ln-button--lg">
               View source
             </a>
           </div>

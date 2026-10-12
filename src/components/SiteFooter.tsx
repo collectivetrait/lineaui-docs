@@ -22,7 +22,7 @@ const FOOTER_COLS = [
     links: [
       { label: "About", href: "/project/about" },
       { label: "Changelog", href: "/project/changelog" },
-      { label: "GitHub", href: "https://github.com/collectivetrait/linea-ui" },
+      { label: "GitHub", href: "https://github.com/collectivetrait/lineaui" },
     ],
   },
 ];

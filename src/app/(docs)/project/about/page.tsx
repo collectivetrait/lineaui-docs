@@ -63,7 +63,7 @@ export default function AboutPage() {
         </p>
         <p>
           Questions, bugs and suggestions are welcome on{" "}
-          <a href="https://github.com/collectivetrait/linea-ui">GitHub</a>.
+          <a href="https://github.com/collectivetrait/lineaui">GitHub</a>.
         </p>
       </section>
     </article>
