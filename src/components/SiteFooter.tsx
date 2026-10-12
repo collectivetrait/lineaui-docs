@@ -65,16 +65,16 @@ export function SiteFooter() {
           ))}
         </div>
         <div className="ln-site-footer__bottom">
-          <p className="ln-site-footer__legal">
+          <span className="ln-site-footer__legal">
             Built with Linea UI. MIT License.
-          </p>
-          <p className="ln-site-footer__legal">
+          </span>
+          <span className="ln-site-footer__legal">
             A{" "}
             <a href="https://collectivetrait.com" target="_blank" rel="noopener noreferrer" className="ln-site-footer__link">
               Collective Trait
             </a>{" "}
             project.
-          </p>
+          </span>
         </div>
       </div>
     </footer>
