@@ -63,7 +63,7 @@ export default function FontsPage() {
         <h2>Font family</h2>
         <p>
           Switch the font stack on any element. The three families map to the
-          library's font-role tokens: <code>.font-prose</code> for serif
+          library&apos;s font-role tokens: <code>.font-prose</code> for serif
           headings and editorial text, <code>.font-ui</code> for sans-serif
           body and interface text, and <code>.font-mono</code> for code and
           tabular data.
