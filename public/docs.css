@@ -1171,11 +1171,15 @@ h3:hover > .docs-heading-anchor,
   z-index: 0;
 }
 
+.home-hero h1 {
+    line-height: 4.5rem;
+    letter-spacing: -0.125rem;
+}
+
 .home-hero__inner {
     position: relative;
     z-index: 1;
 }
-
 
 /* 1. home-accent — purple accent color for highlighted words */
 .home-accent {
