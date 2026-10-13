@@ -101,12 +101,12 @@ export default function Home() {
         <div className="home-hero__inner ln-section__inner">
         <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg align-items-center">
           <div>
-            <p className="ln-section__eyebrow">
-              <span className="ln-badge ln-badge--secondary" style={{ textTransform: "lowercase", marginTop: "-1px", marginRight: "0.5rem", display: "inline-block" }}>
-                <span className="ln-badge__dot" />
-                v1.0
-              </span>
-              BEM / VERTICAL RHYTHM / CASCADE LAYERS</p>
+            <span className="ln-badge ln-badge--secondary mb-1">
+              <span className="ln-badge__dot" />
+              v1.0
+            </span>
+            <div className="ln-section__eyebrow">
+              BEM / VERTICAL RHYTHM / CASCADE LAYERS</div>
             <h1 className="text-display-1 font-prose fw-bold mb-4">
               Interfaces that keep the{" "}
               <em className="home-accent fs-italic">beat.</em>
