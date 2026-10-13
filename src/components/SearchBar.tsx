@@ -60,6 +60,7 @@ export function SearchBar({ className }: SearchBarProps) {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- resetting selection when query changes
     setActiveIndex(-1);
   }, [query]);
 

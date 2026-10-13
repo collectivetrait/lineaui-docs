@@ -32,6 +32,7 @@ export function TableOfContents() {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- resetting highlight on route change
     setActiveId("");
 
     const timer = setTimeout(() => {

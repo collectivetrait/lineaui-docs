@@ -18,6 +18,7 @@ export function CookieConsent({ gaId }: { gaId: string }) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reading stored consent on mount
     setConsent(getStoredConsent());
     setLoaded(true);
 

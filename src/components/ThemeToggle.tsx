@@ -19,6 +19,7 @@ export function ThemeToggle() {
 
   useLayoutEffect(() => {
     const preferred = getPreferred();
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- syncing React state with browser storage on mount
     setTheme(preferred);
     if (!document.documentElement.dataset.theme) {
       document.documentElement.dataset.theme = preferred;
