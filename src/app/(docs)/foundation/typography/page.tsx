@@ -15,7 +15,7 @@ export default function TypographyPage() {
       <section className="docs-section">
         <h1 className="text-display-2">Typography</h1>
         <p className="lead text-subtle">
-          The ln type system is built on a 24px vertical rhythm grid. Every
+          The Linea UI type system is built on a 24px vertical rhythm grid. Every
           font size, line height, and spacing value is a whole multiple of 8px,
           and heading line heights are whole multiples of 24px.
         </p>
@@ -51,11 +51,11 @@ export default function TypographyPage() {
           with consistent rhythm.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<p class="mb-3">The ln type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
+          <CodeBlock language="html">{`<p class="mb-3">The Linea UI type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
 <p class="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
 <p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>`}</CodeBlock>
           <div className="component-demo__preview">
-            <p className="mb-3">The ln type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
+            <p className="mb-3">The Linea UI type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
             <p className="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
             <p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>
           </div>
@@ -166,7 +166,7 @@ export default function TypographyPage() {
             automatically.
           </p>
           <p>
-            The ln type system is built on two grids: an 8px base grid for
+            The Linea UI type system is built on two grids: an 8px base grid for
             spacing and an 24px line grid for vertical rhythm. Font sizes,
             line heights, and margins are all whole multiples of these values,
             so elements snap to the grid without manual adjustment.

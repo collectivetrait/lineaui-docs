@@ -39,7 +39,7 @@ export default function AccordionPage() {
   </details>
   <details class="ln-accordion__item">
     <summary class="ln-accordion__summary">
-      <span class="ln-accordion__title">What grid does ln use?</span>
+      <span class="ln-accordion__title">What grid does Linea UI use?</span>
       <i class="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
     </summary>
     <div class="ln-accordion__content">
@@ -72,7 +72,7 @@ export default function AccordionPage() {
               </details>
               <details className="ln-accordion__item">
                 <summary className="ln-accordion__summary">
-                  <span className="ln-accordion__title">What grid does ln use?</span>
+                  <span className="ln-accordion__title">What grid does Linea UI use?</span>
                   <i className="fa-solid fa-chevron-down ln-accordion__icon" aria-hidden="true"></i>
                 </summary>
                 <div className="ln-accordion__content">

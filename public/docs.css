@@ -1,10 +1,10 @@
 /* ---------------------------------------------------------------
    Demo infrastructure — code blocks, component demos, syntax
    highlighting, and preview controls. Reusable across any site
-   that showcases ln components.
+   that showcases Linea UI components.
    --------------------------------------------------------------- */
 
-/* --- Syntax token definitions (mapped to ln semantic tokens) --- */
+/* --- Syntax token definitions (mapped to Linea UI semantic tokens) --- */
 :root {
   background-color: var(--surface);
   overscroll-behavior-y: none;

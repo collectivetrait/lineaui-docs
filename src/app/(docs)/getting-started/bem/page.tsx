@@ -14,7 +14,7 @@ export default function BemPage() {
       <section className="docs-section">
         <h1 className="text-display-2">BEM</h1>
         <p className="lead text-subtle">
-          Every component in ln follows the Block Element Modifier convention,
+          Every component in Linea UI follows the Block Element Modifier convention,
           namespaced with a configurable prefix.
         </p>
       </section>

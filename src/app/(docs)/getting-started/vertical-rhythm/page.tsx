@@ -14,7 +14,7 @@ export default function VerticalRhythmPage() {
       <section className="docs-section">
         <h1 className="text-display-2">Vertical Rhythm</h1>
         <p className="lead text-subtle">
-          Every size, spacing, and line-height token in ln is derived from two
+          Every size, spacing, and line-height token in Linea UI is derived from two
           values: an 8px base grid and a 24px line grid.
         </p>
       </section>

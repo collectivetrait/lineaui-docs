@@ -29,14 +29,14 @@ export default function PageHeaderPage() {
           <CodeBlock language="html">{`<div class="ln-page-header ln-page-header--bordered">
   <span class="ln-page-header__eyebrow">Documentation</span>
   <h1 class="ln-page-header__title">Getting Started</h1>
-  <p class="ln-page-header__lead">Install ln via npm, import the compiled
+  <p class="ln-page-header__lead">Install Linea UI via npm, import the compiled
      CSS, and add the JS bundle to your page.</p>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
             <div className="ln-page-header ln-page-header--bordered">
               <span className="ln-page-header__eyebrow">Documentation</span>
               <h1 className="ln-page-header__title">Getting Started</h1>
-              <p className="ln-page-header__lead">Install ln via npm, import the compiled
+              <p className="ln-page-header__lead">Install Linea UI via npm, import the compiled
                  CSS, and add the JS bundle to your page.</p>
             </div>
           </div>
