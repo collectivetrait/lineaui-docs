@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { GridToggle } from "@/components/GridToggle";
 import { BackToTop } from "@/components/BackToTop";
+import { PreviewInnerWrap } from "@/components/PreviewInnerWrap";
 import { PreviewGridToggles } from "@/components/PreviewGridToggles";
 import { HomeInstallBar } from "@/components/HomeInstallBar";
 import { HomeSpecimenToggle } from "@/components/HomeSpecimenToggle";
@@ -295,6 +296,7 @@ export default function Home() {
       <div className="docs-fixed-buttons">
         {showGridTools && <GridToggle />}
         <BackToTop />
+        <PreviewInnerWrap />
         {showGridTools && <PreviewGridToggles />}
         {process.env.NEXT_PUBLIC_SHOW_COOKIE_CONSENT !== "false" && (
           <CookieConsentReset />

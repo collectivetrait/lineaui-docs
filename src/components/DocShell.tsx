@@ -5,6 +5,7 @@ import { SiteFooter } from "./SiteFooter";
 import { GridToggle } from "./GridToggle";
 import { TocToggle } from "./TocToggle";
 import { BackToTop } from "./BackToTop";
+import { PreviewInnerWrap } from "./PreviewInnerWrap";
 import { PreviewGridToggles } from "./PreviewGridToggles";
 import { CookieConsentReset } from "./CookieConsentReset";
 
@@ -26,6 +27,7 @@ export function DocShell({ children }: { children: React.ReactNode }) {
         {showGridTools && <GridToggle />}
         <TocToggle />
         <BackToTop />
+        <PreviewInnerWrap />
         {showGridTools && <PreviewGridToggles />}
         {process.env.NEXT_PUBLIC_SHOW_COOKIE_CONSENT !== "false" && (
           <CookieConsentReset />
