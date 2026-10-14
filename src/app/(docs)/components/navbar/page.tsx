@@ -26,7 +26,7 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h2>Standard navbar</h2>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--bordered">
+          <CodeBlock language="html">{`<nav class="ln-navbar">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
@@ -41,7 +41,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar ln-navbar--bordered">
+            <nav className="ln-navbar">
               <div className="ln-navbar__inner">
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
@@ -70,7 +70,7 @@ export default function NavbarPage() {
           collapse in action.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--bordered">
+          <CodeBlock language="html">{`<nav class="ln-navbar">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
@@ -96,7 +96,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar ln-navbar--bordered">
+            <nav className="ln-navbar">
               <div className="ln-navbar__inner">
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
@@ -128,7 +128,7 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h2>Compact navbar</h2>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--compact ln-navbar--bordered">
+          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--compact">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Dashboard</a>
     <div class="ln-navbar__nav">
@@ -139,7 +139,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar ln-navbar--compact ln-navbar--bordered">
+            <nav className="ln-navbar ln-navbar--compact">
               <div className="ln-navbar__inner">
                 <a className="ln-navbar__brand" href="#">Dashboard</a>
                 <div className="ln-navbar__nav">
@@ -174,7 +174,6 @@ export default function NavbarPage() {
             <tr><td><code>.ln-navbar__toggle</code></td><td>Mobile menu toggle button</td><td>No</td></tr>
             <tr><td><code>.ln-navbar__panel</code></td><td>Collapsible mobile nav panel</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--sticky</code></td><td>Stick to viewport top</td><td>No</td></tr>
-            <tr><td><code>.ln-navbar--bordered</code></td><td>Bottom border separator</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--transparent</code></td><td>Transparent background until scrolled</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--center</code></td><td>Centre-align nav links</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--compact</code></td><td>Reduced height (48px)</td><td>No</td></tr>
