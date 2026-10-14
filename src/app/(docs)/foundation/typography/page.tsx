@@ -37,7 +37,7 @@ export default function TypographyPage() {
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<p class="lead">Introductory sentence in prose font, slightly larger than body.</p>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <p className="lead">
               Introductory sentence in prose font, slightly larger than body.
             </p>
@@ -54,7 +54,7 @@ export default function TypographyPage() {
           <CodeBlock language="html">{`<p class="mb-3">The Linea UI type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
 <p class="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
 <p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <p className="mb-3">The Linea UI type system is built on a 24px vertical rhythm grid. Every font size, line height, and spacing value is a whole multiple of 8px.</p>
             <p className="mb-3">Paragraphs receive their styles from the base layer automatically. No utility classes are needed for standard prose content.</p>
             <p>The bottom margin on the last paragraph is removed to prevent unwanted trailing space inside containers.</p>
@@ -73,7 +73,7 @@ export default function TypographyPage() {
 <h4 class="mb-3">Heading level four</h4>
 <h5 class="mb-3">Heading level five</h5>
 <h6>Heading level six</h6>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <h1 className="mb-3">Heading level one</h1>
             <h2 className="mb-3">Heading level two</h2>
             <h3 className="mb-3">Heading level three</h3>
@@ -98,7 +98,7 @@ export default function TypographyPage() {
 <div class="h4 mb-3">Heading four style on a div</div>
 <div class="h5 mb-3">Heading five style on a div</div>
 <div class="h6">Heading six style on a div</div>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <div className="h1 mb-3">Heading one style on a div</div>
             <div className="h2 mb-3">Heading two style on a div</div>
             <div className="h3 mb-3">Heading three style on a div</div>
@@ -117,7 +117,7 @@ export default function TypographyPage() {
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<h1 class="text-display-1 mb-3">Hero heading</h1>
 <h2 class="text-display-2">Section hero</h2>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <h1 className="text-display-1 mb-3">Hero heading</h1>
             <h2 className="text-display-2">Section hero</h2>
           </div>
@@ -132,7 +132,7 @@ export default function TypographyPage() {
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="h4 h2@md mb-3">h4 on mobile, h2 from md up</div>
 <div class="text-display-2 text-display-1@lg">Display 2 on mobile, display 1 from lg up</div>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <div className="h4 h2@md mb-3">h4 on mobile, h2 from md up</div>
             <div className="text-display-2 text-display-1@lg">Display 2 on mobile, display 1 from lg up</div>
           </div>
