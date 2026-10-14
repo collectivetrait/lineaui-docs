@@ -113,7 +113,7 @@ export default function ChangelogPage() {
 
       <section className="docs-section">
         {entries.map((entry) => (
-          <article key={entry.heading}>
+          <article key={entry.heading} className="mb-4">
             <h2>
               {entry.heading}
               {entry.date && (
