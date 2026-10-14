@@ -36,7 +36,7 @@ export default function FiguresPage() {
   <img src="/placeholder.svg" alt="Example figure image">
   <figcaption>A descriptive caption for the image above.</figcaption>
 </figure>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <figure>
               <img src="/placeholder.svg" alt="Example figure image" />
               <figcaption>A descriptive caption for the image above.</figcaption>
@@ -56,7 +56,7 @@ export default function FiguresPage() {
   <pre><code>@use 'ln/scss' with ($prefix: 'my-');</code></pre>
   <figcaption>Importing the library with a custom prefix.</figcaption>
 </figure>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <figure>
               <pre><code>{"@use 'ln/scss' with ($prefix: 'my-');"}</code></pre>
               <figcaption>Importing the library with a custom prefix.</figcaption>
