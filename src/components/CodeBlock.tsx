@@ -26,8 +26,27 @@ export function CodeBlock({ language, filename, children }: CodeBlockProps) {
 
   const rawLines = result.value.split('\n');
   const lines = rawLines[rawLines.length - 1] === '' ? rawLines.slice(0, -1) : rawLines;
+
+  let openSpans: string[] = [];
   const wrappedHtml = lines
-    .map(line => `<span class="code-block__line">${line}</span>`)
+    .map(line => {
+      const prefix = openSpans.join('');
+
+      const nextOpen: string[] = [...openSpans];
+      const tagRe = /<\/?span[^>]*>/g;
+      let m;
+      while ((m = tagRe.exec(line)) !== null) {
+        if (m[0].startsWith('</')) {
+          nextOpen.pop();
+        } else {
+          nextOpen.push(m[0]);
+        }
+      }
+      openSpans = nextOpen;
+
+      const suffix = openSpans.map(() => '</span>').join('');
+      return `<span class="code-block__line">${prefix}${line}${suffix}</span>`;
+    })
     .join('\n');
 
   return (
