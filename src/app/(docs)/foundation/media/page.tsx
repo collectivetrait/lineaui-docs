@@ -78,57 +78,57 @@ img, video {
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-media ln-media--ratio-1x1 ln-media--bordered">
   <div class="ln-media__frame">
-    <img class="ln-media__img" src="/placeholder.svg" alt="1:1 ratio">
+    <img class="ln-media__img" src="/placeholder-1x1.svg" alt="1:1 ratio">
   </div>
 </div>
 
 <div class="ln-media ln-media--ratio-4x3 ln-media--bordered">
   <div class="ln-media__frame">
-    <img class="ln-media__img" src="/placeholder.svg" alt="4:3 ratio">
+    <img class="ln-media__img" src="/placeholder-4x3.svg" alt="4:3 ratio">
   </div>
 </div>
 
 <div class="ln-media ln-media--ratio-3x2 ln-media--bordered">
   <div class="ln-media__frame">
-    <img class="ln-media__img" src="/placeholder.svg" alt="3:2 ratio">
+    <img class="ln-media__img" src="/placeholder-3x2.svg" alt="3:2 ratio">
   </div>
 </div>
 
 <div class="ln-media ln-media--ratio-16x9 ln-media--bordered">
   <div class="ln-media__frame">
-    <img class="ln-media__img" src="/placeholder.svg" alt="16:9 ratio">
+    <img class="ln-media__img" src="/placeholder-16x9.svg" alt="16:9 ratio">
   </div>
 </div>
 
 <div class="ln-media ln-media--ratio-21x9 ln-media--bordered">
   <div class="ln-media__frame">
-    <img class="ln-media__img" src="/placeholder.svg" alt="21:9 ratio">
+    <img class="ln-media__img" src="/placeholder-21x9.svg" alt="21:9 ratio">
   </div>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
             <div className="ln-media ln-media--ratio-1x1 ln-media--bordered">
               <div className="ln-media__frame">
-                <img className="ln-media__img" src="/placeholder.svg" alt="1:1 ratio" />
+                <img className="ln-media__img" src="/placeholder-1x1.svg" alt="1:1 ratio" />
               </div>
             </div>
             <div className="ln-media ln-media--ratio-4x3 ln-media--bordered">
               <div className="ln-media__frame">
-                <img className="ln-media__img" src="/placeholder.svg" alt="4:3 ratio" />
+                <img className="ln-media__img" src="/placeholder-4x3.svg" alt="4:3 ratio" />
               </div>
             </div>
             <div className="ln-media ln-media--ratio-3x2 ln-media--bordered">
               <div className="ln-media__frame">
-                <img className="ln-media__img" src="/placeholder.svg" alt="3:2 ratio" />
+                <img className="ln-media__img" src="/placeholder-3x2.svg" alt="3:2 ratio" />
               </div>
             </div>
             <div className="ln-media ln-media--ratio-16x9 ln-media--bordered">
               <div className="ln-media__frame">
-                <img className="ln-media__img" src="/placeholder.svg" alt="16:9 ratio" />
+                <img className="ln-media__img" src="/placeholder-16x9.svg" alt="16:9 ratio" />
               </div>
             </div>
             <div className="ln-media ln-media--ratio-21x9 ln-media--bordered">
               <div className="ln-media__frame">
-                <img className="ln-media__img" src="/placeholder.svg" alt="21:9 ratio" />
+                <img className="ln-media__img" src="/placeholder-21x9.svg" alt="21:9 ratio" />
               </div>
             </div>
           </div>
