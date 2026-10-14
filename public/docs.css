@@ -188,6 +188,10 @@
   min-width: 100%;
 }
 
+.component-demo__preview-sizer--full-contained {
+    width: 100%;
+}
+
 .component-demo__preview-sizer--narrow {
   max-width: 500px;
 }
@@ -982,6 +986,7 @@ h3:hover > .docs-heading-anchor,
 .docs-section {
   padding-bottom: var(--s4);
   margin-bottom: var(--s4);
+  min-width: 0;
 }
 
 .docs-section:last-child {
