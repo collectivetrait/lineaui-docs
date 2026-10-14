@@ -70,8 +70,8 @@ export default function NavbarPage() {
           collapse in action.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar">
-  <div class="ln-navbar__inner">
+          <CodeBlock language="html">{`<nav class="ln-navbar border">
+  <div class="ln-navbar__inner py-1 px-2">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
       <a class="ln-navbar__link" href="#" aria-current="page">Home</a>
@@ -97,8 +97,8 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar">
-              <div className="ln-navbar__inner">
+            <nav className="ln-navbar border">
+              <div className="ln-navbar__inner py-1 px-2">
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
                   <a className="ln-navbar__link" href="#" aria-current="page">Home</a>
