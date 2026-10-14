@@ -131,11 +131,11 @@ localStorage.setItem("ln:theme", next);`}</CodeBlock>
           markup and the client DOM.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="tsx">{`export default function RootLayout({ children }) {
+          <CodeBlock language="tsx">{`export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script src="/theme-init.js" />
+        <script src="/theme-init.js"></script>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>{children}</body>
