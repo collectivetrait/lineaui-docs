@@ -85,8 +85,11 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem("ln:theme");if(t==="light"||t==="dark"){document.documentElement.dataset.theme=t}}catch(e){}})()`,
           }}
         />
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/fa.css" />
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/docs.css" />
+        {/* eslint-disable-next-line @next/next/no-css-tags */}
         <link rel="stylesheet" href="/consent.css" />
         <script
           type="application/ld+json"

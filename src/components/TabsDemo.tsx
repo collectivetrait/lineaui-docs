@@ -17,6 +17,7 @@ export function TabsDemo({ variant, tabs = ["Overview", "Features", "Pricing"], 
           <button
             key={label}
             className="ln-tabs__tab"
+            role="tab"
             id={`${id}-tab-${i}`}
             aria-controls={`${id}-panel-${i}`}
             aria-selected={i === 0 ? "true" : "false"}

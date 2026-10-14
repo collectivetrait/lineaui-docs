@@ -273,8 +273,8 @@ export default function TablesPage() {
                     <th className="ln-table__header ln-table__select">
                       <input type="checkbox" className="ln-choice__input" />
                     </th>
-                    <th className="ln-table__header">
-                      <button className="ln-table__sort" aria-sort="ascending">Name</button>
+                    <th className="ln-table__header" aria-sort="ascending">
+                      <button className="ln-table__sort">Name</button>
                     </th>
                     <th className="ln-table__header">Role</th>
                     <th className="ln-table__header">Status</th>

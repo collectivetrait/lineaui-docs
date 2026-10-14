@@ -314,13 +314,13 @@ export default function EcommercePatterns() {
                 </div>
               </div>
               <div className="ln-gallery__thumbs">
-                <button className="ln-gallery__thumb is-active" aria-selected="true">
+                <button className="ln-gallery__thumb is-active" role="tab" aria-selected="true">
                   <img src="/placeholder-1.svg" alt="Thumb 1" />
                 </button>
-                <button className="ln-gallery__thumb" aria-selected="false">
+                <button className="ln-gallery__thumb" role="tab" aria-selected="false">
                   <img src="/placeholder-2.svg" alt="Thumb 2" />
                 </button>
-                <button className="ln-gallery__thumb" aria-selected="false">
+                <button className="ln-gallery__thumb" role="tab" aria-selected="false">
                   <img src="/placeholder-3.svg" alt="Thumb 3" />
                 </button>
               </div>
