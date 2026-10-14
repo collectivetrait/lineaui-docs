@@ -180,10 +180,12 @@
 
 .component-demo__preview-inner {
   padding: var(--s3);
+  overflow: auto;
 }
 
 .component-demo__preview-sizer--full {
-  width: 100%;
+  width: max-content;
+  min-width: 100%;
 }
 
 .component-demo__preview-sizer--narrow {
