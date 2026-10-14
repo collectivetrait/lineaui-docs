@@ -103,7 +103,7 @@ export default function Home() {
           <div>
             <span className="ln-badge ln-badge--secondary mb-1">
               <span className="ln-badge__dot" />
-              v1.0
+              v1.0.1
             </span>
             <div className="ln-section__eyebrow">
               BEM / VERTICAL RHYTHM / CASCADE LAYERS</div>
