@@ -157,7 +157,7 @@ export default function TypographyPage() {
   <ul><li>List item</li></ul>
   <pre><code>code block</code></pre>
 </article>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
         <article className="docs-prose-specimen">
           <h1>Typographic defaults</h1>
           <p className="lead">

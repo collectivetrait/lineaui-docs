@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const SIZER_MODIFIERS = ["narrow", "xs", "sm"];
+const SIZER_MODIFIERS = ["full-contained", "narrow", "xs", "sm"];
 
 export function PreviewInnerWrap() {
   const pathname = usePathname();
