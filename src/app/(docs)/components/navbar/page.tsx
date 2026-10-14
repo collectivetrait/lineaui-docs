@@ -26,7 +26,7 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h2>Standard navbar</h2>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar">
+          <CodeBlock language="html">{`<nav class="ln-navbar bg-surface-sunken border">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
@@ -41,7 +41,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar">
+            <nav className="ln-navbar bg-surface-sunken border">
               <div className="ln-navbar__inner">
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
@@ -70,7 +70,7 @@ export default function NavbarPage() {
           collapse in action.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar">
+          <CodeBlock language="html">{`<nav class="ln-navbar bg-surface-sunken border">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
@@ -97,7 +97,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar">
+            <nav className="ln-navbar bg-surface-sunken border">
               <div className="ln-navbar__inner">
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
@@ -130,7 +130,7 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h2>Compact navbar</h2>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--compact">
+          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--compact bg-surface-sunken border">
   <div class="ln-navbar__inner">
     <a class="ln-navbar__brand" href="#">Dashboard</a>
     <div class="ln-navbar__nav">
@@ -141,7 +141,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar ln-navbar--compact">
+            <nav className="ln-navbar ln-navbar--compact bg-surface-sunken border">
               <div className="ln-navbar__inner">
                 <a className="ln-navbar__brand" href="#">Dashboard</a>
                 <div className="ln-navbar__nav">
