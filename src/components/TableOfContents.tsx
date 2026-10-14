@@ -121,7 +121,7 @@ export function TableOfContents({ noNumbers = false }: { noNumbers?: boolean } =
     }, 0);
 
     return () => clearTimeout(timer);
-  }, [pathname]);
+  }, [pathname, noNumbers]);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();

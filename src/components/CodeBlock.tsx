@@ -27,12 +27,10 @@ export function CodeBlock({ language, filename, children }: CodeBlockProps) {
   const rawLines = result.value.split('\n');
   const lines = rawLines[rawLines.length - 1] === '' ? rawLines.slice(0, -1) : rawLines;
 
-  let openSpans: string[] = [];
   const wrappedHtml = lines
-    .map(line => {
-      const prefix = openSpans.join('');
-
-      const nextOpen: string[] = [...openSpans];
+    .reduce<{ html: string[]; open: string[] }>((acc, line) => {
+      const prefix = acc.open.join('');
+      const nextOpen: string[] = [...acc.open];
       const tagRe = /<\/?span[^>]*>/g;
       let m;
       while ((m = tagRe.exec(line)) !== null) {
@@ -42,12 +40,12 @@ export function CodeBlock({ language, filename, children }: CodeBlockProps) {
           nextOpen.push(m[0]);
         }
       }
-      openSpans = nextOpen;
-
-      const suffix = openSpans.map(() => '</span>').join('');
-      return `<span class="code-block__line">${prefix}${line}${suffix}</span>`;
-    })
-    .join('\n');
+      const suffix = nextOpen.map(() => '</span>').join('');
+      acc.html.push(`<span class="code-block__line">${prefix}${line}${suffix}</span>`);
+      acc.open = nextOpen;
+      return acc;
+    }, { html: [], open: [] })
+    .html.join('\n');
 
   return (
     <div className="code-block">
