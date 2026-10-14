@@ -353,10 +353,6 @@
   margin-right: var(--s1);
 }
 
-.no-section-numbers .docs-section-number {
-  display: none;
-}
-
 /* --- Heading anchor links --- */
 
 .docs-heading-anchor {
