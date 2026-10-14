@@ -111,10 +111,9 @@ export default function ChangelogPage() {
 
       <TableOfContents />
 
-      <section className="docs-section ln-prose">
-        {entries.map((entry, i) => (
+      <section className="docs-section no-section-numbers">
+        {entries.map((entry) => (
           <article key={entry.heading}>
-            {i > 0 && <hr className="ln-divider ln-divider--space-lg" />}
             <h2>
               {entry.heading}
               {entry.date && (
