@@ -63,8 +63,8 @@ export default function NavbarPage() {
         <h2>Responsive navbar with mobile panel</h2>
         <p>
           Below the <code>md</code> breakpoint, nav links and actions hide and
-          a toggle button appears. Clicking it reveals the panel with a
-          slide-down transition and backdrop overlay. Add{" "}
+          a toggle button appears. Place both the open and close icons inside
+          the toggle — CSS swaps them based on <code>aria-expanded</code>. Add{" "}
           <code>data-ln-navbar-toggle</code> to the button and place mobile
           links inside <code>__panel</code>. Resize the browser to see the
           collapse in action.
@@ -84,7 +84,8 @@ export default function NavbarPage() {
     </div>
     <button class="ln-navbar__toggle" data-ln-navbar-toggle
             aria-expanded="false" aria-label="Toggle menu">
-      ☰
+      <i class="fa-solid fa-bars ln-navbar__toggle-open" aria-label="Open menu"></i>
+      <i class="fa-solid fa-xmark ln-navbar__toggle-close" aria-label="Close menu"></i>
     </button>
   </div>
   <div class="ln-navbar__panel" aria-hidden="true">
@@ -110,7 +111,8 @@ export default function NavbarPage() {
                 </div>
                 <button className="ln-navbar__toggle" data-ln-navbar-toggle=""
                         aria-expanded="false" aria-label="Toggle menu">
-                  ☰
+                  <i className="fa-solid fa-bars ln-navbar__toggle-open" aria-label="Open menu"></i>
+                  <i className="fa-solid fa-xmark ln-navbar__toggle-close" aria-label="Close menu"></i>
                 </button>
               </div>
               <div className="ln-navbar__panel" aria-hidden="true">

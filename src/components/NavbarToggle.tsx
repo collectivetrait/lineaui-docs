@@ -16,11 +16,9 @@ export function NavbarToggle() {
     if (expanded) {
       btn.setAttribute("aria-expanded", "false");
       panel.setAttribute("aria-hidden", "true");
-      document.documentElement.classList.remove("ln-navbar-open");
     } else {
       btn.setAttribute("aria-expanded", "true");
       panel.setAttribute("aria-hidden", "false");
-      document.documentElement.classList.add("ln-navbar-open");
     }
   }, []);
 
@@ -32,7 +30,8 @@ export function NavbarToggle() {
       aria-label="Toggle navigation"
       onClick={toggle}
     >
-      <i className="fa-solid fa-bars" aria-hidden="true"></i>
+      <i className="fa-solid fa-bars ln-navbar__toggle-open" aria-label="Open menu"></i>
+      <i className="fa-solid fa-xmark ln-navbar__toggle-close" aria-label="Close menu"></i>
     </button>
   );
 }
