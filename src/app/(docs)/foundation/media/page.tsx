@@ -35,7 +35,7 @@ export default function MediaPage() {
           <CodeBlock language="html">{`<!-- Images and video are responsive by default — no classes needed -->
 <img src="/placeholder.svg" alt="Responsive image">
 <video src="/sample.mp4" controls>…</video>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <img src="/placeholder.svg" alt="Responsive image" />
           </div>
         </div>
@@ -62,7 +62,7 @@ img, video {
   </div>
   <p class="ln-media__caption">A bordered media block with a descriptive caption below.</p>
 </div>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <div className="ln-media ln-media--bordered">
               <div className="ln-media__frame">
                 <img className="ln-media__img" src="/placeholder.svg" alt="Placeholder image" />
@@ -105,7 +105,7 @@ img, video {
     <img class="ln-media__img" src="/placeholder-21x9.svg" alt="21:9 ratio">
   </div>
 </div>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained">
             <div className="ln-media ln-media--ratio-1x1 ln-media--bordered">
               <div className="ln-media__frame">
                 <img className="ln-media__img" src="/placeholder-1x1.svg" alt="1:1 ratio" />
