@@ -26,7 +26,7 @@ function findSectionGroup(pathname: string): string | null {
   return null;
 }
 
-export function TableOfContents() {
+export function TableOfContents({ noNumbers = false }: { noNumbers?: boolean } = {}) {
   const pathname = usePathname();
   const [headings, setHeadings] = useState<Heading[]>([]);
   const [activeId, setActiveId] = useState<string>("");
@@ -83,7 +83,7 @@ export function TableOfContents() {
 
         if (el.tagName === "H2") {
           h2Counter++;
-          if (!el.querySelector(".docs-section-number")) {
+          if (!noNumbers && !el.querySelector(".docs-section-number")) {
             const num = document.createElement("span");
             num.className = "docs-section-number";
             num.textContent = String(h2Counter).padStart(2, "0");

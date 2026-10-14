@@ -109,9 +109,9 @@ export default function ChangelogPage() {
         </p>
       </section>
 
-      <TableOfContents />
+      <TableOfContents noNumbers />
 
-      <section className="docs-section no-section-numbers">
+      <section className="docs-section">
         {entries.map((entry) => (
           <article key={entry.heading}>
             <h2>
