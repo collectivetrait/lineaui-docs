@@ -5,6 +5,13 @@ const nextConfig: NextConfig = {
     ? false
     : undefined,
   transpilePackages: ["@collectivetrait/lineaui"],
+  webpack: (config) => {
+    config.watchOptions = {
+      ...config.watchOptions,
+      followSymlinks: true,
+    };
+    return config;
+  },
   async redirects() {
     return [
       {
