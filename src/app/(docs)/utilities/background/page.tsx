@@ -32,7 +32,7 @@ export default function BackgroundUtilities() {
           <CodeBlock language="html">{`<div class="bg-primary text-inverse border rounded-sm p-2 mb-3">bg-primary</div>
 <div class="bg-secondary text-inverse border rounded-sm p-2 mb-3">bg-secondary</div>
 <div class="bg-success text-inverse border rounded-sm p-2 mb-3">bg-success</div>
-<div class="bg-warning border rounded-sm p-2 mb-3">bg-warning</div>
+<div class="bg-warning text-inverse border rounded-sm p-2 mb-3">bg-warning</div>
 <div class="bg-danger text-inverse border rounded-sm p-2 mb-3">bg-danger</div>
 <div class="bg-info text-inverse border rounded-sm p-2 mb-3">bg-info</div>
 <div class="bg-primary-subtle border rounded-sm p-2 mb-3">bg-primary-subtle</div>
@@ -45,7 +45,7 @@ export default function BackgroundUtilities() {
             <div className="bg-primary text-inverse border rounded-sm p-2 mb-3">bg-primary</div>
             <div className="bg-secondary text-inverse border rounded-sm p-2 mb-3">bg-secondary</div>
             <div className="bg-success text-inverse border rounded-sm p-2 mb-3">bg-success</div>
-            <div className="bg-warning border rounded-sm p-2 mb-3">bg-warning</div>
+            <div className="bg-warning text-inverse border rounded-sm p-2 mb-3">bg-warning</div>
             <div className="bg-danger text-inverse border rounded-sm p-2 mb-3">bg-danger</div>
             <div className="bg-info text-inverse border rounded-sm p-2 mb-3">bg-info</div>
             <div className="bg-primary-subtle border rounded-sm p-2 mb-3">bg-primary-subtle</div>
@@ -110,6 +110,7 @@ export default function BackgroundUtilities() {
             <tr><td><code>.bg-surface-raised</code></td><td><code>background-color: var(--surface-raised)</code></td><td>No</td></tr>
             <tr><td><code>.bg-surface-sunken</code></td><td><code>background-color: var(--surface-sunken)</code></td><td>No</td></tr>
             <tr><td><code>.bg-surface-inverse</code></td><td><code>background-color: var(--surface-inverse)</code></td><td>No</td></tr>
+            <tr><td><code>.bg-transparent</code></td><td><code>background-color: transparent</code></td><td>No</td></tr>
           </tbody>
         </table>
       </section>

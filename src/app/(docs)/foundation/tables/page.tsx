@@ -173,7 +173,7 @@ export default function TablesPage() {
     <thead>
       <tr>
         <th class="ln-table__header ln-table__select">
-          <input type="checkbox" class="ln-choice__input">
+          <label class="ln-choice"><input type="checkbox" class="ln-choice__input"></label>
         </th>
         <th class="ln-table__header">
           <button class="ln-table__sort" aria-sort="ascending">Name</button>
@@ -186,7 +186,7 @@ export default function TablesPage() {
     <tbody>
       <tr class="ln-table__row" aria-selected="true">
         <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input" checked>
+          <label class="ln-choice"><input type="checkbox" class="ln-choice__input" checked></label>
         </td>
         <td class="ln-table__cell">
           <span class="d-flex align-items-center gap-2">
@@ -202,7 +202,7 @@ export default function TablesPage() {
       </tr>
       <tr class="ln-table__row" aria-selected="true">
         <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input" checked>
+          <label class="ln-choice"><input type="checkbox" class="ln-choice__input" checked></label>
         </td>
         <td class="ln-table__cell">
           <span class="d-flex align-items-center gap-2">
@@ -218,7 +218,7 @@ export default function TablesPage() {
       </tr>
       <tr class="ln-table__row">
         <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input">
+          <label class="ln-choice"><input type="checkbox" class="ln-choice__input"></label>
         </td>
         <td class="ln-table__cell">
           <span class="d-flex align-items-center gap-2">
@@ -234,7 +234,7 @@ export default function TablesPage() {
       </tr>
       <tr class="ln-table__row">
         <td class="ln-table__cell ln-table__select">
-          <input type="checkbox" class="ln-choice__input">
+          <label class="ln-choice"><input type="checkbox" class="ln-choice__input"></label>
         </td>
         <td class="ln-table__cell">
           <span class="d-flex align-items-center gap-2">
@@ -271,7 +271,7 @@ export default function TablesPage() {
                 <thead>
                   <tr>
                     <th className="ln-table__header ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" />
+                      <label className="ln-choice"><input type="checkbox" className="ln-choice__input" /></label>
                     </th>
                     <th className="ln-table__header" aria-sort="ascending">
                       <button className="ln-table__sort">Name</button>
@@ -284,7 +284,7 @@ export default function TablesPage() {
                 <tbody>
                   <tr className="ln-table__row" aria-selected="true">
                     <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" defaultChecked />
+                      <label className="ln-choice"><input type="checkbox" className="ln-choice__input" defaultChecked /></label>
                     </td>
                     <td className="ln-table__cell">
                       <span className="d-flex align-items-center gap-2">
@@ -300,7 +300,7 @@ export default function TablesPage() {
                   </tr>
                   <tr className="ln-table__row" aria-selected="true">
                     <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" defaultChecked />
+                      <label className="ln-choice"><input type="checkbox" className="ln-choice__input" defaultChecked /></label>
                     </td>
                     <td className="ln-table__cell">
                       <span className="d-flex align-items-center gap-2">
@@ -316,7 +316,7 @@ export default function TablesPage() {
                   </tr>
                   <tr className="ln-table__row">
                     <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" />
+                      <label className="ln-choice"><input type="checkbox" className="ln-choice__input" /></label>
                     </td>
                     <td className="ln-table__cell">
                       <span className="d-flex align-items-center gap-2">
@@ -332,7 +332,7 @@ export default function TablesPage() {
                   </tr>
                   <tr className="ln-table__row">
                     <td className="ln-table__cell ln-table__select">
-                      <input type="checkbox" className="ln-choice__input" />
+                      <label className="ln-choice"><input type="checkbox" className="ln-choice__input" /></label>
                     </td>
                     <td className="ln-table__cell">
                       <span className="d-flex align-items-center gap-2">
