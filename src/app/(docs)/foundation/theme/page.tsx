@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import Link from "next/link";
 import { CodeBlock } from "@/components/CodeBlock";
 import { TableOfContents } from "@/components/TableOfContents";
 
@@ -65,8 +66,11 @@ export default function ThemePage() {
         <p>
           To create a visually inverted region — for example, a dark section
           inside a light page — use the{" "}
-          <code>ln-section--surface-inverse</code> modifier or the{" "}
-          <code>bg-surface-inverse</code> and <code>text-inverse</code>{" "}
+          <Link href="/layout/section"><code>ln-section--surface-inverse</code></Link>{" "}
+          modifier or the{" "}
+          <Link href="/utilities/background"><code>bg-surface-inverse</code></Link>{" "}
+          and{" "}
+          <Link href="/utilities/colors"><code>text-inverse</code></Link>{" "}
           utility classes.
         </p>
         <div className="component-demo">
@@ -91,6 +95,29 @@ export default function ThemePage() {
           still resolve their tokens from the root theme, so their borders,
           shadows, and role colours remain unchanged.
         </p>
+        <p>
+          Note that colour roles — <code>--primary</code>,{" "}
+          <code>--danger</code>, <code>--success</code>, and others — are also
+          redefined between light and dark themes, so a forced theme on the root
+          element updates role colours across the whole page.
+        </p>
+        <p>
+          For full control over a subtree, you can redefine any token as a
+          custom property on your own component. See{" "}
+          <Link href="/getting-started/customization">Customization</Link> for
+          details.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="css">{`.my-dark-card {
+  --canvas: #09090B;
+  --surface: #18181B;
+  --text: #FAFAFA;
+  --c-muted: #A1A1AA;
+  --border: #3F3F46;
+  background: var(--surface);
+  color: var(--text);
+}`}</CodeBlock>
+        </div>
       </section>
 
       <section className="docs-section">
