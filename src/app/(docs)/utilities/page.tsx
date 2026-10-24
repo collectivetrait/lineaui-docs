@@ -20,6 +20,7 @@ const PAGES = [
   { href: "/utilities/shadows", label: "Shadows", description: "Box-shadow elevation utilities." },
   { href: "/utilities/sizing", label: "Sizing", description: "Width and height utilities." },
   { href: "/utilities/spacing", label: "Spacing", description: "Margin and padding utilities." },
+  { href: "/utilities/accessibility", label: "Accessibility", description: "Screen-reader-only and visually-hidden utilities." },
 ];
 
 export default function UtilitiesIndex() {

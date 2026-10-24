@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { CookieConsent } from "@/components/CookieConsent";
-import "@collectivetrait/lineaui/dist/styles.css";
+import "@collectivetrait/lineaui/scss";
 import { LineaUIInit } from "@/components/LineaUIInit";
 
 

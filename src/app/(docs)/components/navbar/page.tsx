@@ -14,10 +14,11 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h1 className="text-display-2">Navbar</h1>
         <p className="lead text-subtle">
-          A top navigation bar with brand, links, and action slots. Default
-          height is 72px (3 line rows). The <code>--compact</code> modifier
-          shrinks to 48px. Below the <code>md</code> breakpoint, the nav
-          collapses into a toggleable panel.
+          A top navigation bar with brand, links, and action slots. Below the{" "}
+          <code>md</code> breakpoint, the nav collapses into a toggleable
+          panel. The panel must be a sibling of <code>__inner</code>, not
+          nested inside it: <code>.ln-navbar &gt; .ln-navbar__inner +
+          .ln-navbar__panel</code>.
         </p>
       </section>
 
@@ -128,34 +129,6 @@ export default function NavbarPage() {
       </section>
 
       <section className="docs-section">
-        <h2>Compact navbar</h2>
-        <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--compact">
-  <div class="ln-navbar__inner">
-    <a class="ln-navbar__brand" href="#">Dashboard</a>
-    <div class="ln-navbar__nav">
-      <a class="ln-navbar__link" href="#" aria-current="page">Overview</a>
-      <a class="ln-navbar__link" href="#">Analytics</a>
-      <a class="ln-navbar__link" href="#">Settings</a>
-    </div>
-  </div>
-</nav>`}</CodeBlock>
-          <div className="component-demo__preview">
-            <nav className="ln-navbar ln-navbar--compact">
-              <div className="ln-navbar__inner">
-                <a className="ln-navbar__brand" href="#">Dashboard</a>
-                <div className="ln-navbar__nav">
-                  <a className="ln-navbar__link" href="#" aria-current="page">Overview</a>
-                  <a className="ln-navbar__link" href="#">Analytics</a>
-                  <a className="ln-navbar__link" href="#">Settings</a>
-                </div>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </section>
-
-      <section className="docs-section">
         <h2>Reference</h2>
         <table>
           <thead>
@@ -178,7 +151,6 @@ export default function NavbarPage() {
             <tr><td><code>.ln-navbar--sticky</code></td><td>Stick to viewport top</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--transparent</code></td><td>Transparent background until scrolled</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--center</code></td><td>Centre-align nav links</td><td>No</td></tr>
-            <tr><td><code>.ln-navbar--compact</code></td><td>Reduced height (48px)</td><td>No</td></tr>
             <tr><td><code>.ln-navbar--actions-visible</code></td><td>Keep actions visible on mobile</td><td>No</td></tr>
           </tbody>
         </table>
