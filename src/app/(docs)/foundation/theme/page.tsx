@@ -44,22 +44,52 @@ export default function ThemePage() {
       <section className="docs-section">
         <h2>Forcing a theme</h2>
         <p>
-          Set <code>data-theme</code> on any ancestor element to override the
-          OS preference. Use <code>data-theme=&quot;dark&quot;</code> or{" "}
+          Set <code>data-theme</code> on the <code>&lt;html&gt;</code> element
+          to override the OS preference for the whole page. Use{" "}
+          <code>data-theme=&quot;dark&quot;</code> or{" "}
           <code>data-theme=&quot;light&quot;</code>.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<!-- Force dark on the whole page -->
-<html data-theme="dark">…</html>
-
-<!-- Light island inside a dark page -->
-<section data-theme="light">…</section>`}</CodeBlock>
+          <CodeBlock language="html">{`<html data-theme="dark">…</html>`}</CodeBlock>
         </div>
         <p>
-          When <code>data-theme=&quot;light&quot;</code> is set, the element
-          gets <code>color-scheme: light</code>, forcing all{" "}
-          <code>light-dark()</code> tokens to their first value. The opposite
-          applies for <code>data-theme=&quot;dark&quot;</code>.
+          When <code>data-theme=&quot;dark&quot;</code> is set, the root element
+          gets <code>color-scheme: dark</code>, forcing all{" "}
+          <code>light-dark()</code> tokens to resolve to their dark value. The
+          opposite applies for <code>data-theme=&quot;light&quot;</code>.
+        </p>
+      </section>
+
+      <section className="docs-section">
+        <h2>Inverted surfaces</h2>
+        <p>
+          To create a visually inverted region — for example, a dark section
+          inside a light page — use the{" "}
+          <code>ln-section--surface-inverse</code> modifier or the{" "}
+          <code>bg-surface-inverse</code> and <code>text-inverse</code>{" "}
+          utility classes.
+        </p>
+        <div className="component-demo">
+          <CodeBlock language="html">{`<!-- Dark section on a light page -->
+<section class="ln-section ln-section--surface-inverse">
+  <div class="ln-container">…</div>
+</section>
+
+<!-- Or with utility classes on any element -->
+<div class="bg-surface-inverse text-inverse p-5">…</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <section className="ln-section ln-section--surface-inverse">
+              <div className="ln-container">
+                <p>A section with an inverted surface.</p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <p>
+          These approaches flip the background and text colour of the element
+          itself. Child components — buttons, badges, cards, and other blocks —
+          still resolve their tokens from the root theme, so their borders,
+          shadows, and role colours remain unchanged.
         </p>
       </section>
 
