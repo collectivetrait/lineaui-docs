@@ -14,9 +14,8 @@ export default function BorderUtilities() {
       <section className="docs-section">
         <h1 className="text-display-2">Borders</h1>
         <p className="lead text-subtle">
-          Linea UI offers three border approaches, each with different tradeoffs
-          for vertical rhythm, per-side targeting, and CSS feature support. Choose
-          the right one for the job.
+          Linea UI offers three border families, each with different tradeoffs
+          for vertical rhythm, per-side targeting, and CSS feature support.
         </p>
       </section>
 
@@ -27,57 +26,70 @@ export default function BorderUtilities() {
         <table>
           <thead>
             <tr>
-              <th>Approach</th>
+              <th>Family</th>
+              <th>All sides</th>
               <th>Per-side</th>
               <th>Rhythm-safe</th>
               <th>Respects radius</th>
-              <th>Combinable with shadows</th>
+              <th>Works with <code>.shadow-*</code></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Outline</strong> (<code>.border</code>)</td>
+              <td><strong>Outline</strong></td>
+              <td><code>.border</code></td>
               <td>No</td>
               <td>Yes</td>
               <td>Yes</td>
               <td>Yes</td>
             </tr>
             <tr>
-              <td><strong>Shadow</strong> (<code>.border-t</code>, …)</td>
-              <td>Yes</td>
+              <td><strong>Shadow</strong></td>
+              <td><code>.border-sh</code></td>
+              <td><code>-t -b -s -e -x -y</code></td>
               <td>Yes</td>
               <td>No</td>
               <td>No</td>
             </tr>
             <tr>
-              <td><strong>Native</strong> (<code>.border-native-t</code>, …)</td>
-              <td>Yes</td>
+              <td><strong>Native</strong></td>
+              <td><code>.border-n</code></td>
+              <td><code>-t -b -s -e -x -y</code></td>
               <td>No</td>
               <td>Yes</td>
               <td>Yes</td>
             </tr>
           </tbody>
         </table>
+        <p>
+          <strong>Outline</strong> is the simplest choice for all-sides borders on
+          cards and containers. <strong>Shadow</strong> (<code>border-sh</code>) is
+          the go-to for per-side borders that must preserve vertical rhythm.{" "}
+          <strong>Native</strong> (<code>border-n</code>) is for cases where you
+          need <code>border-style</code> (dashed, dotted) or{" "}
+          <code>border-radius</code> interaction and are willing to compensate for
+          the layout shift yourself.
+        </p>
       </section>
 
       <section className="docs-section">
         <h2>Tokens</h2>
         <p>
-          All three approaches read from the same custom properties. Override
+          All three families read from the same custom properties. Override
           them locally to change size or color on any element.
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Default: 1px, var(--border) color -->
-<div class="border-b p-2">Default border</div>
+<div class="border-sh-b p-2">Default border</div>
 
 <!-- Override size and color inline -->
-<div class="border-b p-2"
+<div class="border-sh-b p-2"
      style="--border-size: var(--bd3); --border-color: var(--primary);">
   3px primary border
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <div className="border-b p-2 mb-3">Default border</div>
-            <div className="border-b p-2" style={{"--border-size": "var(--bd3)", "--border-color": "var(--primary)"} as React.CSSProperties}>
+            <div className="border-sh-b p-2 mb-3">Default border</div>
+            <div className="border-sh-b p-2" style={{"--border-size": "var(--bd3)", "--border-color": "var(--primary)"} as React.CSSProperties}>
               3px primary border
             </div>
           </div>
@@ -89,13 +101,13 @@ export default function BorderUtilities() {
           color of any border utility on a single element.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<div class="border-b p-2" style="--border-color: var(--primary);">Primary accent</div>
-<div class="border-b p-2" style="--border-color: var(--danger);">Danger accent</div>
-<div class="border-b p-2" style="--border-color: var(--success);">Success accent</div>`}</CodeBlock>
+          <CodeBlock language="html">{`<div class="border-sh-b p-2" style="--border-color: var(--primary);">Primary accent</div>
+<div class="border-sh-b p-2" style="--border-color: var(--danger);">Danger accent</div>
+<div class="border-sh-b p-2" style="--border-color: var(--success);">Success accent</div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <div className="border-b p-2 mb-3" style={{"--border-color": "var(--primary)"} as React.CSSProperties}>Primary accent</div>
-            <div className="border-b p-2 mb-3" style={{"--border-color": "var(--danger)"} as React.CSSProperties}>Danger accent</div>
-            <div className="border-b p-2" style={{"--border-color": "var(--success)"} as React.CSSProperties}>Success accent</div>
+            <div className="border-sh-b p-2 mb-3" style={{"--border-color": "var(--primary)"} as React.CSSProperties}>Primary accent</div>
+            <div className="border-sh-b p-2 mb-3" style={{"--border-color": "var(--danger)"} as React.CSSProperties}>Danger accent</div>
+            <div className="border-sh-b p-2" style={{"--border-color": "var(--success)"} as React.CSSProperties}>Success accent</div>
           </div>
         </div>
 
@@ -114,10 +126,10 @@ export default function BorderUtilities() {
   --border-color: var(--danger);
 }`}</CodeBlock>
           <CodeBlock language="html">{`<!-- All border utilities inside inherit the color -->
-<div class="card--accent border-s p-3">Card with primary start accent</div>
+<div class="card--accent border-sh-s p-3">Card with primary start accent</div>
 
-<!-- Works with any border approach -->
-<section class="section--danger border-native-b py-3">
+<!-- Works with any border family -->
+<section class="section--danger border-n-b py-3">
   Danger section with native bottom border
 </section>`}</CodeBlock>
         </div>
@@ -129,8 +141,8 @@ export default function BorderUtilities() {
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div style="--border-color: var(--primary);">
-  <div class="border-b p-2">Inherits primary border</div>
-  <div class="border-b p-2">Also primary</div>
+  <div class="border-sh-b p-2">Inherits primary border</div>
+  <div class="border-sh-b p-2">Also primary</div>
   <div class="border p-2">Outline border — also primary</div>
 </div>`}</CodeBlock>
         </div>
@@ -154,12 +166,13 @@ export default function BorderUtilities() {
       </section>
 
       <section className="docs-section">
-        <h2>Outline borders (all-sides)</h2>
+        <h2>Outline borders</h2>
         <p>
-          The default <code>.border</code> class uses an inset{" "}
-          <code>outline</code> that looks like a border without affecting the box
-          model or breaking vertical rhythm. It respects{" "}
-          <code>border-radius</code> and works alongside shadow utilities.
+          The <code>.border</code> class uses an inset <code>outline</code> that
+          looks like a border without affecting the box model or breaking vertical
+          rhythm. It respects <code>border-radius</code> and works alongside{" "}
+          <code>.shadow-*</code> elevation utilities. It only supports all sides
+          at once — use shadow borders for per-side control.
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-2 mb-3">border — 1px solid</div>
@@ -173,70 +186,72 @@ export default function BorderUtilities() {
             <div className="border-0 rounded-sm p-2">border-0 — no border</div>
           </div>
         </div>
-        <p>
-          <strong>Tradeoff:</strong> outline cannot target individual sides. Use
-          shadow borders for per-side control.
-        </p>
       </section>
 
       <section className="docs-section">
-        <h2>Shadow borders (per-side, rhythm-safe)</h2>
+        <h2>Shadow borders (<code>border-sh</code>)</h2>
         <p>
-          Shadow borders use <code>box-shadow: inset</code> to render per-side
-          borders without affecting layout or breaking vertical rhythm. They are
-          combinable — add multiple classes to show borders on several sides.
+          Shadow borders use <code>box-shadow: inset</code> to render borders
+          without affecting layout or breaking vertical rhythm. They support all
+          sides, per-side, and per-axis targeting. Multiple classes on the same
+          element combine into a multi-side border.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<div class="border-b p-2 mb-3">border-b — bottom only</div>
-<div class="border-t p-2 mb-3">border-t — top only</div>
-<div class="border-s p-2 mb-3">border-s — start (left) only</div>
-<div class="border-y p-2 mb-3">border-y — top + bottom</div>
-<div class="border-t border-b border-s border-e p-2">all four sides</div>`}</CodeBlock>
+          <CodeBlock language="html">{`<div class="border-sh p-2 mb-3">border-sh — all sides</div>
+<div class="border-sh-b p-2 mb-3">border-sh-b — bottom only</div>
+<div class="border-sh-t p-2 mb-3">border-sh-t — top only</div>
+<div class="border-sh-s p-2 mb-3">border-sh-s — start (left) only</div>
+<div class="border-sh-y p-2 mb-3">border-sh-y — top + bottom</div>
+<div class="border-sh-t border-sh-s p-2">combined: top + start</div>`}</CodeBlock>
           <div className="component-demo__preview">
-            <div className="border-b p-2 mb-3">border-b — bottom only</div>
-            <div className="border-t p-2 mb-3">border-t — top only</div>
-            <div className="border-s p-2 mb-3">border-s — start (left) only</div>
-            <div className="border-y p-2 mb-3">border-y — top + bottom</div>
-            <div className="border-t border-b border-s border-e p-2">all four sides</div>
+            <div className="border-sh p-2 mb-3">border-sh — all sides</div>
+            <div className="border-sh-b p-2 mb-3">border-sh-b — bottom only</div>
+            <div className="border-sh-t p-2 mb-3">border-sh-t — top only</div>
+            <div className="border-sh-s p-2 mb-3">border-sh-s — start (left) only</div>
+            <div className="border-sh-y p-2 mb-3">border-sh-y — top + bottom</div>
+            <div className="border-sh-t border-sh-s p-2">combined: top + start</div>
           </div>
         </div>
+
         <h3>Responsive</h3>
         <p>
-          Shadow borders support responsive variants. Use{" "}
-          <code>.border-b@md</code> to add a border at a breakpoint, or{" "}
-          <code>.border-b-0@md</code> to remove one.
+          All shadow border classes have responsive variants. Use{" "}
+          <code>.border-sh-b@md</code> to add a border at a breakpoint, or{" "}
+          <code>.border-sh-b-0@md</code> to remove one.
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<!-- Bottom border on mobile, removed at md -->
-<div class="border-b border-b-0@md p-2">Divider on mobile only</div>`}</CodeBlock>
+<div class="border-sh-b border-sh-b-0@md p-2">Divider on mobile only</div>`}</CodeBlock>
         </div>
+
         <h3>Tradeoffs</h3>
         <ul>
           <li>
-            Shadow borders <strong>do not respect <code>border-radius</code></strong>.
-            The inset shadow bleeds straight at corners. Use outline borders for
-            rounded containers.
+            Shadow borders <strong>do not respect{" "}
+            <code>border-radius</code></strong>. The inset shadow bleeds straight
+            at corners. Use outline borders for rounded containers.
           </li>
           <li>
             Shadow borders <strong>cannot be combined with{" "}
             <code>.shadow-*</code> utilities</strong> on the same element, because
-            both set <code>box-shadow</code>. To give an element both a border
-            and a shadow, use a containing element:
+            both set <code>box-shadow</code>. To give a component both a shadow
+            and a border, use a containing element — the outer element carries the
+            shadow, the inner one carries the border:
           </li>
         </ul>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<!-- Wrong: shadow-2 and border-b compete for box-shadow -->
-<!-- <div class="shadow-2 border-b"> -->
+          <CodeBlock language="html">{`<!-- Wrong: shadow-2 and border-sh-b both set box-shadow -->
+<!-- <div class="shadow-2 border-sh-b"> -->
 
 <!-- Right: wrapper carries the shadow, inner carries the border -->
 <div class="shadow-2 rounded-md">
-  <div class="border-b p-3">
+  <div class="border-sh-b p-3">
     Card with shadow and bottom border
   </div>
 </div>`}</CodeBlock>
           <div className="component-demo__preview">
             <div className="shadow-2 rounded-md">
-              <div className="border-b p-3">
+              <div className="border-sh-b p-3">
                 Card with shadow and bottom border
               </div>
             </div>
@@ -245,28 +260,30 @@ export default function BorderUtilities() {
       </section>
 
       <section className="docs-section">
-        <h2>Native borders (per-side, developer compensates)</h2>
+        <h2>Native borders (<code>border-n</code>)</h2>
         <p>
           Native borders use standard CSS <code>border-*</code> properties. They
           support <code>border-radius</code>, <code>border-style</code> (dashed,
           dotted), and CSS transitions — but they add to the element{"'"}s
-          dimensions and <strong>break vertical rhythm</strong>.
-        </p>
-        <p>
-          Use native borders only when you need a feature shadow borders
-          can{"'"}t provide (dashed/dotted styles, radius interaction) and you are
-          handling rhythm compensation yourself — typically by subtracting the
-          border width from padding with <code>calc()</code>.
+          dimensions and <strong>break vertical rhythm</strong>. The library
+          cannot compensate automatically; you must adjust padding yourself,
+          typically by subtracting the border width with <code>calc()</code>.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<!-- Native border with manual rhythm compensation -->
-<div class="border-native-b p-2"
+          <CodeBlock language="html">{`<!-- All sides -->
+<div class="border-n rounded-sm p-2 mb-3"
+     style="padding: calc(1rem - var(--border-size));">
+  border-n — all sides (compensated)
+</div>
+
+<!-- Per-side with compensation -->
+<div class="border-n-b p-2"
      style="padding-bottom: calc(1rem - var(--border-size));">
-  Compensated bottom border
+  border-n-b — bottom only (compensated)
 </div>
 
 <!-- Dashed style (not possible with outline or shadow) -->
-<div class="border-native-b p-2"
+<div class="border-n-b p-2"
      style="border-style: dashed; padding-bottom: calc(1rem - var(--border-size));">
   Dashed bottom border
 </div>`}</CodeBlock>
@@ -330,7 +347,7 @@ export default function BorderUtilities() {
           </tbody>
         </table>
 
-        <h3>Shadow (per-side, rhythm-safe)</h3>
+        <h3>Shadow (<code>border-sh</code>, rhythm-safe)</h3>
         <table>
           <thead>
             <tr>
@@ -340,20 +357,22 @@ export default function BorderUtilities() {
             </tr>
           </thead>
           <tbody>
-            <tr><td><code>.border-t</code></td><td>Top border via inset shadow</td><td>Yes</td></tr>
-            <tr><td><code>.border-b</code></td><td>Bottom border via inset shadow</td><td>Yes</td></tr>
-            <tr><td><code>.border-s</code></td><td>Start (left) border via inset shadow</td><td>Yes</td></tr>
-            <tr><td><code>.border-e</code></td><td>End (right) border via inset shadow</td><td>Yes</td></tr>
-            <tr><td><code>.border-x</code></td><td>Inline (left + right) borders</td><td>Yes</td></tr>
-            <tr><td><code>.border-y</code></td><td>Block (top + bottom) borders</td><td>Yes</td></tr>
-            <tr><td><code>.border-t-0</code></td><td>Remove top shadow border</td><td>Yes</td></tr>
-            <tr><td><code>.border-b-0</code></td><td>Remove bottom shadow border</td><td>Yes</td></tr>
-            <tr><td><code>.border-s-0</code></td><td>Remove start shadow border</td><td>Yes</td></tr>
-            <tr><td><code>.border-e-0</code></td><td>Remove end shadow border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh</code></td><td>All sides via inset shadow</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-t</code></td><td>Top border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-b</code></td><td>Bottom border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-s</code></td><td>Start (left) border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-e</code></td><td>End (right) border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-x</code></td><td>Inline (left + right) borders</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-y</code></td><td>Block (top + bottom) borders</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-0</code></td><td>Remove all shadow borders</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-t-0</code></td><td>Remove top shadow border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-b-0</code></td><td>Remove bottom shadow border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-s-0</code></td><td>Remove start shadow border</td><td>Yes</td></tr>
+            <tr><td><code>.border-sh-e-0</code></td><td>Remove end shadow border</td><td>Yes</td></tr>
           </tbody>
         </table>
 
-        <h3>Native (per-side, affects layout)</h3>
+        <h3>Native (<code>border-n</code>, affects layout)</h3>
         <table>
           <thead>
             <tr>
@@ -363,12 +382,13 @@ export default function BorderUtilities() {
             </tr>
           </thead>
           <tbody>
-            <tr><td><code>.border-native-t</code></td><td><code>border-top</code></td><td>Yes</td></tr>
-            <tr><td><code>.border-native-b</code></td><td><code>border-bottom</code></td><td>Yes</td></tr>
-            <tr><td><code>.border-native-s</code></td><td><code>border-left</code></td><td>Yes</td></tr>
-            <tr><td><code>.border-native-e</code></td><td><code>border-right</code></td><td>Yes</td></tr>
-            <tr><td><code>.border-native-x</code></td><td><code>border-inline</code></td><td>Yes</td></tr>
-            <tr><td><code>.border-native-y</code></td><td><code>border-block</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n</code></td><td><code>border</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n-t</code></td><td><code>border-top</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n-b</code></td><td><code>border-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n-s</code></td><td><code>border-left</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n-e</code></td><td><code>border-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n-x</code></td><td><code>border-inline</code></td><td>Yes</td></tr>
+            <tr><td><code>.border-n-y</code></td><td><code>border-block</code></td><td>Yes</td></tr>
           </tbody>
         </table>
 
