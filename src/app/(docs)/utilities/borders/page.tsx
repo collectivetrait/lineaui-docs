@@ -75,7 +75,66 @@ export default function BorderUtilities() {
      style="--border-size: var(--bd3); --border-color: var(--primary);">
   3px primary border
 </div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="border-b p-2 mb-3">Default border</div>
+            <div className="border-b p-2" style={{"--border-size": "var(--bd3)", "--border-color": "var(--primary)"} as React.CSSProperties}>
+              3px primary border
+            </div>
+          </div>
         </div>
+
+        <h3>Overriding color per element</h3>
+        <p>
+          Set <code>--border-color</code> with an inline style to change the
+          color of any border utility on a single element.
+        </p>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<div class="border-b p-2" style="--border-color: var(--primary);">Primary accent</div>
+<div class="border-b p-2" style="--border-color: var(--danger);">Danger accent</div>
+<div class="border-b p-2" style="--border-color: var(--success);">Success accent</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="border-b p-2 mb-3" style={{"--border-color": "var(--primary)"} as React.CSSProperties}>Primary accent</div>
+            <div className="border-b p-2 mb-3" style={{"--border-color": "var(--danger)"} as React.CSSProperties}>Danger accent</div>
+            <div className="border-b p-2" style={{"--border-color": "var(--success)"} as React.CSSProperties}>Success accent</div>
+          </div>
+        </div>
+
+        <h3>Overriding color via a class</h3>
+        <p>
+          For reusable patterns, define <code>--border-color</code> in a custom
+          class. Every border utility inside that context inherits the override.
+        </p>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="css">{`/* In your stylesheet */
+.card--accent {
+  --border-color: var(--primary);
+}
+
+.section--danger {
+  --border-color: var(--danger);
+}`}</CodeBlock>
+          <CodeBlock language="html">{`<!-- All border utilities inside inherit the color -->
+<div class="card--accent border-s p-3">Card with primary start accent</div>
+
+<!-- Works with any border approach -->
+<section class="section--danger border-native-b py-3">
+  Danger section with native bottom border
+</section>`}</CodeBlock>
+        </div>
+
+        <h3>Scoping to a parent</h3>
+        <p>
+          Setting <code>--border-color</code> on a parent element applies to
+          every border utility inside it, without needing per-element overrides.
+        </p>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<div style="--border-color: var(--primary);">
+  <div class="border-b p-2">Inherits primary border</div>
+  <div class="border-b p-2">Also primary</div>
+  <div class="border p-2">Outline border — also primary</div>
+</div>`}</CodeBlock>
+        </div>
+
         <table>
           <thead>
             <tr>
