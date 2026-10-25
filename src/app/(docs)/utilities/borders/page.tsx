@@ -201,6 +201,7 @@ export default function BorderUtilities() {
 <div class="border-sh-b p-2 mb-3">border-sh-b — bottom only</div>
 <div class="border-sh-t p-2 mb-3">border-sh-t — top only</div>
 <div class="border-sh-s p-2 mb-3">border-sh-s — start (left) only</div>
+<div class="border-sh-x p-2 mb-3">border-sh-x — left + right</div>
 <div class="border-sh-y p-2 mb-3">border-sh-y — top + bottom</div>
 <div class="border-sh-t border-sh-s p-2">combined: top + start</div>`}</CodeBlock>
           <div className="component-demo__preview">
@@ -208,6 +209,7 @@ export default function BorderUtilities() {
             <div className="border-sh-b p-2 mb-3">border-sh-b — bottom only</div>
             <div className="border-sh-t p-2 mb-3">border-sh-t — top only</div>
             <div className="border-sh-s p-2 mb-3">border-sh-s — start (left) only</div>
+            <div className="border-sh-x p-2 mb-3">border-sh-x — left + right</div>
             <div className="border-sh-y p-2 mb-3">border-sh-y — top + bottom</div>
             <div className="border-sh-t border-sh-s p-2">combined: top + start</div>
           </div>
