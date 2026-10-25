@@ -1174,7 +1174,7 @@ h3:hover > .docs-heading-anchor,
 
 /* Hero background grid — decorative, low opacity, behind content */
 .home-hero {
-    min-height: calc(round(100vh, 8px) - 4rem);
+    min-height: calc(round(100vh, 2rem) - 4rem);
     align-content: center;
 }
 
@@ -1197,12 +1197,6 @@ h3:hover > .docs-heading-anchor,
 .home-hero__inner {
     position: relative;
     z-index: 1;
-}
-
-@media (min-width: 768px) {
-    .home-hero__inner {
-        transform: translateY(-4px);
-    }
 }
 
 /* 1. home-accent — purple accent color for highlighted words */
