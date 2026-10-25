@@ -1173,9 +1173,14 @@ h3:hover > .docs-heading-anchor,
 /* --- Home page --- */
 
 /* Hero background grid — decorative, low opacity, behind content */
+.home-hero {
+    min-height: calc(round(100vh, 8px) - 4rem);
+    align-content: center;
+}
+
 .home-hero.show-grid::before {
-  opacity: 0.35;
-  z-index: 0;
+    opacity: 0.35;
+    z-index: 0;
 }
 
 .home-hero h1 {
@@ -1183,9 +1188,21 @@ h3:hover > .docs-heading-anchor,
     letter-spacing: -0.125rem;
 }
 
+@media (max-width: 767px) {
+    .home-hero h1 {
+        line-height: 3.5rem;
+    }
+}
+
 .home-hero__inner {
     position: relative;
     z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .home-hero__inner {
+        transform: translateY(-4px);
+    }
 }
 
 /* 1. home-accent — purple accent color for highlighted words */

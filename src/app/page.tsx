@@ -97,10 +97,10 @@ export default function Home() {
       <SiteHeader />
 
       {/* 1. Hero */}
-      <section className="home-hero show-grid ln-section ln-section--wide ln-section--space-2xl">
+      <section className="home-hero show-grid ln-section ln-section--wide">
         <div className="home-hero__inner ln-section__inner">
-        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg align-items-center">
-          <div>
+        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-2@md ln-grid--gap-lg">
+          <div className="py-4@md">
             <span className="ln-badge ln-badge--secondary mb-1">
               <span className="ln-badge__dot" />
               v1.0.1
