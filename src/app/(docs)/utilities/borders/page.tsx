@@ -189,7 +189,7 @@ export default function BorderUtilities() {
       </section>
 
       <section className="docs-section">
-        <h2>Shadow borders (<code>border-sh</code>)</h2>
+        <h2>Shadow borders</h2>
         <p>
           Shadow borders use <code>box-shadow: inset</code> to render borders
           without affecting layout or breaking vertical rhythm. They support all
@@ -262,7 +262,7 @@ export default function BorderUtilities() {
       </section>
 
       <section className="docs-section">
-        <h2>Native borders (<code>border-n</code>)</h2>
+        <h2>Native borders</h2>
         <p>
           Native borders use standard CSS <code>border-*</code> properties. They
           support <code>border-radius</code>, <code>border-style</code> (dashed,
@@ -332,7 +332,7 @@ export default function BorderUtilities() {
       <section className="docs-section">
         <h2>Reference</h2>
 
-        <h3>Outline (all-sides)</h3>
+        <h3>Outline</h3>
         <table>
           <thead>
             <tr>
@@ -349,7 +349,7 @@ export default function BorderUtilities() {
           </tbody>
         </table>
 
-        <h3>Shadow (<code>border-sh</code>, rhythm-safe)</h3>
+        <h3>Shadow</h3>
         <table>
           <thead>
             <tr>
@@ -374,7 +374,7 @@ export default function BorderUtilities() {
           </tbody>
         </table>
 
-        <h3>Native (<code>border-n</code>, affects layout)</h3>
+        <h3>Native</h3>
         <table>
           <thead>
             <tr>
