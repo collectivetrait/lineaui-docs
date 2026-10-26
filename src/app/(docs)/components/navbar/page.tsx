@@ -135,8 +135,7 @@ export default function NavbarPage() {
     </button>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
-            <div className="component-demo__preview-sizer--full-contained">
+          <div className="component-demo__preview component-demo__preview-sizer--full-contained">
             <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -156,7 +155,6 @@ export default function NavbarPage() {
                 </button>
               </div>
             </nav>
-            </div>
           </div>
         </div>
       </section>
