@@ -1,20 +1,21 @@
 {
   "name": "docs",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "@collectivetrait/lineaui": "1.0.1",
+    "@collectivetrait/lineaui": "1.0.2",
     "@next/third-parties": "^16.4.0",
     "highlight.js": "^11.12.0",
     "next": "16.3.6",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "sass": "^1.69.5"
   },
   "devDependencies": {
     "@types/node": "^20",

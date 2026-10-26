@@ -27,14 +27,16 @@ export default function TagPage() {
       <section className="docs-section">
         <h2>Default and outline</h2>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<span class="ln-tag ln-tag--primary">Default</span>
-<span class="ln-tag ln-tag--outline ln-tag--primary">Outline</span>
+          <CodeBlock language="html">{`<span class="ln-tag">Default</span>
+<span class="ln-tag ln-tag--outline">Outline</span>
+<span class="ln-tag ln-tag--primary">Primary</span>
 <span class="ln-tag ln-tag--success">Success</span>
 <span class="ln-tag ln-tag--danger">Danger</span>`}</CodeBlock>
           <div className="component-demo__preview">
             <div className="d-flex align-items-center gap-2">
-              <span className="ln-tag ln-tag--primary">Default</span>
-              <span className="ln-tag ln-tag--outline ln-tag--primary">Outline</span>
+              <span className="ln-tag">Default</span>
+              <span className="ln-tag ln-tag--outline">Outline</span>
+              <span className="ln-tag ln-tag--primary">Primary</span>
               <span className="ln-tag ln-tag--success">Success</span>
               <span className="ln-tag ln-tag--danger">Danger</span>
             </div>
@@ -75,6 +77,7 @@ export default function TagPage() {
             <tr><td><code>.ln-tag__icon</code></td><td>Leading icon</td><td>No</td></tr>
             <tr><td><code>.ln-tag__label</code></td><td>Tag label text</td><td>No</td></tr>
             <tr><td><code>.ln-tag__remove</code></td><td>Dismiss / remove button</td><td>No</td></tr>
+            <tr><td><code>.ln-tag--outline</code></td><td>Transparent background with border</td><td>No</td></tr>
             <tr><td><code>.ln-tag--selectable</code></td><td>Toggle-selectable tag</td><td>No</td></tr>
           </tbody>
         </table>

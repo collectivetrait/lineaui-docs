@@ -74,6 +74,55 @@ export default function ToastPage() {
       </section>
 
       <section className="docs-section">
+        <h2>With icon and action</h2>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<div class="ln-toast ln-toast--warning border" role="alert">
+  <i class="fa-solid fa-triangle-exclamation ln-toast__icon"></i>
+  <div class="ln-toast__content">
+    <div class="ln-toast__title">Unsaved changes</div>
+    <div class="ln-toast__body">You have unsaved changes that will be lost.</div>
+    <div class="ln-toast__action">
+      <button class="ln-button ln-button--sm">Save now</button>
+    </div>
+  </div>
+  <button class="ln-toast__close" aria-label="Close">&times;</button>
+</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="ln-toast ln-toast--warning border" role="alert">
+              <i className="fa-solid fa-triangle-exclamation ln-toast__icon"></i>
+              <div className="ln-toast__content">
+                <div className="ln-toast__title">Unsaved changes</div>
+                <div className="ln-toast__body">You have unsaved changes that will be lost.</div>
+                <div className="ln-toast__action">
+                  <button className="ln-button ln-button--sm">Save now</button>
+                </div>
+              </div>
+              <button className="ln-toast__close" aria-label="Close">&times;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Toast region</h2>
+        <p>
+          Toasts live inside a fixed-position <code>ln-toast-region</code>.
+          Position modifiers control which corner they anchor to.
+        </p>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<!-- Bottom-end is the most common position -->
+<div class="ln-toast-region ln-toast-region--bottom-end">
+  <div class="ln-toast ln-toast--success border" role="alert">
+    <div class="ln-toast__content">
+      <div class="ln-toast__title">File uploaded</div>
+    </div>
+    <button class="ln-toast__close" aria-label="Close">&times;</button>
+  </div>
+</div>`}</CodeBlock>
+        </div>
+      </section>
+
+      <section className="docs-section">
         <h2>Reference</h2>
         <table>
           <thead>

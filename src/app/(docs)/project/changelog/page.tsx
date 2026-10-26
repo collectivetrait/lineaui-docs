@@ -131,7 +131,7 @@ export default function ChangelogPage() {
             {entry.sections.map((section) => (
               <div key={section.title}>
                 <h3>{section.title}</h3>
-                <ul>
+                <ul className="mb-3">
                   {section.items.map((item, j) => (
                     <li key={j}>{renderInline(item)}</li>
                   ))}

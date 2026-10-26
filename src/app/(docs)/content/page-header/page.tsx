@@ -44,6 +44,104 @@ export default function PageHeaderPage() {
       </section>
 
       <section className="docs-section">
+        <h2>Full page header</h2>
+        <p>
+          All available slots in one header: breadcrumb, eyebrow, title, lead,
+          meta, and actions.
+        </p>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<div class="ln-page-header">
+  <nav class="ln-page-header__breadcrumb">
+    <a href="#">Home</a> / <a href="#">Products</a> / Details
+  </nav>
+  <span class="ln-page-header__eyebrow">Product</span>
+  <h1 class="ln-page-header__title">Wireless Headphones</h1>
+  <p class="ln-page-header__lead">Premium noise-cancelling headphones
+     with 30-hour battery life.</p>
+  <div class="ln-page-header__meta text-meta text-muted">
+    Updated 3 days ago · SKU WH-1042
+  </div>
+  <div class="ln-page-header__actions">
+    <button class="ln-button">Edit</button>
+    <button class="ln-button ln-button--neutral">Archive</button>
+  </div>
+</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="ln-page-header">
+              <nav className="ln-page-header__breadcrumb">
+                <a href="#">Home</a> / <a href="#">Products</a> / Details
+              </nav>
+              <span className="ln-page-header__eyebrow">Product</span>
+              <h1 className="ln-page-header__title">Wireless Headphones</h1>
+              <p className="ln-page-header__lead">Premium noise-cancelling headphones
+                 with 30-hour battery life.</p>
+              <div className="ln-page-header__meta text-meta text-muted">
+                Updated 3 days ago · SKU WH-1042
+              </div>
+              <div className="ln-page-header__actions">
+                <button className="ln-button">Edit</button>
+                <button className="ln-button ln-button--neutral">Archive</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>Hero variant</h2>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<div class="ln-page-header ln-page-header--hero ln-page-header--center">
+  <h1 class="ln-page-header__title">Build beautiful interfaces</h1>
+  <p class="ln-page-header__lead">A lightweight component library built on
+     vertical rhythm and cascade layers.</p>
+  <div class="ln-page-header__actions">
+    <button class="ln-button">Get started</button>
+    <button class="ln-button ln-button--ghost">Learn more</button>
+  </div>
+</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="ln-page-header ln-page-header--hero ln-page-header--center">
+              <h1 className="ln-page-header__title">Build beautiful interfaces</h1>
+              <p className="ln-page-header__lead">A lightweight component library built on
+                 vertical rhythm and cascade layers.</p>
+              <div className="ln-page-header__actions">
+                <button className="ln-button">Get started</button>
+                <button className="ln-button ln-button--ghost">Learn more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
+        <h2>With tabs</h2>
+        <div className="component-demo shadow-2">
+          <CodeBlock language="html">{`<div class="ln-page-header">
+  <h1 class="ln-page-header__title">Settings</h1>
+  <div class="ln-page-header__tabs">
+    <nav class="ln-tabs">
+      <a class="ln-tabs__tab" href="#" aria-current="page">General</a>
+      <a class="ln-tabs__tab" href="#">Security</a>
+      <a class="ln-tabs__tab" href="#">Billing</a>
+    </nav>
+  </div>
+</div>`}</CodeBlock>
+          <div className="component-demo__preview">
+            <div className="ln-page-header">
+              <h1 className="ln-page-header__title">Settings</h1>
+              <div className="ln-page-header__tabs">
+                <nav className="ln-tabs">
+                  <a className="ln-tabs__tab" href="#" aria-current="page">General</a>
+                  <a className="ln-tabs__tab" href="#">Security</a>
+                  <a className="ln-tabs__tab" href="#">Billing</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="docs-section">
         <h2>Compact variant</h2>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="ln-page-header ln-page-header--compact">

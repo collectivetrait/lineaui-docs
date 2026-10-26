@@ -28,7 +28,7 @@ export default function SpacingUtilities() {
           <code>px-*</code>/<code>py-*</code> for axes, and{" "}
           <code>pt-*</code>/<code>pb-*</code>/<code>ps-*</code>/<code>pe-*</code>{" "}
           for individual sides. Values are <code>0</code>, <code>half</code>, and{" "}
-          <code>1</code> through <code>4</code>.
+          <code>1</code> through <code>8</code>.
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<div class="border rounded-sm p-1 mb-3">p-1</div>
@@ -78,7 +78,7 @@ export default function SpacingUtilities() {
           Use <code>-m-*</code> for all sides,{" "}
           <code>-mx-*</code> for inline, and{" "}
           <code>-my-*</code> for block. Values are <code>1px</code> and{" "}
-          <code>1</code> through <code>4</code>. All support responsive
+          <code>1</code> through <code>8</code>. All support responsive
           breakpoint suffixes.
         </p>
         <div className="component-demo shadow-2">
@@ -188,26 +188,26 @@ export default function SpacingUtilities() {
             </tr>
           </thead>
           <tbody>
-            <tr><td><code>.p-&#123;0|half|1–4&#125;</code></td><td><code>padding (all sides)</code></td><td>Yes</td></tr>
-            <tr><td><code>.pt-&#123;0|half|1–4&#125;</code></td><td><code>padding-top</code></td><td>Yes</td></tr>
-            <tr><td><code>.pb-&#123;0|half|1–4&#125;</code></td><td><code>padding-bottom</code></td><td>Yes</td></tr>
-            <tr><td><code>.ps-&#123;0|half|1–4&#125;</code></td><td><code>padding-left</code></td><td>Yes</td></tr>
-            <tr><td><code>.pe-&#123;0|half|1–4&#125;</code></td><td><code>padding-right</code></td><td>Yes</td></tr>
-            <tr><td><code>.px-&#123;0|half|1–4&#125;</code></td><td><code>padding-inline</code></td><td>Yes</td></tr>
-            <tr><td><code>.py-&#123;0|half|1–4&#125;</code></td><td><code>padding-block</code></td><td>Yes</td></tr>
-            <tr><td><code>.m-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin (all sides)</code></td><td>Yes</td></tr>
-            <tr><td><code>.mt-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin-top</code></td><td>Yes</td></tr>
-            <tr><td><code>.mb-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin-bottom</code></td><td>Yes</td></tr>
-            <tr><td><code>.ms-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin-left</code></td><td>Yes</td></tr>
-            <tr><td><code>.me-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin-right</code></td><td>Yes</td></tr>
-            <tr><td><code>.mx-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin-inline</code></td><td>Yes</td></tr>
-            <tr><td><code>.my-&#123;0|half|1–4|auto&#125;</code></td><td><code>margin-block</code></td><td>Yes</td></tr>
-            <tr><td><code>.-m-&#123;1px|1–4&#125;</code></td><td><code>margin (all sides)</code></td><td>Yes</td></tr>
-            <tr><td><code>.-mx-&#123;1px|1–4&#125;</code></td><td><code>margin-inline</code></td><td>Yes</td></tr>
-            <tr><td><code>.-my-&#123;1px|1–4&#125;</code></td><td><code>margin-block</code></td><td>Yes</td></tr>
-            <tr><td><code>.gap-&#123;0|half|1–4&#125;</code></td><td><code>gap</code></td><td>Yes</td></tr>
-            <tr><td><code>.row-gap-&#123;0|half|1–4&#125;</code></td><td><code>row-gap</code></td><td>Yes</td></tr>
-            <tr><td><code>.col-gap-&#123;0|half|1–4&#125;</code></td><td><code>column-gap</code></td><td>Yes</td></tr>
+            <tr><td><code>.p-&#123;0|half|1–8&#125;</code></td><td><code>padding (all sides)</code></td><td>Yes</td></tr>
+            <tr><td><code>.pt-&#123;0|half|1–8&#125;</code></td><td><code>padding-top</code></td><td>Yes</td></tr>
+            <tr><td><code>.pb-&#123;0|half|1–8&#125;</code></td><td><code>padding-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.ps-&#123;0|half|1–8&#125;</code></td><td><code>padding-left</code></td><td>Yes</td></tr>
+            <tr><td><code>.pe-&#123;0|half|1–8&#125;</code></td><td><code>padding-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.px-&#123;0|half|1–8&#125;</code></td><td><code>padding-inline</code></td><td>Yes</td></tr>
+            <tr><td><code>.py-&#123;0|half|1–8&#125;</code></td><td><code>padding-block</code></td><td>Yes</td></tr>
+            <tr><td><code>.m-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin (all sides)</code></td><td>Yes</td></tr>
+            <tr><td><code>.mt-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin-top</code></td><td>Yes</td></tr>
+            <tr><td><code>.mb-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin-bottom</code></td><td>Yes</td></tr>
+            <tr><td><code>.ms-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin-left</code></td><td>Yes</td></tr>
+            <tr><td><code>.me-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin-right</code></td><td>Yes</td></tr>
+            <tr><td><code>.mx-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin-inline</code></td><td>Yes</td></tr>
+            <tr><td><code>.my-&#123;0|half|1–8|auto&#125;</code></td><td><code>margin-block</code></td><td>Yes</td></tr>
+            <tr><td><code>.-m-&#123;1px|1–8&#125;</code></td><td><code>margin (all sides)</code></td><td>Yes</td></tr>
+            <tr><td><code>.-mx-&#123;1px|1–8&#125;</code></td><td><code>margin-inline</code></td><td>Yes</td></tr>
+            <tr><td><code>.-my-&#123;1px|1–8&#125;</code></td><td><code>margin-block</code></td><td>Yes</td></tr>
+            <tr><td><code>.gap-&#123;0|half|1–8&#125;</code></td><td><code>gap</code></td><td>Yes</td></tr>
+            <tr><td><code>.row-gap-&#123;0|half|1–8&#125;</code></td><td><code>row-gap</code></td><td>Yes</td></tr>
+            <tr><td><code>.col-gap-&#123;0|half|1–8&#125;</code></td><td><code>column-gap</code></td><td>Yes</td></tr>
           </tbody>
         </table>
       </section>
