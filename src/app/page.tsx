@@ -63,9 +63,9 @@ const PRINCIPLES = [
 ];
 
 const STATS = [
-  { label: "CSS, min + gzip", value: "26", unit: "KB" },
+  { label: "CSS, min + gzip", value: "29", unit: "KB" },
   { label: "JS, min + gzip", value: "6", unit: "KB" },
-  { label: "Components", value: "52" },
+  { label: "Components", value: "54" },
   { label: "Base unit", value: "8", unit: "px" },
 ];
 
@@ -103,7 +103,7 @@ export default function Home() {
           <div className="py-4@md">
             <span className="ln-badge ln-badge--secondary mb-1">
               <span className="ln-badge__dot" />
-              v1.0.1
+              v1.0.2
             </span>
             <div className="ln-section__eyebrow">
               BEM / VERTICAL RHYTHM / CASCADE LAYERS</div>
