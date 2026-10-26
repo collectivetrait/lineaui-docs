@@ -28,7 +28,7 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h2>Standard navbar</h2>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar">
+          <CodeBlock language="html">{`<nav class="ln-navbar border">
   <div class="ln-navbar__inner" style="--_px: 1rem">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
@@ -43,7 +43,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar">
+            <nav className="ln-navbar border">
               <div className="ln-navbar__inner" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
@@ -135,7 +135,7 @@ export default function NavbarPage() {
     </button>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview-sizer--full-contained">
             <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -176,8 +176,11 @@ export default function NavbarPage() {
       <a class="ln-navbar__link" href="#" aria-current="page">Home</a>
       <a class="ln-navbar__link" href="#">Products</a>
     </div>
-    <button class="ln-navbar__link" data-ln-navbar-panel="more-links"
-            aria-expanded="false">More ▾</button>
+    <button class="ln-navbar__toggle" data-ln-navbar-panel="more-links"
+            aria-expanded="false" aria-label="Toggle more">
+      <i class="fa-solid fa-bars ln-navbar__toggle-open"></i>
+      <i class="fa-solid fa-xmark ln-navbar__toggle-close"></i>
+    </button>
   </div>
   <div class="ln-navbar__panel" id="more-links" aria-hidden="true">
     <a class="ln-navbar__link" href="#">Resources</a>
@@ -193,8 +196,11 @@ export default function NavbarPage() {
                   <a className="ln-navbar__link" href="#" aria-current="page">Home</a>
                   <a className="ln-navbar__link" href="#">Products</a>
                 </div>
-                <button className="ln-navbar__link" data-ln-navbar-panel="more-links"
-                        aria-expanded="false">More ▾</button>
+                <button className="ln-navbar__toggle" data-ln-navbar-panel="more-links"
+                        aria-expanded="false" aria-label="Toggle more">
+                  <i className="fa-solid fa-bars ln-navbar__toggle-open"></i>
+                  <i className="fa-solid fa-xmark ln-navbar__toggle-close"></i>
+                </button>
               </div>
               <div className="ln-navbar__panel" id="more-links" aria-hidden="true">
                 <a className="ln-navbar__link" href="#">Resources</a>
@@ -277,7 +283,7 @@ export default function NavbarPage() {
           navbar.
         </p>
         <div className="component-demo shadow-2">
-          <CodeBlock language="html">{`<nav class="ln-navbar border">
+          <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--collapse border">
   <div class="ln-navbar__inner py-1" style="--_px: 1rem">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
@@ -286,6 +292,11 @@ export default function NavbarPage() {
               aria-expanded="false">Products ▾</button>
       <a class="ln-navbar__link" href="#">About</a>
     </div>
+    <button class="ln-navbar__toggle" data-ln-navbar-toggle
+            aria-expanded="false" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars ln-navbar__toggle-open"></i>
+      <i class="fa-solid fa-xmark ln-navbar__toggle-close"></i>
+    </button>
   </div>
   <div class="ln-navbar__megamenu" id="mega-products" aria-hidden="true">
     <div class="ln-navbar__megamenu-inner">
@@ -310,7 +321,7 @@ export default function NavbarPage() {
   </div>
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
-            <nav className="ln-navbar border">
+            <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
@@ -319,6 +330,11 @@ export default function NavbarPage() {
                           aria-expanded="false">Products ▾</button>
                   <a className="ln-navbar__link" href="#">About</a>
                 </div>
+                <button className="ln-navbar__toggle" data-ln-navbar-toggle=""
+                        aria-expanded="false" aria-label="Toggle menu">
+                  <i className="fa-solid fa-bars ln-navbar__toggle-open"></i>
+                  <i className="fa-solid fa-xmark ln-navbar__toggle-close"></i>
+                </button>
               </div>
               <div className="ln-navbar__megamenu" id="mega-products" aria-hidden="true">
                 <div className="ln-navbar__megamenu-inner">
