@@ -86,7 +86,7 @@ export default function NavbarPage() {
     </button>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview overflow-visible">
             <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -135,7 +135,7 @@ export default function NavbarPage() {
     </button>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview component-demo__preview--full-contained">
+          <div className="component-demo__preview">
             <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -188,7 +188,7 @@ export default function NavbarPage() {
     <a class="ln-navbar__link" href="#">Careers</a>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview overflow-visible">
             <nav className="ln-navbar border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -245,7 +245,7 @@ export default function NavbarPage() {
     </button>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview overflow-visible">
             <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -276,11 +276,11 @@ export default function NavbarPage() {
       <section className="docs-section">
         <h2>Megamenu</h2>
         <p>
-          A full-width panel below the bar, toggled by{" "}
-          <code>data-ln-navbar-panel</code>. The <code>__megamenu-inner</code>{" "}
-          element constrains content to <code>--container-wide</code>. Opening
-          one megamenu closes any other open panel or megamenu in the same
-          navbar.
+          Wrap each megamenu trigger and its panel inside{" "}
+          <code>__mega</code>. On desktop the panel is absolute and full-width
+          below the bar. On mobile it renders inline under its trigger inside
+          the collapsed nav. Opening one megamenu closes any other open panel
+          or megamenu in the same navbar.
         </p>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-navbar ln-navbar--collapse border">
@@ -288,8 +288,34 @@ export default function NavbarPage() {
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
       <a class="ln-navbar__link" href="#" aria-current="page">Home</a>
-      <button class="ln-navbar__link" data-ln-navbar-panel="mega-products"
-              aria-expanded="false">Products ▾</button>
+      <div class="ln-navbar__mega">
+        <button class="ln-navbar__link ln-navbar__mega-toggle"
+                data-ln-navbar-panel="mega-products"
+                aria-expanded="false">Products ▾</button>
+        <div class="ln-navbar__megamenu" id="mega-products"
+             aria-hidden="true">
+          <div class="ln-navbar__megamenu-inner">
+            <div class="ln-grid ln-grid--cols-1 ln-grid--cols-3@md
+                        ln-grid--gap-lg">
+              <div>
+                <p class="h5 mb-2">Widgets</p>
+                <a class="ln-navbar__megamenu-link" href="#">Widget A</a>
+                <a class="ln-navbar__megamenu-link" href="#">Widget B</a>
+              </div>
+              <div>
+                <p class="h5 mb-2">Gadgets</p>
+                <a class="ln-navbar__megamenu-link" href="#">Gadget X</a>
+                <a class="ln-navbar__megamenu-link" href="#">Gadget Y</a>
+              </div>
+              <div>
+                <p class="h5 mb-2">Tools</p>
+                <a class="ln-navbar__megamenu-link" href="#">Tool 1</a>
+                <a class="ln-navbar__megamenu-link" href="#">Tool 2</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <a class="ln-navbar__link" href="#">About</a>
     </div>
     <button class="ln-navbar__toggle" data-ln-navbar-toggle
@@ -298,36 +324,38 @@ export default function NavbarPage() {
       <i class="fa-solid fa-xmark ln-navbar__toggle-close"></i>
     </button>
   </div>
-  <div class="ln-navbar__megamenu" id="mega-products" aria-hidden="true">
-    <div class="ln-navbar__megamenu-inner">
-      <div class="ln-grid ln-grid--cols-3 ln-grid--gap-lg">
-        <div>
-          <p class="h5 mb-2">Widgets</p>
-          <a class="ln-navbar__link" href="#">Widget A</a>
-          <a class="ln-navbar__link" href="#">Widget B</a>
-        </div>
-        <div>
-          <p class="h5 mb-2">Gadgets</p>
-          <a class="ln-navbar__link" href="#">Gadget X</a>
-          <a class="ln-navbar__link" href="#">Gadget Y</a>
-        </div>
-        <div>
-          <p class="h5 mb-2">Tools</p>
-          <a class="ln-navbar__link" href="#">Tool 1</a>
-          <a class="ln-navbar__link" href="#">Tool 2</a>
-        </div>
-      </div>
-    </div>
-  </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview component-demo__preview--full-contained overflow-visible">
             <nav className="ln-navbar ln-navbar--collapse border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
                   <a className="ln-navbar__link" href="#" aria-current="page">Home</a>
-                  <button className="ln-navbar__link" data-ln-navbar-panel="mega-products"
-                          aria-expanded="false">Products ▾</button>
+                  <div className="ln-navbar__mega">
+                    <button className="ln-navbar__link ln-navbar__mega-toggle" data-ln-navbar-panel="mega-products"
+                            aria-expanded="false">Products ▾</button>
+                    <div className="ln-navbar__megamenu" id="mega-products" aria-hidden="true">
+                      <div className="ln-navbar__megamenu-inner">
+                        <div className="ln-grid ln-grid--cols-1 ln-grid--cols-3@md ln-grid--gap-lg">
+                          <div>
+                            <p className="h5 mb-2">Widgets</p>
+                            <a className="ln-navbar__megamenu-link" href="#">Widget A</a>
+                            <a className="ln-navbar__megamenu-link" href="#">Widget B</a>
+                          </div>
+                          <div>
+                            <p className="h5 mb-2">Gadgets</p>
+                            <a className="ln-navbar__megamenu-link" href="#">Gadget X</a>
+                            <a className="ln-navbar__megamenu-link" href="#">Gadget Y</a>
+                          </div>
+                          <div>
+                            <p className="h5 mb-2">Tools</p>
+                            <a className="ln-navbar__megamenu-link" href="#">Tool 1</a>
+                            <a className="ln-navbar__megamenu-link" href="#">Tool 2</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <a className="ln-navbar__link" href="#">About</a>
                 </div>
                 <button className="ln-navbar__toggle" data-ln-navbar-toggle=""
@@ -335,27 +363,6 @@ export default function NavbarPage() {
                   <i className="fa-solid fa-bars ln-navbar__toggle-open"></i>
                   <i className="fa-solid fa-xmark ln-navbar__toggle-close"></i>
                 </button>
-              </div>
-              <div className="ln-navbar__megamenu" id="mega-products" aria-hidden="true">
-                <div className="ln-navbar__megamenu-inner">
-                  <div className="ln-grid ln-grid--cols-3 ln-grid--gap-lg">
-                    <div>
-                      <p className="h5 mb-2">Widgets</p>
-                      <a className="ln-navbar__link" href="#">Widget A</a>
-                      <a className="ln-navbar__link" href="#">Widget B</a>
-                    </div>
-                    <div>
-                      <p className="h5 mb-2">Gadgets</p>
-                      <a className="ln-navbar__link" href="#">Gadget X</a>
-                      <a className="ln-navbar__link" href="#">Gadget Y</a>
-                    </div>
-                    <div>
-                      <p className="h5 mb-2">Tools</p>
-                      <a className="ln-navbar__link" href="#">Tool 1</a>
-                      <a className="ln-navbar__link" href="#">Tool 2</a>
-                    </div>
-                  </div>
-                </div>
               </div>
             </nav>
           </div>
@@ -391,7 +398,7 @@ export default function NavbarPage() {
     <a class="ln-navbar__link" href="#">Sign in</a>
   </div>
 </nav>`}</CodeBlock>
-          <div className="component-demo__preview">
+          <div className="component-demo__preview overflow-visible">
             <nav className="ln-navbar border">
               <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
@@ -436,8 +443,11 @@ export default function NavbarPage() {
             <tr><td><code>.ln-navbar__toggle</code></td><td>Menu toggle button</td></tr>
             <tr><td><code>.ln-navbar__panel</code></td><td>Collapsible panel (explicit or JS-added)</td></tr>
             <tr><td><code>.ln-navbar__keep</code></td><td>Link group that stays visible on mobile</td></tr>
+            <tr><td><code>.ln-navbar__mega</code></td><td>Wrapper for megamenu trigger + panel</td></tr>
             <tr><td><code>.ln-navbar__megamenu</code></td><td>Full-width dropdown panel below the bar</td></tr>
             <tr><td><code>.ln-navbar__megamenu-inner</code></td><td>Container-wide content wrapper</td></tr>
+            <tr><td><code>.ln-navbar__megamenu-link</code></td><td>Link inside a megamenu (no inline padding, block display)</td></tr>
+            <tr><td><code>.ln-navbar__mega-toggle</code></td><td>Megamenu trigger button (no background on hover)</td></tr>
             <tr><td><code>.ln-navbar--sticky</code></td><td>Stick to viewport top</td></tr>
             <tr><td><code>.ln-navbar--transparent</code></td><td>Transparent background until scrolled</td></tr>
             <tr><td><code>.ln-navbar--center</code></td><td>Centre-align nav links</td></tr>

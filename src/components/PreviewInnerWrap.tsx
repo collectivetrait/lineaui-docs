@@ -26,6 +26,10 @@ export function PreviewInnerWrap() {
 
       const inner = document.createElement("div");
       inner.className = "component-demo__preview-inner";
+      if (preview.classList.contains("overflow-visible")) {
+        inner.classList.add("overflow-visible");
+        preview.classList.remove("overflow-visible");
+      }
       while (preview.firstChild) {
         inner.appendChild(preview.firstChild);
       }

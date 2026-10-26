@@ -183,6 +183,10 @@
   overflow: auto;
 }
 
+.component-demo__preview-inner.overflow-visible {
+  overflow: visible;
+}
+
 .component-demo__preview-sizer--full {
   width: max-content;
   min-width: 100%;
