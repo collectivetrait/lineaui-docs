@@ -29,7 +29,7 @@ export default function NavbarPage() {
         <h2>Standard navbar</h2>
         <div className="component-demo shadow-2">
           <CodeBlock language="html">{`<nav class="ln-navbar border">
-  <div class="ln-navbar__inner" style="--_px: 1rem">
+  <div class="ln-navbar__inner py-1" style="--_px: 1rem">
     <a class="ln-navbar__brand" href="#">Acme</a>
     <div class="ln-navbar__nav">
       <a class="ln-navbar__link" href="#" aria-current="page">Home</a>
@@ -44,7 +44,7 @@ export default function NavbarPage() {
 </nav>`}</CodeBlock>
           <div className="component-demo__preview">
             <nav className="ln-navbar border">
-              <div className="ln-navbar__inner" style={{"--_px": "1rem"} as React.CSSProperties}>
+              <div className="ln-navbar__inner py-1" style={{"--_px": "1rem"} as React.CSSProperties}>
                 <a className="ln-navbar__brand" href="#">Acme</a>
                 <div className="ln-navbar__nav">
                   <a className="ln-navbar__link" href="#" aria-current="page">Home</a>
